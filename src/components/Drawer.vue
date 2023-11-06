@@ -6,31 +6,31 @@
             <q-list padding>
                 <q-item clickable v-ripple>
                     <q-item-section avatar>
-                        <q-icon name="inbox" />
+                        <q-icon name="child_care" />
                     </q-item-section>
 
                     <q-item-section>
-                        Inbox
-                    </q-item-section>
-                </q-item>
-
-                <q-item active clickable v-ripple>
-                    <q-item-section avatar>
-                        <q-icon name="star" />
-                    </q-item-section>
-
-                    <q-item-section>
-                        Star
+                        Students
                     </q-item-section>
                 </q-item>
 
                 <q-item clickable v-ripple>
                     <q-item-section avatar>
-                        <q-icon name="send" />
+                        <q-icon name="diversity_1" />
                     </q-item-section>
 
                     <q-item-section>
-                        Send
+                        Parents
+                    </q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple>
+                    <q-item-section avatar>
+                        <q-icon name="payments" />
+                    </q-item-section>
+
+                    <q-item-section>
+                        Finance
                     </q-item-section>
                 </q-item>
 
@@ -38,11 +38,20 @@
 
                 <q-item clickable v-ripple>
                     <q-item-section avatar>
-                        <q-icon name="drafts" />
+                        <q-icon name="event" />
                     </q-item-section>
 
                     <q-item-section>
-                        Drafts
+                        Events
+                    </q-item-section>
+                </q-item>
+                <q-item clickable v-ripple>
+                    <q-item-section avatar>
+                        <q-icon name="campaign" />
+                    </q-item-section>
+
+                    <q-item-section>
+                        Announcements
                     </q-item-section>
                 </q-item>
             </q-list>
