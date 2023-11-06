@@ -1,18 +1,46 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
+    <div>
+        <Slider />
+    </div>
+    <AnnouncementsAndEvents/>
+    <Sections/>
 
+</template>
+  
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Header from '@/components/Header.vue'
+import Table from '@/components/Table.vue'
+import Slider from '@/components/Slider.vue'
+import AnnouncementsAndEvents from '@/components/AnnouncementsAndEvents.vue'
+import Sections from '@/components/Sections.vue'
 
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+    name: 'home',
+    components: {
+        Header,
+        Slider,
+        AnnouncementsAndEvents,
+        Sections,
+    }
 }
 </script>
+
+<style lang="sass" scoped>
+.header-container 
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
+.slider-container 
+  position: relative 
+  z-index: 1
+
+
+
+
+</style>
+
+
+  

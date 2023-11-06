@@ -1,0 +1,6 @@
+.one
+  background-color: green
+.two
+  background-color: blue
+.three
+  background-color: red  
