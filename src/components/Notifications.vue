@@ -1,5 +1,6 @@
 <template>
-    <q-btn dense round icon="notifications" :color="buttonColor" class="q-mr-md" @click="notifClicked">
+    <q-btn dense round  :color="buttonColor" class="q-mr-md" @click="notifClicked">
+        <q-icon name="notifications" style="color: black;" />
         <q-badge color="red" floating>4</q-badge>
     </q-btn>
 

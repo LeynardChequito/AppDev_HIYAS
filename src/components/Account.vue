@@ -1,5 +1,6 @@
 <template>
-    <q-btn dense round icon="person" :color="buttonColor" class="q-mr-md hays" @click="accountClicked">
+    <q-btn dense round :color="buttonColor" class="q-mr-md hays" @click="accountClicked">
+        <q-icon name="person" style="color: black;" />
     </q-btn>
 
     <div class="row one justify-center">
@@ -102,7 +103,8 @@ export default {
   right: 0
   margin-top: 45px
   margin-right: 10px
-
+.hays .icon
+    color: black
 </style>
   
 

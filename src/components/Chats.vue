@@ -1,5 +1,6 @@
 <template>
-    <q-btn dense round icon="messages" :color="buttonColor" class="q-mr-md" @click="chatClicked">
+    <q-btn dense round :color="buttonColor" class="q-mr-md" @click="chatClicked">
+        <q-icon name="messages" style="color: black;" />
         <q-badge color="red" floating>1</q-badge>
     </q-btn>
 
