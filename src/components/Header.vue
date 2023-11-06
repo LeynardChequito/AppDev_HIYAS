@@ -1,34 +1,33 @@
 <template>
-  <div class="header-container q-pt-md row justify-center one">
-    <q-toolbar class="bg-transparent text-white">
+  <q-header reveal class="bg-white text-black" height-hint="98">
+    <q-toolbar>
       <div class="row items-start col-4 two self-start">
-        <q-avatar class="logo q-ml-md">
+        <q-avatar class="logo q-ml-md q-pt-sm">
           <img src="@/assets/images/hiyas-logo-wt-bg.jpg" alt="Hiyas Logo" class="logo" @click="logoClicked"
             style="cursor: pointer;" />
         </q-avatar>
-        <q-input rounded dark dense standout v-model="text" input-class="text-right" class="q-ml-md q-mr-sm">
+
+        <q-input rounded dark dense standout v-model="text" input-class="text-right" class="q-pt-sm q-ml-md q-mr-sm"
+          bg-color="grey-3">
           <template v-slot:append>
-            <q-icon v-if="text === ''" name="search" />
-            <q-icon v-else name="clear" class="cursor-pointer" @click="text = ''" />
-          </template> </q-input>
+            <q-icon v-if="text === ''" name="search" color="black" /> <!-- Change the color attribute to "grey" -->
+            <q-icon v-else name="clear" class="cursor-pointer" @click="text = ''" color="black" />
+            <!-- Change the color attribute to "grey" -->
+          </template>
+        </q-input>
       </div>
-      <!-- <q-toolbar-title class="title"><b>Hiyas ng Tahanan</b></q-toolbar-title> -->
-      <div class="row col-5 justify-center three self-start">
-        <q-tabs v-model="tab" shrink>
-          <router-link to="/home"> <!-- Use router-link to navigate to /home -->
-            <q-tab name="home" label="Home" />
-          </router-link>
-          <router-link to="/manage"> <!-- Use router-link to navigate to /manage -->
-            <q-tab name="manage" label="Manage" />
-          </router-link>
-          <router-link to="/reports"> <!-- Use router-link to navigate to /reports -->
-            <q-tab name="reports" label="Reports" />
-          </router-link>
+      <div class="row col-5 justify-center three self-start q-pt-sm">
+        <q-tabs align="left">
+          <q-route-tab to="/home" label="Page One" />
+          <q-route-tab to="/manage" label="Page Two" />
+          <q-route-tab to="/reports" label="Page Three" />
         </q-tabs>
       </div>
 
-      <div class="row col-3 justify-end items-start four self-start q-mt-sm">
-        <q-btn dense color="" round icon="widgets" class="q-mr-md" @click="widgetsClicked" />
+      <div class="row col-3 justify-end items-start four self-center q-mt-sm">
+        <q-btn dense color="" round class="q-mr-md" @click="widgetsClicked">
+          <q-icon name="widgets" style="color: black;" />
+        </q-btn>
         <Chats />
         <Notifications />
         <Account />
@@ -36,10 +35,11 @@
 
     </q-toolbar>
 
-  </div>
+  </q-header>
 </template>
 
 <script>
+
 import Notifications from '@/components/Notifications.vue'
 import Account from '@/components/Account.vue'
 import Chats from '@/components/Chats.vue'
@@ -52,54 +52,11 @@ export default {
     Chats,
     Account
   },
-  setup() {
-    const dialog = ref(false)
-    const position = ref('top')
-    const router = useRouter()
-
-    return {
-      tab: ref('tab1'),
-      text: ref(''),
-
-      dialog,
-      position,
-
-
-      open(pos) {
-        position.value = pos
-        dialog.value = true
-      }
-    }
-  },
-
-  methods: {
-    searchClicked() {
-      // Handle the search icon click event here
-      // You can open a search input or perform any desired action
-    },
-    accountClicked() {
-      console.log('Icon clicked');
-      this.$router.push({ name: 'login' });
-    },
-    logoClicked() {
-      this.$router.push({ name: 'home' });
-    },
-  }
 }
 </script>
 
-<style lang="sass" scoped>
-.logo 
-  width: 40px
-  height: 40px
-
-.one
-  background-color: black
-
-
-
-
-
+<style scoped>
+.q-toolbar {
+  border-bottom: 1px solid #ccc;
+}
 </style>
-
-
