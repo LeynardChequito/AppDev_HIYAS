@@ -7,7 +7,7 @@ import ManageView from "../views/ManageView.vue";
 import ReportsView from "../views/ReportsView.vue";
 import CoachesView from "../views/CoachesView.vue";
 import EventsView from "../views/EventsView.vue";
-
+import StudentsView from "../views/StudentsView.vue";
 
 
 const routes = [
@@ -50,6 +50,11 @@ const routes = [
     path: "/events",
     name: "events",
     component: EventsView,
+  },
+  {
+    path: "/students",
+    name: "students",
+    component: StudentsView,
   },
 ];
 
