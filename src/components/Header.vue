@@ -18,10 +18,10 @@
       </div>
 
       <div class="row col-12 col-md-7 justify-between self-center q-pt-sm">
-        <q-tabs align="left" class="q-mr-md">
-          <q-route-tab to="/home" label="Home" />
-          <q-route-tab to="/manage" label="Manage" />
-          <q-route-tab to="/reports" label="Reports" />
+        <q-tabs align="left" class="" inline-label>
+          <q-route-tab to="/home" icon="home" label="Home" />
+          <q-route-tab to="/manage" icon="tune" label="Manage" />
+          <q-route-tab to="/reports" icon="analytics" label="Reports" />
         </q-tabs>
 
         <div class="row justify-end items-start four self-center">
@@ -55,25 +55,24 @@
 
 
     <q-toolbar>
-      <div class="row col-sm-12 justify-center self-center">
-        <q-tabs align="center">
+      <div class="row col-sm-12 col-12 justify-center self-center">
+        <q-tabs stretch>
           <q-route-tab to="/home">
-            <q-btn dense flat round icon="home" />
+            <q-icon name="home" size="sm" />
           </q-route-tab>
           <q-route-tab to="/manage">
-            <q-btn dense flat round icon="tune" />
+            <q-icon name="tune" size="sm" />
           </q-route-tab>
 
           <q-route-tab to="/reports">
-            <q-btn dense flat round icon="analytics" />
+            <q-icon name="analytics" size="sm" />
           </q-route-tab>
 
           <q-route-tab to="/notifications">
-            <q-btn dense flat round icon="notifications" />
-
+            <q-icon name="notifications" size="sm" />
           </q-route-tab>
           <q-route-tab to="/account">
-            <q-btn dense flat round icon="account_circle" />
+            <q-icon name="account_circle" size="sm" />
           </q-route-tab>
 
         </q-tabs>

@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpR lfr">
-    <Header />
-    <Drawer />
+    <Header v-if="$route.name !== 'login' && $route.name !== 'register'" /> 
+    <Drawer v-if="$route.name !== 'login' && $route.name !== 'register' && $route.name !== 'home' " /> 
 
 
     <q-page-container>

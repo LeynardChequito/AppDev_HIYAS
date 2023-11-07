@@ -16,7 +16,7 @@
 
                 <q-item clickable v-ripple>
                     <q-item-section avatar>
-                        <q-icon name="diversity_1" />
+                        <q-icon name="family_restroom" />
                     </q-item-section>
 
                     <q-item-section>
@@ -34,7 +34,6 @@
                     </q-item-section>
                 </q-item>
 
-                <q-separator />
 
                 <q-item clickable v-ripple>
                     <q-item-section avatar>
@@ -52,6 +51,35 @@
 
                     <q-item-section>
                         Announcements
+                    </q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple>
+                    <q-item-section avatar>
+                        <q-icon name="people" />
+                    </q-item-section>
+
+                    <q-item-section>
+                        Staff
+                    </q-item-section>
+                </q-item>
+                <q-item clickable v-ripple>
+                    <q-item-section avatar>
+                        <q-icon name="emoji_people" />
+                    </q-item-section>
+
+                    <q-item-section>
+                        Coaches
+                    </q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple>
+                    <q-item-section avatar>
+                        <q-icon name="handshake" />
+                    </q-item-section>
+
+                    <q-item-section>
+                        Sponsors
                     </q-item-section>
                 </q-item>
             </q-list>

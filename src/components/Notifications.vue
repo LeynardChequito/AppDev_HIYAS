@@ -1,5 +1,5 @@
 <template>
-    <q-btn dense round  :color="buttonColor" class="q-mr-md" @click="notifClicked">
+    <q-btn dense round :color="buttonColor" class="q-mr-md no-shadow" @click="notifClicked">
         <q-icon name="notifications" style="color: black;" />
         <q-badge color="red" floating>4</q-badge>
     </q-btn>
@@ -15,7 +15,6 @@
                                 Notifications
                             </div>
                         </div>
-
 
 
                         <q-separator spaced />
@@ -204,7 +203,9 @@ export default {
   right: 0
   margin-top: 45px
   margin-right: 10px
+
 </style>
+
   
 
 
