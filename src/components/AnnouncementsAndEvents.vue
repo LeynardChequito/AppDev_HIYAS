@@ -36,7 +36,12 @@
 export default {
   setup() {
     const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-    const body = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua';
+    const WLA = 'Weekly assignments and exercises that reinforce course concepts, support skills development, and engage students with digestible learning tasks outside of lectures.';
+    const MOA = 'Ceremonial partnership agreement signing celebrating collaboration between school and organization.';
+    const LW = 'Handwriting exercise practicing neat letter formation to build penmanship skills.';
+    const MDC = 'Routine health screening providing basic wellness exams and tests for students.';
+    const body = 'HIII';
+    
 
     const announcements = [
       {
@@ -44,28 +49,28 @@ export default {
         title: 'Weekly Learning Activity',
         date: 'Sept. 09, 2023 (Monday) 7:30 PM',
         image: require('@/assets/images/WLA.jpg'),
-        content: lorem,
+        content: WLA,
       },
       {
         id: 2,
         title: 'MOA Signing',
         date: 'Sept. 09, 2023 (Monday) 7:30 PM',
         image: require('@/assets/images/MOA-signing.jpg'),
-        content: lorem,
+        content: MOA,
       },
       {
         id: 3,
         title: 'Letter Writing',
         date: 'Sept. 09, 2023 (Monday) 7:30 PM',
         image: require('@/assets/images/letter-writing.jpg'),
-        content: lorem,
+        content: LW,
       },
       {
         id: 4,
         title: 'Medical and Dental Checkup',
         date: 'Sept. 09, 2023 (Monday) 7:30 PM',
         image: require('@/assets/images/medical-checkup.jpeg'),
-        content: lorem,
+        content: MDC,
       },
     ];
 
