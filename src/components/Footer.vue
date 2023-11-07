@@ -1,35 +1,15 @@
-<!-- <template>
-    <q-layout view="hHh lpR fFf">
-  
-      <q-page-container>
-        <router-view />
-      </q-page-container>
-  
-      <q-footer bordered class="text-white custom-footer">
-        <div>
-            Developed in Oriental Mindoro, Philippines.<br />
-        Copyright &copy; 2023-2024 HIYAS. All Rights Reserved.
-        </div>
-      </q-footer>
-    </q-layout>
-  </template> -->
-  
+
   <template>
-    <div class="q-pa-md">
-        <q-layout view="lHh lpr lFf" container style="height: 250px" class="">
-        
-            <q-page-container>
-        <router-view />
-      </q-page-container>
+    
+
   
-      <q-footer bordered class="text-white custom-footer">
+      <q-footer bordered class="text-white custom-footer row self-end justify-center">
         <div>
             Developed in Oriental Mindoro, Philippines.<br />
         Copyright &copy; 2023-2024 HIYAS. All Rights Reserved.
         </div>
       </q-footer>
-    </q-layout>
-    </div>
+    
   </template>
 
 

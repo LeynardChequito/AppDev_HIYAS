@@ -40,7 +40,7 @@ const routes = [
   {
     path: "/",
     redirect: "/home",
-    component: View,
+    // component: View,
   }
 ];
 

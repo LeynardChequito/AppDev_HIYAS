@@ -10,11 +10,9 @@
 <script>
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
-import Table from '@/components/Table.vue'
 import Slider from '@/components/Slider.vue'
 import AnnouncementsAndEvents from '@/components/AnnouncementsAndEvents.vue'
 import Sections from '@/components/Sections.vue'
-import Footer from '@/components/Footer.vue'
 
 export default {
     name: 'home',
@@ -23,7 +21,6 @@ export default {
         Slider,
         AnnouncementsAndEvents,
         Sections,
-        Footer,
     }
 }
 </script>
