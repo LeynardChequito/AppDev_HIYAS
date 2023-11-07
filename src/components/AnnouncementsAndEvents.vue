@@ -5,7 +5,7 @@
         <h3 class="text-center" style="margin-bottom: 8px; margin-top: 10px;">Announcements</h3>
       </div>
 
-      <q-card v-for="announcement in announcements" :key="announcement.id" class="my-card col-12 col-md-6 q-mb-md">
+      <q-card v-for="announcement in announcements" :key="announcement.id" class="my-card col-sm-12 col-md-5 q-mb-md">
         <q-card-section horizontal>
           <q-img class="col-5" :src="announcement.image" />
           <q-card-section>
@@ -22,7 +22,7 @@
       </q-card>
     </div>
 
-    <div class="q-pa-md row items-start q-gutter-md col-12 col-md-4 justify-center">
+    <div class="q-pa-md row items-start q-gutter-md col-sm-12 col-md-4 justify-center">
       <q-timeline color="green">
         <q-timeline-entry heading body="Upcoming Events" />
 
