@@ -1,8 +1,5 @@
 
   <template>
-    
-
-  
       <q-footer bordered class="text-white custom-footer row self-end justify-center">
         <div>
             Developed in Oriental Mindoro, Philippines.<br />
@@ -15,7 +12,6 @@
 
   <script>
   export default {
-    // Other Vue.js component code
   };
   </script>
   
