@@ -13,6 +13,7 @@ import Header from '@/components/Header.vue'
 import Slider from '@/components/Slider.vue'
 import AnnouncementsAndEvents from '@/components/AnnouncementsAndEvents.vue'
 import Sections from '@/components/Sections.vue'
+import Students from '@/components/Students.vue'
 
 export default {
     name: 'home',
@@ -21,6 +22,7 @@ export default {
         Slider,
         AnnouncementsAndEvents,
         Sections,
+        Students,
     }
 }
 </script>
