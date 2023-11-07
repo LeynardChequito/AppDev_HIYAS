@@ -15,11 +15,13 @@
 <script>
 import Header from '@/components/Header.vue'
 import Drawer from '@/components/Drawer.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: {
     Header,
-    Drawer
+    Drawer,
+    Footer
   },
 }
 </script>
