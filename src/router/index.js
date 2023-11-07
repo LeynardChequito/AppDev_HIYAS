@@ -5,6 +5,9 @@ import RegisterView from "../views/RegisterView.vue";
 import Experiment from "../views/Experiment.vue";
 import ManageView from "../views/ManageView.vue";
 import ReportsView from "../views/ReportsView.vue";
+import CoachView from "../views/CoachesView.vue";
+
+
 
 const routes = [
   {
@@ -38,10 +41,10 @@ const routes = [
     component: ReportsView,
   },
   {
-    path: "/",
-    redirect: "/home",
-    // component: View,
-  }
+    path: "/coaches",
+    name: "coaches",
+    component: CoachView,
+  },
 ];
 
 const router = createRouter({
