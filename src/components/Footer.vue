@@ -21,15 +21,15 @@
   
   <style scoped>
   .custom-footer {
-    background-color: rgb(0, 155, 34); /* Change the background color to blue (customize this as needed) */
-    color: white; /* Change the text color to white (customize this as needed) */
-    position: fixed;
+    background-color: rgb(5, 51, 14);
+    color: white; 
+    position: fixed-bottom;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for aesthetics */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
     /* Add any other custom styling here */
   }
   </style>

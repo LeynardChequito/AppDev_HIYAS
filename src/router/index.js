@@ -5,7 +5,8 @@ import RegisterView from "../views/RegisterView.vue";
 import Experiment from "../views/Experiment.vue";
 import ManageView from "../views/ManageView.vue";
 import ReportsView from "../views/ReportsView.vue";
-import CoachView from "../views/CoachesView.vue";
+import CoachesView from "../views/CoachesView.vue";
+import EventsView from "../views/EventsView.vue";
 
 
 
@@ -43,7 +44,12 @@ const routes = [
   {
     path: "/coaches",
     name: "coaches",
-    component: CoachView,
+    component: CoachesView,
+  },
+  {
+    path: "/events",
+    name: "events",
+    component: EventsView,
   },
 ];
 
