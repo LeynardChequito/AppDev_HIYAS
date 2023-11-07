@@ -4,7 +4,7 @@
         mini-to-overlay :width="200" :breakpoint="500" bordered :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'">
         <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
             <q-list padding>
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('students')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="child_care" />
                     </q-item-section>
@@ -14,7 +14,7 @@
                     </q-item-section>
                 </q-item>
 
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('parents')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="family_restroom" />
                     </q-item-section>
@@ -24,7 +24,7 @@
                     </q-item-section>
                 </q-item>
 
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('finance')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="payments" />
                     </q-item-section>
@@ -35,7 +35,7 @@
                 </q-item>
 
 
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('events')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="event" />
                     </q-item-section>
@@ -44,7 +44,7 @@
                         Events
                     </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('announcements')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="campaign" />
                     </q-item-section>
@@ -54,7 +54,7 @@
                     </q-item-section>
                 </q-item>
 
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('staff')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="people" />
                     </q-item-section>
@@ -63,7 +63,7 @@
                         Staff
                     </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('coaches')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="emoji_people" />
                     </q-item-section>
@@ -73,7 +73,7 @@
                     </q-item-section>
                 </q-item>
 
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('sponsors')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="handshake" />
                     </q-item-section>
@@ -82,13 +82,13 @@
                         Sponsors
                     </q-item-section>
                 </q-item>
-                <q-item clickable v-ripple>
+                <q-item @click="goToRoute('sections')" clickable v-ripple>
                     <q-item-section avatar>
                         <q-icon name="class" />
                     </q-item-section>
 
                     <q-item-section>
-                        Section
+                        Sections
                     </q-item-section>
                 </q-item>
             </q-list>
@@ -98,13 +98,23 @@
 
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default {
     setup() {
+
+        const router = useRouter()
+
+        const goToRoute = (route) => {
+            router.push(`/${route}`)
+        }
         return {
             drawer: ref(false),
-            miniState: ref(true)
+            miniState: ref(true),
+            goToRoute
         }
+
+
     }
 }
 </script>

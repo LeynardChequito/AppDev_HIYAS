@@ -37,6 +37,11 @@ const routes = [
     name: "reports",
     component: ReportsView,
   },
+  {
+    path: "/",
+    redirect: "/home",
+    component: View,
+  }
 ];
 
 const router = createRouter({

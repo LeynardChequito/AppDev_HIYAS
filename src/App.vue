@@ -9,6 +9,7 @@
     </q-page-container>
 
 
+    <Footer />
   </q-layout>
 </template>
 
