@@ -35,7 +35,6 @@
 <script>
 export default {
   setup() {
-    const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
     const WLA = 'Weekly assignments and exercises that reinforce course concepts, support skills development, and engage students with digestible learning tasks outside of lectures.';
     const MOA = 'Ceremonial partnership agreement signing celebrating collaboration between school and organization.';
     const LW = 'Handwriting exercise practicing neat letter formation to build penmanship skills.';
@@ -80,6 +79,7 @@ export default {
         title: 'Christmas Party',
         date: 'December 22, 2023',
         icon: 'celebration',
+        content: 'body1'
       },
       {
         id: 2,
