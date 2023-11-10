@@ -8,6 +8,7 @@ import ReportsView from "../views/ReportsView.vue";
 import CoachesView from "../views/CoachesView.vue";
 import EventsView from "../views/EventsView.vue";
 import StudentsView from "../views/StudentsView.vue";
+import AnnouncementsView from "../views/AnnouncementsView.vue";
 
 
 const routes = [
@@ -56,6 +57,11 @@ const routes = [
     name: "students",
     component: StudentsView,
   },
+  {
+    path: "/announcements",
+    name: "announcements",
+    component: AnnouncementsView,
+  }
 ];
 
 const router = createRouter({
