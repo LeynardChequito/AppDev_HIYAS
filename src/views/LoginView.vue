@@ -6,17 +6,14 @@
       <q-img src="@/assets/images/hiyas-banner.png" class="q-mb-lg" @click="logoClicked" style="cursor: pointer;" />
     </div>
 
-
-
-    <!--
-
-    -->
     <div class="row col-6 two justify-center ">
       <q-card class="login-card text-center">
 
         <q-card-section>
-          <q-input v-model="mobile_or_email" outlined label="Mobile or Email" dense debounce="300" class="q-mb-md" />
-          <q-input v-model="password" outlined label="Password" type="password" dense debounce="300" />
+          <q-input v-model="mobile_or_email" outlined label="Mobile or Email" dense debounce="300" :error="errors.mobile_or_email ? 'Mobile or Email is incorrect.' : false" class="q-mb-md" />
+          <q-input v-model="password" outlined label="Password" type="password" dense debounce="300" :error="errors.password ? 'Password is incorrect.' : false" />
+          <div class="error-message">{{ errors.mobile_or_email }}</div>
+          <div class="error-message">{{ errors.password }}</div>
           <q-btn rounded color="primary" label="Log in" type="submit" class="q-mt-md q-mb-sm" style="width: 100%" />
           <q-space />
           <a href="#" class="q-mt-md text-caption" style="text-decoration: none;">Forgot Password?</a>
@@ -36,17 +33,40 @@
 
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+
 export default {
   name: 'login',
   data() {
     return {
       mobile_or_email: '',
       password: '',
+      errors: {
+        mobile_or_email: '',
+        password: '',
+      },
     };
   },
   methods: {
     async login() {
+      // Clear previous error messages
+      this.errors.mobile_or_email = '';
+      this.errors.password = '';
+
+      // Perform validation
+      if (!this.mobile_or_email) {
+        this.errors.mobile_or_email = 'Mobile or Email is required.';
+      }
+
+      if (!this.password) {
+        this.errors.password = 'Password is required.';
+      }
+
+      // If there are validation errors, stop the login process
+      if (this.errors.mobile_or_email || this.errors.password) {
+        return;
+      }
+
       try {
         const response = await axios.post('/login', {
           mobile_or_email: this.mobile_or_email,
@@ -56,11 +76,18 @@ export default {
         // Handle the response from the server, e.g., show a success message or redirect to another page
         console.log('Login successful:', response.data);
 
-        // For example, redirect to the user's dashboard after successful login
+        // For example, redirect to the user's dashboard after a successful login
         this.$router.push({ name: 'home' });
       } catch (error) {
         console.error('Error logging in:', error);
         // Handle the error, e.g., display an error message to the user
+      }
+
+      // Simulate an incorrect email or password for demonstration
+      if (this.mobile_or_email !== 'correct@email.com' || this.password !== 'correctpassword') {
+        this.errors.mobile_or_email = 'Mobile or Email is incorrect.';
+        this.errors.password = 'Password is incorrect.';
+        return;
       }
     },
     createAccount() {
@@ -69,7 +96,7 @@ export default {
     },
     logoClicked() {
       this.$router.push({ name: 'home' });
-    }
+    },
   },
 };
 </script>
@@ -105,7 +132,12 @@ export default {
   align-items: center;
 }
 
-.one {
-  /* background-color: blue; */
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 4px;
 }
+/* .one {
+  background-color: blue;
+} */
 </style>

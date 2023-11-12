@@ -14,46 +14,54 @@
                 <q-card-section class="q-gutter-sm">
                     <div class="row">
                         <div class="col-6">
-                            <q-input v-model="firstname" outlined label="First Name" dense debounce="300" class="q-mr-sm" />
+                            <q-input v-model="firstname" outlined label="First Name" dense debounce="300" :rules="[v => !!v || 'First Name is required']" class="q-mr-sm" />
                         </div>
                         <div class="col-6">
-                            <q-input v-model="lastname" outlined label="Last Name" dense debounce="300" />
+                            <q-input v-model="lastname" outlined label="Last Name" dense debounce="300" :rules="[v => !!v || 'Last Name is required']" class="q-mr-sm" />
                         </div>
                     </div>
-                    <q-input v-model="mobile_or_email" outlined label="Mobile Number or Email" dense debounce="300" />
-                    <q-input v-model="password" outlined label="New Password" type="password" dense debounce="300" />
+                    <q-input v-model="mobile_or_email" outlined label="Mobile Number or Email" dense debounce="300" :rules="[v => !!v || 'Mobile Numer or Email is required']" class="q-mr-sm"/>
+                    <q-input v-model="password" outlined label="New Password" type="password" dense debounce="300" :rules="[v => !!v || 'New Password is required']" class="q-mr-sm"/>
                     <div class="row items-center">
                         <div class="text-caption col-9 text-weight-thin">Birthday</div>
                         <div class="text-caption col-3 text-weight-thin">Gender</div>
                         <div class="col-3">
-                            <q-select v-model="birthMonth" outlined label="Month" :options="months" dense class="q-mr-sm" />
+                            <q-select v-model="birthMonth" outlined label="Month" :options="months" dense class="q-mr-sm" rules="[]" />
                         </div>
                         <div class="col-3">
-                            <q-select v-model="birthday" outlined label="Day" :options="days" dense class="q-mr-sm" />
+                            <q-select v-model="birthday" outlined label="Day" :options="days" dense class="q-mr-sm" rules="[]" />
                         </div>
-                        <div class="col-3">
-                            <q-select v-model="birthYear" outlined label="Year" :options="years" dense />
+                        <div class="col-2.5">
+                            <q-select v-model="birthYear" outlined label="Year" :options="years" dense :rules="[validateBirthday]" />
                         </div>
+                        
                         <div class="col-3">
-                            <q-btn-toggle unelevated class="q-ml-sm my-custom-toggle" v-model="gender" no-caps
-                                toggle-color="primary" color="white" text-color="black" :options="[
+                            <q-btn-toggle unelevated class=" q-ml-sm my-custom-toggle"  v-model="gender" no-caps
+                                toggle-color="primary" color="white" text-color="black"  :options="[
                                     { label: 'M', value: 'male' },
                                     { label: 'F', value: 'female' }
-                                ]" />
+                                ]"/>
                         </div>
                     </div>
                     <div class="col-12">
-                        <q-select v-model="barangay" outlined label="Barangay" :options="barangayOptions" dense />
+                        <q-select v-model="barangay" outlined label="Barangay" :options="barangayOptions" :rules="[v => !!v || 'Barangay is required']" dense />
                     </div>
                     <div class="col-12">
-                        <q-select v-model="user_role" outlined label="Role" :options="userModeOptions" dense />
+                        <q-select v-model="user_role" outlined label="Role" :options="userModeOptions" :rules="[v => !!v || 'Role is required']" dense />
                     </div>
                     
 
-                    <q-checkbox dense v-model="teal"
-                        label="Lahat ng nakalagay ay tama at naiintindihan ko na kung may mali akong nilagay, lagot ay ako ang mananagot"
-                        color="primary" class="text-caption" style="color: gray; font-size: 10px;" />
-
+                    <div class="col-12">
+                        <q-checkbox
+                        dense
+                        v-model="teal"
+                        label="By checking the box, I affirm that all provided registration information is accurate. I understand that supplying false details violates terms of use, leading to consequences like account suspension or termination. I accept responsibility for any inaccuracies, subject to applicable laws."
+                        color="primary"
+                        class="text-caption text-justify"
+                        style="color: gray; font-size: 10px;"
+                        :rules="[v => !!v || 'Check the agreement required']"
+                        />
+                    </div>
 
 
                     <div class="col-12 text-center">
@@ -109,6 +117,14 @@ export default {
         };
     },
 
+        computed: {
+            tealError() {
+                if (!this.firstname || !this.lastname || !this.mobile_or_email || !this.password || !this.user_role || !this.barangay) {
+                return 'Please fill in all required fields before checking this box.';
+                }
+                return '';
+            },
+        },
 
 
     methods: {
@@ -125,6 +141,8 @@ export default {
                     barangay: this.barangay,
                 });
 
+                // Clear local storage after successful signup
+                localStorage.clear();
                 // Handle the response from the server, e.g., show a success message or redirect to another page
                 // console.log('Signup successful:', response.data);
 
@@ -137,9 +155,25 @@ export default {
         },
         logoClicked() {
             this.$router.push({ name: 'home' });
-        }
+        },
+
+        validateBirthday(value) {
+    const birthDate = new Date(`${value}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthday}`);
+    const currentDate = new Date();
+
+    // Calculate age
+    const age = currentDate.getFullYear() - birthDate.getFullYear();
+
+    // Check if the user is at least 5 years old
+    if (age < 5) {
+      return 'Must be at least 5 years old.';
+    }
+
+    // Return true if the validation passes
+    return true;
     },
-};
+}
+}
 </script>
     
 <style scoped>
@@ -168,5 +202,10 @@ export default {
     border-radius: 50%;
     /* Make the image itself rounded */
 }
+
+@media (max-width: 576px) {
+  .signup-card {
+    max-width: 100%;
+  }
+}
 </style>
-    
