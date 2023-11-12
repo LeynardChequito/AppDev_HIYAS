@@ -1,0 +1,325 @@
+CRITICAL - 2023-11-06 04:29:16 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:29:23 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:29:56 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:31:46 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:32:22 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:33:17 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:33:18 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:33:23 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:34:46 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:34:52 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:35:04 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 04:36:14 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:06:21 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:42:34 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:53:22 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:53:26 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:53:27 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:53:28 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:53:28 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 05:53:28 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 06:12:12 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 06:12:27 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 06:16:45 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 06:31:33 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 06:35:22 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:00:06 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:00:21 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:05:07 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 32.
+ 1 APPPATH\Controllers\MainController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:34:44 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:34:52 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:41:31 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:45:02 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:47:59 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:48:03 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 07:48:09 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:13:46 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:14:53 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:34:42 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:35:59 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:40:17 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:40:18 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:40:18 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:40:19 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:41:09 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:43:34 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:45:14 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:45:15 --> Call to undefined method App\Controllers\MainController::repond()
+in APPPATH\Controllers\MainController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 09:15:48 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 34.
+ 1 APPPATH\Controllers\MainController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 09:16:31 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 34.
+ 1 APPPATH\Controllers\MainController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 09:18:21 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 34.
+ 1 APPPATH\Controllers\MainController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 09:18:25 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 34.
+ 1 APPPATH\Controllers\MainController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 09:18:33 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\MainController.php on line 34.
+ 1 APPPATH\Controllers\MainController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->del()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
