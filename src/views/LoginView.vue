@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-center login-page">
+  <q-form @submit.prevent="login" class="row justify-center login-page">
     <div class="row col-6 one justify-center">
       <!--image here-->
       <!-- <img src="@/assets/images/hiyas-banner.png" alt="Hiyas ng Tahanan" /> -->
@@ -15,9 +15,9 @@
       <q-card class="login-card text-center">
 
         <q-card-section>
-          <q-input v-model="username" outlined label="Username" dense debounce="300" class="q-mb-md" />
+          <q-input v-model="mobile_or_email" outlined label="Mobile or Email" dense debounce="300" class="q-mb-md" />
           <q-input v-model="password" outlined label="Password" type="password" dense debounce="300" />
-          <q-btn rounded color="primary" label="Log in" @click="login" class="q-mt-md q-mb-sm" style="width: 100%" />
+          <q-btn rounded color="primary" label="Log in" type="submit" class="q-mt-md q-mb-sm" style="width: 100%" />
           <q-space />
           <a href="#" class="q-mt-md text-caption" style="text-decoration: none;">Forgot Password?</a>
         </q-card-section>
@@ -31,31 +31,41 @@
         </q-card-section>
       </q-card>
     </div>
-  </div>
+  </q-form>
 </template>
 
 
 <script>
+import axios from 'axios'
 export default {
   name: 'login',
   data() {
     return {
-      username: '',
+      mobile_or_email: '',
       password: '',
     };
   },
   methods: {
-    login() {
-      // Add your login logic here
-      // Typically, you would make an API request to authenticate the user
-      // For this example, we'll just log the username and password
-      console.log('Username:', this.username);
-      console.log('Password:', this.password);
+    async login() {
+      try {
+        const response = await axios.post('/login', {
+          mobile_or_email: this.mobile_or_email,
+          password: this.password,
+        });
+
+        // Handle the response from the server, e.g., show a success message or redirect to another page
+        console.log('Login successful:', response.data);
+
+        // For example, redirect to the user's dashboard after successful login
+        this.$router.push({ name: 'home' });
+      } catch (error) {
+        console.error('Error logging in:', error);
+        // Handle the error, e.g., display an error message to the user
+      }
     },
     createAccount() {
       // Add your create account logic here
       this.$router.push({ name: 'register' });
-      console.log('Create new account clicked');
     },
     logoClicked() {
       this.$router.push({ name: 'home' });

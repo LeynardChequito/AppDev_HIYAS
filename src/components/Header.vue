@@ -102,4 +102,5 @@ export default {
 .q-toolbar {
   border-bottom: 1px solid black;
 }
+
 </style>

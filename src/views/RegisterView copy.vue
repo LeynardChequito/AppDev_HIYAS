@@ -1,5 +1,5 @@
 <template>
-    <q-form @submit.prevent="signup" class="row justify-center signup-page">
+    <div class="row justify-center signup-page">
         <div class="row col-1 justify-center">
             <q-img src="@/assets/images/hiyas-logo-wt-bg.jpg" class="q-mt-lg hiyas-logo" @click="logoClicked"
                 style="cursor: pointer;" />
@@ -14,14 +14,14 @@
                 <q-card-section class="q-gutter-sm">
                     <div class="row">
                         <div class="col-6">
-                            <q-input v-model="firstname" outlined label="First Name" dense debounce="300" class="q-mr-sm" />
+                            <q-input v-model="firstName" outlined label="First Name" dense debounce="300" class="q-mr-sm" />
                         </div>
                         <div class="col-6">
-                            <q-input v-model="lastname" outlined label="Last Name" dense debounce="300" />
+                            <q-input v-model="lastName" outlined label="Last Name" dense debounce="300" />
                         </div>
                     </div>
-                    <q-input v-model="mobile_or_email" outlined label="Mobile Number or Email" dense debounce="300" />
-                    <q-input v-model="password" outlined label="New Password" type="password" dense debounce="300" />
+                    <q-input v-model="mobileOrEmail" outlined label="Mobile Number or Email" dense debounce="300" />
+                    <q-input v-model="newPassword" outlined label="New Password" type="password" dense debounce="300" />
                     <div class="row items-center">
                         <div class="text-caption col-9 text-weight-thin">Birthday</div>
                         <div class="text-caption col-3 text-weight-thin">Gender</div>
@@ -29,13 +29,13 @@
                             <q-select v-model="birthMonth" outlined label="Month" :options="months" dense class="q-mr-sm" />
                         </div>
                         <div class="col-3">
-                            <q-select v-model="birthday" outlined label="Day" :options="days" dense class="q-mr-sm" />
+                            <q-select v-model="birthDay" outlined label="Day" :options="days" dense class="q-mr-sm" />
                         </div>
                         <div class="col-3">
                             <q-select v-model="birthYear" outlined label="Year" :options="years" dense />
                         </div>
                         <div class="col-3">
-                            <q-btn-toggle unelevated class="q-ml-sm my-custom-toggle" v-model="gender" no-caps
+                            <q-btn-toggle unelevated class="q-ml-sm my-custom-toggle" v-model="model" no-caps
                                 toggle-color="primary" color="white" text-color="black" :options="[
                                     { label: 'M', value: 'male' },
                                     { label: 'F', value: 'female' }
@@ -45,10 +45,6 @@
                     <div class="col-12">
                         <q-select v-model="barangay" outlined label="Barangay" :options="barangayOptions" dense />
                     </div>
-                    <div class="col-12">
-                        <q-select v-model="user_role" outlined label="Role" :options="userModeOptions" dense />
-                    </div>
-                    
 
                     <q-checkbox dense v-model="teal"
                         label="Lahat ng nakalagay ay tama at naiintindihan ko na kung may mali akong nilagay, lagot ay ako ang mananagot"
@@ -57,7 +53,7 @@
 
 
                     <div class="col-12 text-center">
-                        <q-btn no-caps rounded color="green" label="Sign Up" type="submit" class="q-mt-sm "
+                        <q-btn no-caps rounded color="green" label="Sign Up" @click="signup" class="q-mt-sm "
                             style="width: 70%" />
 
                         <br><br><a href="/login" class="text-body2" style="text-decoration: none;">Already have an
@@ -67,7 +63,7 @@
                 </q-card-section>
             </q-card>
         </div>
-    </q-form>
+    </div>
 </template>
 
     
@@ -87,23 +83,23 @@ export default {
         const days = Array.from({ length: 31 }, (_, index) => (index + 1).toString());
 
         return {
-            firstname: '',
-            lastname: '',
-            mobile_or_email: '',
-            password: '',
+            firstName: '',
+            lastName: '',
+            mobileOrEmail: '',
+            newPassword: '',
             gender: 'male',
-            user_role: '',
+            userMode: '',
             barangay: '',
             userModeOptions: ['Student', 'Coach', 'Staff', 'Parent/Guardian', 'Other'],
             barangayOptions: ['Balite', 'Baruyan', 'Bayanan I', 'Bayanan II', 'Calero', 'Camilmil', 'Canubing I', 'Canubing II', 'Guinobatan', 'GulodIbaba East', 'Ibaba West', 'Ilaya', 'Lalud', 'Lazareto', 'Lumangbayan', 'Masipit', 'Pachoca', 'San Antonio', 'Suqui', 'Tawagan', 'Tawiran', 'Tibag'
             ],
             birthMonth: months[currentDate.getMonth()],
-            birthday: currentDate.getDate().toString(),
+            birthDay: currentDate.getDate().toString(),
             birthYear: currentDate.getFullYear().toString(),
             months,
             days,
             years,
-            gender: ref('male'),
+            model: ref('male'),
             teal: ref(false),
 
         };
@@ -114,19 +110,19 @@ export default {
     methods: {
         async signup() {
             try {
-                const response = await axios.post("register", {
-                    firstname: this.firstname,
-                    lastname: this.lastname,
-                    mobile_or_email: this.mobile_or_email,
-                    password: this.password,
-                    birthday: `${this.birthYear}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthday}`, // Format the birthday
-                    gender: this.gender,
-                    user_role: this.user_role,
+                const response = await axios.post('register', {
+                    firstName: this.firstName,
+                    lastName: this.lastName,
+                    mobileOrEmail: this.mobileOrEmail,
+                    newPassword: this.newPassword,
+                    birthday: `${this.birthYear}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthDay}`, // Format the birthday
+                    gender: this.model,
+                    userMode: this.userMode,
                     barangay: this.barangay,
                 });
 
                 // Handle the response from the server, e.g., show a success message or redirect to another page
-                // console.log('Signup successful:', response.data);
+                console.log('Signup successful:', response.data);
 
                 // For example, redirect to login page after successful signup
                 this.$router.push({ name: 'login' });
