@@ -1,63 +1,78 @@
+e
 <template>
-   <q-sidebar
-    v-model="open"
-    :mini="miniState"
-    @mouseover="miniState = false" 
-    @mouseout="miniState = true"
-    mini-to-overlay
-    :width="200"
-    :breakpoint="500"
-    bordered
-    :class="sidebarClass"
-  >
-    <q-scroll-area class="fit" :vertical-thumb-style="{ opacity: 0 }">
-      <q-list padding>
-        <q-item
-          v-for="item in menuItems"
-          :key="item.route"
-          @click="goToRoute(item.route)"
-          clickable
-          v-ripple
-        >
-          <q-item-section avatar>
-            <q-icon :name="item.icon" />
-          </q-item-section>
-          
-          <q-item-section>{{ item.label }}</q-item-section>
-        </q-item>
-      </q-list>
-    </q-scroll-area>
-  </q-sidebar>
-
-  <div class="q-pa-md">
-    <q-table
-      class="my-sticky-header-table"
-      flat
-      bordered
-      title="Students"
-      :rows="rows"
-      :columns="columns"
-      row-key="name"
-    />
-  </div>
-  <div class="q-pa-md">
+  <div>
     <q-drawer
-      class="text-black q-gutter-md"
-      flat
+      v-model="drawer"
+      show-if-above
+      :mini="miniState"
+      @mouseover="miniState = false"
+      @mouseout="miniState = true"
+      mini-to-overlay
+      :width="200"
+      :breakpoint="500"
       bordered
-      title="Grades"
-      :rows="rows"
-      :columns="columns"
-      row-key="grades"
-    />
+      :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
+    >
+      <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
+        <q-list padding>
+          <q-item v-for="item in menuItems" :key="item.route" @click="goToRoute(item.route)" clickable v-ripple>
+            <q-item-section avatar>
+              <q-icon :name="item.icon" />
+            </q-item-section>
+            <q-item-section>{{ item.label }}</q-item-section>
+          </q-item>
+        </q-list>
+      </q-scroll-area>
+    </q-drawer>
+
+    <div class="q-pa-md">
+      <q-table
+        class="my-sticky-header-table"
+        flat
+        bordered
+        title="Students"
+        :rows="rows"
+        :columns="columns"
+        row-key="name"
+      />
+    </div>
+
+    <div class="q-pa-md">
+      <q-drawer
+        class="text-black q-gutter-md"
+        flat
+        bordered
+        title="Grades"
+        :rows="rows"
+        :columns="columns"
+        row-key="grades"
+      />
+    </div>
   </div>
-  
 </template>
 
 <script>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
+export default {
+  setup() {
+    const router = useRouter();
+
+    const menuItems = [
+      { route: 'dashboard', icon: 'child_care', label: 'Dashboard' },
+      { route: 'notifications', icon: 'family_restroom', label: 'Notifications' },
+      { route: 'grades', icon: 'payments', label: 'Grades' },
+      { route: 'events', icon: 'event', label: 'Events' },
+      { route: 'announcements', icon: 'campaign', label: 'Announcements' },
+    ];
+
+    const drawer = ref(false);
+    const miniState = ref(true);
+
+    const goToRoute = (route) => {
+      router.push(`/${route}`);
+    };
 const columns = [
   {
     name: 'name',
@@ -204,61 +219,16 @@ const columns = [
     },
   ]
   
-
-  export default {
-  props: {
-    modelValue: {
-      type: Boolean,
-      default: false
-    }
-  },
-
-  data() {
     return {
-      miniState: true,
-      menuItems: [
-        { route: 'dashboard', icon: 'child_care', label: 'Dashboard' },
-        { route: 'notifications', icon: 'family_restroom', label: 'Notifications' },
-        { route: 'grades', icon: 'payments', label: 'Grades' },
-        { route: 'events', icon: 'event', label: 'Events' },
-        { route: 'announcements', icon: 'campaign', label: 'Announcements' },
-        ]
-    }
-  },
-
-    computed: {
-    open: {
-      get() {
-        return this.modelValue
-      },
-      set(value) {
-        this.$emit('update:modelValue', value)
-      }
-    },
-
-    sidebarClass() {
-      return this.$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'
-    }
-  },
-
-  methods: {
-    goToRoute(route) {
-     
-    const goToRoute = route => {
-      router.push(`/${route}`);
-    };
-
-    return {
-      drawer: ref(false),
-      miniState: ref(true),
+      drawer,
+      miniState,
       goToRoute,
       menuItems,
       columns,
-      rows
+      rows,
     };
   },
-}
-  }
+};
 </script>
 
 <style lang="sass">
@@ -287,26 +257,4 @@ const columns = [
   tbody
     /* height of all previous header rows */
     scroll-margin-top: 48px
-</style>
-    <style scoped>
-.sidebar {
-  width: 200px;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
 </style>
