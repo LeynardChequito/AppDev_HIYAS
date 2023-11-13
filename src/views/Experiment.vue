@@ -20,10 +20,12 @@
         </template>
       </q-table>
     </div>
+    <TryButton/>
   </template>
   
   <script>
   import axios from 'axios';
+  import TryButton from '@/components/TryButton.vue';
   
   // Define the columns outside the data method
   const columns = [
@@ -33,6 +35,9 @@
   ];
   
   export default {
+    components: {
+      TryButton,
+    },
     data() {
       return {
         info: [],
