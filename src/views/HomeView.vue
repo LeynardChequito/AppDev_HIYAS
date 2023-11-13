@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Slider />
+        <!-- <Slider /> -->
     </div>
     <AnnouncementsAndEvents/>
     <Sections/>

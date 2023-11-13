@@ -1,6 +1,6 @@
 <template>
   <div class="text-h2 my-font text-center ">
-        UPCOMING EVENTS
+        Events
     </div>
     
     <div class="q-pa-md row q-gutter-md q-col-gutter-md justify-center">

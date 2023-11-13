@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 export default {
     setup() {
@@ -66,8 +66,38 @@ export default {
 
         const accountClicked = () => {
             cardVisible.value = !cardVisible.value;
-            clicked.value = !clicked.value; // Toggle the 'clicked' state
+            clicked.value = !clicked.value;
+            // Toggle the 'clicked' state
         };
+        const handleGlobalClick = (event) => {
+            // Check if the clicked element is outside the button and the notification card
+            const isOutsideButton = !event.target.closest('.q-btn');
+            const isOutsideNotificationCard = !event.target.closest('.notification-card');
+
+            // Close the notification card if it's open and the click is outside both the button and the card
+            if (cardVisible.value && isOutsideButton && isOutsideNotificationCard) {
+                cardVisible.value = false;
+                clicked.value = false;
+            }
+        };
+
+        // Close the notification card when a global click event is emitted from another component
+        const closeNotificationCard = () => {
+            cardVisible.value = false;
+            clicked.value = false;
+        };
+
+        // Add and remove the global click event listener when the component is mounted and unmounted
+        onMounted(() => {
+            document.addEventListener('click', handleGlobalClick);
+        });
+
+        onBeforeUnmount(() => {
+            document.removeEventListener('click', handleGlobalClick);
+        });
+
+        // Listen for global events from other components
+        window.addEventListener('closeNotificationCard', closeNotificationCard);
 
         // Computed property to calculate button color based on 'clicked' state
         const buttonColor = computed(() => {
@@ -77,11 +107,15 @@ export default {
         return {
             cardVisible,
             accountClicked,
-            buttonColor, // Expose the computed 'buttonColor' to the template
+            buttonColor,
+            handleGlobalClick, // Expose the computed 'buttonColor' to the template
             lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         };
     },
+
+
 };
+
 </script>
   
 <style lang="sass" scoped>
@@ -101,7 +135,7 @@ export default {
   z-index: 1
   top: 0
   right: 0
-  margin-top: 45px
+  margin-top: 55px
   margin-right: 10px
 .hays .icon
     color: black

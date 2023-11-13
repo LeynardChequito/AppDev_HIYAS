@@ -71,10 +71,6 @@ export default {
                 }
             }
         },
-        handleItemClick(item) {
-            // Handle item click logic here
-            console.log('Clicked:', item);
-        },
     },
 };
 </script>
