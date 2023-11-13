@@ -23,12 +23,19 @@
     </div>
 
     <div class="q-pa-md row items-start q-gutter-md col-sm-12 col-md-4 justify-center">
-      <q-timeline color="green">
-        <q-timeline-entry heading body="Upcoming Events" />
+    <q-timeline color="green">
+      <q-timeline-entry heading body="Upcoming Events" />
 
-        <q-timeline-entry v-for="event in upcomingEvents" :key="event.id" :title="event.title" :subtitle="event.date" :icon="event.icon" :body="body" />
-      </q-timeline>
-    </div>
+      <q-timeline-entry
+        v-for="event in upcomingEvents"
+        :key="event.id"
+        :title="event.title"
+        :subtitle="event.date"
+        :icon="event.icon"
+        :body="event.description"
+      />
+    </q-timeline>
+  </div>
   </div>
 </template>
 
@@ -39,8 +46,9 @@ export default {
     const MOA = 'Ceremonial partnership agreement signing celebrating collaboration between school and organization.';
     const LW = 'Handwriting exercise practicing neat letter formation to build penmanship skills.';
     const MDC = 'Routine health screening providing basic wellness exams and tests for students.';
-    const body = 'HIII';
-    
+    const CP = '';
+    const FR = ''; 
+    const LM = '';  
 
     const announcements = [
       {
@@ -79,26 +87,30 @@ export default {
         title: 'Christmas Party',
         date: 'December 22, 2023',
         icon: 'celebration',
-        content: 'body1'
+        description: 'Celebrate the holiday season with a festive Christmas party.',
       },
       {
         id: 2,
         title: 'Fun Run',
         date: 'January 22, 2024',
         icon: 'directions_run',
+        description: 'Join us for a fun and healthy community run.',
       },
       {
         id: 3,
         title: 'Love Month',
         date: 'February 15, 2024',
         icon: 'favorite',
+        description: 'Celebrate love and friendship in the month of February.',
       },
     ];
 
     return {
       announcements,
       upcomingEvents,
-      body,
+      CP,
+      FR,
+      LM,
     };
   },
 };

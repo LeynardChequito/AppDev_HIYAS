@@ -1,27 +1,33 @@
 <template>
-  <q-drawer
-    v-model="drawer"
-    show-if-above
+   <q-sidebar
+    v-model="open"
     :mini="miniState"
-    @mouseover="miniState = false"
+    @mouseover="miniState = false" 
     @mouseout="miniState = true"
     mini-to-overlay
     :width="200"
     :breakpoint="500"
     bordered
-    :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
+    :class="sidebarClass"
   >
-    <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
+    <q-scroll-area class="fit" :vertical-thumb-style="{ opacity: 0 }">
       <q-list padding>
-        <q-item v-for="item in menuItems" :key="item.route" @click="goToRoute(item.route)" clickable v-ripple>
+        <q-item
+          v-for="item in menuItems"
+          :key="item.route"
+          @click="goToRoute(item.route)"
+          clickable
+          v-ripple
+        >
           <q-item-section avatar>
             <q-icon :name="item.icon" />
           </q-item-section>
+          
           <q-item-section>{{ item.label }}</q-item-section>
         </q-item>
       </q-list>
     </q-scroll-area>
-  </q-drawer>
+  </q-sidebar>
 
   <div class="q-pa-md">
     <q-table
@@ -199,18 +205,45 @@ const columns = [
   ]
   
 
-export default {
-  setup() {
-    const router = useRouter();
+  export default {
+  props: {
+    modelValue: {
+      type: Boolean,
+      default: false
+    }
+  },
 
-    const menuItems = [
+  data() {
+    return {
+      miniState: true,
+      menuItems: [
         { route: 'dashboard', icon: 'child_care', label: 'Dashboard' },
         { route: 'notifications', icon: 'family_restroom', label: 'Notifications' },
         { route: 'grades', icon: 'payments', label: 'Grades' },
         { route: 'events', icon: 'event', label: 'Events' },
         { route: 'announcements', icon: 'campaign', label: 'Announcements' },
-    ];
+        ]
+    }
+  },
 
+    computed: {
+    open: {
+      get() {
+        return this.modelValue
+      },
+      set(value) {
+        this.$emit('update:modelValue', value)
+      }
+    },
+
+    sidebarClass() {
+      return this.$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'
+    }
+  },
+
+  methods: {
+    goToRoute(route) {
+     
     const goToRoute = route => {
       router.push(`/${route}`);
     };
@@ -223,8 +256,9 @@ export default {
       columns,
       rows
     };
+  },
+}
   }
-};
 </script>
 
 <style lang="sass">
@@ -253,4 +287,26 @@ export default {
   tbody
     /* height of all previous header rows */
     scroll-margin-top: 48px
+</style>
+    <style scoped>
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
 </style>
