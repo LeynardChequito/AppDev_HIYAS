@@ -1,24 +1,64 @@
 <template>
-    <div class="q-pa-md">
-      <q-table
-        class="my-sticky-header-table"
-        flat bordered
-        title="Students"
-        :rows="rows"
-        :columns="columns"
-        row-key="name"
-      />
-    </div>
-  </template>
+  <q-drawer
+    v-model="drawer"
+    show-if-above
+    :mini="miniState"
+    @mouseover="miniState = false"
+    @mouseout="miniState = true"
+    mini-to-overlay
+    :width="200"
+    :breakpoint="500"
+    bordered
+    :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
+  >
+    <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
+      <q-list padding>
+        <q-item v-for="item in menuItems" :key="item.route" @click="goToRoute(item.route)" clickable v-ripple>
+          <q-item-section avatar>
+            <q-icon :name="item.icon" />
+          </q-item-section>
+          <q-item-section>{{ item.label }}</q-item-section>
+        </q-item>
+      </q-list>
+    </q-scroll-area>
+  </q-drawer>
+
+  <div class="q-pa-md">
+    <q-table
+      class="my-sticky-header-table"
+      flat
+      bordered
+      title="Students"
+      :rows="rows"
+      :columns="columns"
+      row-key="name"
+    />
+  </div>
+  <div class="q-pa-md">
+    <q-drawer
+      class="text-black q-gutter-md"
+      flat
+      bordered
+      title="Grades"
+      :rows="rows"
+      :columns="columns"
+      row-key="grades"
+    />
+  </div>
   
-  <script>
-  const columns = [
+</template>
+
+<script>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const columns = [
   {
     name: 'name',
     required: true,
     label: 'Name of Students',
     align: 'left',
-    field: row => row.name,
+    field: 'name', 
     format: val => `${val}`,
     sortable: true
   },
@@ -158,40 +198,59 @@
     },
   ]
   
-  export default {
-    setup () {
-      return {
-        columns,
-        rows
-      }
-    }
+
+export default {
+  setup() {
+    const router = useRouter();
+
+    const menuItems = [
+        { route: 'dashboard', icon: 'child_care', label: 'Dashboard' },
+        { route: 'notifications', icon: 'family_restroom', label: 'Notifications' },
+        { route: 'grades', icon: 'payments', label: 'Grades' },
+        { route: 'events', icon: 'event', label: 'Events' },
+        { route: 'announcements', icon: 'campaign', label: 'Announcements' },
+    ];
+
+    const goToRoute = route => {
+      router.push(`/${route}`);
+    };
+
+    return {
+      drawer: ref(false),
+      miniState: ref(true),
+      goToRoute,
+      menuItems,
+      columns,
+      rows
+    };
   }
-  </script>
-  
-  <style lang="sass">
-  .my-sticky-header-table
-    /* height or max-height is important */
-    height: 310px
-  
-    .q-table__top,
-    .q-table__bottom,
-    thead tr:first-child th
-      /* bg color is important for th; just specify one */
-      background-color: #00b4ff
-  
-    thead tr th
-      position: sticky
-      z-index: 1
-    thead tr:first-child th
-      top: 0
-  
-    /* this is when the loading indicator appears */
-    &.q-table--loading thead tr:last-child th
-      /* height of all previous header rows */
-      top: 48px
-  
-    /* prevent scrolling behind sticky top row on focus */
-    tbody
-      /* height of all previous header rows */
-      scroll-margin-top: 48px
-  </style>
+};
+</script>
+
+<style lang="sass">
+.my-sticky-header-table
+  /* height or max-height is important */
+  height: 310px
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th
+    /* bg color is important for th just specify one */
+    background-color: #00b4ff
+
+  thead tr th
+    position: sticky
+    z-index: 1
+  thead tr:first-child th
+    top: 0
+
+  /* this is when the loading indicator appears */
+  &.q-table--loading thead tr:last-child th
+    /* height of all previous header rows */
+    top: 48px
+
+  /* prevent scrolling behind sticky top row on focus */
+  tbody
+    /* height of all previous header rows */
+    scroll-margin-top: 48px
+</style>
