@@ -1,4 +1,5 @@
 <template>
+  
     <div class="q-pa-md row items-start q-gutter-md one col-12 justify-center">
   
       <div v-for="coach in coaches">

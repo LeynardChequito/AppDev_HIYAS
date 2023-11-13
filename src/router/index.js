@@ -9,6 +9,10 @@ import CoachesView from "../views/CoachesView.vue";
 import EventsView from "../views/EventsView.vue";
 import StudentsView from "../views/StudentsView.vue";
 import AnnouncementsView from "../views/AnnouncementsView.vue";
+import Profile from "../components/Profile.vue";
+import CoachDash from "../components/CoachDash.vue";
+
+
 
 
 const routes = [
@@ -61,6 +65,16 @@ const routes = [
     path: "/announcements",
     name: "announcements",
     component: AnnouncementsView,
+  },
+  {
+    path: "/profile",
+    name: "profile",
+    component: Profile,
+  },
+  {
+    path: "/coachdash",
+    name: "/coachdash",
+    component: CoachDash,
   }
 ];
 
