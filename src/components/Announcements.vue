@@ -1,39 +1,68 @@
 <template>
-  <div class="centered-card"><q-card class="my-card" style="width: 800px;">
-  
-  <q-card-section>
-    <div class="text-h3 text-center">Announcements</div>
-  </q-card-section>
+  <div class="centered-card">
+    <q-card class="my-card" style="width: 1200px;">
+      <q-card-section>
+        <div class="text-h3 text-center">Announcements</div>
+      </q-card-section>
 
-  <q-separator />
+      <q-separator />
 
-  <q-card-section class="q-pt-none">
-  
-    <q-scroll-area style="height: 400px;">
-      <q-timeline>
-        <q-timeline-entry
-          v-for="announcement in announcements" 
-          :key="announcement.id"
-          :title="announcement.title"
-          :subtitle="announcement.date"
-        >
-          {{ announcement.description }}
-        </q-timeline-entry>
-      </q-timeline>
-    </q-scroll-area>
-    
-  </q-card-section>
+      <q-card-section class="q-pt-none">
+        <q-select
+          v-model="selectedMonth"
+          :options="months"
+          label="Filter by Month"
+          outlined
+        ></q-select>
+        <q-select
+          v-model="selectedYear"
+          :options="years"
+          label="Filter by Year"
+          outlined
+        ></q-select>
 
-</q-card> 
-</div>
-   
+        <q-scroll-area style="height: 570px;">
+          <q-timeline>
+            <q-timeline-entry
+              v-for="announcement in filteredAnnouncements" 
+              :key="announcement.id"
+              :title="announcement.title"
+              :subtitle="announcement.date"
+            >
+              {{ announcement.description }}
+            </q-timeline-entry>
+          </q-timeline>
+        </q-scroll-area>
+      </q-card-section>
+    </q-card> 
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
+      selectedMonth: '',
+      selectedYear: '',
       announcements: [
+        {
+          id: 1,  
+          title: 'Site Maintenance',
+          date: 'January 1, 2020',
+          description: 'The site will be undergoing maintenance between 3-5pm PST.'
+        },
+        {
+          id: 2,
+          title: 'New Feature Release', 
+          date: 'January 15, 2020',
+          description: 'We have released a new feature for analytics reporting. See the documentation for more details.'
+        },
+        {
+          id: 3,
+          title: 'Service Disruption',
+          date: 'January 28, 2020',
+          description: 'There will be intermittent service disruptions between 2-4am PST due to network upgrades.'
+        },
         {
           id: 1,  
           title: 'Site Maintenance',
@@ -88,11 +117,46 @@ export default {
           date: 'June 20, 2020',
           description: 'Two-factor authentication (2FA) methods have been updated. Review the security page for more information.'
         }
-      ]
-    }
-  } 
-}
+        ]
+    };
+  },
+  computed: {
+    months() {
+      return [
+        { label: 'January', value: 'January' },
+        { label: 'February', value: 'February' },
+        { label: 'March', value: 'March' },
+        { label: 'April', value: 'April' },
+        { label: 'May', value: 'May' },
+        { label: 'June', value: 'June' },
+        { label: 'July', value: 'July' },
+        { label: 'August', value: 'August' },
+        { label: 'September', value: 'September' },
+        { label: 'October', value: 'October' },
+        { label: 'November', value: 'November' },
+        { label: 'December', value: 'December' },
+        ];
+    },
+    years() {
+      const currentYear = new Date().getFullYear();
+      return Array.from({ length: 10 }, (_, index) => currentYear - index);
+    },
+    filteredAnnouncements() {
+      return this.announcements.filter(announcement => {
+        const announcementDate = new Date(announcement.date);
+        const selectedMonth = this.selectedMonth ? String(this.selectedMonth).toLowerCase() : '';
+        const selectedYear = this.selectedYear ? parseInt(this.selectedYear) : 0;
+
+        const matchesMonth = !selectedMonth || announcementDate.toLocaleString('default', { month: 'long' }).toLowerCase() === selectedMonth;
+        const matchesYear = !selectedYear || announcementDate.getFullYear() === selectedYear;
+
+        return matchesMonth && matchesYear;
+      });
+    },
+  },
+};
 </script>
+
 <style scoped>
 .centered-card {
   display: flex;
@@ -101,9 +165,8 @@ export default {
 }
 
 .my-card {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto; 
-  
 }
 
 .q-card {
