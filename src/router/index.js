@@ -11,7 +11,7 @@ import StudentsView from "../views/StudentsView.vue";
 import AnnouncementsView from "../views/AnnouncementsView.vue";
 import Profile from "../components/Profile.vue";
 import CoachDash from "../components/CoachDash.vue";
-
+import ParentsView from "../views/ParentsView.vue";
 
 
 
@@ -75,7 +75,12 @@ const routes = [
     path: "/coachdash",
     name: "/coachdash",
     component: CoachDash,
-  }
+  },
+  {
+    path: "/parents",
+    name: "parents",
+    component: ParentsView,
+  },
 ];
 
 const router = createRouter({
