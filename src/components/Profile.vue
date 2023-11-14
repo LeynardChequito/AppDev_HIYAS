@@ -48,7 +48,7 @@
   };
   </script>
   
-  <style>
+  <style scoped>
   .my-card {
     width: 300px;
     margin: 16px;

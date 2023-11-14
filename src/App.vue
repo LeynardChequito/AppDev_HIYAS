@@ -4,7 +4,7 @@
     <Drawer v-if="$route.name !== 'login' && $route.name !== 'register' && $route.name !== 'home' " /> 
 
 
-    <q-page-container>
+    <q-page-container class="custom-background">
       <router-view />
     </q-page-container>
 
@@ -26,3 +26,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.custom-background {
+  background-color: #EEEEEE;
+}
+</style>

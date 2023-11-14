@@ -57,7 +57,7 @@ const routes = [
     component: EventsView,
   },
   {
-    path: "/students",
+    path: "/reports/students",
     name: "students",
     component: StudentsView,
   },
@@ -73,7 +73,7 @@ const routes = [
   },
   {
     path: "/coachdash",
-    name: "/coachdash",
+    name: "coachdash",
     component: CoachDash,
   },
   {

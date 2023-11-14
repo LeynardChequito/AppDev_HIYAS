@@ -5,7 +5,7 @@
         
         <q-card class="my-card">
   
-          <q-img src="@/assets/images/coach1.png">
+          <q-img src={{ coach.image }}>
             <div class="absolute-bottom text-h6">
               {{ coach.name }} 
             </div>
@@ -45,7 +45,7 @@
            },
            {
              name: 'John Doe', 
-             image: '@/assets/images/coach1.png',
+             image: '@/assets/images/Children.jpeg',
              section: 'Masipag',
              ageGroup: '10-15'
            },
