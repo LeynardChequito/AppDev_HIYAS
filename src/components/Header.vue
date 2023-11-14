@@ -66,7 +66,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router';
 
 export default {
-  components: { Notifications, Chats, Account },
+  components: { Notifications, Chats, Account},
   setup() {
     const text = ref('');
     const logoClicked = () => {
