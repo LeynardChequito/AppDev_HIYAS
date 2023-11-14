@@ -1,51 +1,52 @@
 <template>
-    <q-drawer v-model="drawer" show-if-above :mini="miniState" @mouseover="miniState = false" @mouseout="miniState = true"
-      mini-to-overlay :width="200" :breakpoint="500" bordered :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'">
-      <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
-        <q-list padding>
-          <q-item v-for="item in menuItems" :key="item.route" @click="goToRoute(item.route)" clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon :name="item.icon" />
-            </q-item-section>
-            <q-item-section>{{ item.label }}</q-item-section>
-          </q-item>
-        </q-list>
-      </q-scroll-area>
-    </q-drawer>
-  </template>
+  <q-drawer v-model="drawer" show-if-above :mini="miniState" @mouseover="miniState = false" @mouseout="miniState = true"
+    mini-to-overlay :width="200" :breakpoint="500" bordered :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'">
+    <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
+      <q-list padding>
+        <q-item v-for="item in menuItems" :key="item.route" @click="goToRoute('reports/' + item.route)" clickable
+          v-ripple>
+          <q-item-section avatar>
+            <q-icon :name="item.icon" />
+          </q-item-section>
+          <q-item-section>{{ item.label }}</q-item-section>
+        </q-item>
+      </q-list>
+    </q-scroll-area>
+  </q-drawer>
+</template>
   
-  <script>
-  import { ref } from 'vue';
-  import { useRouter } from 'vue-router';
-  
-  export default {
-    setup() {
-      const router = useRouter();
-  
-      const menuItems = [
-        { route: 'students', icon: 'child_care', label: 'Students' },
-        { route: 'parents', icon: 'family_restroom', label: 'Parents' },
-        { route: 'finance', icon: 'payments', label: 'Finance' },
-        { route: 'events', icon: 'event', label: 'Events' },
-        { route: 'announcements', icon: 'campaign', label: 'Announcements' },
-        { route: 'staff', icon: 'people', label: 'Staff' },
-        { route: 'coaches', icon: 'emoji_people', label: 'Coaches' },
-        { route: 'sponsors', icon: 'handshake', label: 'Sponsors' },
-        { route: 'sections', icon: 'class', label: 'Sections' },
-        { route: 'accounts', icon: 'manage_accounts', label: 'Accounts' },
-      ];
-  
-      const goToRoute = (route) => {
-        router.push(`/${route}`);
-      };
-  
-      return {
-        drawer: ref(false),
-        miniState: ref(true),
-        goToRoute,
-        menuItems,
-      };
-    },
-  };
-  </script>
+<script>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+export default {
+  setup() {
+    const router = useRouter();
+
+    const menuItems = [
+      { route: 'students', icon: 'child_care', label: 'Students' },
+      { route: 'parents', icon: 'family_restroom', label: 'Parents' },
+      { route: 'finance', icon: 'payments', label: 'Finance' },
+      { route: 'events', icon: 'event', label: 'Events' },
+      { route: 'announcements', icon: 'campaign', label: 'Announcements' },
+      { route: 'staff', icon: 'people', label: 'Staff' },
+      { route: 'coaches', icon: 'emoji_people', label: 'Coaches' },
+      { route: 'sponsors', icon: 'handshake', label: 'Sponsors' },
+      { route: 'sections', icon: 'class', label: 'Sections' },
+      { route: 'accounts', icon: 'manage_accounts', label: 'Accounts' },
+    ];
+
+    const goToRoute = (route) => {
+      router.push(`/${route}`);
+    };
+
+    return {
+      drawer: ref(false),
+      miniState: ref(true),
+      goToRoute,
+      menuItems,
+    };
+  },
+};
+</script>
   
