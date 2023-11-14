@@ -11,7 +11,7 @@ import StudentsView from "../views/StudentsView.vue";
 import AnnouncementsView from "../views/AnnouncementsView.vue";
 import Profile from "../components/Profile.vue";
 import CoachDash from "../components/CoachDash.vue";
-
+import IndividualStudent from "../components/Student/IndividualStudent.vue";
 
 
 
@@ -75,7 +75,13 @@ const routes = [
     path: "/coachdash",
     name: "coachdash",
     component: CoachDash,
-  }
+  },
+  {
+    path: "/reports/students/:id",
+    // name: "coachdash",
+    component: IndividualStudent,
+  },
+
 ];
 
 const router = createRouter({
