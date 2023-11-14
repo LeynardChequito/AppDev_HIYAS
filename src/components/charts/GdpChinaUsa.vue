@@ -18,7 +18,7 @@ export default defineComponent({
     return {
       options: {
         title: {
-          text: 'GDP Growth (Annual %)',
+          text: '4 Aspects',
           align: 'left'
         },
         chart: {
