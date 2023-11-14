@@ -5,31 +5,45 @@
       <!-- <img src="@/assets/images/hiyas-banner.png" alt="Hiyas ng Tahanan" /> -->
       <q-img src="@/assets/images/hiyas-banner.png" class="q-mb-lg" @click="logoClicked" style="cursor: pointer;" />
     </div>
-
     <div class="row col-6 two justify-center ">
       <q-card class="login-card text-center">
-
         <q-card-section>
-          <q-input v-model="mobile_or_email" outlined label="Mobile or Email" dense debounce="300" :error="errors.mobile_or_email ? 'Mobile or Email is incorrect.' : false" class="q-mb-md" />
-          <q-input v-model="password" outlined label="Password" type="password" dense debounce="300" :error="errors.password ? 'Password is incorrect.' : false" />
+          <q-input
+            v-model="mobile_or_email"
+            outlined
+            label="Mobile or Email"
+            dense
+            debounce="300"
+            :error="errors.mobile_or_email ? 'Mobile or Email is incorrect.' : false"
+            class="q-mb-md"
+          />
+          <q-input
+            v-model="password"
+            :type="showPassword ? 'text' : 'password'"
+            outlined
+            label="Password"
+            dense
+            debounce="300"
+            :error="errors.password ? 'Password is incorrect.' : false"
+          >
+            <template v-slot:append>
+              <q-icon
+                :name="showPassword ? 'visibility' : 'visibility_off'"
+                @click="togglePassword"
+                style="cursor: pointer;"
+              />
+            </template>
+          </q-input>
+
           <div class="error-message">{{ errors.mobile_or_email }}</div>
           <div class="error-message">{{ errors.password }}</div>
-          <q-btn rounded color="primary" label="Log in" type="submit" class="q-mt-md q-mb-sm" style="width: 100%" />
-          <q-space />
-          <a href="#" class="q-mt-md text-caption" style="text-decoration: none;">Forgot Password?</a>
-        </q-card-section>
-        <div class="hr-container">
-          <hr class="hr-line">
-        </div>
-        <q-card-section>
-          <q-btn rounded color="green" label="Create New Account" @click="createAccount" class="text-caption"
-            style="width: 70%" />
-
+          <!-- ... (your existing code) -->
         </q-card-section>
       </q-card>
     </div>
   </q-form>
 </template>
+
 
 
 <script>
@@ -45,6 +59,7 @@ export default {
         mobile_or_email: '',
         password: '',
       },
+      showPassword: false,
     };
   },
   methods: {
@@ -96,6 +111,9 @@ export default {
     },
     logoClicked() {
       this.$router.push({ name: 'home' });
+    },
+    togglePassword() {
+      this.showPassword = !this.showPassword;
     },
   },
 };
