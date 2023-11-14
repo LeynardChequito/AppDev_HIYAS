@@ -107,6 +107,6 @@ export default {
 }
 
 .q-card {
-  background: linear-gradient(to right, #273430, #185a9d); 
+  /* background: linear-gradient(to right, #273430, #185a9d);  */
 }
 </style>

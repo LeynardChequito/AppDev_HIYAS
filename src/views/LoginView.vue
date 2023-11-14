@@ -15,7 +15,7 @@
             dense
             debounce="300"
             :error="errors.mobile_or_email ? 'Mobile or Email is incorrect.' : false"
-            class="q-mb-md"
+              
           />
           <q-input
             v-model="password"
@@ -37,7 +37,16 @@
 
           <div class="error-message">{{ errors.mobile_or_email }}</div>
           <div class="error-message">{{ errors.password }}</div>
-          <!-- ... (your existing code) -->
+          <q-btn rounded color="primary" label="Log in" type="submit" class="q-mt-md q-mb-sm" style="width: 100%" />
+          <q-space />
+          <a href="#" class="q-mt-md text-caption" style="text-decoration: none;">Forgot Password?</a>
+        </q-card-section>
+        <div class="hr-container">
+          <hr class="hr-line">
+        </div>
+        <q-card-section>
+          <q-btn rounded color="green" label="Create New Account" @click="createAccount" class="text-caption"
+            style="width: 70%" />
         </q-card-section>
       </q-card>
     </div>

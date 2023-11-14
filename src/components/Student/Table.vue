@@ -20,7 +20,7 @@ import axios from 'axios';
 const columns = [
     { name: 'id_number', label: 'Id Number', align: 'left', field: 'id_number' },
     { name: 'lastname', label: 'Lastname', align: 'left', field: 'lastname' },
-    { name: 'firsname', label: 'Firsname', align: 'left', field: 'firsname' },
+    { name: 'firstname', label: 'Firstname', align: 'left', field: 'firstname' },
     { name: 'age', label: 'Age', align: 'left', field: 'age' },
     { name: 'birthday', label: 'Birthday', align: 'left', field: 'birthday' },
     { name: 'gender', label: 'Gender', align: 'left', field: 'gender' },

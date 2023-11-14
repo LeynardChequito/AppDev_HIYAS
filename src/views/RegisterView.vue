@@ -20,6 +20,7 @@
                             <q-input v-model="lastname" outlined label="Last Name" dense debounce="300" :rules="[v => !!v || 'Last Name is required']" class="q-mr-sm" />
                         </div>
                     </div>
+                    <q-input v-model="mobile_or_email" outlined label="Mobile Number or Email" dense debounce="300" :rules="[v => !!v || 'Mobile Numer or Email is required']" class="q-mr-sm"/>
                         <q-input v-model="password" :type="showPassword ? 'text' : 'password'" outlined label="New Password" dense debounce="300" :rules="[v => !!v || 'New Password is required']" class="q-mr-sm">
                     <template v-slot:append>
                     <q-icon

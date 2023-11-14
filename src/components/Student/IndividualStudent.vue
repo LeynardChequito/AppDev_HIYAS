@@ -1,12 +1,22 @@
 <template>
     <div class="q-pa-md row justify-center">
-        <div class="col-md-2 items-center text-center hey">
+        <!-- <div class="col-md-2 items-center text-center hey">
             <q-img width="50" height="50" scale-down src="@/assets/images/coach1.png">
             </q-img>
 
-        </div>
+        </div> -->
         <div class="col-md-10 heyq">
-            {{ info.firsname }}
+            {{ info.firstname }}
+            <br>
+            {{ info.lastname }}
+            <br>
+            {{ info.age }}
+            <br>
+            {{ info.birthday }}
+            <br>
+            {{ info.gender }}
+            <br>
+            {{ info.address }}
         </div>
 
 
@@ -14,7 +24,6 @@
 
 
     </div>
-    <div>{{ info.address }}</div>
 </template>
   
 <script>
@@ -24,7 +33,7 @@ import axios from 'axios';
 const columns = [
     { name: 'id_number', label: 'Id Number', align: 'left', field: 'id_number' },
     { name: 'lastname', label: 'Lastname', align: 'left', field: 'lastname' },
-    { name: 'firsname', label: 'Firsname', align: 'left', field: 'firsname' },
+    { name: 'firstname', label: 'Firsname', align: 'left', field: 'firsname' },
     { name: 'age', label: 'Age', align: 'left', field: 'age' },
     { name: 'birthday', label: 'Birthday', align: 'left', field: 'birthday' },
     { name: 'gender', label: 'Gender', align: 'left', field: 'gender' },
@@ -55,7 +64,7 @@ export default {
                 const studentId = parseInt(this.$route.params.id);
 
                 // Fetch data based on the id parameter
-                const response = await axios.get('getstudentdata/${studentId}');
+                const response = await axios.get(`getstudentdata/${studentId}`);
                 this.info = response.data;
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -77,6 +86,6 @@ export default {
     background-color:green;
 }
 .heyq{
-    background-color:blue;
+    /* background-color:blue; */
 }
 </style>
