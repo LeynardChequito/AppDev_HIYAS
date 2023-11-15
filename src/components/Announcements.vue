@@ -1,175 +1,182 @@
 <template>
-  <div class="centered-card">
-    <q-card class="my-card" style="width: 1200px;">
-      <q-card-section>
-        <div class="text-h3 text-center">Announcements</div>
-      </q-card-section>
+  <div class="page-container">
+    <div class="left-panel">
+      <!-- Centered Card -->
+      <q-card class="my-card">
+        <q-card-section>
+          <div class="text-h3 text-center">Announcements</div>
+        </q-card-section>
 
-      <q-separator />
+        <q-separator />
 
-      <q-card-section class="q-pt-none">
-        <q-select
+          <q-select
           v-model="selectedMonth"
           :options="months"
           label="Filter by Month"
           outlined
-        ></q-select>
-        <q-select
-          v-model="selectedYear"
-          :options="years"
-          label="Filter by Year"
-          outlined
-        ></q-select>
+          >
+          </q-select>
+          <q-select
+            v-model="selectedYear"
+            :options="years"
+            label="Filter by Year"
+            outlined
+          ></q-select>
 
-        <q-scroll-area style="height: 570px;">
-          <q-timeline>
-            <q-timeline-entry
-              v-for="announcement in filteredAnnouncements" 
-              :key="announcement.id"
-              :title="announcement.title"
-              :subtitle="announcement.date"
-            >
-              {{ announcement.description }}
-            </q-timeline-entry>
-          </q-timeline>
-        </q-scroll-area>
-      </q-card-section>
-    </q-card> 
-  </div>
+          <q-scroll-area style="height: 500px;">
+            <q-timeline>
+              <q-timeline-entry
+    v-for="announcement in filteredAnnouncements"
+    :key="announcement.id"
+    :title="announcement.title"
+    :subtitle="formatDate(announcement.date)"
+  >
+    {{ announcement.description }}
+  </q-timeline-entry>
+            </q-timeline>
+          </q-scroll-area>
+      
+      </q-card>
+    </div>
+      <div class="bottom-right">
+        <!-- Input Form for New Announcements -->
+        <div class="q-pa-md">
+          <form @submit.prevent="addNewAnnouncement">
+            <q-input v-model="newAnnouncement.title" label="Title" outlined />
+            <q-input v-model="newAnnouncement.date" label="Date" type="date" outlined />
+            <div style="height: 500;">
+              <q-input v-model="newAnnouncement.description" label="Description" outlined />
+            </div>
+            
+            <q-btn type="submit" label="Add Announcement" />
+          </form>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
   data() {
     return {
       selectedMonth: '',
       selectedYear: '',
+      selectedDate: '',
       announcements: [
-        {
-          id: 1,  
-          title: 'Site Maintenance',
-          date: 'January 1, 2020',
-          description: 'The site will be undergoing maintenance between 3-5pm PST.'
-        },
-        {
-          id: 2,
-          title: 'New Feature Release', 
-          date: 'January 15, 2020',
-          description: 'We have released a new feature for analytics reporting. See the documentation for more details.'
-        },
-        {
-          id: 3,
-          title: 'Service Disruption',
-          date: 'January 28, 2020',
-          description: 'There will be intermittent service disruptions between 2-4am PST due to network upgrades.'
-        },
-        {
-          id: 1,  
-          title: 'Site Maintenance',
-          date: 'January 1, 2020',
-          description: 'The site will be undergoing maintenance between 3-5pm PST.'
-        },
-        {
-          id: 2,
-          title: 'New Feature Release', 
-          date: 'January 15, 2020',
-          description: 'We have released a new feature for analytics reporting. See the documentation for more details.'
-        },
-        {
-          id: 3,
-          title: 'Service Disruption',
-          date: 'January 28, 2020',
-          description: 'There will be intermittent service disruptions between 2-4am PST due to network upgrades.'
-        },
-        {
-          id: 4,
-          title: 'App Update',
-          date: 'February 5, 2020',
-          description: 'A new version of the app has been released. Please update for the latest features and bug fixes.'
-        },
-        {  
-          id: 5,
-          title: 'Billing Reminder',
-          date: 'February 15, 2020', 
-          description: 'This is a reminder that yearly billing will be charged on March 1st. Please update your payment information.'
-        },
-        {
-          id: 6,
-          title: 'Server Migration',
-          date: 'March 10, 2020',
-          description: 'Our servers will be undergoing migration March 15-17. Minimal downtime is expected.'
-        },
-        {
-          id: 7,
-          title: 'Holiday Hours',
-          date: 'April 1, 2020',
-          description: 'Support will be limited December 23-25 and December 31 - January 2 for the holidays.'
-        },
-        {
-          id: 8, 
-          title: 'Password Reset',
-          date: 'May 5, 2020',
-          description: 'If you have forgotten your password, you can reset it here. A reset link will be emailed.'
-        },
-        {
-          id: 9,
-          title: '2FA Changes',
-          date: 'June 20, 2020',
-          description: 'Two-factor authentication (2FA) methods have been updated. Review the security page for more information.'
-        }
-        ]
+        // Add other announcements here
+      ],
+      splitterModel: ref(50),
+      newAnnouncement: {
+        title: '',
+        date: '',
+        description: '',
+      },
     };
   },
   computed: {
     months() {
       return [
-        { label: 'January', value: 'January' },
-        { label: 'February', value: 'February' },
-        { label: 'March', value: 'March' },
-        { label: 'April', value: 'April' },
-        { label: 'May', value: 'May' },
-        { label: 'June', value: 'June' },
-        { label: 'July', value: 'July' },
-        { label: 'August', value: 'August' },
-        { label: 'September', value: 'September' },
-        { label: 'October', value: 'October' },
-        { label: 'November', value: 'November' },
-        { label: 'December', value: 'December' },
-        ];
+        { label: 'None', value: 'None' },
+        { label: 'January', value: '1' },
+        { label: 'February', value: '2' },
+        { label: 'March', value: '3' },
+        { label: 'April', value: '4' },
+        { label: 'May', value: '5' },
+        { label: 'June', value: '6' },
+        { label: 'July', value: '7' },
+        { label: 'August', value: '8' },
+        { label: 'September', value: '9' },
+        { label: 'October', value: '10' },
+        { label: 'November', value: '11' },
+        { label: 'December', value: '12' },
+      ];
     },
     years() {
       const currentYear = new Date().getFullYear();
       return Array.from({ length: 10 }, (_, index) => currentYear - index);
     },
     filteredAnnouncements() {
-      return this.announcements.filter(announcement => {
-        const announcementDate = new Date(announcement.date);
-        const selectedMonth = this.selectedMonth ? String(this.selectedMonth).toLowerCase() : '';
-        const selectedYear = this.selectedYear ? parseInt(this.selectedYear) : 0;
-
-        const matchesMonth = !selectedMonth || announcementDate.toLocaleString('default', { month: 'long' }).toLowerCase() === selectedMonth;
-        const matchesYear = !selectedYear || announcementDate.getFullYear() === selectedYear;
-
-        return matchesMonth && matchesYear;
+      return this.announcements.map((announcement) => ({
+        ...announcement,
+        date: this.formatDate(announcement.date),
+      }));
+    },
+    events() {
+      // Combine announcements and additional events
+      const allEvents = [...this.announcements];
+      // Add any additional events here if needed
+      allEvents.push(
+        { id: 100, title: 'Event 1', date: '2023-11-20', description: 'Description for Event 1' },
+        { id: 101, title: 'Event 2', date: '2023-11-22', description: 'Description for Event 2' },
+      );
+      return allEvents.map((event) => event.date);
+    },
+    tabPanels() {
+      const uniqueDates = [...new Set(this.announcements.map((announcement) => announcement.date))];
+      return uniqueDates.map((date) => {
+        return {
+          date,
+          announcements: this.announcements.filter((announcement) => announcement.date === date),
+        };
       });
     },
+  },
+  methods: {
+    addNewAnnouncement() {
+      // Validate the new announcement data
+      if (
+        this.newAnnouncement.title &&
+        this.newAnnouncement.date &&
+        this.newAnnouncement.description
+      ) {
+        // Push the new announcement to the announcements array
+        this.announcements.push({
+          id: this.announcements.length + 1, // or use a unique identifier
+          title: this.newAnnouncement.title,
+          date: this.newAnnouncement.date,
+          description: this.newAnnouncement.description,
+        });
+
+        // Clear the form fields after adding the announcement
+        this.newAnnouncement = {
+          title: '',
+          date: '',
+          description: '',
+        };
+      }
+    },
+    formatDate(dateString) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Date(dateString).toLocaleDateString('en-US', options);
+      }
   },
 };
 </script>
 
 <style scoped>
-.centered-card {
+.page-container {
   display: flex;
-  justify-content: center;
-  align-items: center; 
 }
 
-.my-card {
-  max-width: 1200px;
-  margin: 0 auto; 
+.left-panel {
+  flex: 1;
 }
 
-.q-card {
-  /* background: linear-gradient(to right, #273430, #185a9d);  */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-right {
+  flex: 1;
+}
+
+.bottom-right {
+  flex: 1;
+  height: 350px; /* Adjust the height as needed */
 }
 </style>
