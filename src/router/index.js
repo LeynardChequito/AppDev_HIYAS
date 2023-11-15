@@ -13,6 +13,8 @@ import Profile from "../components/Profile.vue";
 import CoachDash from "../components/CoachDash.vue";
 import IndividualStudent from "../components/Student/IndividualStudent.vue";
 import FinanceView from "../views/FinanceView.vue";
+import EventsCalendar from "../views/EventsCalendarView.vue";
+
 
 
 const routes = [
@@ -85,6 +87,11 @@ const routes = [
     path: "/reports/finance",
     name: "finance",
     component: FinanceView,
+  },
+  {
+    path: "/EventsCal",
+    name: "EventsCal",
+    component: EventsCalendar,
   },
 ];
 
