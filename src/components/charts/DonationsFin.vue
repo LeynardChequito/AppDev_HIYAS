@@ -2,7 +2,7 @@
     <div>
       <FinanceF v-model="selectedTimeframe" />
       <!-- ApexCharts -->
-      <apexchart height="400" width="600" type="line" :options="options" :series="series"></apexchart>
+      <apexchart height="300"  type="line" :options="options" :series="series"></apexchart>
     </div>
   </template>
   

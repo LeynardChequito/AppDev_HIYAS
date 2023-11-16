@@ -36,17 +36,17 @@
                             </q-item-section>
                         </q-item>
 
-                        <q-item clickable v-ripple>
+                        <q-item clickable v-ripple @click="logout">
                             <q-item-section avatar>
                                 <q-avatar color="grey" text-color="white" icon="logout" />
                             </q-item-section>
-
                             <q-item-section>Logout</q-item-section>
                             <q-space />
                             <q-item-section side>
                                 <q-icon name="chevron_right" />
                             </q-item-section>
                         </q-item>
+
 
 
                     </q-list>
@@ -58,6 +58,7 @@
 
 <script>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import router from '@/router';
 
 export default {
     setup() {
@@ -67,27 +68,36 @@ export default {
         const accountClicked = () => {
             cardVisible.value = !cardVisible.value;
             clicked.value = !clicked.value;
-            // Toggle the 'clicked' state
         };
+
         const handleGlobalClick = (event) => {
-            // Check if the clicked element is outside the button and the notification card
             const isOutsideButton = !event.target.closest('.q-btn');
             const isOutsideNotificationCard = !event.target.closest('.notification-card');
 
-            // Close the notification card if it's open and the click is outside both the button and the card
             if (cardVisible.value && isOutsideButton && isOutsideNotificationCard) {
                 cardVisible.value = false;
                 clicked.value = false;
             }
         };
 
-        // Close the notification card when a global click event is emitted from another component
         const closeNotificationCard = () => {
             cardVisible.value = false;
             clicked.value = false;
         };
 
-        // Add and remove the global click event listener when the component is mounted and unmounted
+        const logout = () => {
+            // Clear the authentication token from localStorage
+            localStorage.removeItem('token');
+
+            // Emit a global event to notify other components about the logout
+            window.dispatchEvent(new Event('logout'));
+            router.push('/login');
+
+            // Close the notification card
+            closeNotificationCard();
+        };
+
+
         onMounted(() => {
             document.addEventListener('click', handleGlobalClick);
         });
@@ -96,27 +106,23 @@ export default {
             document.removeEventListener('click', handleGlobalClick);
         });
 
-        // Listen for global events from other components
         window.addEventListener('closeNotificationCard', closeNotificationCard);
 
-        // Computed property to calculate button color based on 'clicked' state
         const buttonColor = computed(() => {
-            return clicked.value ? 'grey' : ''; // Set to 'red' when clicked, else empty
+            return clicked.value ? 'grey' : '';
         });
 
         return {
             cardVisible,
             accountClicked,
             buttonColor,
-            handleGlobalClick, // Expose the computed 'buttonColor' to the template
-            lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            handleGlobalClick,
+            logout, // Expose the logout method to the template
         };
     },
-
-
 };
-
 </script>
+
   
 <style lang="sass" scoped>
 .my-card

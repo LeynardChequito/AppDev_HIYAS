@@ -75,7 +75,6 @@
         type="submit"
         class="q-mt-sm"
         style="width: 70%"
-        :disable="tealError" 
       />
       <br /><br />
       <a href="/login" class="text-body2" style="text-decoration: none;">Already have an account?</a>

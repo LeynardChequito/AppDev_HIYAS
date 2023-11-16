@@ -13,8 +13,13 @@ import Profile from "../components/Profile.vue";
 import CoachDash from "../components/CoachDash.vue";
 import IndividualStudent from "../components/Student/IndividualStudent.vue";
 import FinanceView from "../views/FinanceView.vue";
+<<<<<<< Updated upstream
 import EventsCalendar from "../views/EventsCalendarView.vue";
 
+=======
+import ChatView from "../views/ChatView.vue";
+import authService from '../JWT/authService';
+>>>>>>> Stashed changes
 
 
 const routes = [
@@ -42,51 +47,77 @@ const routes = [
     path: "/manage",
     name: "manage",
     component: ManageView,
+    meta: { requiresAuth: true },
   },
   {
     path: "/reports",
     name: "reports",
     component: ReportsView,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/coaches",
     name: "coaches",
     component: CoachesView,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/events",
     name: "events",
     component: EventsView,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/reports/students",
     name: "students",
     component: StudentsView,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/announcements",
     name: "announcements",
     component: AnnouncementsView,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/profile",
     name: "profile",
     component: Profile,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/coachdash",
     name: "coachdash",
     component: CoachDash,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/reports/students/:id",
     // name: "coachdash",
     component: IndividualStudent,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/reports/finance",
     name: "finance",
     component: FinanceView,
+    meta: { requiresAuth: true },
+
+  },
+  {
+    path: "/chats",
+    name: "chats",
+    component: ChatView,
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/EventsCal",
@@ -98,6 +129,16 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+// Global navigation guard
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth && !authService.isAuthenticated()) {
+    // If the route requires authentication and the user is not authenticated
+    next('/login'); // Redirect to the login page
+  } else {
+    next(); // Proceed to the route
+  }
 });
 
 export default router;

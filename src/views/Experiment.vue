@@ -1,67 +1,48 @@
-<!-- src/pages/TablePage.vue -->
-
 <template>
-    <div>
-      <q-table
-        :rows="info"
-        :columns="columns"
-        row-key="id"
-      >
-        <template v-slot:body="props">
-          <q-tr :props="props">
-            <q-td
-              v-for="col in columns"
-              :key="col.name"
-              :props="props"
-            >
-              {{ props.row[col.name] }}
-            </q-td>
-          </q-tr>
-        </template>
-      </q-table>
-    </div>
-    <TryButton/>
-  </template>
-  
-  <script>
-  import axios from 'axios';
-  import TryButton from '@/components/TryButton.vue';
-  
-  // Define the columns outside the data method
-  const columns = [
-    { name: 'id', label: 'ID', align: 'left', field: 'id' },
-    { name: 'name', label: 'Name', align: 'left', field: 'name' },
-    // Add more columns as needed
-  ];
-  
-  export default {
-    components: {
-      TryButton,
-    },
-    data() {
-      return {
-        info: [],
-      };
-    },
-    created() {
-      this.getInfo();
-    },
-    methods: {
-      async getInfo() {
-        try {
-          const response = await axios.get('getdata');
-          this.info = response.data;
-        } catch (error) {
-          console.error('Error fetching data:', error);
+  <div>
+    <h1>Hello, {{ userName }}</h1>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      userName: null,
+    };
+  },
+  mounted() {
+    this.fetchUserName();
+  },
+  methods: {
+    async fetchUserName() {
+      try {
+        const token = localStorage.getItem('token');
+
+        if (!token) {
+          console.error('No token available.');
+          return;
         }
-      },
+
+        const response = await axios.get('getUser', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        // Assuming the server responds with user data
+        const user = response.data.user;
+        this.userName = user.firstname || 'Guest'; // Replace 'firstname' with the actual property name in your user data
+      } catch (error) {
+        console.error('Error getting user data:', error);
+      }
     },
-    // Bind the columns to the component
-    computed: {
-      columns() {
-        return columns;
-      },
-    },
-  };
-  </script>
-  
+  },
+};
+</script>
+
+<style scoped>
+/* Your component styles go here */
+</style>

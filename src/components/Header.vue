@@ -17,8 +17,8 @@
       <div class="row col-12 col-md-7 justify-between self-center q-pt-sm">
         <q-tabs align="left" class="" inline-label>
           <q-route-tab to="/home" icon="home" label="Home" />
-          <q-route-tab to="/manage" icon="tune" label="Manage" />
-          <q-route-tab to="/reports" icon="analytics" label="Reports" />
+          <q-route-tab to="/manage" icon="tune" label="Management" />
+          <q-route-tab to="/reports" icon="analytics" label="Reports And Analytics" />
         </q-tabs>
 
         <div class="row justify-end items-start four self-center">

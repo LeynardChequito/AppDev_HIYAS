@@ -2,7 +2,7 @@
     <div>
       <FinanceF v-model="selectedTimeframe" />
       <!-- ApexCharts -->
-      <apexchart height="475" type="radialBar" :options="options" :series="series" :total="totalSum"></apexchart>
+      <apexchart height="300" type="radialBar" :options="options" :series="series" :total="totalSum"></apexchart>
     </div>
   </template>
   

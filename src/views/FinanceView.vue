@@ -1,12 +1,6 @@
 <template>
     <q-page padding>
       <div class="row q-col-gutter-sm q-pt-md">
-        <!-- <div class="col-md-8 col-xs-12">
-          <q-card>
-            <GdpChinaUsa />
-          </q-card>
-        </div> -->
-
         <div class="col-md-4 col-xs-12">
           <q-card>
             <SavingsFin/>
@@ -14,7 +8,7 @@
         </div>
 
 
-        <div class="col-md-5 col-xs-12">
+        <div class="col-md-8 col-xs-12">
           <q-card>
             <DonationsFin />
           </q-card>

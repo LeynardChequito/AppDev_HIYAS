@@ -1,37 +1,18 @@
 <template>
   <q-form @submit.prevent="login" class="row justify-center login-page">
     <div class="row col-6 one justify-center">
-      <!--image here-->
-      <!-- <img src="@/assets/images/hiyas-banner.png" alt="Hiyas ng Tahanan" /> -->
       <q-img src="@/assets/images/hiyas-banner.png" class="q-mb-lg" @click="logoClicked" style="cursor: pointer;" />
     </div>
     <div class="row col-6 two justify-center ">
       <q-card class="login-card text-center">
         <q-card-section>
-          <q-input
-            v-model="mobile_or_email"
-            outlined
-            label="Mobile or Email"
-            dense
-            debounce="300"
-            :error="errors.mobile_or_email ? 'Mobile or Email is incorrect.' : false"
-              
-          />
-          <q-input
-            v-model="password"
-            :type="showPassword ? 'text' : 'password'"
-            outlined
-            label="Password"
-            dense
-            debounce="300"
-            :error="errors.password ? 'Password is incorrect.' : false"
-          >
+          <q-input v-model="mobile_or_email" outlined label="Mobile or Email" dense debounce="300"
+            :error="errors.mobile_or_email ? 'Mobile or Email is incorrect.' : false" />
+          <q-input v-model="password" :type="showPassword ? 'text' : 'password'" outlined label="Password" dense
+            debounce="300" :error="errors.password ? 'Password is incorrect.' : false">
             <template v-slot:append>
-              <q-icon
-                :name="showPassword ? 'visibility' : 'visibility_off'"
-                @click="togglePassword"
-                style="cursor: pointer;"
-              />
+              <q-icon :name="showPassword ? 'visibility' : 'visibility_off'" @click="togglePassword"
+                style="cursor: pointer;" />
             </template>
           </q-input>
 
@@ -52,8 +33,6 @@
     </div>
   </q-form>
 </template>
-
-
 
 <script>
 import axios from 'axios';
@@ -97,6 +76,12 @@ export default {
           password: this.password,
         });
 
+        // Assuming your server sends the token in the response
+        const token = response.data.token;
+
+        // Store the token securely (e.g., in local storage)
+        localStorage.setItem('token', token);
+        // axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
         // Handle the response from the server, e.g., show a success message or redirect to another page
         console.log('Login successful:', response.data);
 
@@ -142,7 +127,6 @@ export default {
   width: 100%;
 }
 
-
 .create-account-card {
   max-width: 300px;
   width: 100%;
@@ -164,6 +148,7 @@ export default {
   font-size: 0.75rem;
   margin-top: 4px;
 }
+
 /* .one {
   background-color: blue;
 } */
