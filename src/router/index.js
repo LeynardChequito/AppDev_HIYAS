@@ -13,13 +13,10 @@ import Profile from "../components/Profile.vue";
 import CoachDash from "../components/CoachDash.vue";
 import IndividualStudent from "../components/Student/IndividualStudent.vue";
 import FinanceView from "../views/FinanceView.vue";
-<<<<<<< Updated upstream
 import EventsCalendar from "../views/EventsCalendarView.vue";
 
-=======
 import ChatView from "../views/ChatView.vue";
 import authService from '../JWT/authService';
->>>>>>> Stashed changes
 
 
 const routes = [
@@ -123,6 +120,7 @@ const routes = [
     path: "/EventsCal",
     name: "EventsCal",
     component: EventsCalendar,
+    meta: { requiresAuth: true },
   },
 ];
 
