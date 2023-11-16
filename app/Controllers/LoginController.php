@@ -7,45 +7,86 @@ use App\Models\AccountModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\RESTful\ResourceController;
 
+use Firebase\JWT\JWT;
+use Firebase\JWT\KEY;
+
 class LoginController extends ResourceController
 {
     use ResponseTrait;
 
-    public function index()
-    {
-        // Display the login view or return a response for the API
-    }
-
     public function login()
     {
-        // Handle login logic for the API
+        // Use $this->request->getJSON() to get JSON input
         $json = $this->request->getJSON();
 
+        // Extract email and password from the JSON data
+        $email = $json->mobile_or_email;
+        $password = $json->password;
 
-        // Validate the input data
-        $validationRules = [
-            'mobile_or_email' => 'required|valid_email', // Adjust this validation based on your needs
-            'password' => 'required',
+        $userModel = new AccountModel();
+
+        $user = $userModel->where('mobile_or_email', $email)->first();
+
+        if (is_null($user)) {
+            return $this->respond(['error' => 'Email does not exist'], 401);
+        }
+
+        $pwd_verify = password_verify($password, $user['password']);
+
+        if (!$pwd_verify) {
+            return $this->respond(['error' => 'Invalid username or password.'], 401);
+        }
+
+        $key = getenv('JWT_SECRET');
+        $iat = time(); // current timestamp value
+        $exp = $iat + 3600;
+
+        $payload = [
+            "iss" => "localhost",
+            "aud" => "localhost",
+            // "sub" => "Subject of the JWT",
+            "iat" => $iat, //Time the JWT issued at
+            "exp" => $exp, // Expiration time of token
+            "email" => $user['mobile_or_email'],
+            "firstname" => $user['firstname'],
+            "id" => $user['id'], // Add this line
         ];
 
-        if (!$this->validate($validationRules)) {
-            return $this->failValidationErrors($this->validator->getErrors());
+        $token = JWT::encode($payload, $key, 'HS256');
+
+        $response = [
+            'message' => 'Login Successful',
+            'token' => $token,
+            'user' => $user,
+        ];
+
+        return $this->respond($response, 200);
+    }
+    public function getUser()
+    {
+        // $userModel = new AccountModel();
+
+        $request = service('request');
+        $key = getenv('JWT_SECRET');
+        $headers = $request->getHeader('authorization');
+        $token = $headers->getValue();
+        // return $token;
+        try {
+            $decodedToken = JWT::decode($token, new KEY($key, 'HS256'));
+            $email = $decodedToken->email;
+            $firstname = $decodedToken->firstname;
+            $id = $decodedToken->id;
+            return $this->respond([
+                'status' => 1,
+                'user' => [
+                    "id" => $id,
+                    'email' => $email,
+                    'firstname' => $firstname,
+                    // Add other properties as needed
+                ],
+            ]);
+        } catch (\Exception $e) {
+            return $this->failUnauthorized('Invalid token');
         }
-
-        // If validation passes, attempt to log in
-        $accountModel = new AccountModel();
-
-        $user = $accountModel
-            ->where('mobile_or_email', $json->mobile_or_email)
-            ->first();
-
-        if (!$user || !password_verify($json->password, $user['password'])) {
-            return $this->failUnauthorized('Invalid email or password');
-        }
-
-        // Successfully logged in, you can set user session or perform other actions
-
-        // Return a JSON response
-        return $this->respond(['message' => 'Login successful']);
     }
 }

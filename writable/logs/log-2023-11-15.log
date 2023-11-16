@@ -1,0 +1,330 @@
+ERROR - 2023-11-15 09:06:05 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ch...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\CIbackend\app\Controllers\ChatController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\ChatController->sendMessage()
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\CIbackend\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-15 09:06:05 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `chat_messages` (`message`) VALUES (:message:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ChatController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->sendMessage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 11:32:41 --> Too few arguments to function App\Controllers\JWTController::generateToken(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JWTController->generateToken()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:34:04 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:34:08 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:34:24 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:34:24 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:34:26 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:36:48 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:36:53 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:36:55 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:37:08 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:37:31 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:37:44 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:38:05 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:39:27 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 12:42:36 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:03:16 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:09:58 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:10:00 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:15:06 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:15:06 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:15:11 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:15:41 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:17:27 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:18:30 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:18:44 --> Too few arguments to function App\Controllers\LoginController::saveUserDataInSession(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->saveUserDataInSession()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-15 13:33:57 --> Token Decoding Error: Undefined variable $algorithm
+ERROR - 2023-11-15 13:34:27 --> Token Decoding Error: Wrong number of segments
+ERROR - 2023-11-15 13:38:44 --> Token Decoding Error: Wrong number of segments
+CRITICAL - 2023-11-15 13:39:03 --> Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+in APPPATH\Controllers\JWTController.php on line 44.
+ 1 APPPATH\Controllers\LoginController.php(59): App\Controllers\JWTController->decodeToken('')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getLoggedInUserData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:40:28 --> Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+in APPPATH\Controllers\JWTController.php on line 44.
+ 1 APPPATH\Controllers\LoginController.php(59): App\Controllers\JWTController->decodeToken('')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getLoggedInUserData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:47:29 --> Too few arguments to function App\Controllers\JWTController::decodeToken(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JWTController->decodeToken()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:47:30 --> Too few arguments to function App\Controllers\JWTController::decodeToken(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JWTController->decodeToken()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:47:58 --> Too few arguments to function App\Controllers\JWTController::generateToken(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JWTController->generateToken()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:48:00 --> Too few arguments to function App\Controllers\JWTController::generateToken(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\JWTController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\JWTController->generateToken()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JWTController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:10 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:13 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:22 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:27 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:31 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:54 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:49:59 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:50:47 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:50:54 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:51:03 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:51:05 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:51:12 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 13:51:16 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-15 13:51:36 --> Token Decoding Error: Wrong number of segments
+ERROR - 2023-11-15 14:27:41 --> Token: 
+ERROR - 2023-11-15 14:27:41 --> Exception: Wrong number of segments
+ERROR - 2023-11-15 14:28:11 --> Token: 
+ERROR - 2023-11-15 14:28:11 --> Exception: Wrong number of segments
+ERROR - 2023-11-15 14:40:25 --> Token: 
+ERROR - 2023-11-15 14:40:25 --> Exception: Wrong number of segments
+ERROR - 2023-11-15 14:41:03 --> Token: 
+ERROR - 2023-11-15 14:41:03 --> Exception: Wrong number of segments
+ERROR - 2023-11-15 23:51:16 --> Error in SignupController: Attempt to read property "firstname" on null
+ERROR - 2023-11-15 23:51:22 --> Error in SignupController: Attempt to read property "firstname" on null
+CRITICAL - 2023-11-15 23:56:14 --> Undefined array key "email"
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 APPPATH\Controllers\LoginController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-15 23:59:10 --> Error in SignupController: Attempt to read property "firstname" on null
+ERROR - 2023-11-15 23:59:36 --> Error in SignupController: Attempt to read property "firstname" on null
+ERROR - 2023-11-15 23:59:37 --> Error in SignupController: Attempt to read property "firstname" on null
+ERROR - 2023-11-15 23:59:39 --> Error in SignupController: Attempt to read property "firstname" on null

@@ -14,6 +14,8 @@
         "ext-intl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
+        "chriskacerguis/codeigniter-restserver": "^3.1",
+        "firebase/php-jwt": "^6.9",
         "laminas/laminas-escaper": "^2.9",
         "psr/log": "^1.1"
     },

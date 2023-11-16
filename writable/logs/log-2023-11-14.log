@@ -1,0 +1,162 @@
+CRITICAL - 2023-11-14 02:39:09 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:15 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:20 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:30 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:36 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:38 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:40 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:45 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:48 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:50 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:54 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:39:57 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:40:00 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:40:02 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:40:04 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:40:06 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:40:11 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 02:40:11 --> syntax error, unexpected token "/", expecting "function" or "const"
+in APPPATH\Models\StudentModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Models\\StudentModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\StudentModel')
+ 3 APPPATH\Controllers\TryController.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\StudentModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TryController->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TryController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()

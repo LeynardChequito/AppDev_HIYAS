@@ -12,7 +12,7 @@ class MainController extends ResourceController
 {
     public function index()
     {
-        // Your index method logic
+       return $this->respond(['hello'=>'world']);
     }
 
     public function save()

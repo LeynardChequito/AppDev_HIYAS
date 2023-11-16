@@ -1,0 +1,1429 @@
+ERROR - 2023-11-16 00:00:32 --> Error in SignupController: Attempt to read property "firstname" on null
+ERROR - 2023-11-16 00:00:38 --> Error in SignupController: Attempt to read property "firstname" on null
+ERROR - 2023-11-16 00:01:51 --> Error in SignupController: Attempt to read property "firstname" on null
+CRITICAL - 2023-11-16 00:18:10 --> Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+in APPPATH\Controllers\LoginController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUserData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+DEBUG - 2023-11-16 00:20:04 --> Received token: 
+DEBUG - 2023-11-16 00:20:23 --> Received token: 
+CRITICAL - 2023-11-16 01:13:09 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:24:48 --> Error in SignupController: Attempt to read property "firstname" on null
+CRITICAL - 2023-11-16 01:25:17 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 01:25:39 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:29:11 --> Error in SignupController: Attempt to read property "firstname" on null
+WARNING - 2023-11-16 01:29:52 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:29:52 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:29:52 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:30:03 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:30:03 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:30:03 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:30:06 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:30:06 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:30:06 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:30:41 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:30:41 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:30:41 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:31:31 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:31:31 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:31:31 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:32:23 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:32:23 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:32:23 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:32:24 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 55.
+ 1 APPPATH\Controllers\SignupController.php(55): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:32:24 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:32:24 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(64): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:33:23 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 50.
+ 1 APPPATH\Controllers\SignupController.php(50): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:33:23 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:33:23 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:34:00 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 50.
+ 1 APPPATH\Controllers\SignupController.php(50): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:34:00 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:34:00 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:35:45 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 50.
+ 1 APPPATH\Controllers\SignupController.php(50): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:35:45 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:35:45 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:35:56 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 50.
+ 1 APPPATH\Controllers\SignupController.php(50): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:35:56 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:35:56 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:36:26 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 50.
+ 1 APPPATH\Controllers\SignupController.php(50): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:36:26 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:36:26 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-16 01:36:36 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\SignupController.php on line 50.
+ 1 APPPATH\Controllers\SignupController.php(50): password_hash(null, '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 01:36:36 --> mysqli_sql_exception: Column 'firstname' cannot be null in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SignupController->register()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-16 01:36:36 --> Column 'firstname' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `account` (`firstname`, `lastname`, `mobile_or_email`, `password`, `birthday`, `gender`, `barangay`, `user_role`) VALUES (:firstname:, :lastname:, :mobile_or_email:, :password:, :birthday:, :gender:, :barangay:, :user_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(59): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 01:44:03 --> Undefined array key 1
+in APPPATH\Controllers\LoginController.php on line 66.
+ 1 APPPATH\Controllers\LoginController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getLoggedInUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 01:46:14 --> Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getLoggedInUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:22:49 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:22:50 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:26:43 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:26:44 --> Attempt to read property "mobile_or_email" on null
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mobile_or_email" on null', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:42:03 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:43:13 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:46:28 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:46:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:48:18 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:48:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:48:19 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:48:19 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:48:20 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:48:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:48:34 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:48:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:49:28 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:49:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:49:35 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:49:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:49:40 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:49:40 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:49:44 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:49:44 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(70): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:50:06 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:50:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:50:23 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:51:51 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q"', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:51:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer "eyJ0eXA...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:52:11 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q"', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:52:11 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:52:20 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:52:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:54:20 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:54:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 03:55:38 --> Firebase\JWT\JWT::decode(): Argument #3 ($headers) cannot be passed by reference
+in APPPATH\Controllers\LoginController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:59:37 --> Unexpected control character found
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 523.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+ 2 VENDORPATH\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('æ«z·²\'G—#¢$¥uB"Â&Ær#¢$…3#Sb\'')
+ 3 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 03:59:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\laragon\www\CIbackend\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon\www\CIbackend\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon\www\CIbackend\system\Debug\ExceptionHandler.php(78): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon\www\CIbackend\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(DomainException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(DomainException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+DomainException
+Unexpected control character found
+#0 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(368): Firebase\JWT\JWT::handleJsonError(3)
+#1 C:\laragon\www\CIbackend\vendor\firebase\php-jwt\src\JWT.php(113): Firebase\JWT\JWT::jsonDecode('\x05\xE6\xABz\xB7\xB2'G\x97\x02#\xA2$\xA5u...')
+#2 C:\laragon\www\CIbackend\app\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('Bearer eyJ0eXAi...', Object(Firebase\JWT\Key))
+#3 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+#4 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CIbackend\public\index.php(88): CodeIgniter\CodeIgniter->run()
+#7 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 04:01:37 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:01:42 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDU4NTMsImV4cCI6MTcwMDEwOTQ1MywiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.syOf4aQYT9c6HP4thcg_3DpuiT4H3jYHzvhyc_Vn49Q', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:06 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczMDgsImV4cCI6MTcwMDExMDkwOCwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.lIHbDi70z1AQZd0w-jzB7_ewAD-fVGFvzUbwOmvNjSk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:15 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczMDgsImV4cCI6MTcwMDExMDkwOCwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.lIHbDi70z1AQZd0w-jzB7_ewAD-fVGFvzUbwOmvNjSk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:53 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczNDYsImV4cCI6MTcwMDExMDk0NiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.z1v2sVEwpD-48IWsFs3W-3cBCcmReFtfsI6keij0jjk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:55 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczNDYsImV4cCI6MTcwMDExMDk0NiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.z1v2sVEwpD-48IWsFs3W-3cBCcmReFtfsI6keij0jjk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:03:30 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczNDYsImV4cCI6MTcwMDExMDk0NiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.z1v2sVEwpD-48IWsFs3W-3cBCcmReFtfsI6keij0jjk"', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:03:41 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczNDYsImV4cCI6MTcwMDExMDk0NiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.z1v2sVEwpD-48IWsFs3W-3cBCcmReFtfsI6keij0jjk"', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:03:47 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczNDYsImV4cCI6MTcwMDExMDk0NiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.z1v2sVEwpD-48IWsFs3W-3cBCcmReFtfsI6keij0jjk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:06:18 --> Incorrect key for this algorithm
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 143.
+ 1 APPPATH\Controllers\LoginController.php(71): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMDczNDYsImV4cCI6MTcwMDExMDk0NiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.z1v2sVEwpD-48IWsFs3W-3cBCcmReFtfsI6keij0jjk', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:07:47 --> Undefined property: stdClass::$data
+in APPPATH\Controllers\LoginController.php on line 72.
+ 1 APPPATH\Controllers\LoginController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$data', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:12:07 --> Undefined property: stdClass::$user
+in APPPATH\Controllers\LoginController.php on line 74.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:13:48 --> Undefined property: stdClass::$mobile_or_email
+in APPPATH\Controllers\LoginController.php on line 74.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$mobile_or_email', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\LoginController.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:18:47 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:18:53 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:37:47 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:38:30 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:38:35 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:39:02 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 05:38:30 --> Signature verification failed
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 150.
+ 1 APPPATH\Controllers\LoginController.php(73): Firebase\JWT\JWT::decode('"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMTMwOTIsImV4cCI6MTcwMDExNjY5MiwiZW1haWwiOiJqZG1hbGFsdWFuMkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJKYW4gRHl6ZXMifQ.KRIm6Z4ia9RohS1RN0eHdcIGq_X4qZMtS_cXHejuOzM', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 05:43:00 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 05:43:10 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 05:43:41 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 05:43:52 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 05:58:51 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 06:06:13 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 06:22:43 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:25:22 --> Expired token
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 176.
+ 1 APPPATH\Controllers\LoginController.php(73): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDAxMTMxNDcsImV4cCI6MTcwMDExNjc0NywiZW1haWwiOiJjaGl3aXoxMDIyQGdtYWlsLmNvbSIsImZpcnN0bmFtZSI6IkphbiBEeXplIn0.zRrmb380qLYYbahMqQFDTzVizx9H0uTz_JdWjjdaYSo', Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:45:49 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:45:52 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:46:14 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:40 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Controllers\ChatController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Controllers\\ChatController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ChatController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ChatController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ChatController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:41 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Controllers\ChatController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\CIbackend\\app\\Controllers\\ChatController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ChatController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ChatController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ChatController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:45 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:46 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:50 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:51 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:55 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:55:56 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:00 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:01 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:05 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:06 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:10 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:11 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:15 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:16 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:20 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:21 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:25 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:26 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:30 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:31 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:35 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:36 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:40 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:41 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:45 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:46 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:49 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 09:56:54 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\ChatController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ChatController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:16:45 --> Call to a member function getValue() on null
+in APPPATH\Controllers\ChatController.php on line 92.
+ 1 APPPATH\Controllers\ChatController.php(63): App\Controllers\ChatController->getUserIdFromToken()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->sendMessage()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:17:14 --> Call to a member function getValue() on null
+in APPPATH\Controllers\ChatController.php on line 92.
+ 1 APPPATH\Controllers\ChatController.php(63): App\Controllers\ChatController->getUserIdFromToken()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->sendMessage()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:26:05 --> Call to a member function getValue() on null
+in APPPATH\Controllers\ChatController.php on line 92.
+ 1 APPPATH\Controllers\ChatController.php(63): App\Controllers\ChatController->getUserIdFromToken()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->sendMessage()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(88): CodeIgniter\CodeIgniter->run()
