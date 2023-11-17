@@ -8,6 +8,7 @@ import ManageAnnouncementsView from "../views/Manage/ManageAnnouncementsView.vue
 import Profile from "../components/Profile.vue";
 import IndividualStudent from "../components/Student/IndividualStudent.vue";
 import EventsCalendar from "../views/EventsCalendarView.vue";
+import ManageAttendanceView from "../views/Manage/ManageAttendanceView.vue";
 
 import ChatView from "../views/ChatView.vue";
 import authService from '../JWT/authService';
@@ -81,6 +82,13 @@ const routes = [
     path: "/manage/announcements",
     name: "manageAnnouncements",
     component: ManageAnnouncementsView,
+    meta: { requiresAuth: true },
+
+  },
+  {
+    path: "/manage/attendance",
+    name: "manageAttendance",
+    component: ManageAttendanceView,
     meta: { requiresAuth: true },
 
   },

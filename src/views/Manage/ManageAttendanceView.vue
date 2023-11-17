@@ -1,13 +1,13 @@
 <template>
-    <Events/>
+    <Attendance />
     </template>
     
     <script>
-    import Events from '@/components/Events.vue'
+    import Attendance from '@/components/Attendance.vue'
     export default {
-        name: 'events',
+        name: 'attendance',
         components: {
-            Events,
+            Attendance,
         }
     }
     </script>
