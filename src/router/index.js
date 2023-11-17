@@ -4,19 +4,22 @@ import HomeView from "../views/HomeView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import Experiment from "../views/Experiment.vue";
 import ManageView from "../views/ManageView.vue";
-import ReportsView from "../views/ReportsView.vue";
-import CoachesView from "../views/CoachesView.vue";
-import EventsView from "../views/EventsView.vue";
-import StudentsView from "../views/StudentsView.vue";
-import AnnouncementsView from "../views/AnnouncementsView.vue";
+import ManageAnnouncementsView from "../views/Manage/ManageAnnouncementsView.vue";
 import Profile from "../components/Profile.vue";
-import CoachDash from "../components/CoachDash.vue";
 import IndividualStudent from "../components/Student/IndividualStudent.vue";
-import FinanceView from "../views/FinanceView.vue";
 import EventsCalendar from "../views/EventsCalendarView.vue";
 
 import ChatView from "../views/ChatView.vue";
 import authService from '../JWT/authService';
+
+//Reports-----------------------------------------------------------------------
+import ReportsView from "../views/ReportsView.vue";
+import ReportsCoachesView from "../views/Reports/ReportsCoachesView.vue";
+import ReportsEventsView from "../views/Reports/ReportsEventsView.vue";
+import ReportsStudentsView from "../views/Reports/ReportsStudentsView.vue";
+import ReportsFinanceView from "../views/Reports/ReportsFinanceView.vue";
+
+//Reports-----------------------------------------------------------------------
 
 
 const routes = [
@@ -54,30 +57,30 @@ const routes = [
 
   },
   {
-    path: "/coaches",
-    name: "coaches",
-    component: CoachesView,
+    path: "/reports/coaches",
+    name: "reportsCoaches",
+    component: ReportsCoachesView,
     meta: { requiresAuth: true },
 
   },
   {
-    path: "/events",
-    name: "events",
-    component: EventsView,
+    path: "/reports/events",
+    name: "reportsEvents",
+    component: ReportsEventsView,
     meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/students",
-    name: "students",
-    component: StudentsView,
+    name: "reportsStudents",
+    component: ReportsStudentsView,
     meta: { requiresAuth: true },
 
   },
   {
-    path: "/announcements",
-    name: "announcements",
-    component: AnnouncementsView,
+    path: "/manage/announcements",
+    name: "manageAnnouncements",
+    component: ManageAnnouncementsView,
     meta: { requiresAuth: true },
 
   },
@@ -89,23 +92,15 @@ const routes = [
 
   },
   {
-    path: "/coachdash",
-    name: "coachdash",
-    component: CoachDash,
-    meta: { requiresAuth: true },
-
-  },
-  {
     path: "/reports/students/:id",
-    // name: "coachdash",
     component: IndividualStudent,
     meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/finance",
-    name: "finance",
-    component: FinanceView,
+    name: "reportsFinance",
+    component: ReportsFinanceView,
     meta: { requiresAuth: true },
 
   },

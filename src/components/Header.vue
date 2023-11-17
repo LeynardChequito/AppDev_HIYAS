@@ -1,12 +1,14 @@
 <template>
   <q-header fixed reveal class="bg-white text-black" height-hint="98" v-show="!$q.screen.lt.md">
     <q-toolbar>
-      <div class="row items-start col-12 col-md-5 self-start q-ml-md">
+      <div class="row items-start col-12 col-md-3 self-start q-ml-md one">
         <q-avatar class="logo q-pt-sm">
-          <img src="@/assets/images/hiyas-logo-wt-bg.jpg" alt="Hiyas Logo" class="logo" @click="logoClicked" style="cursor: pointer;" />
+          <img src="@/assets/images/hiyas-logo-wt-bg.jpg" alt="Hiyas Logo" class="logo" @click="logoClicked"
+            style="cursor: pointer;" />
         </q-avatar>
 
-        <q-input rounded dark dense standout v-model="text" input-class="text-right" class="q-pt-sm q-ml-md q-mr-sm" bg-color="grey-3">
+        <q-input rounded dark dense standout v-model="text" input-class="text-right" class="q-pt-sm q-ml-md q-mr-sm"
+          bg-color="grey-3">
           <template v-slot:append>
             <q-icon v-if="text === ''" name="search" color="black" />
             <q-icon v-else name="clear" class="cursor-pointer" @click="text = ''" color="black" />
@@ -14,14 +16,15 @@
         </q-input>
       </div>
 
-      <div class="row col-12 col-md-7 justify-between self-center q-pt-sm">
-        <q-tabs align="left" class="" inline-label>
-          <q-route-tab to="/home" icon="home" label="Home" />
-          <q-route-tab to="/manage" icon="tune" label="Management" />
-          <q-route-tab to="/reports" icon="analytics" label="Reports And Analytics" />
-        </q-tabs>
-
-        <div class="row justify-end items-start four self-center">
+      <div class="row col-12 col-md-9 justify-between self-center q-pt-sm">
+        <div class="row col-8 justify-left hello">
+          <q-tabs align="left" class="" inline-label>
+            <q-route-tab to="/home" icon="home" label="Home" />
+            <q-route-tab to="/manage" icon="tune" label="Management" />
+            <q-route-tab to="/reports" icon="analytics" label="Reports And Analytics" />
+          </q-tabs>
+        </div>
+        <div class="row justify-end items-start four self-center col-4">
           <q-btn dense color="" round class="q-mr-md" @click="widgetsClicked">
             <q-icon name="widgets" style="color: black;" />
           </q-btn>
@@ -37,7 +40,8 @@
     <q-toolbar class="row col-12">
       <div class="row items-start col-sm-2 self-start">
         <q-avatar class="logo q-pt-sm">
-          <img src="@/assets/images/hiyas-logo-wt-bg.jpg" alt="Hiyas Logo" class="logo" @click="logoClicked" style="cursor: pointer;" />
+          <img src="@/assets/images/hiyas-logo-wt-bg.jpg" alt="Hiyas Logo" class="logo" @click="logoClicked"
+            style="cursor: pointer;" />
         </q-avatar>
       </div>
       <q-space></q-space>
@@ -66,7 +70,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router';
 
 export default {
-  components: { Notifications, Chats, Account},
+  components: { Notifications, Chats, Account },
   setup() {
     const text = ref('');
     const logoClicked = () => {
@@ -99,4 +103,5 @@ export default {
 .q-toolbar {
   border-bottom: 1px solid black;
 }
+
 </style>

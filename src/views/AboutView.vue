@@ -1,9 +1,7 @@
 <template>
-  
+  asdsada
 </template>
 
 <script>
 
 </script>
-
-<style></style>
