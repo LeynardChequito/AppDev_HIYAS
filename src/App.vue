@@ -6,8 +6,8 @@
 
     <q-page-container class="custom-background">
       <router-view />
+    <NewDrawer/>
     </q-page-container>
-
 
     <Footer />
   </q-layout>
@@ -17,12 +17,14 @@
 import Header from '@/components/Header.vue'
 import Drawer from '@/components/Drawer.vue'
 import Footer from '@/components/Footer.vue'
+import NewDrawer from '@/components/NewDrawer.vue'
 
 export default {
   components: {
     Header,
     Drawer,
-    Footer
+    Footer,
+    NewDrawer
   },
 }
 </script>

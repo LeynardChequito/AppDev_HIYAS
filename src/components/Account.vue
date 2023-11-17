@@ -47,8 +47,6 @@
                             </q-item-section>
                         </q-item>
 
-
-
                     </q-list>
                 </div>
             </q-card>
@@ -58,6 +56,7 @@
 
 <script>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import axios from 'axios'; // Import Axios for making HTTP requests
 import router from '@/router';
 
 export default {
@@ -85,16 +84,36 @@ export default {
             clicked.value = false;
         };
 
-        const logout = () => {
-            // Clear the authentication token from localStorage
-            localStorage.removeItem('token');
+        const logout = async () => {
+            try {
+                // Retrieve the token from localStorage
+                const token = localStorage.getItem('token');
 
-            // Emit a global event to notify other components about the logout
-            window.dispatchEvent(new Event('logout'));
-            router.push('/login');
+                if (!token) {
+                    console.error('Token not found in localStorage');
+                    return;
+                }
 
-            // Close the notification card
-            closeNotificationCard();
+                // Make an API call to your backend's logout endpoint with the token in the headers
+                await axios.post('/logout', {}, {
+                    headers: {
+                        Authorization: `${token}`,
+                    },
+                });
+
+                // Clear the authentication token from localStorage
+                localStorage.removeItem('token');
+
+                // Emit a global event to notify other components about the logout
+                window.dispatchEvent(new Event('logout'));
+                router.push('/login');
+
+                // Close the notification card
+                closeNotificationCard();
+            } catch (error) {
+                console.error('Error during logout:', error);
+                // Handle the error as needed
+            }
         };
 
 
@@ -117,13 +136,12 @@ export default {
             accountClicked,
             buttonColor,
             handleGlobalClick,
-            logout, // Expose the logout method to the template
+            logout,
         };
     },
 };
 </script>
 
-  
 <style lang="sass" scoped>
 .my-card
     width: 350px
@@ -146,7 +164,3 @@ export default {
 .hays .icon
     color: black
 </style>
-  
-
-
-  

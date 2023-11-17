@@ -47,7 +47,7 @@ const routes = [
     path: "/manage",
     name: "manage",
     component: ManageView,
-    meta: { requiresAuth: true },
+    // meta: { requiresAuth: true },
   },
   {
     path: "/reports",
