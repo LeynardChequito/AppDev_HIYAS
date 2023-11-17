@@ -6,6 +6,10 @@ use App\Controllers\BaseController;
 use App\Models\AccountModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\RESTful\ResourceController;
+use \CodeIgniter\Config\Services;
+use Firebase\JWT\ExpiredException;
+use Firebase\JWT\BeforeValidException;
+use Firebase\JWT\SignatureInvalidException;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\KEY;
@@ -88,5 +92,69 @@ class LoginController extends ResourceController
         } catch (\Exception $e) {
             return $this->failUnauthorized('Invalid token');
         }
+    }
+
+
+    public function logout()
+    {
+        // Retrieve the token from the request headers
+        $request = service('request');
+        $headers = $request->getHeader('authorization');
+        $token = $headers->getValue();
+
+        // Check if the token exists
+        if ($token) {
+            try {
+                // Attempt to decode the token to check if it's valid
+                $this->validateToken($token);
+
+                // Invalidate the token on the server side
+                $this->addToTokenBlacklist($token);
+
+                // Clear the token on the client side
+                $this->clearTokenCookie();
+
+                // Respond with a success message
+                return $this->respond(['message' => 'Logout Successful'], 200);
+            } catch (ExpiredException $e) {
+                return $this->failUnauthorized('Logout Failed: Token has expired');
+            } catch (BeforeValidException $e) {
+                return $this->failUnauthorized('Logout Failed: Token is not yet valid');
+            } catch (SignatureInvalidException $e) {
+                return $this->failUnauthorized('Logout Failed: Invalid token signature');
+            } catch (\Exception $e) {
+                return $this->failUnauthorized('Logout Failed: Invalid token');
+            }
+        } else {
+            // If no token is present, respond with a success message
+            return $this->respond(['message' => 'Logout Successful (No Token Present)'], 200);
+        }
+    }
+
+
+    private function validateToken($token)
+    {
+        // Attempt to decode the token
+        $key = getenv('JWT_SECRET');
+        JWT::decode($token, new KEY($key, 'HS256'));
+    }
+
+    private function addToTokenBlacklist($token)
+    {
+        // Store the invalidated token in a persistent storage, like a database
+        // This example uses a simple array; in a production environment, consider using a more robust solution
+        $blacklist = cache('token_blacklist') ?? [];
+        $blacklist[] = $token;
+
+        // Save the updated blacklist
+        cache()->save('token_blacklist', $blacklist, 60 * 60 * 24); // Adjust the expiration time as needed
+    }
+
+    private function clearTokenCookie()
+    {
+        // For example, if using JWT with HttpOnly cookies, clear the cookie
+        setcookie('token', '', time() - 3600, '/'); // Expire the cookie
+
+        // Note: The exact parameters of setcookie depend on your application's setup
     }
 }

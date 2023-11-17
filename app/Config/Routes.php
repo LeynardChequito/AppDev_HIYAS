@@ -13,6 +13,7 @@ $routes->get('/getstudentdata/(:num)', 'StudentController::getDataById/$1');
 $routes->post('/register', 'SignupController::register');
 $routes->post('/login', 'LoginController::login');
 $routes->get('/getUser', 'LoginController::getUser');
+$routes->post('logout', 'LoginController::logout');
 // $routes->match(['get', 'post'], '/login', 'LoginController::login');
 
 $routes->post('/save', 'MainController::save');

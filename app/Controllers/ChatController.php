@@ -65,12 +65,14 @@ class ChatController extends ResourceController
             $data = $this->request->getJSON(true);
 
             // Check if "receiver" key exists in the $data array
-            // if (!array_key_exists('receiver', $data)) {
-            //     return $this->failValidationError('Receiver is required.');
-            // }
+            if (!isset($data['receiver'])) {
+                return $this->failValidationError('Receiver is required.');
+            }
 
             // Get the currently logged-in user (assuming you have authentication implemented)
-            $loggedUserId = $this->getUserIdFromToken(); // Replace this with your actual method to get the user ID from the token
+            $loggedUserId = $this->getUserIdFromToken();
+
+            // Validate the data if necessary
 
             // Fetch sender name from the account table
             $sender = $this->accountModel->find($loggedUserId);
@@ -78,7 +80,9 @@ class ChatController extends ResourceController
             // Fetch receiver name from the account table
             $receiver = $this->accountModel->find($data['receiver']);
 
-            // Validate the data if necessary
+            if (!$sender || !$receiver) {
+                return $this->failValidationError('Invalid sender or receiver');
+            }
 
             // Set sender and receiver information in the $data array
             $data['sender'] = $sender['id'];
@@ -92,6 +96,7 @@ class ChatController extends ResourceController
             return $this->failServerError('Error sending message');
         }
     }
+
 
     // Add the following method to your controller to get the user ID from the token
     private function getUserIdFromToken()

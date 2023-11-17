@@ -1,0 +1,656 @@
+CRITICAL - 2023-11-17 13:56:39 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:03:24 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:12:33 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:14:06 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:15:51 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:17:28 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:56:41 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:56:42 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:56:42 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:56:44 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:56:44 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:57:00 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:57:00 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 14:57:04 --> Call to a member function getValue() on null
+in APPPATH\Controllers\LoginController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:00:27 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:00:36 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:00:37 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:03:26 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:03:30 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:05:22 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:05:29 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:05:33 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:06:20 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:06:23 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:06:43 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:08:32 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:09:00 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:10:26 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:14 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:30 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:32 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:35 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:40 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:41 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:12:50 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:13:33 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:13:34 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:13:35 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:14:02 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:15:01 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:15:05 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:15:15 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:15:36 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:15:59 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:16:04 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:16:04 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:16:07 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:17:07 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:17:10 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:17:20 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:17:21 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:17:38 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:17:42 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:18:45 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:18:48 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:18:51 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:18:52 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:18:54 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:19:43 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:21:40 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:21:40 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:21:41 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:21:45 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:21:57 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:22:16 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:22:46 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:22:46 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:22:59 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:23:03 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:23:05 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:23:06 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:23:07 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:23:09 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:23:13 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:26:53 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:27:29 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:27:32 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:28:53 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:34:16 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:34:41 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:34:41 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:34:44 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:36:17 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:36:17 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\LoginController.php(79): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->getUser()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:37:18 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 15:38:51 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(111): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(35): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getMessages()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
