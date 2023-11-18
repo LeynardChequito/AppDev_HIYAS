@@ -1,57 +1,88 @@
 <template>
-    <div class="q-pa-md">
-      <q-btn color="primary" label="Add New" @click="addNew"></q-btn>
-  
-      <q-table class="my-sticky-header-last-column-table" flat bordered :rows="info" :columns="columns" row-key="id">
-        <template v-slot:body="props">
-          <q-tr :props="props">
-            <q-td v-for="col in columns" :key="col.name" :props="props">
-              {{ props.row[col.name] }}
-            </q-td>
-            <q-td>
-              <q-btn icon="visibility" round flat @click="handleRowClick(props.row)"></q-btn>
-              <q-btn icon="edit" round flat @click="editRow(props.row)"></q-btn>
-              <q-btn icon="delete" round flat @click="deleteRow(props.row)"></q-btn>
-            </q-td>
-          </q-tr>
-        </template>
-      </q-table>
-  
-      <q-dialog v-model="editModal" persistent>
-        <q-card>
-          <q-card-section>
-            <q-form @submit="saveChanges" class="q-gutter-md">
-              <q-input v-model="editedData.firstname" label="First Name"></q-input>
-              <q-input v-model="editedData.lastname" label="Last Name"></q-input>
-              <q-input v-model="editedData.email_or_phone" label="Email_or_Phone"></q-input>
-              <q-input v-model="editedData.password" label="Password"></q-input>
-  
-              <div class="q-mt-md">
-                <q-btn type="submit" color="primary" label="Save Changes"></q-btn>
-                <q-btn color="red" label="Cancel" @click="cancelEdit"></q-btn>
-              </div>
-            </q-form>
-          </q-card-section>
-        </q-card>
-      </q-dialog>
-  
-      <q-dialog v-model="addModal" persistent>
-        <q-card>
-          <q-card-section>
-            <q-form @submit="addNewData" class="q-gutter-md">
-                <q-input v-model="editedData.firstname" label="First Name"></q-input>
-              <q-input v-model="editedData.lastname" label="Last Name"></q-input>
-              <q-input v-model="editedData.mobile_or_email" label="mobile_or_email"></q-input>
-              <q-input v-model="editedData.password" label="Password"></q-input>
+     <div class="q-pa-md">
+    <q-btn color="primary" label="Add New" @click="addNew"></q-btn>
 
-              <div class="q-mt-md">
-                <q-btn type="submit" color="primary" label="Add Data"></q-btn>
-                <q-btn color="red" label="Cancel" @click="cancelAdd"></q-btn>
-              </div>
-            </q-form>
-          </q-card-section>
-        </q-card>
-      </q-dialog>
+    <q-table class="my-sticky-header-last-column-table" flat bordered :rows="info" :columns="columns" row-key="id">
+      <template v-slot:body="props">
+        <q-tr :props="props">
+          <q-td v-for="col in columns" :key="col.name" :props="props">
+            {{ props.row[col.name] }}
+          </q-td>
+          <q-td>
+            <q-btn icon="visibility" round flat @click="handleRowClick(props.row)"></q-btn>
+            <q-btn icon="edit" round flat @click="editRow(props.row)"></q-btn>
+            <q-btn icon="delete" round flat @click="deleteRow(props.row)"></q-btn>
+          </q-td>
+        </q-tr>
+      </template>
+    </q-table>
+  
+    <div v-if="editModal" class="modal-overlay">
+      <div class="modal-content">
+    <div class="modal-header">
+      <h2>Edit Data</h2>
+    </div>
+    <div class="modal-body">
+      <form @submit.prevent="saveChanges" class="q-gutter-md">
+        <div class="form-group">
+          <label for="editFirstName">First Name</label>
+          <input v-model="editedData.firstname" id="editFirstName" type="text">
+        </div>
+        <div class="form-group">
+          <label for="editLastName">Last Name</label>
+          <input v-model="editedData.lastname" id="editLastName" type="text">
+        </div>
+        <div class="form-group">
+          <label for="editEmailOrPhone">Email_or_Phone</label>
+          <input v-model="editedData.email_or_phone" id="editEmailOrPhone" type="text">
+        </div>
+        <div class="form-group">
+          <label for="editPassword">Password</label>
+          <input v-model="editedData.password" id="editPassword" type="password">
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-primary">Save Changes</button>
+          <button class="btn-cancel" @click="cancelEdit">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div v-if="addModal" class="modal-overlay">
+      <div class="modal-content">
+    <div class="modal-header">
+      <h2>Add New Data</h2>
+    </div>
+    <div class="modal-body">
+      <form @submit.prevent="addNewData" class="q-gutter-md">
+        <div class="form-group">
+          <label for="addFirstName">First Name</label>
+          <input v-model="editedData.firstname" id="addFirstName" type="text">
+        </div>
+        <div class="form-group">
+          <label for="addLastName">Last Name</label>
+          <input v-model="editedData.lastname" id="addLastName" type="text">
+        </div>
+        <div class="form-group">
+          <label for="addMobileOrEmail">Mobile_or_Email</label>
+          <input v-model="editedData.mobile_or_email" id="addMobileOrEmail" type="text">
+        </div>
+        <div class="form-group">
+          <label for="addPassword">Password</label>
+          <input v-model="editedData.password" id="addPassword" type="password">
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-primary">Add Data</button>
+          <button class="btn-cancel" @click="cancelAdd">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
     </div>
   </template>
   
@@ -162,64 +193,62 @@
   };
   </script>
   <style lang="scss" scoped>
-  .my-sticky-header-last-column-table {
-    /* height or max-height is important */
-    /* specifying max-width so the example can highlight the sticky column on any browser window */
-  }
-
-  td:last-child {
-    /* bg color is important for td; just specify one */
-    background-color: #EEEE;
-  }
-
-  tr th {
-    position: sticky;
-    /* higher than z-index for td below */
-    z-index: 2;
-    /* bg color is important; just specify one */
-    background: #EEEEEE;
-  }
-
-  /* this will be the loading indicator */
-  thead tr:last-child th {
-    /* height of all previous header rows */
-    top: 48px;
-    /* highest z-index */
-    z-index: 3;
-  }
-
-  thead tr:first-child th {
+  /* Table Styling */
+  /*.my-sticky-header-last-column-table {
+    /* Adjust table styles here */
+  
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
     top: 0;
-    z-index: 1;
-  }
-
-  tr:last-child th:last-child {
-    /* highest z-index */
-    z-index: 3;
-  }
-
-  td:last-child {
-    z-index: 1;
-  }
-
-  td:last-child, th:last-child {
-    position: sticky;
+    left: 0;
     right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  /* prevent scrolling behind sticky top row on focus */
-  tbody {
-    /* height of all previous header rows */
-    scroll-margin-top: 48px;
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    /* Adjust modal content styles */
   }
-
-  .q-form {
-    width: 800px; /* Adjust the form width as needed */
-    height: auto;
-    margin: 0 auto;
+  
+  .modal-header {
+    text-align: center;
+    margin-bottom: 15px;
   }
-
-  .q-mt-md {
-    margin-top: 20px; /* Adjust the margin as needed */
+  
+  .modal-header h2 {
+    margin: 0;
   }
-</style>
+  
+  /*.modal-body {
+    /* Adjust modal body styles */
+  
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .button-group {
+    text-align: center;
+  }
+  
+  .btn-primary,
+  .btn-cancel {
+    margin-right: 10px;
+  }
+  
+  /* Additional styles can be added as needed */
+  </style>
