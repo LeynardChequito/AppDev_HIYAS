@@ -37,23 +37,35 @@
           </q-scroll-area>
       
       </q-card>
+
     </div>
-      <div class="bottom-right">
-        <!-- Input Form for New Announcements -->
+
+
+    <div class="add-announcement-panel">
+      <q-card class="my-card">
+        <q-card-section>
+          <div class="text-h3 text-center">New Announcement</div>
+        </q-card-section>
+
+        <q-separator />
+
         <div class="q-pa-md">
-          <form @submit.prevent="addNewAnnouncement">
+          <form @submit.prevent="addNewAnnouncement" class="announcement-form">
             <q-input v-model="newAnnouncement.title" label="Title" outlined />
             <q-input v-model="newAnnouncement.date" label="Date" type="date" outlined />
-            <div style="height: 500;">
-              <q-input v-model="newAnnouncement.description" label="Description" outlined />
+            <q-input v-model="newAnnouncement.description" label="Description" outlined />
+
+            <div class="button-group">
+              <q-btn type="submit" label="Add Announcement" color="primary" />
             </div>
-            
-            <q-btn type="submit" label="Add Announcement" />
           </form>
         </div>
-      </div>
+      </q-card>
     </div>
+  </div>
 </template>
+
+
 
 <script>
 import { ref } from 'vue';
@@ -155,28 +167,48 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .page-container {
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .left-panel {
   flex: 1;
+  margin-right: 20px;
+  max-width: 600px;
 }
 
 .right-panel {
   flex: 1;
+  max-width: 400px;
+}
+
+.my-card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.filter-section {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-.top-right {
-  flex: 1;
+.announcement-form {
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-right {
-  flex: 1;
-  height: 350px; /* Adjust the height as needed */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 </style>
