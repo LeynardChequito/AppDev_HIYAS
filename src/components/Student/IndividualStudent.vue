@@ -1,91 +1,147 @@
 <template>
-    <div class="q-pa-md row justify-center">
-        <!-- <div class="col-md-2 items-center text-center hey">
-            <q-img width="50" height="50" scale-down src="@/assets/images/coach1.png">
-            </q-img>
-
-        </div> -->
-        <div class="col-md-10 heyq">
-            {{ info.firstname }}
-            <br>
-            {{ info.lastname }}
-            <br>
-            {{ info.age }}
-            <br>
-            {{ info.birthday }}
-            <br>
-            {{ info.gender }}
-            <br>
-            {{ info.address }}
-        </div>
-
-
-
-
-
-    </div>
-</template>
+    <div>
+      <!-- Image Section -->
+      <div class="q-pa-md q-gutter-sm text-left">
+        <q-img
+          src="https://picsum.photos/500/300"
+          loading="lazy"
+          spinner-color="white"
+          height="140px"
+          style="max-width: 150px; border-radius: 50%"
+        />
+      </div>
   
-<script>
-import axios from 'axios';
-
-// Define the columns outside the data method
-const columns = [
-    { name: 'id_number', label: 'Id Number', align: 'left', field: 'id_number' },
-    { name: 'lastname', label: 'Lastname', align: 'left', field: 'lastname' },
-    { name: 'firstname', label: 'Firsname', align: 'left', field: 'firsname' },
-    { name: 'age', label: 'Age', align: 'left', field: 'age' },
-    { name: 'birthday', label: 'Birthday', align: 'left', field: 'birthday' },
-    { name: 'gender', label: 'Gender', align: 'left', field: 'gender' },
-    { name: 'address', label: 'Address', align: 'left', field: 'address' },
-    { name: 'contact_info', label: 'Contact Info', align: 'left', field: 'contact_info' },
-    { name: 'guardian/parents', label: 'Parent/Guardian', align: 'left', field: 'guardian/parents' },
-    { name: 'coach', label: 'Coach', align: 'left', field: 'coach' },
-    { name: 'section', label: 'Section', align: 'left', field: 'section' },
-    { name: 'sponsor', label: 'Sponsor', align: 'left', field: 'sponsor' },
-    { name: 'staff', label: 'Staff', align: 'left', field: 'staff' },
-    // Add more columns as needed
-];
-
-export default {
+      <!-- Table Section -->
+      <div class="q-pa-md">
+        <q-table
+          class="my-sticky-dynamic"
+          flat bordered
+          title="Treats"
+          :rows="rows"
+          :columns="columns"
+          row-key="index"
+          virtual-scroll
+          :virtual-scroll-item-size="48"
+          :virtual-scroll-sticky-size-start="48"
+          :pagination="pagination"
+          :rows-per-page-options="[0]"
+          @virtual-scroll="onScroll"
+        />
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  import { ref, computed, nextTick } from 'vue';
+  import axios from 'axios';
+  
+  const columns = [
+    { label: 'Id Number', align: 'left', field: 'id_number' },
+    { label: 'Lastname', align: 'left', field: 'lastname' },
+    { label: 'Firstname', align: 'left', field: 'firstname' },
+    { label: 'Age', align: 'left', field: 'age' },
+    { label: 'Birthday', align: 'left', field: 'birthday' },
+    { label: 'Gender', align: 'left', field: 'gender' },
+    { label: 'Address', align: 'left', field: 'address' },
+    { label: 'Contact Info', align: 'left', field: 'contact_info' },
+    { label: 'Parent/Guardian', align: 'left', field: 'guardian/parents' },
+    { label: 'Coach', align: 'left', field: 'coach' },
+    { label: 'Section', align: 'left', field: 'section' },
+    { label: 'Sponsor', align: 'left', field: 'sponsor' },
+    { label: 'Staff', align: 'left', field: 'staff' },
+    // ... (other fields)
+  ];
+  
+  export default {
     data() {
-        return {
-            info: [],
-        };
+      return {
+        info: [],
+        loading: false,
+        rows: [], // Temporary data for testing
+        pagination: {},
+      };
     },
     created() {
-
-        this.getInfo();
+      this.loadTemporaryData();
     },
     methods: {
-        async getInfo() {
-            try {
-                // Get the id parameter from the URL
-                const studentId = parseInt(this.$route.params.id);
-
-                // Fetch data based on the id parameter
-                const response = await axios.get(`getstudentdata/${studentId}`);
-                this.info = response.data;
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        },
+      async loadTemporaryData() {
+        const temporaryData = [
+          { id_number: '1', lastname: 'Doe', firstname: 'John', age: 25, /* ... other fields ... */ },
+          { id_number: '2', lastname: 'Smith', firstname: 'Jane', age: 22, /* ... other fields ... */ },
+          // Add more temporary data as needed
+        ];
+  
+        this.rows = temporaryData;
+      },
+      onScroll({ to, ref }) {
+        const lastIndex = this.rows.length - 1;
+  
+        if (!this.loading && to === lastIndex) {
+          this.loading = true;
+  
+          setTimeout(() => {
+            this.nextPage++;
+            nextTick(() => {
+              ref.refresh();
+              this.loading = false;
+            });
+          }, 500);
+        }
+      },
     },
     computed: {
-        // No need for filteredInfo computed property since getInfo fetches data based on the id
-        // Bind the columns to the component
-        columns() {
-            return columns;
-        },
+      columns() {
+        return columns;
+      },
     },
-};
-</script>
+  };
+  </script>
   
-<style scoped>
-.hey{
-    background-color:green;
-}
-.heyq{
-    /* background-color:blue; */
-}
-</style>
+  <style scoped>
+  .my-sticky-dynamic {
+    height: 410px;
+  
+    .q-table__top,
+    .q-table__bottom,
+    thead tr:first-child th {
+      background-color: #00b4ff;
+    }
+  
+    thead tr th {
+      position: sticky;
+      z-index: 1;
+    }
+    thead tr:last-child th {
+      top: 48px;
+    }
+  
+    thead tr:first-child th {
+      top: 0;
+    }
+    tbody {
+      scroll-margin-top: 48px;
+    }
+  
+    tbody tr {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  
+    tbody tr td {
+      flex: 1;
+      word-wrap: break-word;
+    }
+  }
+  
+  .hey {
+    background-color: green;
+  }
+  
+  .heyq {
+  }
+  </style>
+  
