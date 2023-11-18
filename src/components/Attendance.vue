@@ -1,7 +1,7 @@
 <template>
     <q-card>
       <div class="q-pa-md">
-        <div>
+        <div class="filters">
           <label for="roleFilter">Filter by Role:</label>
           <select id="roleFilter" v-model="selectedRole">
             <option value="">All Roles</option>
@@ -48,82 +48,24 @@
   
       // Temporary data, replace this with your actual data
       const data = [
-  { 
-    id: 1, 
-    firstname: 'Son', 
-    lastname: 'Goku', 
-    section: 'mekus mekus', 
-    time_in: '08:01 AM', 
-    time_out: '05:00 PM', 
-    event_name: 'Dragon Ball Z', 
-    role: 'students' 
-  },
-  { 
-    id: 2, 
-    firstname: 'Jane', 
-    lastname: 'Doe', 
-    section: 'B', 
-    time_in: '10:00 AM', 
-    time_out: '04:00 PM', 
-    event_name: 'Event 2', 
-    role: 'students' 
-  },
-  // Add more student entries
-
-  { 
-    id: 101, 
-    firstname: 'Alice', 
-    lastname: 'Smith', 
-    position: 'Manager', 
-    time_in: '08:30 AM', 
-    time_out: '05:00 PM', 
-    event_name: 'Meeting 1', 
-    role: 'staff' 
-  },
-  { 
-    id: 102, 
-    firstname: 'Bob', 
-    lastname: 'Johnson', 
-    position: 'Developer', 
-    time_in: '09:00 AM', 
-    time_out: '06:00 PM', 
-    event_name: 'Meeting 2', 
-    role: 'staff' 
-  },
-  // Add more staff entries
-
-  { 
-    id: 201, 
-    firstname: 'Eve', 
-    lastname: 'Brown', 
-    relationship: 'Parent', 
-    address: '123 Main St', 
-    event_name: 'Session 1', 
-    time_in: '06:00 PM', 
-    time_out: '08:00 PM', 
-    role: 'parents' 
-  },
-  { 
-    id: 202, 
-    firstname: 'Charlie', 
-    lastname: 'Green', 
-    relationship: 'Guardian', 
-    address: '456 Oak St', 
-    event_name: 'Session 2', 
-    time_in: '05:30 PM', 
-    time_out: '07:30 PM', 
-    role: 'parents' 
-  },
-  // Add more parent entries
-]
+        { id: 1, firstname: 'Son', lastname: 'Goku', section: 'mekus mekus', time_in: '08:01 AM', time_out: '05:00 PM', event_name: 'Dragon Ball Z', role: 'students' },
+        { id: 2, firstname: 'Jane', lastname: 'Doe', section: 'B', time_in: '10:00 AM', time_out: '04:00 PM', event_name: 'Event 2', role: 'students' },
+        // Add more student entries
+        { id: 101, firstname: 'Alice', lastname: 'Smith', position: 'Manager', time_in: '08:30 AM', time_out: '05:00 PM', event_name: 'Meeting 1', role: 'staff' },
+        { id: 102, firstname: 'Bob', lastname: 'Johnson', position: 'Developer', time_in: '09:00 AM', time_out: '06:00 PM', event_name: 'Meeting 2', role: 'staff' },
+        // Add more staff entries
+        { id: 201, firstname: 'Eve', lastname: 'Brown', relationship: 'Parent', address: '123 Main St', event_name: 'Session 1', time_in: '06:00 PM', time_out: '08:00 PM', role: 'parents' },
+        { id: 202, firstname: 'Charlie', lastname: 'Green', relationship: 'Guardian', address: '456 Oak St', event_name: 'Session 2', time_in: '05:30 PM', time_out: '07:30 PM', role: 'parents' },
+        // Add more parent entries
+      ];
   
       const sortField = ref(null);
       const sortOrder = ref('asc');
   
       const filteredData = computed(() => {
-        let filtered = data.filter(item => {
+        let filtered = data.filter((item) => {
           const roleFilter = selectedRole.value ? item.role === selectedRole.value : true;
-          const eventFilter = selectedEvent.value ? item.event === selectedEvent.value : true;
+          const eventFilter = selectedEvent.value ? item.event_name === selectedEvent.value : true;
           return roleFilter && eventFilter;
         });
   
@@ -173,7 +115,7 @@
   
       const pagination = { rowsPerPage: 10 };
   
-      const handleSort = field => {
+      const handleSort = (field) => {
         if (sortField.value === field) {
           sortOrder.value = sortOrder.value === 'asc' ? 'desc' : 'asc';
         } else {
@@ -196,7 +138,50 @@
   };
   </script>
   
-  <style lang="sass" scoped>
-  /* Add your styling here if needed */
+  <style lang="scss" scoped>
+  .q-card {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  
+    label {
+      margin-right: 10px;
+    }
+  
+    select {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-right: 20px;
+    }
+  }
+  
+  .q-table {
+    width: 100%;
+  }
+  
+  .q-tr {
+    &:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  .q-td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Customize the appearance of the header */
+  .q-table__header th {
+    background-color: #0870e0;
+    color: #fff;
+  }
+  
+  /* Add more styling as needed */
   </style>
   
