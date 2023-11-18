@@ -6,8 +6,7 @@
     </div>
 </template>
 <script>
-import Table from '@/components/Student/Table.vue'
-
+import Table from '@/components/Student/MSTable.vue'
 
 export default ({
     name: 'LineCharts',
