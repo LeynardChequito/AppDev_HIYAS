@@ -57,84 +57,91 @@ const routes = [
     path: "/reports",
     name: "reports",
     component: ReportsView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/coaches",
     name: "reportsCoaches",
     component: ReportsCoachesView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/events",
     name: "reportsEvents",
     component: ReportsEventsView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/students",
     name: "reportsStudents",
     component: ReportsStudentsView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/manage/announcements",
     name: "manageAnnouncements",
     component: ManageAnnouncementsView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/manage/attendance",
     name: "manageAttendance",
     component: ManageAttendanceView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/manage/students",
     name: "manageStudents",
     component: ManageStudentsView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/profile",
     name: "profile",
     component: Profile,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/students/:id",
     component: IndividualStudent,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/reports/finance",
     name: "reportsFinance",
     component: ReportsFinanceView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/chats/:id",
     name: "chats",
     component: ChatView,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
 
   },
   {
     path: "/EventsCal",
     name: "EventsCal",
     component: EventsCalendar,
-    meta: { requiresAuth: true },
+   // meta: { requiresAuth: true },
   },
+  {
+    path: "/manage/accounts",
+    name: "account",
+    component: MAccount,
+   // meta: { requiresAuth: true },
+
+  }
 ];
 
 const router = createRouter({
