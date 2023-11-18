@@ -117,11 +117,14 @@ class LoginController extends ResourceController
                 // Respond with a success message
                 return $this->respond(['message' => 'Logout Successful'], 200);
             } catch (ExpiredException $e) {
-                return $this->failUnauthorized('Logout Failed: Token has expired');
+                // Automatically log out when the token has expired
+                return $this->respond(['message' => 'Token has expired. Logout Successful'], 200);
             } catch (BeforeValidException $e) {
-                return $this->failUnauthorized('Logout Failed: Token is not yet valid');
+                // Automatically log out when the token is not yet valid
+                return $this->respond(['message' => 'Token is not yet valid. Logout Successful'], 200);
             } catch (SignatureInvalidException $e) {
-                return $this->failUnauthorized('Logout Failed: Invalid token signature');
+                // Automatically log out when the token signature is invalid
+                return $this->respond(['message' => 'Invalid token signature. Logout Successful'], 200);
             } catch (\Exception $e) {
                 return $this->failUnauthorized('Logout Failed: Invalid token');
             }
@@ -130,6 +133,7 @@ class LoginController extends ResourceController
             return $this->respond(['message' => 'Logout Successful (No Token Present)'], 200);
         }
     }
+
 
 
     private function validateToken($token)

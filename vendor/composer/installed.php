@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'codeigniter4/framework',
-        'pretty_version' => 'dev-backend',
-        'version' => 'dev-backend',
-        'reference' => '00863750e39fa2030f9c60427a5adceffffd5992',
+        'pretty_version' => 'dev-backendHiyas',
+        'version' => 'dev-backendHiyas',
+        'reference' => '690dd13c0af8aa6e1c141911134092a46f667e73',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => true,
         ),
         'codeigniter4/framework' => array(
-            'pretty_version' => 'dev-backend',
-            'version' => 'dev-backend',
-            'reference' => '00863750e39fa2030f9c60427a5adceffffd5992',
+            'pretty_version' => 'dev-backendHiyas',
+            'version' => 'dev-backendHiyas',
+            'reference' => '690dd13c0af8aa6e1c141911134092a46f667e73',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -163,6 +163,15 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'nesbot/carbon' => array(
+            'pretty_version' => '2.71.0',
+            'version' => '2.71.0.0',
+            'reference' => '98276233188583f2ff845a0f992a235472d9466a',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nesbot/carbon',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'nexusphp/cs-config' => array(
             'pretty_version' => 'v3.8.0',
             'version' => '3.8.0.0',
@@ -270,6 +279,21 @@
             'install_path' => __DIR__ . '/../psr/cache',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'psr/clock' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => 'e41a24703d4560fd0acb709162f73b8adfc3aa0d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/clock',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'psr/clock-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
         ),
         'psr/container' => array(
             'pretty_version' => '2.0.2',
@@ -470,7 +494,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/event-dispatcher' => array(
             'pretty_version' => 'v6.3.2',
@@ -557,7 +581,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-php80' => array(
             'pretty_version' => 'v1.28.0',
@@ -566,7 +590,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-php80',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-php81' => array(
             'pretty_version' => 'v1.28.0',
@@ -612,6 +636,30 @@
             'install_path' => __DIR__ . '/../symfony/string',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'symfony/translation' => array(
+            'pretty_version' => 'v6.3.7',
+            'version' => '6.3.7.0',
+            'reference' => '30212e7c87dcb79c83f6362b00bde0e0b1213499',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/translation',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/translation-contracts' => array(
+            'pretty_version' => 'v3.4.0',
+            'version' => '3.4.0.0',
+            'reference' => 'dee0c6e5b4c07ce851b462530088e64b255ac9c5',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/translation-contracts',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/translation-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '2.3|3.0',
+            ),
         ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.1',

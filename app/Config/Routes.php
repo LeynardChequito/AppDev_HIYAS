@@ -13,12 +13,13 @@ $routes->get('/getstudentdata/(:num)', 'StudentController::getDataById/$1');
 $routes->post('/register', 'SignupController::register');
 $routes->post('/login', 'LoginController::login');
 $routes->get('/getUser', 'LoginController::getUser');
+$routes->get('getUserMessages/(:num)', 'ChatController::getUserMessages/$1');
+
 $routes->post('logout', 'LoginController::logout');
+$routes->get('getConnectedUsers', 'ChatController::getConnectedUsers');
 // $routes->match(['get', 'post'], '/login', 'LoginController::login');
 
 $routes->post('/save', 'MainController::save');
 $routes->post('/del', 'MainController::del');
 $routes->get('/getMessage', 'ChatController::getMessages');
 $routes->post('/sendMessage', 'ChatController::sendMessage');
-
-

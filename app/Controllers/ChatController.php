@@ -115,4 +115,91 @@ class ChatController extends ResourceController
             return null;
         }
     }
+
+    public function getConnectedUsers()
+    {
+        try {
+            // Get the currently logged-in user ID
+            $loggedUserId = $this->getUserIdFromToken();
+
+            if (!$loggedUserId) {
+                return $this->failUnauthorized('Invalid token or user not logged in.');
+            }
+
+            // Fetch connected users from the database (adjust the logic based on your requirements)
+            $connectedUsers = $this->messageModel
+                ->distinct()
+                ->select('sender, receiver')
+                ->where('sender', $loggedUserId)
+                ->orWhere('receiver', $loggedUserId)
+                ->findAll();
+
+            // Merge sender and receiver IDs, then remove the current user's ID
+            $userIds = array_merge(array_column($connectedUsers, 'sender'), array_column($connectedUsers, 'receiver'));
+            $userIds = array_diff($userIds, [$loggedUserId]);
+
+            // Fetch unique user IDs
+            $uniqueUserIds = array_unique($userIds);
+
+            // Fetch user details from the account table based on unique user IDs
+            $uniqueUsers = $this->accountModel->find($uniqueUserIds);
+
+            // Prepare the response data with the latest message for each user
+            $responseData = [];
+            foreach ($uniqueUsers as $user) {
+                // Get the latest message for the current user as either sender or receiver
+                $latestMessage = $this->messageModel
+                    ->where('receiver', $loggedUserId)
+                    ->where('sender', $user['id'])
+                    ->orWhere('receiver', $user['id'])
+                    ->orderBy('id', 'desc')
+                    ->first();
+
+                $responseData[] = [
+                    'id' => $user['id'],
+                    'firstname' => $user['firstname'],
+                    'mobile_or_email' => $user['mobile_or_email'],
+                    'latest_message' => $latestMessage ? $latestMessage['message'] : null,
+                    'when' => $latestMessage ? $latestMessage['created_at'] : null,
+                ];
+            }
+
+            return $this->respond(['users' => $responseData], 200);
+        } catch (\Exception $e) {
+            return $this->failServerError('Error fetching connected users');
+        }
+    }
+
+
+    // Add this method to your ChatController
+    public function getUserMessages($userId)
+    {
+        try {
+            // Get the currently logged-in user ID
+            $loggedUserId = $this->getUserIdFromToken();
+
+            if (!$loggedUserId) {
+                return $this->failUnauthorized('Invalid token or user not logged in.');
+            }
+
+            // Fetch messages from the database where the user is either sender or receiver
+            $messages = $this->messageModel
+                ->whereIn('sender', [$loggedUserId, $userId])
+                ->whereIn('receiver', [$loggedUserId, $userId])
+                ->orderBy('created_at', 'asc')
+                ->findAll();
+
+            // Fetch sender and receiver names from the account table
+            foreach ($messages as &$message) {
+                $sender = $this->accountModel->find($message['sender']);
+                $receiver = $this->accountModel->find($message['receiver']);
+                $message['sender_name'] = $sender['firstname'];
+                $message['receiver_name'] = $receiver['firstname'];
+            }
+
+            return $this->respond($messages, 200);
+        } catch (\Exception $e) {
+            return $this->failServerError('Error fetching user messages');
+        }
+    }
 }
