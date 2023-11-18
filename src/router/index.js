@@ -24,7 +24,7 @@ import ReportsFinanceView from "../views/Reports/ReportsFinanceView.vue";
 
 import ManageStudentsView from "../views/Manage/ManageStudentsView.vue";
 import ManageAccountsView from "../views/Manage/ManageAccountsView.vue";
-
+import ManageParentsView from "../views/Manage/ManageParentsView.vue";
 
 
 const routes = [
@@ -140,6 +140,13 @@ const routes = [
     path: "/manage/accounts",
     name: "account",
     component: ManageAccountsView,
+   // meta: { requiresAuth: true },
+
+  },
+  {
+    path: "/manage/parents",
+    name: "parents",
+    component: ManageParentsView,
    // meta: { requiresAuth: true },
 
   }
