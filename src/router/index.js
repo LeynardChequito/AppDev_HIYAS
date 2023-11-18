@@ -22,6 +22,9 @@ import ReportsFinanceView from "../views/Reports/ReportsFinanceView.vue";
 
 //Reports-----------------------------------------------------------------------
 
+import ManageStudentsView from "../views/Manage/ManageStudentsView.vue";
+
+
 
 const routes = [
   {
@@ -93,6 +96,13 @@ const routes = [
 
   },
   {
+    path: "/manage/students",
+    name: "manageStudents",
+    component: ManageStudentsView,
+    meta: { requiresAuth: true },
+
+  },
+  {
     path: "/profile",
     name: "profile",
     component: Profile,
@@ -113,7 +123,7 @@ const routes = [
 
   },
   {
-    path: "/chats",
+    path: "/chats/:id",
     name: "chats",
     component: ChatView,
     meta: { requiresAuth: true },

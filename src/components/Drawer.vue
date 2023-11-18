@@ -30,7 +30,7 @@ export default {
       { route: 'announcements', icon: 'campaign', label: 'Announcements' },
       { route: 'staff', icon: 'people', label: 'Staff' },
       { route: 'coaches', icon: 'emoji_people', label: 'Coaches' },
-      { route: 'sponsors', icon: 'handshake', label: 'Sponsors' },
+      // { route: 'sponsors', icon: 'handshake', label: 'Sponsors' },
       { route: 'sections', icon: 'class', label: 'Sections' },
       { route: 'attendance', icon: 'fact_check', label: 'Attendance' },
       { route: 'accounts', icon: 'manage_accounts', label: 'Accounts' },

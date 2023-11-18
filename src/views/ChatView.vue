@@ -1,42 +1,50 @@
 <template>
   <div class="q-pa-md row justify-center">
-    <div class="col-12">
-      <chat-window :messages="messages" />
+    <div class="col-4 one">
+      <ChatList />
     </div>
-    <input v-model="newMessage" />
-    <select v-model="receiver" placeholder="Select Receiver">
-      <option v-for="number in [1, 2, 3, 4, 5, 6, 7]" :key="number" :value="number">{{ number }}</option>
-    </select>
-    <button @click="sendMessage">Send</button>
+    <div class="col-8 item-start">
+      <div class="col-12 text-center">
+        <h3>{{ receiverName }}</h3> <!-- Display receiver's name here -->
+      </div>
+      <chat-window :messages="messages" />
+      <div class="q-pa-md">
+        <q-input rounded outlined bottom-slots v-model="newMessage" label="Send Message" :dense="dense">
+          <template v-slot:after>
+            <q-btn @click="sendMessage" round dense flat icon="send" />
+          </template>
+        </q-input>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import ChatWindow from '@/components/ChatWindow.vue';
+import ChatList from '@/components/ChatList.vue';
 import axios from 'axios';
 
 export default {
   components: {
     ChatWindow,
+    ChatList
   },
 
   data() {
     return {
       messages: [],
       newMessage: '',
-      receiver: '', // Assuming receiver is a number
+      receiver: this.$route.params.id, // Use the ID from the route as the default receiver
+      receiverName: '', // Add receiverName data property
     };
   },
 
   methods: {
     async sendMessage() {
       try {
-        // Get the token from local storage
         const token = localStorage.getItem('token');
 
-        // Check if the token is available
         if (token) {
-          // Set the Authorization header for the 'sendMessage' request
           axios.defaults.headers.common['Authorization'] = `${token}`;
         } else {
           console.error('No token available.');
@@ -46,19 +54,18 @@ export default {
         // Perform the Axios POST request to send the message
         await axios.post('sendMessage', {
           message: this.newMessage,
-          receiver: this.receiver, // Include the receiver ID
+          receiver: this.receiver,
         });
 
-        // Assuming you want to fetch updated messages after sending
+        // Fetch updated messages after sending
         await this.fetchMessages();
 
-        // Optionally, you can emit an event to inform parent components
+        // Optionally, emit events to inform parent components
         this.$emit('messages-fetched', this.messages);
         this.$emit('message-sent', this.newMessage);
 
-        // Clear the input fields
+        // Clear the input field
         this.newMessage = '';
-        this.receiver = '';
       } catch (error) {
         console.error('Error sending message:', error);
       }
@@ -66,20 +73,17 @@ export default {
 
     async fetchMessages() {
       try {
-        // Get the token from local storage
         const token = localStorage.getItem('token');
 
-        // Check if the token is available
         if (token) {
-          // Set the Authorization header for the 'getMessage' request
           axios.defaults.headers.common['Authorization'] = `${token}`;
         } else {
           console.error('No token available.');
           return;
         }
 
-        // Perform the Axios GET request to fetch messages
-        const response = await axios.get('getMessage');
+        // Perform the Axios GET request to fetch messages for the specific user
+        const response = await axios.get(`getUserMessages/${this.receiver}`);
         this.messages = response.data;
 
         // Emit a custom event to notify the parent component
@@ -88,11 +92,42 @@ export default {
         console.error('Error fetching messages:', error);
       }
     },
+
+    async fetchReceiverName() {
+      try {
+        const token = localStorage.getItem('token');
+
+        if (token) {
+          axios.defaults.headers.common['Authorization'] = `${token}`;
+        } else {
+          console.error('No token available.');
+          return;
+        }
+
+        // Perform the Axios GET request to fetch the receiver's information
+        const response = await axios.get(`getUserMessages/${this.receiver}`);
+        this.receiverName = response.data[1].receiver_name;
+
+      } catch (error) {
+        console.error('Error fetching receiver name:', error);
+      }
+    },
+  },
+
+  watch: {
+    // Watch for changes in the route params and update the receiver ID accordingly
+    '$route.params.id': function (newUserId) {
+      this.receiver = newUserId;
+      // Fetch messages and receiver name for the new user when the route changes
+      this.fetchMessages();
+      this.fetchReceiverName();
+    },
   },
 
   mounted() {
-    // Fetch messages when the component is mounted
+    // Fetch messages, receiver name, and user information when the component is mounted
     this.fetchMessages();
+    this.fetchReceiverName();
 
     // Automatically fetch messages every 5 seconds
     setInterval(() => {
@@ -101,3 +136,7 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Add your scoped styles here */
+</style>

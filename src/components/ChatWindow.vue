@@ -1,8 +1,8 @@
 <template>
-  <div class="q-pa-md row justify-center">
-    <div style="width: 100%; max-width: 400px">
+  <div class="q-pa-md row justify-start" style="overflow-y: auto; max-height: 70vh;">
+    <div style="width: 100%;">
       <q-chat-message v-for="message in messages" :key="message.id" :name="message.sender_name" :text="[message.message]"
-        :sent="!isSent(message.sender_name)" />
+        :sent="isSent(message.sender_name)" :bg-color="isSent(message.sender_name) ? 'blue' : 'grey'" />
     </div>
   </div>
 </template>
@@ -52,4 +52,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/* You can add additional styles if needed */
+</style>
