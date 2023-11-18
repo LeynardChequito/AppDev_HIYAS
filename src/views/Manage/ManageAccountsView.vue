@@ -5,7 +5,7 @@
     <script>
     import MAccount from '@/components/MAccount.vue'
     export default {
-        name: 'MAccount',
+        name: 'account',
         components: {
             MAccount,
         }

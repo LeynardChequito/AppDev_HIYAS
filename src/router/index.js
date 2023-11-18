@@ -23,6 +23,7 @@ import ReportsFinanceView from "../views/Reports/ReportsFinanceView.vue";
 //Reports-----------------------------------------------------------------------
 
 import ManageStudentsView from "../views/Manage/ManageStudentsView.vue";
+import ManageAccountsView from "../views/Manage/ManageAccountsView.vue";
 
 
 
@@ -138,7 +139,7 @@ const routes = [
   {
     path: "/manage/accounts",
     name: "account",
-    component: MAccount,
+    component: ManageAccountsView,
    // meta: { requiresAuth: true },
 
   }

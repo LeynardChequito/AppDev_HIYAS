@@ -23,19 +23,8 @@
             <q-form @submit="saveChanges" class="q-gutter-md">
               <q-input v-model="editedData.firstname" label="First Name"></q-input>
               <q-input v-model="editedData.lastname" label="Last Name"></q-input>
-              <q-input v-model="editedData.birthday" label="Birthday"></q-input>
-              <q-input v-model="editedData.age" label="Age"></q-input>
-              <q-input v-model="editedData.gender" label="Gender"></q-input>
-              <q-input v-model="editedData.address" label="Address"></q-input>
-              <q-input v-model="editedData.contact_info" label="Contact Info"></q-input>
-              <q-input v-model="editedData.guardian_parents" label="Parent/Guardian"></q-input>
-              <q-input v-model="editedData.school" label="School"></q-input>
-              <q-input v-model="editedData.grade_level" label="Grade Level"></q-input>
-              <q-input v-model="editedData.coach" label="Coach"></q-input>
-              <q-input v-model="editedData.section" label="Section"></q-input>
-              <q-input v-model="editedData.sponsor" label="Sponsor"></q-input>
-              <q-input v-model="editedData.staff" label="Staff"></q-input>
-              <q-input v-model="editedData.fam_number" label="Number in Family" align="center"></q-input>
+              <q-input v-model="editedData.email_or_phone" label="Email_or_Phone"></q-input>
+              <q-input v-model="editedData.password" label="Password"></q-input>
   
               <div class="q-mt-md">
                 <q-btn type="submit" color="primary" label="Save Changes"></q-btn>
@@ -50,22 +39,11 @@
         <q-card>
           <q-card-section>
             <q-form @submit="addNewData" class="q-gutter-md">
-              <q-input v-model="newData.firstname" label="First Name"></q-input>
-              <q-input v-model="newData.lastname" label="Last Name"></q-input>
-              <q-input v-model="newData.birthday" label="Birthday"></q-input>
-              <q-input v-model="newData.age" label="Age"></q-input>
-              <q-input v-model="newData.gender" label="Gender"></q-input>
-              <q-input v-model="newData.address" label="Address"></q-input>
-              <q-input v-model="newData.contact_info" label="Contact Info"></q-input>
-              <q-input v-model="newData.guardian_parents" label="Parent/Guardian"></q-input>
-              <q-input v-model="newData.school" label="School"></q-input>
-              <q-input v-model="newData.grade_level" label="Grade Level"></q-input>
-              <q-input v-model="newData.coach" label="Coach"></q-input>
-              <q-input v-model="newData.section" label="Section"></q-input>
-              <q-input v-model="newData.sponsor" label="Sponsor"></q-input>
-              <q-input v-model="newData.staff" label="Staff"></q-input>
-              <q-input v-model="newData.fam_number" label="Number in Family" align="center"></q-input>
-  
+                <q-input v-model="editedData.firstname" label="First Name"></q-input>
+              <q-input v-model="editedData.lastname" label="Last Name"></q-input>
+              <q-input v-model="editedData.mobile_or_email" label="mobile_or_email"></q-input>
+              <q-input v-model="editedData.password" label="Password"></q-input>
+
               <div class="q-mt-md">
                 <q-btn type="submit" color="primary" label="Add Data"></q-btn>
                 <q-btn color="red" label="Cancel" @click="cancelAdd"></q-btn>
@@ -85,20 +63,9 @@
     { name: 'id_number', label: 'Id Number', align: 'left', field: 'id_number', sortable: true },
     { name: 'lastname', label: 'Lastname', align: 'left', field: 'lastname', sortable: true },
     { name: 'firstname', label: 'Firstname', align: 'left', field: 'firstname', sortable: true },
-    { name: 'birthday', label: 'Birthday', align: 'left', field: 'birthday', sortable: true },
-    { name: 'age', label: 'Age', align: 'left', field: 'age', sortable: true },
-    { name: 'gender', label: 'Gender', align: 'left', field: 'gender', sortable: true },
-    { name: 'address', label: 'Address', align: 'left', field: 'address', sortable: true },
-    { name: 'contact_info', label: 'Contact Info', align: 'left', field: 'contact_info', sortable: true },
-    { name: 'guardian_parents', label: 'Parent/Guardian', align: 'left', field: 'guardian_parents', sortable: true },
-    { name: 'school', label: 'School', align: 'left', field: 'school', sortable: true },
-    { name: 'grade_level', label: 'Grade Level', align: 'left', field: 'grade_level', sortable: true },
-    { name: 'coach', label: 'Coach', align: 'left', field: 'coach', sortable: true },
-    { name: 'section', label: 'Section', align: 'left', field: 'section', sortable: true },
-    { name: 'sponsor', label: 'Sponsor', align: 'left', field: 'sponsor', sortable: true },
-    { name: 'staff', label: 'Staff', align: 'left', field: 'staff', sortable: true },
-    { name: 'fam_number', label: 'Number in Family', align: 'center', field: 'fam', sortable: true },
-    { label: 'Action', align: 'center' },
+    { name: 'mobile_or_email', label: 'mobile_or_email', align: 'left', field: 'mobile_or_email', sortable: true },
+    { name: 'password', label: 'password', align: 'left', field: 'password', sortable: true },
+       { label: 'Action', align: 'center' },
   ];
   
   export default {
