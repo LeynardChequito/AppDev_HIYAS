@@ -51,9 +51,20 @@
 
         <div class="q-pa-md">
           <form @submit.prevent="addNewAnnouncement" class="announcement-form">
-            <q-input v-model="newAnnouncement.title" label="Title" outlined />
-            <q-input v-model="newAnnouncement.date" label="Date" type="date" outlined />
-            <q-input v-model="newAnnouncement.description" label="Description" outlined />
+            <div class="form-group">
+              <label class="form-label">Title</label>
+              <q-input v-model="newAnnouncement.title" outlined />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Date</label>
+              <q-input v-model="newAnnouncement.date" type="date" outlined />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <q-input v-model="newAnnouncement.description" type="textarea" outlined />
+            </div>
 
             <div class="button-group">
               <q-btn type="submit" label="Add Announcement" color="primary" />
@@ -64,7 +75,6 @@
     </div>
   </div>
 </template>
-
 
 
 <script>
@@ -167,48 +177,62 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .page-container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-
 .left-panel {
   flex: 1;
   margin-right: 20px;
   max-width: 600px;
 }
-
 .right-panel {
   flex: 1;
   max-width: 400px;
 }
-
 .my-card {
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .text-h3 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
-
 .filter-section {
   display: flex;
   justify-content: space-between;
 }
-
 .announcement-form {
   display: flex;
   flex-direction: column;
 }
-
 .button-group {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+}
+.add-announcement-panel {
+  width: 40%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.q-input {
+  width: 100%;
 }
 </style>
