@@ -45,7 +45,7 @@
         <div class="edit-form" v-if="editMode">
          
       <div class="form-container q-gutter-md">
-          <h4 style="margin-top: 1px; text-align: center;">Edit Student Information</h4> 
+          <h4 style="margin-top: 1px; text-align: center;">Edit Coaches Information</h4> 
         <div class="row">
           <div v-for="col in columns" :key="col.name" class="col-3 form-group">
             <label v-if="col.label !== 'Action'" :for="'edit-' + col.field">
