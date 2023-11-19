@@ -95,7 +95,6 @@
   import axios from 'axios';
   
   const columns = [
-    { name: 'id_number', label: 'Id Number', align: 'left', field: 'id_number', sortable: true },
     { name: 'lastname', label: 'Lastname', align: 'left', field: 'lastname', sortable: true },
     { name: 'firstname', label: 'Firstname', align: 'left', field: 'firstname', sortable: true },
     { name: 'birthday', label: 'Birthday', align: 'left', field: 'birthday', sortable: true },
@@ -103,14 +102,6 @@
     { name: 'gender', label: 'Gender', align: 'left', field: 'gender', sortable: true },
     { name: 'address', label: 'Address', align: 'left', field: 'address', sortable: true },
     { name: 'contact_info', label: 'Contact Info', align: 'left', field: 'contact_info', sortable: true },
-    { name: 'guardianParents', label: 'Parent/Guardian', align: 'left', field: 'guardianParents', sortable: true },
-    { name: 'school', label: 'School', align: 'left', field: 'school', sortable: true },
-    { name: 'grade_level', label: 'Grade Level', align: 'left', field: 'grade_level', sortable: true },
-    { name: 'coach', label: 'Coach', align: 'left', field: 'coach', sortable: true },
-    { name: 'section', label: 'Section', align: 'left', field: 'section', sortable: true },
-    { name: 'sponsor', label: 'Sponsor', align: 'left', field: 'sponsor', sortable: true },
-    { name: 'staff', label: 'Staff', align: 'left', field: 'staff', sortable: true },
-    { name: 'fam_number', label: 'Number in Family', align: 'center', field: 'fam', sortable: true },
     { label: 'Action', align: 'center' },
   ];
   
