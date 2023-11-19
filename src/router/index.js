@@ -25,6 +25,8 @@ import ReportsFinanceView from "../views/Reports/ReportsFinanceView.vue";
 import ManageStudentsView from "../views/Manage/ManageStudentsView.vue";
 import ManageAccountsView from "../views/Manage/ManageAccountsView.vue";
 import ManageParentsView from "../views/Manage/ManageParentsView.vue";
+import ManageEventsView from "../views/Manage/ManageEventsView.vue";
+import ManageSectionsView from "../views/Manage/ManageSectionsView.vue";
 
 
 const routes = [
@@ -149,6 +151,18 @@ const routes = [
     component: ManageParentsView,
    // meta: { requiresAuth: true },
 
+  },
+  {
+    path: "/manage/events",
+    name: "manageEvents",
+    component: ManageEventsView,
+   // meta: { requiresAuth: true },
+  },
+   {
+  path: "/manage/sections",
+    name: "manageSections",
+    component: ManageSectionsView,
+   // meta: { requiresAuth: true },
   }
 ];
 
