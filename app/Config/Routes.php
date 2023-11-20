@@ -9,6 +9,7 @@ $routes->get('/', 'MainController::index');
 $routes->get('chat', 'ChatController::index');
 $routes->get('/getdata', 'TryController::getData');
 $routes->get('/getstudentdata', 'StudentController::getData');
+$routes->get('/getcoachdata', 'CoachController::getData');
 $routes->get('/getstudentdata/(:num)', 'StudentController::getDataById/$1');
 $routes->post('/register', 'SignupController::register');
 $routes->post('/login', 'LoginController::login');

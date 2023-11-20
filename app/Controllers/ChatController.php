@@ -10,6 +10,7 @@ use App\Models\AccountModel;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\KEY;
+use Carbon\Carbon;
 
 class ChatController extends ResourceController
 {
@@ -155,12 +156,15 @@ class ChatController extends ResourceController
                     ->orderBy('id', 'desc')
                     ->first();
 
+                // Calculate the time difference
+                $when = $latestMessage ? $this->calculateTimeDifference($latestMessage['created_at']) : null;
+
                 $responseData[] = [
                     'id' => $user['id'],
                     'firstname' => $user['firstname'],
                     'mobile_or_email' => $user['mobile_or_email'],
                     'latest_message' => $latestMessage ? $latestMessage['message'] : null,
-                    'when' => $latestMessage ? $latestMessage['created_at'] : null,
+                    'when' => $when,
                 ];
             }
 
@@ -169,6 +173,54 @@ class ChatController extends ResourceController
             return $this->failServerError('Error fetching connected users');
         }
     }
+
+    /**
+     * Calculate the time difference between the given timestamp and the current time.
+     *
+     * @param string $timestamp
+     * @return string
+     */
+    private function calculateTimeDifference($timestamp)
+    {
+        try {
+            // Set the timezone explicitly (replace 'UTC' with your actual timezone)
+            $timezone = 'UTC';
+            $messageTime = Carbon::parse($timestamp, $timezone);
+            $currentTime = Carbon::now($timezone);
+
+            // Calculate the time difference in minutes
+            $difference = $currentTime->diffInMinutes($messageTime);
+
+            // Debugging: Log the values for analysis
+            log_message('info', 'Current time: ' . $currentTime->timestamp);
+            log_message('info', 'Message time: ' . $messageTime->timestamp);
+            log_message('info', 'Difference (minutes): ' . $difference);
+
+            if ($difference < 1) {
+                return 'Just now';
+            } elseif ($difference === 1) {
+                return '1 minute ago';
+            } elseif ($difference < 60) {
+                return $difference . ' minutes ago';
+            } else {
+                // Debugging: Log the formatted date for analysis
+                log_message('info', 'Formatted date: ' . $messageTime->format('M j, Y g:i A'));
+
+                // Return the exact time in a more readable format
+                return $messageTime->format('M j, Y g:i A');
+            }
+        } catch (\Exception $e) {
+            // Handle any exceptions that might occur during date/time calculations
+            log_message('error', 'Error calculating time difference: ' . $e->getMessage());
+            return 'Just now'; // Default to 'Just now' in case of an error
+        }
+    }
+
+
+
+
+
+
 
 
     // Add this method to your ChatController
