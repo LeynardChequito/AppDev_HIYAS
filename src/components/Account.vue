@@ -1,5 +1,5 @@
 <template>
-    <q-btn dense round :color="buttonColor" class="q-mr-md hays" @click="accountClicked">
+    <q-btn dense round :color="buttonColor" class="q-mr-md hays" @click="accountClicked" v-close-popup>
         <q-icon name="person" style="color: black;" />
     </q-btn>
 

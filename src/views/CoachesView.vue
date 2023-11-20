@@ -32,33 +32,7 @@
   export default {
     data() {
       return {
-        coaches: [
-          {
-            name: 'Angelica Perez',
-            image: 'coach1.png',
-            section: 'Mapagpakumbaba',
-            ageGroup: '4-10'
-          },
-          {
-            name: 'John Doe', 
-            image: '@/assets/images/coach1.png',
-            section: 'Masipag',
-            ageGroup: '10-15'
-          },
-          {
-            name: 'John Doe', 
-            image: '@/assets/images/coach1.png',
-            section: 'Masipag',
-            ageGroup: '10-15'
-          },
-          {
-            name: 'John Doe', 
-            image: '@/assets/images/coach1.png',
-            section: 'Masipag',
-            ageGroup: '10-15'
-          },
-
-        ]
+        coaches: []
       }
     }
   }

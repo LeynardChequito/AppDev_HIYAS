@@ -4,9 +4,9 @@
       <ChatList />
     </div>
     <div class="col-8 item-start">
-      <div class="col-12 text-center">
-        <h3>{{ receiverName }}</h3> <!-- Display receiver's name here -->
-      </div>
+      <!-- <div class="col-12 text-center">
+        <h3>{{ receiverName }}</h3> 
+      </div> -->
       <chat-window :messages="messages" />
       <div class="q-pa-md">
         <q-input rounded outlined bottom-slots v-model="newMessage" label="Send Message" :dense="dense">
@@ -106,7 +106,7 @@ export default {
 
         // Perform the Axios GET request to fetch the receiver's information
         const response = await axios.get(`getUserMessages/${this.receiver}`);
-        this.receiverName = response.data[1].receiver_name;
+        this.receiverName = response.data[0].receiver_name;
 
       } catch (error) {
         console.error('Error fetching receiver name:', error);

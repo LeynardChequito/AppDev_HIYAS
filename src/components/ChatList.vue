@@ -1,6 +1,8 @@
 <template>
     <div class="one">
-        <h4>Connected Users</h4>
+        <!-- <div class="row">
+            <div class="row col-12 items-start q-pa-md">Chats</div>
+        </div> -->
         <q-list bordered>
             <q-item v-for="user in connectedUsers" :key="user.id" clickable v-ripple @click="navigateToChat(user.id)">
                 <q-item-section top avatar>

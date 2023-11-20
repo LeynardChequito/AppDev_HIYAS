@@ -1,5 +1,5 @@
 <template>
-    <q-btn dense round :color="buttonColor" class="q-mr-md" @click="toggleChat">
+    <q-btn dense round :color="buttonColor" class="q-mr-md" @click="toggleChat" v-close-popup>
         <q-icon name="messages" style="color: black;" />
         <q-badge color="red" floating>1</q-badge>
     </q-btn>
@@ -17,25 +17,10 @@
                         </div>
                         <q-separator />
 
-                        <template v-for="item in chatItems" :key="item.id">
-                            <q-item clickable v-ripple>
-                                <q-item-section avatar>
-                                    <q-avatar>
-                                        <img :src="item.avatarSrc" />
-                                    </q-avatar>
-                                </q-item-section>
-
-                                <q-item-section>
-                                    <q-item-label lines="1">{{ item.name }}</q-item-label>
-                                    <q-item-label caption lines="1">{{ item.message }}</q-item-label>
-                                </q-item-section>
-
-                                <q-item-section side top>
-                                    <q-item-label caption>{{ item.time }}</q-item-label>
-                                </q-item-section>
-                            </q-item>
-                            <q-separator />
-                        </template>
+                        <!-- <template v-for="item in chatItems" :key="item.id"> -->
+                        <chat-list />
+                        <!-- <q-separator /> -->
+                        <!-- </template> -->
                     </q-list>
                 </div>
             </q-card>
@@ -45,9 +30,13 @@
   
 <script>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import ChatList from '@/components/ChatList.vue';
 
 
 export default {
+    components: {
+        ChatList
+    },
     setup() {
         const cardVisible = ref(false);
         const clicked = ref(false);
@@ -106,6 +95,13 @@ export default {
             handleGlobalClick
         };
     },
+    methods: {
+        navigateToChat(userId) {
+            // Programmatic navigation to /chats/:id
+            this.$router.push({ name: 'chats', params: { id: userId } });
+        },
+
+    },
 };
 </script>
   
@@ -113,14 +109,12 @@ export default {
   .my-card
     width: 350px
     max-width: 100%
-    color: black
+    
   
   .scrollable-list
     max-height: 450px 
     overflow-y: auto
   
-  .one
-    background-color: black
   
   .chat-card
     position: absolute
