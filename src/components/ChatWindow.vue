@@ -19,31 +19,28 @@ export default {
   data() {
     return {
       currentUserId: null,
-      loading: false, // Add loading state
+      loading: false, 
     };
   },
 
   methods: {
     async getUser() {
       try {
-        this.loading = true; // Set loading to true while fetching messages
+        this.loading = true; 
         const token = localStorage.getItem('token');
-        // Make an API call to retrieve the user information
         const response = await axios.get('getUser', {
           headers: {
             Authorization: `${token}`,
           },
         });
 
-        // Set the currentUserId based on the retrieved user information
         this.currentUserId = response.data.user.firstname;
 
-        // Emit an event to notify the parent component
         this.$emit('user-loaded');
       } catch (error) {
         console.error('Error fetching user:', error);
       } finally {
-        this.loading = false; // Set loading to false after fetching messages
+        this.loading = false; 
       }
     },
 
@@ -52,14 +49,12 @@ export default {
     },
 
     scrollToBottom() {
-      // Scroll to the bottom using the ref
       const chatContainer = this.$refs.chatContainer;
       chatContainer.scrollTop = chatContainer.scrollHeight;
     },
   },
 
   watch: {
-    // Watch for changes in the messages prop and scroll to the bottom when it changes
     messages: {
       handler() {
         this.$nextTick(() => {
@@ -71,12 +66,10 @@ export default {
   },
 
   updated() {
-    // Scroll to the bottom after the component is updated
     this.scrollToBottom();
   },
 
   created() {
-    // Call the getUser method when the component is created
     this.getUser();
   },
 };

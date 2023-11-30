@@ -51,16 +51,13 @@ export default {
           return;
         }
 
-        // Perform the Axios POST request to send the message
         await axios.post('sendMessage', {
           message: this.newMessage,
           receiver: this.receiver,
         });
 
-        // Fetch updated messages after sending
         await this.fetchMessages();
 
-        // Optionally, emit events to inform parent components
         this.$emit('messages-fetched', this.messages);
         this.$emit('message-sent', this.newMessage);
 
@@ -125,11 +122,9 @@ export default {
   },
 
   mounted() {
-    // Fetch messages, receiver name, and user information when the component is mounted
     this.fetchMessages();
     this.fetchReceiverName();
 
-    // Automatically fetch messages every 5 seconds
     setInterval(() => {
       this.fetchMessages();
     }, 5000);
