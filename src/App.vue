@@ -1,36 +1,27 @@
 <template>
-  <q-layout view="hHh lpR lfr">
-    <Header v-if="$route.name !== 'login' && $route.name !== 'register'" /> 
-    <Drawer v-if="$route.name !== 'login' && $route.name !== 'register' && $route.name !== 'home' " /> 
+  <q-layout view="lHr LpR fFr" class="bg-grey-10">
 
-
-    <q-page-container class="custom-background">
+    <Navbar />
+    <Drawer />
+    <q-resize-observer @resize="onResize" />
+    <q-page-container>
       <router-view />
-    <NewDrawer/>
     </q-page-container>
 
-    <!-- <Footer /> -->
   </q-layout>
 </template>
 
-<script>
-import Header from '@/components/Header.vue'
-import Drawer from '@/components/Drawer.vue'
-import Footer from '@/components/Footer.vue'
-import NewDrawer from '@/components/NewDrawer.vue'
+<script setup>
+import Navbar from '@/components/Admin/Navbar.vue'
+import Drawer from '@/components/Admin/Drawer.vue'
 
-export default {
-  components: {
-    Header,
-    Drawer,
-    Footer,
-    NewDrawer
-  },
-}
 </script>
 
 <style scoped>
-.custom-background {
-  background-color: #EEEEEE;
+.sticky{
+  position: sticky;
+  top: 0;
+  background-color: white; /* Add a background color for visibility */
+  width: 100%; 
 }
 </style>

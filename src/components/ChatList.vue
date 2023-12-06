@@ -69,7 +69,7 @@ export default {
         // Automatically fetch connected users every 5 seconds
         this.autoReload = setInterval(() => {
             this.fetchConnectedUsers();
-        }, 5000);
+        }, 1000);
     },
 
     beforeDestroy() {

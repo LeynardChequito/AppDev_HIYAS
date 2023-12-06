@@ -163,7 +163,28 @@ const routes = [
     name: "manageSections",
     component: ManageSectionsView,
    // meta: { requiresAuth: true },
-  }
+  },
+  {
+    path: "/admin",
+    name: "admin",
+    component: () => import("@/views/Admin/AdminView.vue"),
+    children: [
+        {
+          path: "dashboard",
+          name: "admin-dashboard",
+          component: () => import("@/views/Admin/Pages/DashboardView.vue"),
+        },
+        {
+          path: "",
+          redirect: { name: "admin-dashboard" },
+        },
+        {
+          path: "students",
+          name: "admin-students",
+          component: () => import("@/views/Admin/Pages/StudentsView.vue"),
+        },
+    ]
+  },
 ];
 
 const router = createRouter({

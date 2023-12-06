@@ -11,6 +11,7 @@
     "@quasar/extras": "^1.0.0",
     "apexcharts": "^3.44.0",
     "axios": "^1.6.1",
+    "chart.js": "^4.4.1",
     "core-js": "^3.8.3",
     "crypto-browserify": "^3.12.0",
     "jsonwebtoken": "^9.0.2",
@@ -23,9 +24,11 @@
     "util": "^0.12.5",
     "vue": "^3.2.13",
     "vue-apexcharts": "^1.6.2",
+    "vue-chartjs": "^5.2.0",
     "vue-native-websocket": "^2.0.15",
     "vue-router": "^4.0.3",
-    "vue3-apexcharts": "^1.4.4"
+    "vue3-apexcharts": "^1.4.4",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.5",
