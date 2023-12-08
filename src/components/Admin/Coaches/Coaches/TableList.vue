@@ -3,25 +3,97 @@
         <q-btn @click="openAddCoachDialog" color="primary" label="Add Coach" class="q-mt-md" />
         <q-table title="" :rows="tableData" :columns="columns" row-key="name" />
 
-        <!-- Add Coach Dialog -->
         <q-dialog v-model="addCoachDialog" position="standard">
-            <q-card>
+            <q-card class="q-pa-md" style="width: 800px;">
                 <q-card-section>
-                    <q-card-title class="text-h6">Add Coach</q-card-title>
-                    <q-input v-model="newCoach.firstname" label="First Name" />
-                    <q-input v-model="newCoach.lastname" label="Last Name" />
-                    <q-input v-model="newCoach.age" label="Age" />
-                    <q-input v-model="newCoach.birthday" label="Birthday" />
-                    <q-input v-model="newCoach.phone" label="Phone" />
-                    <q-input v-model="newCoach.gender" label="Gender" />
-                    <q-input v-model="newCoach.date_hired" label="Date Hired" />
-                    <q-input v-model="newCoach.coach_id" label="Coach ID" />
-                    <q-input v-model="newCoach.address" label="Address" />
+                <q-card-title class="text-h6">Add Coach</q-card-title>
+                <div class="row">
+                    <div class="col-6 q-pr-xs"> 
+                        <q-input v-model="newCoach.firstname" label="First Name" />
+                    </div>
+                    <div class="col-6 q-pl-xs"> 
+                        <q-input v-model="newCoach.lastname" label="Last Name" />
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 q-pr-xs">
+                        <q-input v-model="newCoach.age" label="Age" />
+                    </div>
+                    <div class="col-6 q-pl-xs"> 
+                        <q-input
+                            v-model="newCoach.birthday"
+                            label="Birthday"
+                            filled
+                            mask="date"
+                            :rules="['date']"
+                        >
+                            <template v-slot:append>
+                            <q-icon name="event" class="cursor-pointer">
+                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                                <q-date v-model="newCoach.birthday">
+                                    <div class="row items-center justify-end">
+                                    <q-btn v-close-popup label="Close" color="primary" flat />
+                                    </div>
+                                </q-date>
+                                </q-popup-proxy>
+                            </q-icon>
+                            </template>
+                        </q-input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 q-pr-xs"> 
+                        <q-input v-model="newCoach.phone" label="Phone" />
+                    </div>
+                    <div class="col-6 q-pl-xs"> 
+                        <q-select
+                            v-model="newCoach.gender"
+                            label="Gender"
+                            :options="[ { label: 'Male', value: 'male' }, { label: 'Female', value: 'female' } ]"
+                        />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 q-pr-xs"> 
+                        <q-input
+                            v-model="newCoach.date_hired"
+                            label="Date Hired"
+                            filled
+                            mask="date"
+                            :rules="['date']"
+                        >
+                            <template v-slot:append>
+                            <q-icon name="event" class="cursor-pointer">
+                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                                <q-date v-model="newCoach.date_hired">
+                                    <div class="row items-center justify-end">
+                                    <q-btn v-close-popup label="Close" color="primary" flat />
+                                    </div>
+                                </q-date>
+                                </q-popup-proxy>
+                            </q-icon>
+                            </template>
+                        </q-input>
+                    </div>
+                    <div class="col-6 q-pl-xs">
+                        <q-input v-model="newCoach.coach_id" label="Coach ID" />
+                    </div>
+                </div>
+                <q-select
+                    v-model="newCoach.address"
+                    label="Address"
+                    :options="addressOptions"
+                    :rules="[v => !!v ]"
+                    dense
+                />
                 </q-card-section>
 
                 <q-card-actions align="right">
-                    <q-btn label="Cancel" color="negative" v-close-popup />
-                    <q-btn label="Add Coach" color="primary" @click="addCoach" />
+                <q-btn label="Cancel" color="negative" v-close-popup />
+                <q-btn label="Add Coach" color="primary" @click="addCoach" />
                 </q-card-actions>
             </q-card>
         </q-dialog>
@@ -57,8 +129,34 @@ const newCoach = ref({
     date_hired: '',
     coach_id: '',
     address: '',
-
+    
 });
+
+
+const addressOptions= [
+      'Balite',
+      'Baruyan',
+      'Bayanan I',
+      'Bayanan II',
+      'Calero',
+      'Camilmil',
+      'Canubing I',
+      'Canubing II',
+      'Guinobatan',
+      'GulodIbaba East',
+      'Ibaba West',
+      'Ilaya',
+      'Lalud',
+      'Lazareto',
+      'Lumangbayan',
+      'Masipit',
+      'Pachoca',
+      'San Antonio',
+      'Suqui',
+      'Tawagan',
+      'Tawiran',
+      'Tibag',
+    ];
 
 const openAddCoachDialog = () => {
     // Reset the newCoach object when opening the dialog
@@ -72,6 +170,7 @@ const openAddCoachDialog = () => {
         date_hired: '',
         coach_id: '',
         address: '',
+        
         // Reset other fields as needed
     };
     addCoachDialog.value = true;
