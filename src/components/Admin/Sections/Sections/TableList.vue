@@ -14,24 +14,6 @@
 
         <!-- Add Section Dialog -->
         <q-dialog v-model="addSectionDialog" position="standard">
-<<<<<<< Updated upstream
-            <q-card class="q-pa-md" style="width: 600px;">
-                <q-card-section >
-                    <q-card-title class="text-h6">Add Section</q-card-title>
-                    <q-input filled v-model="newSection.name" label="Section Name" style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
-                    <q-select filled
-                        v-model="newSection.coach"
-                        label="Coach"
-                        :options="coachOptions"
-                    style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
-                    <q-input filled v-model="newSection.age_group" label="Range of Age " style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
-                    <q-input filled v-model="newSection.quantity" label="Total Students" style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
-                </q-card-section>
-
-                <q-card-actions align="right">
-                    <q-btn label="Cancel" color="negative" v-close-popup style="margin-bottom: 5px; color: primary;" label-color="black" filled-color="grey-4" />
-                    <q-btn label="Add Section" color="primary" @click="addSection" style="margin-bottom: 5px; color: primary;" label-color="black" filled-color="grey-4" />
-=======
             <q-card>
                 <q-card-section>
                     <q-card-title class="text-h6">Section Data</q-card-title>
@@ -45,7 +27,6 @@
                     <q-btn label="Cancel" color="negative" v-close-popup />
                     <q-btn :label="editMode ? 'Edit Section' : 'Add Section'" :color="editMode ? 'primary' : 'positive'"
                         @click="addOrEditSection" />
->>>>>>> Stashed changes
                 </q-card-actions>
             </q-card>
         </q-dialog>
