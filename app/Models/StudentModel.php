@@ -13,7 +13,7 @@ class StudentModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['firsname', 'lastname', 'age', 'birthday', 'gender', 'address', 'contact_info', 'guardian/parents', 'coach', 'section', 'sponsor', 'id_number', 'staff'];
+    protected $allowedFields    = ['firstname', 'lastname', 'age', 'birthday', 'gender', 'address', 'contact_info', 'parent/guardian', 'coach', 'section', 'sponsor', 'id_number', 'school', 'grade_level', 'fam_number', 'staff'];
 
     // Dates
     protected $useTimestamps = false;

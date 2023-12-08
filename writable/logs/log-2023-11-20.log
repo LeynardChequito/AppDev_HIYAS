@@ -1,0 +1,2930 @@
+INFO - 2023-11-20 04:55:25 --> Current time: 1700456125
+INFO - 2023-11-20 04:55:25 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:25 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:25 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:25 --> Current time: 1700456125
+INFO - 2023-11-20 04:55:25 --> Message time: 1700337598
+INFO - 2023-11-20 04:55:25 --> Difference (minutes): 1975
+INFO - 2023-11-20 04:55:25 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 04:55:27 --> Current time: 1700456127
+INFO - 2023-11-20 04:55:27 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:27 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:27 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:27 --> Current time: 1700456127
+INFO - 2023-11-20 04:55:27 --> Message time: 1700337598
+INFO - 2023-11-20 04:55:27 --> Difference (minutes): 1975
+INFO - 2023-11-20 04:55:27 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 04:55:30 --> Current time: 1700456130
+INFO - 2023-11-20 04:55:30 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:30 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:30 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:30 --> Current time: 1700456130
+INFO - 2023-11-20 04:55:30 --> Message time: 1700337598
+INFO - 2023-11-20 04:55:30 --> Difference (minutes): 1975
+INFO - 2023-11-20 04:55:30 --> Formatted date: Nov 18, 2023 7:59 PM
+CRITICAL - 2023-11-20 04:55:30 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('12')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:55:32 --> Current time: 1700456132
+INFO - 2023-11-20 04:55:32 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:32 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:32 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:32 --> Current time: 1700456132
+INFO - 2023-11-20 04:55:32 --> Message time: 1700337598
+INFO - 2023-11-20 04:55:32 --> Difference (minutes): 1975
+INFO - 2023-11-20 04:55:32 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 04:55:35 --> Current time: 1700456135
+INFO - 2023-11-20 04:55:35 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:35 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:35 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:35 --> Current time: 1700456135
+INFO - 2023-11-20 04:55:35 --> Message time: 1700337598
+INFO - 2023-11-20 04:55:35 --> Difference (minutes): 1975
+INFO - 2023-11-20 04:55:35 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 04:55:37 --> Current time: 1700456137
+INFO - 2023-11-20 04:55:37 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:37 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:37 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:37 --> Current time: 1700456137
+INFO - 2023-11-20 04:55:37 --> Message time: 1700337598
+INFO - 2023-11-20 04:55:37 --> Difference (minutes): 1975
+INFO - 2023-11-20 04:55:37 --> Formatted date: Nov 18, 2023 7:59 PM
+CRITICAL - 2023-11-20 04:55:40 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:55:42 --> Current time: 1700456142
+INFO - 2023-11-20 04:55:42 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:42 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:42 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:42 --> Current time: 1700456142
+INFO - 2023-11-20 04:55:42 --> Message time: 1700484940
+INFO - 2023-11-20 04:55:42 --> Difference (minutes): 479
+INFO - 2023-11-20 04:55:42 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:55:45 --> Current time: 1700456145
+INFO - 2023-11-20 04:55:45 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:45 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:45 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:45 --> Current time: 1700456145
+INFO - 2023-11-20 04:55:45 --> Message time: 1700484940
+INFO - 2023-11-20 04:55:45 --> Difference (minutes): 479
+INFO - 2023-11-20 04:55:45 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:55:47 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:55:50 --> Current time: 1700456150
+INFO - 2023-11-20 04:55:50 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:50 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:50 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:50 --> Current time: 1700456150
+INFO - 2023-11-20 04:55:50 --> Message time: 1700484940
+INFO - 2023-11-20 04:55:50 --> Difference (minutes): 479
+INFO - 2023-11-20 04:55:50 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:55:52 --> Current time: 1700456152
+INFO - 2023-11-20 04:55:52 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:52 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:52 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:52 --> Current time: 1700456152
+INFO - 2023-11-20 04:55:52 --> Message time: 1700484940
+INFO - 2023-11-20 04:55:52 --> Difference (minutes): 479
+INFO - 2023-11-20 04:55:52 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:55:55 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:55:57 --> Current time: 1700456157
+INFO - 2023-11-20 04:55:57 --> Message time: 1700337385
+INFO - 2023-11-20 04:55:57 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:55:57 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:55:57 --> Current time: 1700456157
+INFO - 2023-11-20 04:55:57 --> Message time: 1700484940
+INFO - 2023-11-20 04:55:57 --> Difference (minutes): 479
+INFO - 2023-11-20 04:55:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:00 --> Current time: 1700456160
+INFO - 2023-11-20 04:56:00 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:00 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:00 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:00 --> Current time: 1700456160
+INFO - 2023-11-20 04:56:00 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:00 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:00 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:02 --> Current time: 1700456162
+INFO - 2023-11-20 04:56:02 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:02 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:02 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:02 --> Current time: 1700456162
+INFO - 2023-11-20 04:56:02 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:02 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:02 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:05 --> Current time: 1700456165
+INFO - 2023-11-20 04:56:05 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:05 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:05 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:05 --> Current time: 1700456165
+INFO - 2023-11-20 04:56:05 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:05 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:07 --> Current time: 1700456167
+INFO - 2023-11-20 04:56:07 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:07 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:07 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:07 --> Current time: 1700456167
+INFO - 2023-11-20 04:56:07 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:07 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:07 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:10 --> Current time: 1700456170
+INFO - 2023-11-20 04:56:10 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:10 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:10 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:10 --> Current time: 1700456170
+INFO - 2023-11-20 04:56:10 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:10 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:12 --> Current time: 1700456172
+INFO - 2023-11-20 04:56:12 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:12 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:12 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:12 --> Current time: 1700456172
+INFO - 2023-11-20 04:56:12 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:12 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:12 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:15 --> Current time: 1700456175
+INFO - 2023-11-20 04:56:15 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:15 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:15 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:15 --> Current time: 1700456175
+INFO - 2023-11-20 04:56:15 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:15 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:17 --> Current time: 1700456177
+INFO - 2023-11-20 04:56:17 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:17 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:17 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:17 --> Current time: 1700456177
+INFO - 2023-11-20 04:56:17 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:17 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:17 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:20 --> Current time: 1700456180
+INFO - 2023-11-20 04:56:20 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:20 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:20 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:20 --> Current time: 1700456180
+INFO - 2023-11-20 04:56:20 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:20 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:20 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:22 --> Current time: 1700456182
+INFO - 2023-11-20 04:56:22 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:22 --> Difference (minutes): 1979
+INFO - 2023-11-20 04:56:22 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:22 --> Current time: 1700456182
+INFO - 2023-11-20 04:56:22 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:22 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:22 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:25 --> Current time: 1700456185
+INFO - 2023-11-20 04:56:25 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:25 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:25 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:25 --> Current time: 1700456185
+INFO - 2023-11-20 04:56:25 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:25 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:27 --> Current time: 1700456187
+INFO - 2023-11-20 04:56:27 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:27 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:27 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:27 --> Current time: 1700456187
+INFO - 2023-11-20 04:56:27 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:27 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:27 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:30 --> Current time: 1700456190
+INFO - 2023-11-20 04:56:30 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:30 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:30 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:30 --> Current time: 1700456190
+INFO - 2023-11-20 04:56:30 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:30 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:30 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:56:32 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:56:35 --> Current time: 1700456195
+INFO - 2023-11-20 04:56:35 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:35 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:35 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:35 --> Current time: 1700456195
+INFO - 2023-11-20 04:56:35 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:35 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:35 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:37 --> Current time: 1700456197
+INFO - 2023-11-20 04:56:37 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:37 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:37 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:37 --> Current time: 1700456197
+INFO - 2023-11-20 04:56:37 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:37 --> Difference (minutes): 479
+INFO - 2023-11-20 04:56:37 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:40 --> Current time: 1700456200
+INFO - 2023-11-20 04:56:40 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:40 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:40 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:40 --> Current time: 1700456200
+INFO - 2023-11-20 04:56:40 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:40 --> Difference (minutes): 478
+INFO - 2023-11-20 04:56:40 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:42 --> Current time: 1700456202
+INFO - 2023-11-20 04:56:42 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:42 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:42 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:42 --> Current time: 1700456202
+INFO - 2023-11-20 04:56:42 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:42 --> Difference (minutes): 478
+INFO - 2023-11-20 04:56:42 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:45 --> Current time: 1700456205
+INFO - 2023-11-20 04:56:45 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:45 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:45 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:45 --> Current time: 1700456205
+INFO - 2023-11-20 04:56:45 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:45 --> Difference (minutes): 478
+INFO - 2023-11-20 04:56:45 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:56:47 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:56:50 --> Current time: 1700456210
+INFO - 2023-11-20 04:56:50 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:50 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:50 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:50 --> Current time: 1700456210
+INFO - 2023-11-20 04:56:50 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:50 --> Difference (minutes): 478
+INFO - 2023-11-20 04:56:50 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:52 --> Current time: 1700456212
+INFO - 2023-11-20 04:56:52 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:52 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:52 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:52 --> Current time: 1700456212
+INFO - 2023-11-20 04:56:52 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:52 --> Difference (minutes): 478
+INFO - 2023-11-20 04:56:52 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:56:55 --> Current time: 1700456215
+INFO - 2023-11-20 04:56:55 --> Message time: 1700337385
+INFO - 2023-11-20 04:56:55 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:56:55 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:56:55 --> Current time: 1700456215
+INFO - 2023-11-20 04:56:55 --> Message time: 1700484940
+INFO - 2023-11-20 04:56:55 --> Difference (minutes): 478
+INFO - 2023-11-20 04:56:55 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:56:57 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:57:00 --> Current time: 1700456220
+INFO - 2023-11-20 04:57:00 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:00 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:00 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:00 --> Current time: 1700456220
+INFO - 2023-11-20 04:57:00 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:00 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:00 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:57:02 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:57:05 --> Current time: 1700456225
+INFO - 2023-11-20 04:57:05 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:05 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:05 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:05 --> Current time: 1700456225
+INFO - 2023-11-20 04:57:05 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:05 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:07 --> Current time: 1700456227
+INFO - 2023-11-20 04:57:07 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:07 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:07 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:07 --> Current time: 1700456227
+INFO - 2023-11-20 04:57:07 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:07 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:07 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:10 --> Current time: 1700456230
+INFO - 2023-11-20 04:57:10 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:10 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:10 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:10 --> Current time: 1700456230
+INFO - 2023-11-20 04:57:10 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:10 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:12 --> Current time: 1700456232
+INFO - 2023-11-20 04:57:12 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:12 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:12 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:12 --> Current time: 1700456232
+INFO - 2023-11-20 04:57:12 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:12 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:12 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:15 --> Current time: 1700456235
+INFO - 2023-11-20 04:57:15 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:15 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:15 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:15 --> Current time: 1700456235
+INFO - 2023-11-20 04:57:15 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:15 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:15 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:57:17 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:57:20 --> Current time: 1700456240
+INFO - 2023-11-20 04:57:20 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:20 --> Difference (minutes): 1980
+INFO - 2023-11-20 04:57:20 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:20 --> Current time: 1700456240
+INFO - 2023-11-20 04:57:20 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:20 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:20 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:57:22 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:57:25 --> Current time: 1700456245
+INFO - 2023-11-20 04:57:25 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:25 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:25 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:25 --> Current time: 1700456245
+INFO - 2023-11-20 04:57:25 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:25 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:27 --> Current time: 1700456247
+INFO - 2023-11-20 04:57:27 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:27 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:27 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:27 --> Current time: 1700456247
+INFO - 2023-11-20 04:57:27 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:27 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:27 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:30 --> Current time: 1700456250
+INFO - 2023-11-20 04:57:30 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:30 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:30 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:30 --> Current time: 1700456250
+INFO - 2023-11-20 04:57:30 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:30 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:30 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:57:32 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:57:35 --> Current time: 1700456255
+INFO - 2023-11-20 04:57:35 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:35 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:35 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:35 --> Current time: 1700456255
+INFO - 2023-11-20 04:57:35 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:35 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:35 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:38 --> Current time: 1700456258
+INFO - 2023-11-20 04:57:38 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:38 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:38 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:38 --> Current time: 1700456258
+INFO - 2023-11-20 04:57:38 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:38 --> Difference (minutes): 478
+INFO - 2023-11-20 04:57:38 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:40 --> Current time: 1700456260
+INFO - 2023-11-20 04:57:40 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:40 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:40 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:40 --> Current time: 1700456260
+INFO - 2023-11-20 04:57:40 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:40 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:40 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:43 --> Current time: 1700456263
+INFO - 2023-11-20 04:57:43 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:43 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:43 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:43 --> Current time: 1700456263
+INFO - 2023-11-20 04:57:43 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:43 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:43 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:45 --> Current time: 1700456265
+INFO - 2023-11-20 04:57:45 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:45 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:45 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:45 --> Current time: 1700456265
+INFO - 2023-11-20 04:57:45 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:45 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:45 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:48 --> Current time: 1700456268
+INFO - 2023-11-20 04:57:48 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:48 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:48 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:48 --> Current time: 1700456268
+INFO - 2023-11-20 04:57:48 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:48 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:48 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:50 --> Current time: 1700456270
+INFO - 2023-11-20 04:57:50 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:50 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:50 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:50 --> Current time: 1700456270
+INFO - 2023-11-20 04:57:50 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:50 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:50 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:57:53 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:57:55 --> Current time: 1700456275
+INFO - 2023-11-20 04:57:55 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:55 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:55 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:55 --> Current time: 1700456275
+INFO - 2023-11-20 04:57:55 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:55 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:57:58 --> Current time: 1700456278
+INFO - 2023-11-20 04:57:58 --> Message time: 1700337385
+INFO - 2023-11-20 04:57:58 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:57:58 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:57:58 --> Current time: 1700456278
+INFO - 2023-11-20 04:57:58 --> Message time: 1700484940
+INFO - 2023-11-20 04:57:58 --> Difference (minutes): 477
+INFO - 2023-11-20 04:57:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:00 --> Current time: 1700456280
+INFO - 2023-11-20 04:58:00 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:00 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:00 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:00 --> Current time: 1700456280
+INFO - 2023-11-20 04:58:00 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:00 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:00 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:03 --> Current time: 1700456283
+INFO - 2023-11-20 04:58:03 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:03 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:03 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:03 --> Current time: 1700456283
+INFO - 2023-11-20 04:58:03 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:03 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:03 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:05 --> Current time: 1700456285
+INFO - 2023-11-20 04:58:05 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:05 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:05 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:05 --> Current time: 1700456285
+INFO - 2023-11-20 04:58:05 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:05 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:08 --> Current time: 1700456288
+INFO - 2023-11-20 04:58:08 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:08 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:08 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:08 --> Current time: 1700456288
+INFO - 2023-11-20 04:58:08 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:08 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:10 --> Current time: 1700456290
+INFO - 2023-11-20 04:58:10 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:10 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:10 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:10 --> Current time: 1700456290
+INFO - 2023-11-20 04:58:10 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:10 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:13 --> Current time: 1700456293
+INFO - 2023-11-20 04:58:13 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:13 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:13 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:13 --> Current time: 1700456293
+INFO - 2023-11-20 04:58:13 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:13 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:15 --> Current time: 1700456295
+INFO - 2023-11-20 04:58:15 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:15 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:15 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:15 --> Current time: 1700456295
+INFO - 2023-11-20 04:58:15 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:15 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:18 --> Current time: 1700456298
+INFO - 2023-11-20 04:58:18 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:18 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:18 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:18 --> Current time: 1700456298
+INFO - 2023-11-20 04:58:18 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:18 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:18 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:20 --> Current time: 1700456300
+INFO - 2023-11-20 04:58:20 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:20 --> Difference (minutes): 1981
+INFO - 2023-11-20 04:58:20 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:20 --> Current time: 1700456300
+INFO - 2023-11-20 04:58:20 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:20 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:20 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:58:23 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:58:25 --> Current time: 1700456305
+INFO - 2023-11-20 04:58:25 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:25 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:25 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:25 --> Current time: 1700456305
+INFO - 2023-11-20 04:58:25 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:25 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:28 --> Current time: 1700456308
+INFO - 2023-11-20 04:58:28 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:28 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:28 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:28 --> Current time: 1700456308
+INFO - 2023-11-20 04:58:28 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:28 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:28 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:30 --> Current time: 1700456310
+INFO - 2023-11-20 04:58:30 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:30 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:30 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:30 --> Current time: 1700456310
+INFO - 2023-11-20 04:58:30 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:30 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:30 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:33 --> Current time: 1700456313
+INFO - 2023-11-20 04:58:33 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:33 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:33 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:33 --> Current time: 1700456313
+INFO - 2023-11-20 04:58:33 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:33 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:33 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:35 --> Current time: 1700456315
+INFO - 2023-11-20 04:58:35 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:35 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:35 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:35 --> Current time: 1700456315
+INFO - 2023-11-20 04:58:35 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:35 --> Difference (minutes): 477
+INFO - 2023-11-20 04:58:35 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:57 --> Current time: 1700456337
+INFO - 2023-11-20 04:58:57 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:57 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:57 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:57 --> Current time: 1700456337
+INFO - 2023-11-20 04:58:57 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:57 --> Difference (minutes): 476
+INFO - 2023-11-20 04:58:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 04:58:57 --> Current time: 1700456337
+INFO - 2023-11-20 04:58:57 --> Message time: 1700337385
+INFO - 2023-11-20 04:58:57 --> Difference (minutes): 1982
+INFO - 2023-11-20 04:58:57 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:58:57 --> Current time: 1700456337
+INFO - 2023-11-20 04:58:57 --> Message time: 1700484940
+INFO - 2023-11-20 04:58:57 --> Difference (minutes): 476
+INFO - 2023-11-20 04:58:57 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 04:59:57 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 04:59:57 --> Current time: 1700456397
+INFO - 2023-11-20 04:59:57 --> Message time: 1700337385
+INFO - 2023-11-20 04:59:57 --> Difference (minutes): 1983
+INFO - 2023-11-20 04:59:57 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 04:59:57 --> Current time: 1700456397
+INFO - 2023-11-20 04:59:57 --> Message time: 1700484940
+INFO - 2023-11-20 04:59:57 --> Difference (minutes): 475
+INFO - 2023-11-20 04:59:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:00:48 --> Current time: 1700456448
+INFO - 2023-11-20 05:00:48 --> Message time: 1700337385
+INFO - 2023-11-20 05:00:48 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:00:48 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:00:48 --> Current time: 1700456448
+INFO - 2023-11-20 05:00:48 --> Message time: 1700484940
+INFO - 2023-11-20 05:00:48 --> Difference (minutes): 474
+INFO - 2023-11-20 05:00:48 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:00:48 --> Current time: 1700456448
+INFO - 2023-11-20 05:00:48 --> Message time: 1700337385
+INFO - 2023-11-20 05:00:48 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:00:48 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:00:48 --> Current time: 1700456448
+INFO - 2023-11-20 05:00:48 --> Message time: 1700484940
+INFO - 2023-11-20 05:00:48 --> Difference (minutes): 474
+INFO - 2023-11-20 05:00:48 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:00:50 --> Current time: 1700456450
+INFO - 2023-11-20 05:00:50 --> Message time: 1700337385
+INFO - 2023-11-20 05:00:50 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:00:50 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:00:50 --> Current time: 1700456450
+INFO - 2023-11-20 05:00:50 --> Message time: 1700484940
+INFO - 2023-11-20 05:00:50 --> Difference (minutes): 474
+INFO - 2023-11-20 05:00:50 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:00:53 --> Current time: 1700456453
+INFO - 2023-11-20 05:00:53 --> Message time: 1700337385
+INFO - 2023-11-20 05:00:53 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:00:53 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:00:53 --> Current time: 1700456453
+INFO - 2023-11-20 05:00:53 --> Message time: 1700484940
+INFO - 2023-11-20 05:00:53 --> Difference (minutes): 474
+INFO - 2023-11-20 05:00:53 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:00:55 --> Current time: 1700456455
+INFO - 2023-11-20 05:00:55 --> Message time: 1700337385
+INFO - 2023-11-20 05:00:55 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:00:55 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:00:55 --> Current time: 1700456455
+INFO - 2023-11-20 05:00:55 --> Message time: 1700484940
+INFO - 2023-11-20 05:00:55 --> Difference (minutes): 474
+INFO - 2023-11-20 05:00:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:00:58 --> Current time: 1700456458
+INFO - 2023-11-20 05:00:58 --> Message time: 1700337385
+INFO - 2023-11-20 05:00:58 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:00:58 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:00:58 --> Current time: 1700456458
+INFO - 2023-11-20 05:00:58 --> Message time: 1700484940
+INFO - 2023-11-20 05:00:58 --> Difference (minutes): 474
+INFO - 2023-11-20 05:00:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:00 --> Current time: 1700456460
+INFO - 2023-11-20 05:01:00 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:00 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:00 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:00 --> Current time: 1700456460
+INFO - 2023-11-20 05:01:00 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:00 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:00 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 05:01:03 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 05:01:05 --> Current time: 1700456465
+INFO - 2023-11-20 05:01:05 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:05 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:05 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:05 --> Current time: 1700456465
+INFO - 2023-11-20 05:01:05 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:05 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:08 --> Current time: 1700456468
+INFO - 2023-11-20 05:01:08 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:08 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:08 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:08 --> Current time: 1700456468
+INFO - 2023-11-20 05:01:08 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:08 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:10 --> Current time: 1700456470
+INFO - 2023-11-20 05:01:10 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:10 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:10 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:10 --> Current time: 1700456470
+INFO - 2023-11-20 05:01:10 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:10 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:13 --> Current time: 1700456473
+INFO - 2023-11-20 05:01:13 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:13 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:13 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:13 --> Current time: 1700456473
+INFO - 2023-11-20 05:01:13 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:13 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:15 --> Current time: 1700456475
+INFO - 2023-11-20 05:01:15 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:15 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:15 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:15 --> Current time: 1700456475
+INFO - 2023-11-20 05:01:15 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:15 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:18 --> Current time: 1700456478
+INFO - 2023-11-20 05:01:18 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:18 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:18 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:18 --> Current time: 1700456478
+INFO - 2023-11-20 05:01:18 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:18 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:18 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:20 --> Current time: 1700456480
+INFO - 2023-11-20 05:01:20 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:20 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:20 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:20 --> Current time: 1700456480
+INFO - 2023-11-20 05:01:20 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:20 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:20 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:23 --> Current time: 1700456483
+INFO - 2023-11-20 05:01:23 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:23 --> Difference (minutes): 1984
+INFO - 2023-11-20 05:01:23 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:23 --> Current time: 1700456483
+INFO - 2023-11-20 05:01:23 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:23 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:23 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:25 --> Current time: 1700456485
+INFO - 2023-11-20 05:01:25 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:25 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:25 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:25 --> Current time: 1700456485
+INFO - 2023-11-20 05:01:25 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:25 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:28 --> Current time: 1700456488
+INFO - 2023-11-20 05:01:28 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:28 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:28 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:28 --> Current time: 1700456488
+INFO - 2023-11-20 05:01:28 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:28 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:28 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:30 --> Current time: 1700456490
+INFO - 2023-11-20 05:01:30 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:30 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:30 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:30 --> Current time: 1700456490
+INFO - 2023-11-20 05:01:30 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:30 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:30 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 05:01:33 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 05:01:35 --> Current time: 1700456495
+INFO - 2023-11-20 05:01:35 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:35 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:35 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:35 --> Current time: 1700456495
+INFO - 2023-11-20 05:01:35 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:35 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:35 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:38 --> Current time: 1700456498
+INFO - 2023-11-20 05:01:38 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:38 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:38 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:38 --> Current time: 1700456498
+INFO - 2023-11-20 05:01:38 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:38 --> Difference (minutes): 474
+INFO - 2023-11-20 05:01:38 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:40 --> Current time: 1700456500
+INFO - 2023-11-20 05:01:40 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:40 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:40 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:40 --> Current time: 1700456500
+INFO - 2023-11-20 05:01:40 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:40 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:40 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:43 --> Current time: 1700456503
+INFO - 2023-11-20 05:01:43 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:43 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:43 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:43 --> Current time: 1700456503
+INFO - 2023-11-20 05:01:43 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:43 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:43 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:45 --> Current time: 1700456505
+INFO - 2023-11-20 05:01:45 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:45 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:45 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:45 --> Current time: 1700456505
+INFO - 2023-11-20 05:01:45 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:45 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:45 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 05:01:48 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 05:01:50 --> Current time: 1700456510
+INFO - 2023-11-20 05:01:50 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:50 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:50 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:50 --> Current time: 1700456510
+INFO - 2023-11-20 05:01:50 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:50 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:50 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:53 --> Current time: 1700456513
+INFO - 2023-11-20 05:01:53 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:53 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:53 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:53 --> Current time: 1700456513
+INFO - 2023-11-20 05:01:53 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:53 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:53 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:55 --> Current time: 1700456515
+INFO - 2023-11-20 05:01:55 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:55 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:55 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:55 --> Current time: 1700456515
+INFO - 2023-11-20 05:01:55 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:55 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:01:58 --> Current time: 1700456518
+INFO - 2023-11-20 05:01:58 --> Message time: 1700337385
+INFO - 2023-11-20 05:01:58 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:01:58 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:01:58 --> Current time: 1700456518
+INFO - 2023-11-20 05:01:58 --> Message time: 1700484940
+INFO - 2023-11-20 05:01:58 --> Difference (minutes): 473
+INFO - 2023-11-20 05:01:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:00 --> Current time: 1700456520
+INFO - 2023-11-20 05:02:00 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:00 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:00 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:00 --> Current time: 1700456520
+INFO - 2023-11-20 05:02:00 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:00 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:00 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 05:02:03 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 05:02:05 --> Current time: 1700456525
+INFO - 2023-11-20 05:02:05 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:05 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:05 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:05 --> Current time: 1700456525
+INFO - 2023-11-20 05:02:05 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:05 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:08 --> Current time: 1700456528
+INFO - 2023-11-20 05:02:08 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:08 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:08 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:08 --> Current time: 1700456528
+INFO - 2023-11-20 05:02:08 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:08 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:10 --> Current time: 1700456530
+INFO - 2023-11-20 05:02:10 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:10 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:10 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:10 --> Current time: 1700456530
+INFO - 2023-11-20 05:02:10 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:10 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:10 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 05:02:13 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 05:02:15 --> Current time: 1700456535
+INFO - 2023-11-20 05:02:15 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:15 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:15 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:15 --> Current time: 1700456535
+INFO - 2023-11-20 05:02:15 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:15 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:18 --> Current time: 1700456538
+INFO - 2023-11-20 05:02:18 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:18 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:18 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:18 --> Current time: 1700456538
+INFO - 2023-11-20 05:02:18 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:18 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:18 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:20 --> Current time: 1700456540
+INFO - 2023-11-20 05:02:20 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:20 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:20 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:20 --> Current time: 1700456540
+INFO - 2023-11-20 05:02:20 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:20 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:20 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:23 --> Current time: 1700456543
+INFO - 2023-11-20 05:02:23 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:23 --> Difference (minutes): 1985
+INFO - 2023-11-20 05:02:23 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:23 --> Current time: 1700456543
+INFO - 2023-11-20 05:02:23 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:23 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:23 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:25 --> Current time: 1700456545
+INFO - 2023-11-20 05:02:25 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:25 --> Difference (minutes): 1986
+INFO - 2023-11-20 05:02:25 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:25 --> Current time: 1700456545
+INFO - 2023-11-20 05:02:25 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:25 --> Difference (minutes): 473
+INFO - 2023-11-20 05:02:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:57 --> Current time: 1700456577
+INFO - 2023-11-20 05:02:57 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:57 --> Difference (minutes): 1986
+INFO - 2023-11-20 05:02:57 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:57 --> Current time: 1700456577
+INFO - 2023-11-20 05:02:57 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:57 --> Difference (minutes): 472
+INFO - 2023-11-20 05:02:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:02:57 --> Current time: 1700456577
+INFO - 2023-11-20 05:02:57 --> Message time: 1700337385
+INFO - 2023-11-20 05:02:57 --> Difference (minutes): 1986
+INFO - 2023-11-20 05:02:57 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:02:57 --> Current time: 1700456577
+INFO - 2023-11-20 05:02:57 --> Message time: 1700484940
+INFO - 2023-11-20 05:02:57 --> Difference (minutes): 472
+INFO - 2023-11-20 05:02:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:03:51 --> Current time: 1700456631
+INFO - 2023-11-20 05:03:51 --> Message time: 1700337385
+INFO - 2023-11-20 05:03:51 --> Difference (minutes): 1987
+INFO - 2023-11-20 05:03:51 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:03:51 --> Current time: 1700456631
+INFO - 2023-11-20 05:03:51 --> Message time: 1700484940
+INFO - 2023-11-20 05:03:51 --> Difference (minutes): 471
+INFO - 2023-11-20 05:03:51 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-20 05:03:51 --> Current time: 1700456631
+INFO - 2023-11-20 05:03:51 --> Message time: 1700337385
+INFO - 2023-11-20 05:03:51 --> Difference (minutes): 1987
+INFO - 2023-11-20 05:03:51 --> Formatted date: Nov 18, 2023 7:56 PM
+INFO - 2023-11-20 05:03:51 --> Current time: 1700456631
+INFO - 2023-11-20 05:03:51 --> Message time: 1700484940
+INFO - 2023-11-20 05:03:51 --> Difference (minutes): 471
+INFO - 2023-11-20 05:03:51 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-20 05:03:52 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:35:49 --> Current time: 1700483749
+INFO - 2023-11-20 12:35:49 --> Message time: 1700337598
+INFO - 2023-11-20 12:35:49 --> Difference (minutes): 2435
+INFO - 2023-11-20 12:35:49 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 12:35:49 --> Current time: 1700483749
+INFO - 2023-11-20 12:35:49 --> Message time: 1700337250
+INFO - 2023-11-20 12:35:49 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:35:49 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:35:49 --> Current time: 1700483749
+INFO - 2023-11-20 12:35:49 --> Message time: 1700484940
+INFO - 2023-11-20 12:35:49 --> Difference (minutes): 19
+INFO - 2023-11-20 12:35:52 --> Current time: 1700483752
+INFO - 2023-11-20 12:35:52 --> Message time: 1700337598
+INFO - 2023-11-20 12:35:52 --> Difference (minutes): 2435
+INFO - 2023-11-20 12:35:52 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 12:35:52 --> Current time: 1700483752
+INFO - 2023-11-20 12:35:52 --> Message time: 1700337250
+INFO - 2023-11-20 12:35:52 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:35:52 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:35:52 --> Current time: 1700483752
+INFO - 2023-11-20 12:35:52 --> Message time: 1700484940
+INFO - 2023-11-20 12:35:52 --> Difference (minutes): 19
+CRITICAL - 2023-11-20 12:35:53 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 12:35:53 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('7')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:35:54 --> Current time: 1700483754
+INFO - 2023-11-20 12:35:54 --> Message time: 1700337598
+INFO - 2023-11-20 12:35:54 --> Difference (minutes): 2435
+INFO - 2023-11-20 12:35:54 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 12:35:54 --> Current time: 1700483754
+INFO - 2023-11-20 12:35:54 --> Message time: 1700337250
+INFO - 2023-11-20 12:35:54 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:35:54 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:35:54 --> Current time: 1700483754
+INFO - 2023-11-20 12:35:54 --> Message time: 1700484940
+INFO - 2023-11-20 12:35:54 --> Difference (minutes): 19
+INFO - 2023-11-20 12:35:57 --> Current time: 1700483757
+INFO - 2023-11-20 12:35:57 --> Message time: 1700337598
+INFO - 2023-11-20 12:35:57 --> Difference (minutes): 2435
+INFO - 2023-11-20 12:35:57 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 12:35:57 --> Current time: 1700483757
+INFO - 2023-11-20 12:35:57 --> Message time: 1700337250
+INFO - 2023-11-20 12:35:57 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:35:57 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:35:57 --> Current time: 1700483757
+INFO - 2023-11-20 12:35:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:35:57 --> Difference (minutes): 19
+INFO - 2023-11-20 12:35:57 --> Current time: 1700483757
+INFO - 2023-11-20 12:35:57 --> Message time: 1700337598
+INFO - 2023-11-20 12:35:57 --> Difference (minutes): 2435
+INFO - 2023-11-20 12:35:57 --> Formatted date: Nov 18, 2023 7:59 PM
+INFO - 2023-11-20 12:35:57 --> Current time: 1700483757
+INFO - 2023-11-20 12:35:57 --> Message time: 1700337250
+INFO - 2023-11-20 12:35:57 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:35:57 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:35:57 --> Current time: 1700483757
+INFO - 2023-11-20 12:35:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:35:57 --> Difference (minutes): 19
+INFO - 2023-11-20 12:35:59 --> Current time: 1700483759
+INFO - 2023-11-20 12:35:59 --> Message time: 1700512559
+INFO - 2023-11-20 12:35:59 --> Difference (minutes): 479
+INFO - 2023-11-20 12:35:59 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:35:59 --> Current time: 1700483759
+INFO - 2023-11-20 12:35:59 --> Message time: 1700337250
+INFO - 2023-11-20 12:35:59 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:35:59 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:35:59 --> Current time: 1700483759
+INFO - 2023-11-20 12:35:59 --> Message time: 1700484940
+INFO - 2023-11-20 12:35:59 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:02 --> Current time: 1700483762
+INFO - 2023-11-20 12:36:02 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:02 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:02 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:02 --> Current time: 1700483762
+INFO - 2023-11-20 12:36:02 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:02 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:36:02 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:02 --> Current time: 1700483762
+INFO - 2023-11-20 12:36:02 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:02 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:03 --> Current time: 1700483763
+INFO - 2023-11-20 12:36:03 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:03 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:03 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:03 --> Current time: 1700483763
+INFO - 2023-11-20 12:36:03 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:03 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:36:03 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:03 --> Current time: 1700483763
+INFO - 2023-11-20 12:36:03 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:03 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:04 --> Current time: 1700483764
+INFO - 2023-11-20 12:36:04 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:04 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:04 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:04 --> Current time: 1700483764
+INFO - 2023-11-20 12:36:04 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:04 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:36:04 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:04 --> Current time: 1700483764
+INFO - 2023-11-20 12:36:04 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:04 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:07 --> Current time: 1700483767
+INFO - 2023-11-20 12:36:07 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:07 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:07 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:07 --> Current time: 1700483767
+INFO - 2023-11-20 12:36:07 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:07 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:36:07 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:07 --> Current time: 1700483767
+INFO - 2023-11-20 12:36:07 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:07 --> Difference (minutes): 19
+CRITICAL - 2023-11-20 12:36:07 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('11')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:36:08 --> Current time: 1700483768
+INFO - 2023-11-20 12:36:08 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:08 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:08 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:08 --> Current time: 1700483768
+INFO - 2023-11-20 12:36:08 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:08 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:36:08 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:08 --> Current time: 1700483768
+INFO - 2023-11-20 12:36:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:08 --> Difference (minutes): 19
+CRITICAL - 2023-11-20 12:36:08 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('12')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:36:09 --> Current time: 1700483769
+INFO - 2023-11-20 12:36:09 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:09 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:09 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:09 --> Current time: 1700483769
+INFO - 2023-11-20 12:36:09 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:09 --> Difference (minutes): 2441
+INFO - 2023-11-20 12:36:09 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:09 --> Current time: 1700483769
+INFO - 2023-11-20 12:36:09 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:09 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:12 --> Current time: 1700483772
+INFO - 2023-11-20 12:36:12 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:12 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:12 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:12 --> Current time: 1700483772
+INFO - 2023-11-20 12:36:12 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:12 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:12 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:12 --> Current time: 1700483772
+INFO - 2023-11-20 12:36:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:12 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:12 --> Current time: 1700483772
+INFO - 2023-11-20 12:36:12 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:12 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:12 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:12 --> Current time: 1700483772
+INFO - 2023-11-20 12:36:12 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:12 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:12 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:12 --> Current time: 1700483772
+INFO - 2023-11-20 12:36:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:12 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:14 --> Current time: 1700483774
+INFO - 2023-11-20 12:36:14 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:14 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:14 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:14 --> Current time: 1700483774
+INFO - 2023-11-20 12:36:14 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:14 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:14 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:14 --> Current time: 1700483774
+INFO - 2023-11-20 12:36:14 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:14 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:17 --> Current time: 1700483777
+INFO - 2023-11-20 12:36:17 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:17 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:17 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:17 --> Current time: 1700483777
+INFO - 2023-11-20 12:36:17 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:17 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:17 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:17 --> Current time: 1700483777
+INFO - 2023-11-20 12:36:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:17 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:18 --> Current time: 1700483778
+INFO - 2023-11-20 12:36:18 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:18 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:18 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:18 --> Current time: 1700483778
+INFO - 2023-11-20 12:36:18 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:18 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:18 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:18 --> Current time: 1700483778
+INFO - 2023-11-20 12:36:18 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:18 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:19 --> Current time: 1700483779
+INFO - 2023-11-20 12:36:19 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:19 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:19 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:19 --> Current time: 1700483779
+INFO - 2023-11-20 12:36:19 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:19 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:19 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:19 --> Current time: 1700483779
+INFO - 2023-11-20 12:36:19 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:19 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:22 --> Current time: 1700483782
+INFO - 2023-11-20 12:36:22 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:22 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:22 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:22 --> Current time: 1700483782
+INFO - 2023-11-20 12:36:22 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:22 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:22 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:22 --> Current time: 1700483782
+INFO - 2023-11-20 12:36:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:22 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:23 --> Current time: 1700483783
+INFO - 2023-11-20 12:36:23 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:23 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:23 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:23 --> Current time: 1700483783
+INFO - 2023-11-20 12:36:23 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:23 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:23 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:23 --> Current time: 1700483783
+INFO - 2023-11-20 12:36:23 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:23 --> Difference (minutes): 19
+CRITICAL - 2023-11-20 12:36:24 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('7')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:36:25 --> Current time: 1700483785
+INFO - 2023-11-20 12:36:25 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:25 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:25 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:25 --> Current time: 1700483785
+INFO - 2023-11-20 12:36:25 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:25 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:25 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:25 --> Current time: 1700483785
+INFO - 2023-11-20 12:36:25 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:25 --> Difference (minutes): 19
+CRITICAL - 2023-11-20 12:36:27 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:36:28 --> Current time: 1700483788
+INFO - 2023-11-20 12:36:28 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:28 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:28 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:28 --> Current time: 1700483788
+INFO - 2023-11-20 12:36:28 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:28 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:28 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:28 --> Current time: 1700483788
+INFO - 2023-11-20 12:36:28 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:28 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:29 --> Current time: 1700483789
+INFO - 2023-11-20 12:36:29 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:29 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:29 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:29 --> Current time: 1700483789
+INFO - 2023-11-20 12:36:29 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:29 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:29 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:29 --> Current time: 1700483789
+INFO - 2023-11-20 12:36:29 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:29 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:32 --> Current time: 1700483792
+INFO - 2023-11-20 12:36:32 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:32 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:32 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:32 --> Current time: 1700483792
+INFO - 2023-11-20 12:36:32 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:32 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:32 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:32 --> Current time: 1700483792
+INFO - 2023-11-20 12:36:32 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:32 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:32 --> Current time: 1700483792
+INFO - 2023-11-20 12:36:32 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:32 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:32 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:32 --> Current time: 1700483792
+INFO - 2023-11-20 12:36:32 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:32 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:32 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:32 --> Current time: 1700483792
+INFO - 2023-11-20 12:36:32 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:32 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:34 --> Current time: 1700483794
+INFO - 2023-11-20 12:36:34 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:34 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:34 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:34 --> Current time: 1700483794
+INFO - 2023-11-20 12:36:34 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:34 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:34 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:34 --> Current time: 1700483794
+INFO - 2023-11-20 12:36:34 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:34 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:38 --> Current time: 1700483797
+INFO - 2023-11-20 12:36:38 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:38 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:38 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:38 --> Current time: 1700483798
+INFO - 2023-11-20 12:36:38 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:38 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:38 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:38 --> Current time: 1700483798
+INFO - 2023-11-20 12:36:38 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:38 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:38 --> Current time: 1700483798
+INFO - 2023-11-20 12:36:38 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:38 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:38 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:38 --> Current time: 1700483798
+INFO - 2023-11-20 12:36:38 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:38 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:38 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:38 --> Current time: 1700483798
+INFO - 2023-11-20 12:36:38 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:38 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:39 --> Current time: 1700483799
+INFO - 2023-11-20 12:36:39 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:39 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:39 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:39 --> Current time: 1700483799
+INFO - 2023-11-20 12:36:39 --> Message time: 1700337250
+INFO - 2023-11-20 12:36:39 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:36:39 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:36:39 --> Current time: 1700483799
+INFO - 2023-11-20 12:36:39 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:39 --> Difference (minutes): 19
+INFO - 2023-11-20 12:36:47 --> Current time: 1700483807
+INFO - 2023-11-20 12:36:47 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:47 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:47 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:47 --> Current time: 1700483807
+INFO - 2023-11-20 12:36:47 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:47 --> Difference (minutes): 18
+INFO - 2023-11-20 12:36:48 --> Current time: 1700483808
+INFO - 2023-11-20 12:36:48 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:48 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:48 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:48 --> Current time: 1700483808
+INFO - 2023-11-20 12:36:48 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:48 --> Difference (minutes): 18
+INFO - 2023-11-20 12:36:49 --> Current time: 1700483809
+INFO - 2023-11-20 12:36:49 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:49 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:49 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:49 --> Current time: 1700483809
+INFO - 2023-11-20 12:36:49 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:49 --> Difference (minutes): 18
+INFO - 2023-11-20 12:36:52 --> Current time: 1700483812
+INFO - 2023-11-20 12:36:52 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:52 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:52 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:52 --> Current time: 1700483812
+INFO - 2023-11-20 12:36:52 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:52 --> Difference (minutes): 18
+CRITICAL - 2023-11-20 12:36:53 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:36:54 --> Current time: 1700483814
+INFO - 2023-11-20 12:36:54 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:54 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:54 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:54 --> Current time: 1700483814
+INFO - 2023-11-20 12:36:54 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:54 --> Difference (minutes): 18
+INFO - 2023-11-20 12:36:57 --> Current time: 1700483817
+INFO - 2023-11-20 12:36:57 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:57 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:57 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:57 --> Current time: 1700483817
+INFO - 2023-11-20 12:36:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:57 --> Difference (minutes): 18
+INFO - 2023-11-20 12:36:58 --> Current time: 1700483818
+INFO - 2023-11-20 12:36:58 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:58 --> Difference (minutes): 479
+INFO - 2023-11-20 12:36:58 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:58 --> Current time: 1700483818
+INFO - 2023-11-20 12:36:58 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:58 --> Difference (minutes): 18
+INFO - 2023-11-20 12:36:59 --> Current time: 1700483819
+INFO - 2023-11-20 12:36:59 --> Message time: 1700512559
+INFO - 2023-11-20 12:36:59 --> Difference (minutes): 478
+INFO - 2023-11-20 12:36:59 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:36:59 --> Current time: 1700483819
+INFO - 2023-11-20 12:36:59 --> Message time: 1700484940
+INFO - 2023-11-20 12:36:59 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:02 --> Current time: 1700483822
+INFO - 2023-11-20 12:37:02 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:02 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:02 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:02 --> Current time: 1700483822
+INFO - 2023-11-20 12:37:02 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:02 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:03 --> Current time: 1700483823
+INFO - 2023-11-20 12:37:03 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:03 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:03 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:03 --> Current time: 1700483823
+INFO - 2023-11-20 12:37:03 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:03 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:03 --> Current time: 1700483823
+INFO - 2023-11-20 12:37:03 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:03 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:03 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:03 --> Current time: 1700483823
+INFO - 2023-11-20 12:37:03 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:03 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:37:03 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:03 --> Current time: 1700483823
+INFO - 2023-11-20 12:37:03 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:03 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:04 --> Current time: 1700483824
+INFO - 2023-11-20 12:37:04 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:04 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:04 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:04 --> Current time: 1700483824
+INFO - 2023-11-20 12:37:04 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:04 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:05 --> Current time: 1700483825
+INFO - 2023-11-20 12:37:05 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:05 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:05 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:05 --> Current time: 1700483825
+INFO - 2023-11-20 12:37:05 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:05 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:37:05 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:05 --> Current time: 1700483825
+INFO - 2023-11-20 12:37:05 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:05 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:07 --> Current time: 1700483827
+INFO - 2023-11-20 12:37:07 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:07 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:07 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:07 --> Current time: 1700483827
+INFO - 2023-11-20 12:37:07 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:07 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:08 --> Current time: 1700483828
+INFO - 2023-11-20 12:37:08 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:08 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:08 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:08 --> Current time: 1700483828
+INFO - 2023-11-20 12:37:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:08 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:08 --> Current time: 1700483828
+INFO - 2023-11-20 12:37:08 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:08 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:08 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:08 --> Current time: 1700483828
+INFO - 2023-11-20 12:37:08 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:08 --> Difference (minutes): 2442
+INFO - 2023-11-20 12:37:08 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:08 --> Current time: 1700483828
+INFO - 2023-11-20 12:37:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:08 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:09 --> Current time: 1700483829
+INFO - 2023-11-20 12:37:09 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:09 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:09 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:09 --> Current time: 1700483829
+INFO - 2023-11-20 12:37:09 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:09 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:10 --> Current time: 1700483830
+INFO - 2023-11-20 12:37:10 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:10 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:10 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:10 --> Current time: 1700483830
+INFO - 2023-11-20 12:37:10 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:10 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:10 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:10 --> Current time: 1700483830
+INFO - 2023-11-20 12:37:10 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:10 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:12 --> Current time: 1700483832
+INFO - 2023-11-20 12:37:12 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:12 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:12 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:12 --> Current time: 1700483832
+INFO - 2023-11-20 12:37:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:12 --> Difference (minutes): 18
+CRITICAL - 2023-11-20 12:37:13 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:37:13 --> Current time: 1700483833
+INFO - 2023-11-20 12:37:13 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:13 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:13 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:13 --> Current time: 1700483833
+INFO - 2023-11-20 12:37:13 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:13 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:13 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:13 --> Current time: 1700483833
+INFO - 2023-11-20 12:37:13 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:13 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:14 --> Current time: 1700483834
+INFO - 2023-11-20 12:37:14 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:14 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:14 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:14 --> Current time: 1700483834
+INFO - 2023-11-20 12:37:14 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:14 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:15 --> Current time: 1700483835
+INFO - 2023-11-20 12:37:15 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:15 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:15 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:15 --> Current time: 1700483835
+INFO - 2023-11-20 12:37:15 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:15 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:15 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:15 --> Current time: 1700483835
+INFO - 2023-11-20 12:37:15 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:15 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:17 --> Current time: 1700483837
+INFO - 2023-11-20 12:37:17 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:17 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:17 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:17 --> Current time: 1700483837
+INFO - 2023-11-20 12:37:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:17 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:17 --> Current time: 1700483837
+INFO - 2023-11-20 12:37:17 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:17 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:17 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:17 --> Current time: 1700483837
+INFO - 2023-11-20 12:37:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:17 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:18 --> Current time: 1700483838
+INFO - 2023-11-20 12:37:18 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:18 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:18 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:18 --> Current time: 1700483838
+INFO - 2023-11-20 12:37:18 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:18 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:18 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:18 --> Current time: 1700483838
+INFO - 2023-11-20 12:37:18 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:18 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:19 --> Current time: 1700483839
+INFO - 2023-11-20 12:37:19 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:19 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:19 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:19 --> Current time: 1700483839
+INFO - 2023-11-20 12:37:19 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:19 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:20 --> Current time: 1700483840
+INFO - 2023-11-20 12:37:20 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:20 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:20 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:20 --> Current time: 1700483840
+INFO - 2023-11-20 12:37:20 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:20 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:20 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:20 --> Current time: 1700483840
+INFO - 2023-11-20 12:37:20 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:20 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:22 --> Current time: 1700483842
+INFO - 2023-11-20 12:37:22 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:22 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:22 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:22 --> Current time: 1700483842
+INFO - 2023-11-20 12:37:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:22 --> Difference (minutes): 18
+CRITICAL - 2023-11-20 12:37:22 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:37:23 --> Current time: 1700483843
+INFO - 2023-11-20 12:37:23 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:23 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:23 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:23 --> Current time: 1700483843
+INFO - 2023-11-20 12:37:23 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:23 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:23 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:23 --> Current time: 1700483843
+INFO - 2023-11-20 12:37:23 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:23 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:24 --> Current time: 1700483844
+INFO - 2023-11-20 12:37:24 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:24 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:24 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:24 --> Current time: 1700483844
+INFO - 2023-11-20 12:37:24 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:24 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:25 --> Current time: 1700483845
+INFO - 2023-11-20 12:37:25 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:25 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:25 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:25 --> Current time: 1700483845
+INFO - 2023-11-20 12:37:25 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:25 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:25 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:25 --> Current time: 1700483845
+INFO - 2023-11-20 12:37:25 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:25 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:27 --> Current time: 1700483847
+INFO - 2023-11-20 12:37:27 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:27 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:27 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:27 --> Current time: 1700483847
+INFO - 2023-11-20 12:37:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:27 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:27 --> Current time: 1700483847
+INFO - 2023-11-20 12:37:27 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:27 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:27 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:27 --> Current time: 1700483847
+INFO - 2023-11-20 12:37:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:27 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:28 --> Current time: 1700483848
+INFO - 2023-11-20 12:37:28 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:28 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:28 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:28 --> Current time: 1700483848
+INFO - 2023-11-20 12:37:28 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:28 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:28 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:28 --> Current time: 1700483848
+INFO - 2023-11-20 12:37:28 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:28 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:29 --> Current time: 1700483849
+INFO - 2023-11-20 12:37:29 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:29 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:29 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:29 --> Current time: 1700483849
+INFO - 2023-11-20 12:37:29 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:29 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:30 --> Current time: 1700483850
+INFO - 2023-11-20 12:37:30 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:30 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:30 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:30 --> Current time: 1700483850
+INFO - 2023-11-20 12:37:30 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:30 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:30 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:30 --> Current time: 1700483850
+INFO - 2023-11-20 12:37:30 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:30 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:33 --> Current time: 1700483853
+INFO - 2023-11-20 12:37:33 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:33 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:33 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:33 --> Current time: 1700483853
+INFO - 2023-11-20 12:37:33 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:33 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:33 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:33 --> Current time: 1700483853
+INFO - 2023-11-20 12:37:33 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:33 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:35 --> Current time: 1700483855
+INFO - 2023-11-20 12:37:35 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:35 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:35 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:35 --> Current time: 1700483855
+INFO - 2023-11-20 12:37:35 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:35 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:35 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:35 --> Current time: 1700483855
+INFO - 2023-11-20 12:37:35 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:35 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:38 --> Current time: 1700483858
+INFO - 2023-11-20 12:37:38 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:38 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:38 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:38 --> Current time: 1700483858
+INFO - 2023-11-20 12:37:38 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:38 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:38 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:38 --> Current time: 1700483858
+INFO - 2023-11-20 12:37:38 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:38 --> Difference (minutes): 18
+INFO - 2023-11-20 12:37:40 --> Current time: 1700483860
+INFO - 2023-11-20 12:37:40 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:40 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:40 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:40 --> Current time: 1700483860
+INFO - 2023-11-20 12:37:40 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:40 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:40 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:40 --> Current time: 1700483860
+INFO - 2023-11-20 12:37:40 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:40 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:43 --> Current time: 1700483862
+INFO - 2023-11-20 12:37:43 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:43 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:43 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:43 --> Current time: 1700483863
+INFO - 2023-11-20 12:37:43 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:43 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:43 --> Current time: 1700483863
+INFO - 2023-11-20 12:37:43 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:43 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:43 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:43 --> Current time: 1700483863
+INFO - 2023-11-20 12:37:43 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:43 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:43 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:43 --> Current time: 1700483863
+INFO - 2023-11-20 12:37:43 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:43 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:44 --> Current time: 1700483864
+INFO - 2023-11-20 12:37:44 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:44 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:44 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:44 --> Current time: 1700483864
+INFO - 2023-11-20 12:37:44 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:44 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:45 --> Current time: 1700483865
+INFO - 2023-11-20 12:37:45 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:45 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:45 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:45 --> Current time: 1700483865
+INFO - 2023-11-20 12:37:45 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:45 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:45 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:45 --> Current time: 1700483865
+INFO - 2023-11-20 12:37:45 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:45 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:48 --> Current time: 1700483868
+INFO - 2023-11-20 12:37:48 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:48 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:48 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:48 --> Current time: 1700483868
+INFO - 2023-11-20 12:37:48 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:48 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:48 --> Current time: 1700483868
+INFO - 2023-11-20 12:37:48 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:48 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:48 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:48 --> Current time: 1700483868
+INFO - 2023-11-20 12:37:48 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:48 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:48 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:48 --> Current time: 1700483868
+INFO - 2023-11-20 12:37:48 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:48 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:49 --> Current time: 1700483869
+INFO - 2023-11-20 12:37:49 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:49 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:49 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:49 --> Current time: 1700483869
+INFO - 2023-11-20 12:37:49 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:49 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:50 --> Current time: 1700483870
+INFO - 2023-11-20 12:37:50 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:50 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:50 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:50 --> Current time: 1700483870
+INFO - 2023-11-20 12:37:50 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:50 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:50 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:50 --> Current time: 1700483870
+INFO - 2023-11-20 12:37:50 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:50 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:52 --> Current time: 1700483872
+INFO - 2023-11-20 12:37:52 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:52 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:52 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:52 --> Current time: 1700483872
+INFO - 2023-11-20 12:37:52 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:52 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:53 --> Current time: 1700483873
+INFO - 2023-11-20 12:37:53 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:53 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:53 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:53 --> Current time: 1700483873
+INFO - 2023-11-20 12:37:53 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:53 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:53 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:53 --> Current time: 1700483873
+INFO - 2023-11-20 12:37:53 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:53 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:54 --> Current time: 1700483874
+INFO - 2023-11-20 12:37:54 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:54 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:54 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:54 --> Current time: 1700483874
+INFO - 2023-11-20 12:37:54 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:54 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:55 --> Current time: 1700483875
+INFO - 2023-11-20 12:37:55 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:55 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:55 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:55 --> Current time: 1700483875
+INFO - 2023-11-20 12:37:55 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:55 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:55 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:55 --> Current time: 1700483875
+INFO - 2023-11-20 12:37:55 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:55 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:57 --> Current time: 1700483877
+INFO - 2023-11-20 12:37:57 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:57 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:57 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:57 --> Current time: 1700483877
+INFO - 2023-11-20 12:37:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:57 --> Difference (minutes): 17
+INFO - 2023-11-20 12:37:58 --> Current time: 1700483878
+INFO - 2023-11-20 12:37:58 --> Message time: 1700512559
+INFO - 2023-11-20 12:37:58 --> Difference (minutes): 478
+INFO - 2023-11-20 12:37:58 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:37:58 --> Current time: 1700483878
+INFO - 2023-11-20 12:37:58 --> Message time: 1700337250
+INFO - 2023-11-20 12:37:58 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:37:58 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:37:58 --> Current time: 1700483878
+INFO - 2023-11-20 12:37:58 --> Message time: 1700484940
+INFO - 2023-11-20 12:37:58 --> Difference (minutes): 17
+CRITICAL - 2023-11-20 12:37:58 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:38:00 --> Current time: 1700483880
+INFO - 2023-11-20 12:38:00 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:00 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:00 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:00 --> Current time: 1700483880
+INFO - 2023-11-20 12:38:00 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:00 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:38:00 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:00 --> Current time: 1700483880
+INFO - 2023-11-20 12:38:00 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:00 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:02 --> Current time: 1700483882
+INFO - 2023-11-20 12:38:02 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:02 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:02 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:02 --> Current time: 1700483882
+INFO - 2023-11-20 12:38:02 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:02 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:03 --> Current time: 1700483883
+INFO - 2023-11-20 12:38:03 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:03 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:03 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:03 --> Current time: 1700483883
+INFO - 2023-11-20 12:38:03 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:03 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:38:03 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:03 --> Current time: 1700483883
+INFO - 2023-11-20 12:38:03 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:03 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:04 --> Current time: 1700483884
+INFO - 2023-11-20 12:38:04 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:04 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:04 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:04 --> Current time: 1700483884
+INFO - 2023-11-20 12:38:04 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:04 --> Difference (minutes): 17
+CRITICAL - 2023-11-20 12:38:04 --> key must be a string when using hmac
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 248.
+ 1 VENDORPATH\firebase\php-jwt\src\JWT.php(218): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3MDA0ODM4ODQsImV4cCI6MTcwMDQ4NzQ4NCwiZW1haWwiOiJLYXNAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiS2FzIiwiaWQiOiI3In0', false, 'HS256')
+ 2 APPPATH\Controllers\LoginController.php(59): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:38:05 --> Current time: 1700483885
+INFO - 2023-11-20 12:38:05 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:05 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:05 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:05 --> Current time: 1700483885
+INFO - 2023-11-20 12:38:05 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:05 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:38:05 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:05 --> Current time: 1700483885
+INFO - 2023-11-20 12:38:05 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:05 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:08 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:08 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:08 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 2443
+INFO - 2023-11-20 12:38:08 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:08 --> Current time: 1700483888
+INFO - 2023-11-20 12:38:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:08 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:09 --> Current time: 1700483889
+INFO - 2023-11-20 12:38:09 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:09 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:09 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:09 --> Current time: 1700483889
+INFO - 2023-11-20 12:38:09 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:09 --> Difference (minutes): 17
+CRITICAL - 2023-11-20 12:38:09 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('5')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 12:38:09 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:38:10 --> Current time: 1700483890
+INFO - 2023-11-20 12:38:10 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:10 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:10 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:10 --> Current time: 1700483890
+INFO - 2023-11-20 12:38:10 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:10 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:10 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:10 --> Current time: 1700483890
+INFO - 2023-11-20 12:38:10 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:10 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:12 --> Current time: 1700483892
+INFO - 2023-11-20 12:38:12 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:12 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:12 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:12 --> Current time: 1700483892
+INFO - 2023-11-20 12:38:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:12 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:13 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:13 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:13 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:13 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:13 --> Current time: 1700483893
+INFO - 2023-11-20 12:38:13 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:13 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:14 --> Current time: 1700483894
+INFO - 2023-11-20 12:38:14 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:14 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:14 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:14 --> Current time: 1700483894
+INFO - 2023-11-20 12:38:14 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:14 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:15 --> Current time: 1700483895
+INFO - 2023-11-20 12:38:15 --> Message time: 1700512559
+INFO - 2023-11-20 12:38:15 --> Difference (minutes): 477
+INFO - 2023-11-20 12:38:15 --> Formatted date: Nov 20, 2023 8:35 PM
+INFO - 2023-11-20 12:38:15 --> Current time: 1700483895
+INFO - 2023-11-20 12:38:15 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:15 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:15 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:15 --> Current time: 1700483895
+INFO - 2023-11-20 12:38:15 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:15 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:18 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:18 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:18 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:18 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:18 --> Current time: 1700483898
+INFO - 2023-11-20 12:38:18 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:18 --> Difference (minutes): 17
+CRITICAL - 2023-11-20 12:38:18 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:38:19 --> Current time: 1700483899
+INFO - 2023-11-20 12:38:19 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:19 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:19 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:19 --> Current time: 1700483899
+INFO - 2023-11-20 12:38:19 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:19 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:20 --> Current time: 1700483900
+INFO - 2023-11-20 12:38:20 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:20 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:20 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:20 --> Current time: 1700483900
+INFO - 2023-11-20 12:38:20 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:20 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:20 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:20 --> Current time: 1700483900
+INFO - 2023-11-20 12:38:20 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:20 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:22 --> Current time: 1700483902
+INFO - 2023-11-20 12:38:22 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:22 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:22 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:22 --> Current time: 1700483902
+INFO - 2023-11-20 12:38:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:22 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:23 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:23 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:23 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:23 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:23 --> Current time: 1700483903
+INFO - 2023-11-20 12:38:23 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:23 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:24 --> Current time: 1700483904
+INFO - 2023-11-20 12:38:24 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:24 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:24 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:24 --> Current time: 1700483904
+INFO - 2023-11-20 12:38:24 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:24 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:25 --> Current time: 1700483905
+INFO - 2023-11-20 12:38:25 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:25 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:25 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:25 --> Current time: 1700483905
+INFO - 2023-11-20 12:38:25 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:25 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:25 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:25 --> Current time: 1700483905
+INFO - 2023-11-20 12:38:25 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:25 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:27 --> Current time: 1700483907
+INFO - 2023-11-20 12:38:27 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:27 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:27 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:27 --> Current time: 1700483907
+INFO - 2023-11-20 12:38:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:27 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:28 --> Current time: 1700483908
+INFO - 2023-11-20 12:38:28 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:28 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:28 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:28 --> Current time: 1700483908
+INFO - 2023-11-20 12:38:28 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:28 --> Difference (minutes): 17
+CRITICAL - 2023-11-20 12:38:28 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 12:38:29 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:38:29 --> Current time: 1700483909
+INFO - 2023-11-20 12:38:29 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:29 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:29 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:29 --> Current time: 1700483909
+INFO - 2023-11-20 12:38:29 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:29 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:30 --> Current time: 1700483910
+INFO - 2023-11-20 12:38:30 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:30 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:30 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:30 --> Current time: 1700483910
+INFO - 2023-11-20 12:38:30 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:30 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:30 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:30 --> Current time: 1700483910
+INFO - 2023-11-20 12:38:30 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:30 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:32 --> Current time: 1700483912
+INFO - 2023-11-20 12:38:32 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:32 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:32 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:32 --> Current time: 1700483912
+INFO - 2023-11-20 12:38:32 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:32 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:33 --> Current time: 1700483913
+INFO - 2023-11-20 12:38:33 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:33 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:33 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:33 --> Current time: 1700483913
+INFO - 2023-11-20 12:38:33 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:33 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:33 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:33 --> Current time: 1700483913
+INFO - 2023-11-20 12:38:33 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:33 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:35 --> Current time: 1700483915
+INFO - 2023-11-20 12:38:35 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:35 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:35 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:35 --> Current time: 1700483915
+INFO - 2023-11-20 12:38:35 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:35 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:35 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:35 --> Current time: 1700483915
+INFO - 2023-11-20 12:38:35 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:35 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:36 --> Current time: 1700483916
+INFO - 2023-11-20 12:38:36 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:36 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:36 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:36 --> Current time: 1700483916
+INFO - 2023-11-20 12:38:36 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:36 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:38 --> Current time: 1700483918
+INFO - 2023-11-20 12:38:38 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:38 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:38 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:38 --> Current time: 1700483918
+INFO - 2023-11-20 12:38:38 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:38 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:38 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:38 --> Current time: 1700483918
+INFO - 2023-11-20 12:38:38 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:38 --> Difference (minutes): 17
+INFO - 2023-11-20 12:38:40 --> Current time: 1700483920
+INFO - 2023-11-20 12:38:40 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:40 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:40 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:40 --> Current time: 1700483920
+INFO - 2023-11-20 12:38:40 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:40 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:40 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:40 --> Current time: 1700483920
+INFO - 2023-11-20 12:38:40 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:40 --> Difference (minutes): 16
+CRITICAL - 2023-11-20 12:38:42 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 12:38:42 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('12')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 12:38:42 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:38:46 --> Current time: 1700483926
+INFO - 2023-11-20 12:38:46 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:46 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:46 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:46 --> Current time: 1700483926
+INFO - 2023-11-20 12:38:46 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:46 --> Difference (minutes): 16
+INFO - 2023-11-20 12:38:47 --> Current time: 1700483927
+INFO - 2023-11-20 12:38:47 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:47 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:47 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:47 --> Current time: 1700483927
+INFO - 2023-11-20 12:38:47 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:47 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:47 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:47 --> Current time: 1700483927
+INFO - 2023-11-20 12:38:47 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:47 --> Difference (minutes): 16
+INFO - 2023-11-20 12:38:51 --> Current time: 1700483931
+INFO - 2023-11-20 12:38:51 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:51 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:51 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:51 --> Current time: 1700483931
+INFO - 2023-11-20 12:38:51 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:51 --> Difference (minutes): 16
+INFO - 2023-11-20 12:38:52 --> Current time: 1700483932
+INFO - 2023-11-20 12:38:52 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:52 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:52 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:52 --> Current time: 1700483932
+INFO - 2023-11-20 12:38:52 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:52 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:52 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:52 --> Current time: 1700483932
+INFO - 2023-11-20 12:38:52 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:52 --> Difference (minutes): 16
+INFO - 2023-11-20 12:38:56 --> Current time: 1700483936
+INFO - 2023-11-20 12:38:56 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:56 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:56 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:56 --> Current time: 1700483936
+INFO - 2023-11-20 12:38:56 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:56 --> Difference (minutes): 16
+INFO - 2023-11-20 12:38:57 --> Current time: 1700483937
+INFO - 2023-11-20 12:38:57 --> Message time: 1700512695
+INFO - 2023-11-20 12:38:57 --> Difference (minutes): 479
+INFO - 2023-11-20 12:38:57 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:38:57 --> Current time: 1700483937
+INFO - 2023-11-20 12:38:57 --> Message time: 1700337250
+INFO - 2023-11-20 12:38:57 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:38:57 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:38:57 --> Current time: 1700483937
+INFO - 2023-11-20 12:38:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:38:57 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:02 --> Current time: 1700483942
+INFO - 2023-11-20 12:39:02 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:02 --> Difference (minutes): 479
+INFO - 2023-11-20 12:39:02 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:02 --> Current time: 1700483942
+INFO - 2023-11-20 12:39:02 --> Message time: 1700337250
+INFO - 2023-11-20 12:39:02 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:39:02 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:39:02 --> Current time: 1700483942
+INFO - 2023-11-20 12:39:02 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:02 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:03 --> Current time: 1700483943
+INFO - 2023-11-20 12:39:03 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:03 --> Difference (minutes): 479
+INFO - 2023-11-20 12:39:03 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:03 --> Current time: 1700483943
+INFO - 2023-11-20 12:39:03 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:03 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:07 --> Current time: 1700483947
+INFO - 2023-11-20 12:39:07 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:07 --> Difference (minutes): 479
+INFO - 2023-11-20 12:39:07 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:07 --> Current time: 1700483947
+INFO - 2023-11-20 12:39:07 --> Message time: 1700337250
+INFO - 2023-11-20 12:39:07 --> Difference (minutes): 2444
+INFO - 2023-11-20 12:39:07 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:39:07 --> Current time: 1700483947
+INFO - 2023-11-20 12:39:07 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:07 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:07 --> Current time: 1700483947
+INFO - 2023-11-20 12:39:07 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:07 --> Difference (minutes): 479
+INFO - 2023-11-20 12:39:07 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:07 --> Current time: 1700483947
+INFO - 2023-11-20 12:39:07 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:07 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:12 --> Current time: 1700483952
+INFO - 2023-11-20 12:39:12 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:12 --> Difference (minutes): 479
+INFO - 2023-11-20 12:39:12 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:12 --> Current time: 1700483952
+INFO - 2023-11-20 12:39:12 --> Message time: 1700337250
+INFO - 2023-11-20 12:39:12 --> Difference (minutes): 2445
+INFO - 2023-11-20 12:39:12 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:39:12 --> Current time: 1700483952
+INFO - 2023-11-20 12:39:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:12 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:12 --> Current time: 1700483952
+INFO - 2023-11-20 12:39:12 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:12 --> Difference (minutes): 479
+INFO - 2023-11-20 12:39:12 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:12 --> Current time: 1700483952
+INFO - 2023-11-20 12:39:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:12 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:17 --> Current time: 1700483957
+INFO - 2023-11-20 12:39:17 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:17 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:17 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:17 --> Current time: 1700483957
+INFO - 2023-11-20 12:39:17 --> Message time: 1700337250
+INFO - 2023-11-20 12:39:17 --> Difference (minutes): 2445
+INFO - 2023-11-20 12:39:17 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:39:17 --> Current time: 1700483957
+INFO - 2023-11-20 12:39:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:17 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:17 --> Current time: 1700483957
+INFO - 2023-11-20 12:39:17 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:17 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:17 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:17 --> Current time: 1700483957
+INFO - 2023-11-20 12:39:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:17 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:22 --> Current time: 1700483962
+INFO - 2023-11-20 12:39:22 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:22 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:22 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:22 --> Current time: 1700483962
+INFO - 2023-11-20 12:39:22 --> Message time: 1700337250
+INFO - 2023-11-20 12:39:22 --> Difference (minutes): 2445
+INFO - 2023-11-20 12:39:22 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:39:22 --> Current time: 1700483962
+INFO - 2023-11-20 12:39:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:22 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:22 --> Current time: 1700483962
+INFO - 2023-11-20 12:39:22 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:22 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:22 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:22 --> Current time: 1700483962
+INFO - 2023-11-20 12:39:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:22 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:27 --> Current time: 1700483967
+INFO - 2023-11-20 12:39:27 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:27 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:27 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:27 --> Current time: 1700483967
+INFO - 2023-11-20 12:39:27 --> Message time: 1700337250
+INFO - 2023-11-20 12:39:27 --> Difference (minutes): 2445
+INFO - 2023-11-20 12:39:27 --> Formatted date: Nov 18, 2023 7:54 PM
+INFO - 2023-11-20 12:39:27 --> Current time: 1700483967
+INFO - 2023-11-20 12:39:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:27 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:27 --> Current time: 1700483967
+INFO - 2023-11-20 12:39:27 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:27 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:27 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:27 --> Current time: 1700483967
+INFO - 2023-11-20 12:39:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:27 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:32 --> Current time: 1700483972
+INFO - 2023-11-20 12:39:32 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:32 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:32 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:32 --> Current time: 1700483972
+INFO - 2023-11-20 12:39:32 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:32 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:37 --> Current time: 1700483977
+INFO - 2023-11-20 12:39:37 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:37 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:37 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:37 --> Current time: 1700483977
+INFO - 2023-11-20 12:39:37 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:37 --> Difference (minutes): 16
+INFO - 2023-11-20 12:39:42 --> Current time: 1700483982
+INFO - 2023-11-20 12:39:42 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:42 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:42 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:42 --> Current time: 1700483982
+INFO - 2023-11-20 12:39:42 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:42 --> Difference (minutes): 15
+INFO - 2023-11-20 12:39:47 --> Current time: 1700483987
+INFO - 2023-11-20 12:39:47 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:47 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:47 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:47 --> Current time: 1700483987
+INFO - 2023-11-20 12:39:47 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:47 --> Difference (minutes): 15
+INFO - 2023-11-20 12:39:52 --> Current time: 1700483992
+INFO - 2023-11-20 12:39:52 --> Message time: 1700512695
+INFO - 2023-11-20 12:39:52 --> Difference (minutes): 478
+INFO - 2023-11-20 12:39:52 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:39:52 --> Current time: 1700483992
+INFO - 2023-11-20 12:39:52 --> Message time: 1700484940
+INFO - 2023-11-20 12:39:52 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:08 --> Current time: 1700484008
+INFO - 2023-11-20 12:40:08 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:08 --> Difference (minutes): 478
+INFO - 2023-11-20 12:40:08 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:08 --> Current time: 1700484008
+INFO - 2023-11-20 12:40:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:08 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:11 --> Current time: 1700484011
+INFO - 2023-11-20 12:40:11 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:11 --> Difference (minutes): 478
+INFO - 2023-11-20 12:40:11 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:11 --> Current time: 1700484011
+INFO - 2023-11-20 12:40:11 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:11 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:16 --> Current time: 1700484016
+INFO - 2023-11-20 12:40:16 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:16 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:16 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:16 --> Current time: 1700484016
+INFO - 2023-11-20 12:40:16 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:16 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:21 --> Current time: 1700484021
+INFO - 2023-11-20 12:40:21 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:21 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:21 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:21 --> Current time: 1700484021
+INFO - 2023-11-20 12:40:21 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:21 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:26 --> Current time: 1700484026
+INFO - 2023-11-20 12:40:26 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:26 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:26 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:26 --> Current time: 1700484026
+INFO - 2023-11-20 12:40:26 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:26 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:31 --> Current time: 1700484031
+INFO - 2023-11-20 12:40:31 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:31 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:31 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:31 --> Current time: 1700484031
+INFO - 2023-11-20 12:40:31 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:31 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:36 --> Current time: 1700484036
+INFO - 2023-11-20 12:40:36 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:36 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:36 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:36 --> Current time: 1700484036
+INFO - 2023-11-20 12:40:36 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:36 --> Difference (minutes): 15
+INFO - 2023-11-20 12:40:41 --> Current time: 1700484041
+INFO - 2023-11-20 12:40:41 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:41 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:41 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:41 --> Current time: 1700484041
+INFO - 2023-11-20 12:40:41 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:41 --> Difference (minutes): 14
+INFO - 2023-11-20 12:40:46 --> Current time: 1700484046
+INFO - 2023-11-20 12:40:46 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:46 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:46 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:46 --> Current time: 1700484046
+INFO - 2023-11-20 12:40:46 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:46 --> Difference (minutes): 14
+INFO - 2023-11-20 12:40:51 --> Current time: 1700484051
+INFO - 2023-11-20 12:40:51 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:51 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:51 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:51 --> Current time: 1700484051
+INFO - 2023-11-20 12:40:51 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:51 --> Difference (minutes): 14
+INFO - 2023-11-20 12:40:57 --> Current time: 1700484057
+INFO - 2023-11-20 12:40:57 --> Message time: 1700512695
+INFO - 2023-11-20 12:40:57 --> Difference (minutes): 477
+INFO - 2023-11-20 12:40:57 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:40:57 --> Current time: 1700484057
+INFO - 2023-11-20 12:40:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:40:57 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:02 --> Current time: 1700484062
+INFO - 2023-11-20 12:41:02 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:02 --> Difference (minutes): 477
+INFO - 2023-11-20 12:41:02 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:02 --> Current time: 1700484062
+INFO - 2023-11-20 12:41:02 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:02 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:07 --> Current time: 1700484067
+INFO - 2023-11-20 12:41:07 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:07 --> Difference (minutes): 477
+INFO - 2023-11-20 12:41:07 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:07 --> Current time: 1700484067
+INFO - 2023-11-20 12:41:07 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:07 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:12 --> Current time: 1700484072
+INFO - 2023-11-20 12:41:12 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:12 --> Difference (minutes): 477
+INFO - 2023-11-20 12:41:12 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:12 --> Current time: 1700484072
+INFO - 2023-11-20 12:41:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:12 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:17 --> Current time: 1700484077
+INFO - 2023-11-20 12:41:17 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:17 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:17 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:17 --> Current time: 1700484077
+INFO - 2023-11-20 12:41:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:17 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:22 --> Current time: 1700484082
+INFO - 2023-11-20 12:41:22 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:22 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:22 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:22 --> Current time: 1700484082
+INFO - 2023-11-20 12:41:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:22 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:27 --> Current time: 1700484087
+INFO - 2023-11-20 12:41:27 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:27 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:27 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:27 --> Current time: 1700484087
+INFO - 2023-11-20 12:41:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:27 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:32 --> Current time: 1700484092
+INFO - 2023-11-20 12:41:32 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:32 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:32 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:32 --> Current time: 1700484092
+INFO - 2023-11-20 12:41:32 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:32 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:37 --> Current time: 1700484097
+INFO - 2023-11-20 12:41:37 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:37 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:37 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:37 --> Current time: 1700484097
+INFO - 2023-11-20 12:41:37 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:37 --> Difference (minutes): 14
+INFO - 2023-11-20 12:41:42 --> Current time: 1700484102
+INFO - 2023-11-20 12:41:42 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:42 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:42 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:42 --> Current time: 1700484102
+INFO - 2023-11-20 12:41:42 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:42 --> Difference (minutes): 13
+INFO - 2023-11-20 12:41:47 --> Current time: 1700484107
+INFO - 2023-11-20 12:41:47 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:47 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:47 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:47 --> Current time: 1700484107
+INFO - 2023-11-20 12:41:47 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:47 --> Difference (minutes): 13
+INFO - 2023-11-20 12:41:56 --> Current time: 1700484116
+INFO - 2023-11-20 12:41:57 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:57 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:57 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:57 --> Current time: 1700484117
+INFO - 2023-11-20 12:41:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:57 --> Difference (minutes): 13
+INFO - 2023-11-20 12:41:58 --> Current time: 1700484118
+INFO - 2023-11-20 12:41:58 --> Message time: 1700512695
+INFO - 2023-11-20 12:41:58 --> Difference (minutes): 476
+INFO - 2023-11-20 12:41:58 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:41:58 --> Current time: 1700484118
+INFO - 2023-11-20 12:41:58 --> Message time: 1700484940
+INFO - 2023-11-20 12:41:58 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:02 --> Current time: 1700484122
+INFO - 2023-11-20 12:42:02 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:02 --> Difference (minutes): 476
+INFO - 2023-11-20 12:42:02 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:02 --> Current time: 1700484122
+INFO - 2023-11-20 12:42:02 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:02 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:09 --> Current time: 1700484129
+INFO - 2023-11-20 12:42:09 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:09 --> Difference (minutes): 476
+INFO - 2023-11-20 12:42:09 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:09 --> Current time: 1700484129
+INFO - 2023-11-20 12:42:09 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:09 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:12 --> Current time: 1700484132
+INFO - 2023-11-20 12:42:12 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:12 --> Difference (minutes): 476
+INFO - 2023-11-20 12:42:12 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:12 --> Current time: 1700484132
+INFO - 2023-11-20 12:42:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:12 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:17 --> Current time: 1700484137
+INFO - 2023-11-20 12:42:17 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:17 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:17 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:17 --> Current time: 1700484137
+INFO - 2023-11-20 12:42:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:17 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:22 --> Current time: 1700484142
+INFO - 2023-11-20 12:42:22 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:22 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:22 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:22 --> Current time: 1700484142
+INFO - 2023-11-20 12:42:22 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:22 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:27 --> Current time: 1700484147
+INFO - 2023-11-20 12:42:27 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:27 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:27 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:27 --> Current time: 1700484147
+INFO - 2023-11-20 12:42:27 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:27 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:32 --> Current time: 1700484152
+INFO - 2023-11-20 12:42:32 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:32 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:32 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:32 --> Current time: 1700484152
+INFO - 2023-11-20 12:42:32 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:32 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:37 --> Current time: 1700484157
+INFO - 2023-11-20 12:42:37 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:37 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:37 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:37 --> Current time: 1700484157
+INFO - 2023-11-20 12:42:37 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:37 --> Difference (minutes): 13
+INFO - 2023-11-20 12:42:42 --> Current time: 1700484162
+INFO - 2023-11-20 12:42:42 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:42 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:42 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:42 --> Current time: 1700484162
+INFO - 2023-11-20 12:42:42 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:42 --> Difference (minutes): 12
+INFO - 2023-11-20 12:42:47 --> Current time: 1700484167
+INFO - 2023-11-20 12:42:47 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:47 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:47 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:47 --> Current time: 1700484167
+INFO - 2023-11-20 12:42:47 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:47 --> Difference (minutes): 12
+INFO - 2023-11-20 12:42:51 --> Current time: 1700484171
+INFO - 2023-11-20 12:42:51 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:51 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:51 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:51 --> Current time: 1700484171
+INFO - 2023-11-20 12:42:51 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:51 --> Difference (minutes): 12
+INFO - 2023-11-20 12:42:57 --> Current time: 1700484177
+INFO - 2023-11-20 12:42:57 --> Message time: 1700512695
+INFO - 2023-11-20 12:42:57 --> Difference (minutes): 475
+INFO - 2023-11-20 12:42:57 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:42:57 --> Current time: 1700484177
+INFO - 2023-11-20 12:42:57 --> Message time: 1700484940
+INFO - 2023-11-20 12:42:57 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:01 --> Current time: 1700484181
+INFO - 2023-11-20 12:43:01 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:01 --> Difference (minutes): 475
+INFO - 2023-11-20 12:43:01 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:01 --> Current time: 1700484181
+INFO - 2023-11-20 12:43:01 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:01 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:06 --> Current time: 1700484186
+INFO - 2023-11-20 12:43:06 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:06 --> Difference (minutes): 475
+INFO - 2023-11-20 12:43:06 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:06 --> Current time: 1700484186
+INFO - 2023-11-20 12:43:06 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:06 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:11 --> Current time: 1700484191
+INFO - 2023-11-20 12:43:11 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:11 --> Difference (minutes): 475
+INFO - 2023-11-20 12:43:11 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:11 --> Current time: 1700484191
+INFO - 2023-11-20 12:43:11 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:11 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:16 --> Current time: 1700484196
+INFO - 2023-11-20 12:43:16 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:16 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:16 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:16 --> Current time: 1700484196
+INFO - 2023-11-20 12:43:16 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:16 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:21 --> Current time: 1700484201
+INFO - 2023-11-20 12:43:21 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:21 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:21 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:21 --> Current time: 1700484201
+INFO - 2023-11-20 12:43:21 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:21 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:26 --> Current time: 1700484206
+INFO - 2023-11-20 12:43:26 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:26 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:26 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:26 --> Current time: 1700484206
+INFO - 2023-11-20 12:43:26 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:26 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:31 --> Current time: 1700484211
+INFO - 2023-11-20 12:43:31 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:31 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:31 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:31 --> Current time: 1700484211
+INFO - 2023-11-20 12:43:31 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:31 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:36 --> Current time: 1700484216
+INFO - 2023-11-20 12:43:36 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:36 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:36 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:36 --> Current time: 1700484216
+INFO - 2023-11-20 12:43:36 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:36 --> Difference (minutes): 12
+INFO - 2023-11-20 12:43:41 --> Current time: 1700484221
+INFO - 2023-11-20 12:43:41 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:41 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:41 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:41 --> Current time: 1700484221
+INFO - 2023-11-20 12:43:41 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:41 --> Difference (minutes): 11
+INFO - 2023-11-20 12:43:46 --> Current time: 1700484226
+INFO - 2023-11-20 12:43:46 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:46 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:46 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:46 --> Current time: 1700484226
+INFO - 2023-11-20 12:43:46 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:46 --> Difference (minutes): 11
+INFO - 2023-11-20 12:43:51 --> Current time: 1700484231
+INFO - 2023-11-20 12:43:51 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:51 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:51 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:51 --> Current time: 1700484231
+INFO - 2023-11-20 12:43:51 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:51 --> Difference (minutes): 11
+INFO - 2023-11-20 12:43:56 --> Current time: 1700484236
+INFO - 2023-11-20 12:43:56 --> Message time: 1700512695
+INFO - 2023-11-20 12:43:56 --> Difference (minutes): 474
+INFO - 2023-11-20 12:43:56 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:43:56 --> Current time: 1700484236
+INFO - 2023-11-20 12:43:56 --> Message time: 1700484940
+INFO - 2023-11-20 12:43:56 --> Difference (minutes): 11
+INFO - 2023-11-20 12:44:01 --> Current time: 1700484241
+INFO - 2023-11-20 12:44:01 --> Message time: 1700512695
+INFO - 2023-11-20 12:44:01 --> Difference (minutes): 474
+INFO - 2023-11-20 12:44:01 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:44:01 --> Current time: 1700484241
+INFO - 2023-11-20 12:44:01 --> Message time: 1700484940
+INFO - 2023-11-20 12:44:01 --> Difference (minutes): 11
+INFO - 2023-11-20 12:44:08 --> Current time: 1700484248
+INFO - 2023-11-20 12:44:08 --> Message time: 1700512695
+INFO - 2023-11-20 12:44:08 --> Difference (minutes): 474
+INFO - 2023-11-20 12:44:08 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:44:08 --> Current time: 1700484248
+INFO - 2023-11-20 12:44:08 --> Message time: 1700484940
+INFO - 2023-11-20 12:44:08 --> Difference (minutes): 11
+INFO - 2023-11-20 12:44:13 --> Current time: 1700484253
+INFO - 2023-11-20 12:44:13 --> Message time: 1700512695
+INFO - 2023-11-20 12:44:13 --> Difference (minutes): 474
+INFO - 2023-11-20 12:44:13 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:44:13 --> Current time: 1700484253
+INFO - 2023-11-20 12:44:13 --> Message time: 1700484940
+INFO - 2023-11-20 12:44:13 --> Difference (minutes): 11
+CRITICAL - 2023-11-20 12:44:13 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('12')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:46:12 --> Current time: 1700484372
+INFO - 2023-11-20 12:46:12 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:12 --> Difference (minutes): 472
+INFO - 2023-11-20 12:46:12 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:12 --> Current time: 1700484372
+INFO - 2023-11-20 12:46:12 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:12 --> Difference (minutes): 9
+CRITICAL - 2023-11-20 12:46:16 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:46:21 --> Current time: 1700484381
+INFO - 2023-11-20 12:46:21 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:21 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:21 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:21 --> Current time: 1700484381
+INFO - 2023-11-20 12:46:21 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:21 --> Difference (minutes): 9
+INFO - 2023-11-20 12:46:26 --> Current time: 1700484386
+INFO - 2023-11-20 12:46:26 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:26 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:26 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:26 --> Current time: 1700484386
+INFO - 2023-11-20 12:46:26 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:26 --> Difference (minutes): 9
+INFO - 2023-11-20 12:46:31 --> Current time: 1700484391
+INFO - 2023-11-20 12:46:31 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:31 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:31 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:31 --> Current time: 1700484391
+INFO - 2023-11-20 12:46:31 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:31 --> Difference (minutes): 9
+INFO - 2023-11-20 12:46:36 --> Current time: 1700484396
+INFO - 2023-11-20 12:46:36 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:36 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:36 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:36 --> Current time: 1700484396
+INFO - 2023-11-20 12:46:36 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:36 --> Difference (minutes): 9
+INFO - 2023-11-20 12:46:42 --> Current time: 1700484402
+INFO - 2023-11-20 12:46:42 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:42 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:42 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:42 --> Current time: 1700484402
+INFO - 2023-11-20 12:46:42 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:42 --> Difference (minutes): 8
+INFO - 2023-11-20 12:46:47 --> Current time: 1700484407
+INFO - 2023-11-20 12:46:47 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:47 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:47 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:47 --> Current time: 1700484407
+INFO - 2023-11-20 12:46:47 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:47 --> Difference (minutes): 8
+INFO - 2023-11-20 12:46:56 --> Current time: 1700484416
+INFO - 2023-11-20 12:46:56 --> Message time: 1700512695
+INFO - 2023-11-20 12:46:56 --> Difference (minutes): 471
+INFO - 2023-11-20 12:46:56 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:46:56 --> Current time: 1700484416
+INFO - 2023-11-20 12:46:56 --> Message time: 1700484940
+INFO - 2023-11-20 12:46:56 --> Difference (minutes): 8
+CRITICAL - 2023-11-20 12:47:02 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-20 12:47:07 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-20 12:47:17 --> Current time: 1700484437
+INFO - 2023-11-20 12:47:17 --> Message time: 1700512695
+INFO - 2023-11-20 12:47:17 --> Difference (minutes): 470
+INFO - 2023-11-20 12:47:17 --> Formatted date: Nov 20, 2023 8:38 PM
+INFO - 2023-11-20 12:47:17 --> Current time: 1700484437
+INFO - 2023-11-20 12:47:17 --> Message time: 1700484940
+INFO - 2023-11-20 12:47:17 --> Difference (minutes): 8

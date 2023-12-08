@@ -1,0 +1,1480 @@
+INFO - 2023-11-30 15:20:50 --> Current time: 1701357650
+INFO - 2023-11-30 15:20:50 --> Message time: 1701085257
+INFO - 2023-11-30 15:20:50 --> Difference (minutes): 4539
+INFO - 2023-11-30 15:20:50 --> Formatted date: Nov 27, 2023 11:40 AM
+INFO - 2023-11-30 15:20:50 --> Current time: 1701357650
+INFO - 2023-11-30 15:20:50 --> Message time: 1700484940
+INFO - 2023-11-30 15:20:50 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:20:50 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-30 15:20:52 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 15:20:55 --> Current time: 1701357655
+INFO - 2023-11-30 15:20:55 --> Message time: 1701085257
+INFO - 2023-11-30 15:20:55 --> Difference (minutes): 4539
+INFO - 2023-11-30 15:20:55 --> Formatted date: Nov 27, 2023 11:40 AM
+INFO - 2023-11-30 15:20:55 --> Current time: 1701357655
+INFO - 2023-11-30 15:20:55 --> Message time: 1700484940
+INFO - 2023-11-30 15:20:55 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:20:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:20:57 --> Current time: 1701357657
+INFO - 2023-11-30 15:20:57 --> Message time: 1701085257
+INFO - 2023-11-30 15:20:57 --> Difference (minutes): 4540
+INFO - 2023-11-30 15:20:57 --> Formatted date: Nov 27, 2023 11:40 AM
+INFO - 2023-11-30 15:20:57 --> Current time: 1701357657
+INFO - 2023-11-30 15:20:57 --> Message time: 1700484940
+INFO - 2023-11-30 15:20:57 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:20:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:20:58 --> Current time: 1701357658
+INFO - 2023-11-30 15:20:58 --> Message time: 1701085257
+INFO - 2023-11-30 15:20:58 --> Difference (minutes): 4540
+INFO - 2023-11-30 15:20:58 --> Formatted date: Nov 27, 2023 11:40 AM
+INFO - 2023-11-30 15:20:58 --> Current time: 1701357658
+INFO - 2023-11-30 15:20:58 --> Message time: 1700484940
+INFO - 2023-11-30 15:20:58 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:20:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:03 --> Current time: 1701357663
+INFO - 2023-11-30 15:21:03 --> Message time: 1701085257
+INFO - 2023-11-30 15:21:03 --> Difference (minutes): 4540
+INFO - 2023-11-30 15:21:03 --> Formatted date: Nov 27, 2023 11:40 AM
+INFO - 2023-11-30 15:21:03 --> Current time: 1701357663
+INFO - 2023-11-30 15:21:03 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:03 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:03 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:08 --> Current time: 1701357668
+INFO - 2023-11-30 15:21:08 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:08 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:08 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:08 --> Current time: 1701357668
+INFO - 2023-11-30 15:21:08 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:08 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:14 --> Current time: 1701357674
+INFO - 2023-11-30 15:21:14 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:14 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:14 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:14 --> Current time: 1701357674
+INFO - 2023-11-30 15:21:14 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:14 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:14 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:19 --> Current time: 1701357679
+INFO - 2023-11-30 15:21:19 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:19 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:19 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:19 --> Current time: 1701357679
+INFO - 2023-11-30 15:21:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:19 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:24 --> Current time: 1701357684
+INFO - 2023-11-30 15:21:24 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:24 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:24 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:24 --> Current time: 1701357684
+INFO - 2023-11-30 15:21:24 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:24 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:24 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:29 --> Current time: 1701357689
+INFO - 2023-11-30 15:21:29 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:29 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:29 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:29 --> Current time: 1701357689
+INFO - 2023-11-30 15:21:29 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:29 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:29 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:34 --> Current time: 1701357694
+INFO - 2023-11-30 15:21:34 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:34 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:34 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:34 --> Current time: 1701357694
+INFO - 2023-11-30 15:21:34 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:34 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:34 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:39 --> Current time: 1701357699
+INFO - 2023-11-30 15:21:39 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:39 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:39 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:39 --> Current time: 1701357699
+INFO - 2023-11-30 15:21:39 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:39 --> Difference (minutes): 14545
+INFO - 2023-11-30 15:21:39 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:44 --> Current time: 1701357704
+INFO - 2023-11-30 15:21:44 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:44 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:44 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:44 --> Current time: 1701357704
+INFO - 2023-11-30 15:21:44 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:44 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:21:44 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:21:49 --> Current time: 1701357709
+INFO - 2023-11-30 15:21:49 --> Message time: 1701386465
+INFO - 2023-11-30 15:21:49 --> Difference (minutes): 479
+INFO - 2023-11-30 15:21:49 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:21:49 --> Current time: 1701357709
+INFO - 2023-11-30 15:21:49 --> Message time: 1700484940
+INFO - 2023-11-30 15:21:49 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:21:49 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:22:02 --> Current time: 1701357722
+INFO - 2023-11-30 15:22:02 --> Message time: 1701386465
+INFO - 2023-11-30 15:22:02 --> Difference (minutes): 479
+INFO - 2023-11-30 15:22:02 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:22:02 --> Current time: 1701357722
+INFO - 2023-11-30 15:22:02 --> Message time: 1700484940
+INFO - 2023-11-30 15:22:02 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:22:02 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-30 15:22:02 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('5')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 15:22:02 --> Current time: 1701357722
+INFO - 2023-11-30 15:22:02 --> Message time: 1701386465
+INFO - 2023-11-30 15:22:02 --> Difference (minutes): 479
+INFO - 2023-11-30 15:22:02 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:22:02 --> Current time: 1701357722
+INFO - 2023-11-30 15:22:02 --> Message time: 1700484940
+INFO - 2023-11-30 15:22:02 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:22:02 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:22:10 --> Current time: 1701357730
+INFO - 2023-11-30 15:22:10 --> Message time: 1701386465
+INFO - 2023-11-30 15:22:10 --> Difference (minutes): 478
+INFO - 2023-11-30 15:22:10 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:22:10 --> Current time: 1701357730
+INFO - 2023-11-30 15:22:10 --> Message time: 1700484940
+INFO - 2023-11-30 15:22:10 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:22:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:22:14 --> Current time: 1701357734
+INFO - 2023-11-30 15:22:14 --> Message time: 1701386465
+INFO - 2023-11-30 15:22:14 --> Difference (minutes): 478
+INFO - 2023-11-30 15:22:14 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:22:14 --> Current time: 1701357734
+INFO - 2023-11-30 15:22:14 --> Message time: 1700484940
+INFO - 2023-11-30 15:22:14 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:22:14 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:22:19 --> Current time: 1701357739
+INFO - 2023-11-30 15:22:19 --> Message time: 1701386465
+INFO - 2023-11-30 15:22:19 --> Difference (minutes): 478
+INFO - 2023-11-30 15:22:19 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:22:19 --> Current time: 1701357739
+INFO - 2023-11-30 15:22:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:22:19 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:22:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:22:24 --> Current time: 1701357744
+INFO - 2023-11-30 15:22:24 --> Message time: 1701386465
+INFO - 2023-11-30 15:22:24 --> Difference (minutes): 478
+INFO - 2023-11-30 15:22:24 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:22:24 --> Current time: 1701357744
+INFO - 2023-11-30 15:22:24 --> Message time: 1700484940
+INFO - 2023-11-30 15:22:24 --> Difference (minutes): 14546
+INFO - 2023-11-30 15:22:24 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:01 --> Current time: 1701357781
+INFO - 2023-11-30 15:23:01 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:01 --> Difference (minutes): 478
+INFO - 2023-11-30 15:23:01 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:01 --> Current time: 1701357781
+INFO - 2023-11-30 15:23:01 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:01 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:01 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:01 --> Current time: 1701357781
+INFO - 2023-11-30 15:23:01 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:01 --> Difference (minutes): 478
+INFO - 2023-11-30 15:23:01 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:01 --> Current time: 1701357781
+INFO - 2023-11-30 15:23:01 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:01 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:01 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:03 --> Current time: 1701357783
+INFO - 2023-11-30 15:23:03 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:03 --> Difference (minutes): 478
+INFO - 2023-11-30 15:23:03 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:03 --> Current time: 1701357783
+INFO - 2023-11-30 15:23:03 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:03 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:03 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:04 --> Current time: 1701357783
+INFO - 2023-11-30 15:23:04 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:04 --> Difference (minutes): 478
+INFO - 2023-11-30 15:23:04 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:04 --> Current time: 1701357784
+INFO - 2023-11-30 15:23:04 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:04 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:04 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:04 --> Current time: 1701357784
+INFO - 2023-11-30 15:23:04 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:04 --> Difference (minutes): 478
+INFO - 2023-11-30 15:23:04 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:04 --> Current time: 1701357784
+INFO - 2023-11-30 15:23:04 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:04 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:04 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:06 --> Current time: 1701357786
+INFO - 2023-11-30 15:23:06 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:06 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:06 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:06 --> Current time: 1701357786
+INFO - 2023-11-30 15:23:06 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:06 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:06 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:06 --> Current time: 1701357786
+INFO - 2023-11-30 15:23:06 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:06 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:06 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:06 --> Current time: 1701357786
+INFO - 2023-11-30 15:23:06 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:06 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:06 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:07 --> Current time: 1701357787
+INFO - 2023-11-30 15:23:07 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:07 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:07 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:07 --> Current time: 1701357787
+INFO - 2023-11-30 15:23:07 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:07 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:07 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:08 --> Current time: 1701357788
+INFO - 2023-11-30 15:23:08 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:08 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:08 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:08 --> Current time: 1701357788
+INFO - 2023-11-30 15:23:08 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:08 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:10 --> Current time: 1701357790
+INFO - 2023-11-30 15:23:10 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:10 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:10 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:10 --> Current time: 1701357790
+INFO - 2023-11-30 15:23:10 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:10 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:10 --> Current time: 1701357790
+INFO - 2023-11-30 15:23:10 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:10 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:10 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:10 --> Current time: 1701357790
+INFO - 2023-11-30 15:23:10 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:10 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:11 --> Current time: 1701357791
+INFO - 2023-11-30 15:23:11 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:11 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:11 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:11 --> Current time: 1701357791
+INFO - 2023-11-30 15:23:11 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:11 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:11 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:13 --> Current time: 1701357793
+INFO - 2023-11-30 15:23:13 --> Message time: 1701386465
+INFO - 2023-11-30 15:23:13 --> Difference (minutes): 477
+INFO - 2023-11-30 15:23:13 --> Formatted date: Nov 30, 2023 11:21 PM
+INFO - 2023-11-30 15:23:13 --> Current time: 1701357793
+INFO - 2023-11-30 15:23:13 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:13 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:13 --> Current time: 1701357793
+INFO - 2023-11-30 15:23:13 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:13 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:13 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:13 --> Current time: 1701357793
+INFO - 2023-11-30 15:23:13 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:13 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:14 --> Current time: 1701357794
+INFO - 2023-11-30 15:23:14 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:14 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:14 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:14 --> Current time: 1701357794
+INFO - 2023-11-30 15:23:14 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:14 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:14 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:15 --> Current time: 1701357795
+INFO - 2023-11-30 15:23:15 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:15 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:15 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:15 --> Current time: 1701357795
+INFO - 2023-11-30 15:23:15 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:15 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:16 --> Current time: 1701357796
+INFO - 2023-11-30 15:23:16 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:16 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:16 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:16 --> Current time: 1701357796
+INFO - 2023-11-30 15:23:16 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:16 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:16 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:17 --> Current time: 1701357797
+INFO - 2023-11-30 15:23:17 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:17 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:17 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:17 --> Current time: 1701357797
+INFO - 2023-11-30 15:23:17 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:17 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:17 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:18 --> Current time: 1701357798
+INFO - 2023-11-30 15:23:18 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:18 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:18 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:18 --> Current time: 1701357798
+INFO - 2023-11-30 15:23:18 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:18 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:18 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:19 --> Current time: 1701357799
+INFO - 2023-11-30 15:23:19 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:19 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:19 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:19 --> Current time: 1701357799
+INFO - 2023-11-30 15:23:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:19 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:19 --> Current time: 1701357799
+INFO - 2023-11-30 15:23:19 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:19 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:19 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:19 --> Current time: 1701357799
+INFO - 2023-11-30 15:23:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:19 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:19 --> Current time: 1701357799
+INFO - 2023-11-30 15:23:19 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:19 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:19 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:19 --> Current time: 1701357799
+INFO - 2023-11-30 15:23:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:19 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:20 --> Current time: 1701357800
+INFO - 2023-11-30 15:23:20 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:20 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:20 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:20 --> Current time: 1701357800
+INFO - 2023-11-30 15:23:20 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:20 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:20 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:20 --> Current time: 1701357800
+INFO - 2023-11-30 15:23:20 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:20 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:20 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:20 --> Current time: 1701357800
+INFO - 2023-11-30 15:23:20 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:20 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:20 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-30 15:23:20 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(231): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getUserMessages('5')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 15:23:21 --> Current time: 1701357801
+INFO - 2023-11-30 15:23:21 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:21 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:21 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:21 --> Current time: 1701357801
+INFO - 2023-11-30 15:23:21 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:21 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:21 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:21 --> Current time: 1701357801
+INFO - 2023-11-30 15:23:21 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:21 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:21 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:21 --> Current time: 1701357801
+INFO - 2023-11-30 15:23:21 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:21 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:21 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:22 --> Current time: 1701357802
+INFO - 2023-11-30 15:23:22 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:22 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:22 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:22 --> Current time: 1701357802
+INFO - 2023-11-30 15:23:22 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:22 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:22 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:22 --> Current time: 1701357802
+INFO - 2023-11-30 15:23:22 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:22 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:22 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:22 --> Current time: 1701357802
+INFO - 2023-11-30 15:23:22 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:22 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:22 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:22 --> Current time: 1701357802
+INFO - 2023-11-30 15:23:22 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:22 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:22 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:22 --> Current time: 1701357802
+INFO - 2023-11-30 15:23:22 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:22 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:22 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:23 --> Current time: 1701357803
+INFO - 2023-11-30 15:23:23 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:23 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:23 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:23 --> Current time: 1701357803
+INFO - 2023-11-30 15:23:23 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:23 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:23 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:23 --> Current time: 1701357803
+INFO - 2023-11-30 15:23:23 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:23 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:23 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:23 --> Current time: 1701357803
+INFO - 2023-11-30 15:23:23 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:23 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:23 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:24 --> Current time: 1701357804
+INFO - 2023-11-30 15:23:24 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:24 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:24 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:24 --> Current time: 1701357804
+INFO - 2023-11-30 15:23:24 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:24 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:24 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:24 --> Current time: 1701357804
+INFO - 2023-11-30 15:23:24 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:24 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:24 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:24 --> Current time: 1701357804
+INFO - 2023-11-30 15:23:24 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:24 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:24 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:24 --> Current time: 1701357804
+INFO - 2023-11-30 15:23:24 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:24 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:24 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:24 --> Current time: 1701357804
+INFO - 2023-11-30 15:23:24 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:24 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:24 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:25 --> Current time: 1701357805
+INFO - 2023-11-30 15:23:25 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:25 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:25 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:25 --> Current time: 1701357805
+INFO - 2023-11-30 15:23:25 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:25 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:25 --> Current time: 1701357805
+INFO - 2023-11-30 15:23:25 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:25 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:25 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:25 --> Current time: 1701357805
+INFO - 2023-11-30 15:23:25 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:25 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:25 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:26 --> Current time: 1701357806
+INFO - 2023-11-30 15:23:26 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:26 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:26 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:26 --> Current time: 1701357806
+INFO - 2023-11-30 15:23:26 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:26 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:26 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:26 --> Current time: 1701357806
+INFO - 2023-11-30 15:23:26 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:26 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:26 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:26 --> Current time: 1701357806
+INFO - 2023-11-30 15:23:26 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:26 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:26 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:27 --> Current time: 1701357807
+INFO - 2023-11-30 15:23:27 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:27 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:27 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:27 --> Current time: 1701357807
+INFO - 2023-11-30 15:23:27 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:27 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:27 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:27 --> Current time: 1701357807
+INFO - 2023-11-30 15:23:27 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:27 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:27 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:27 --> Current time: 1701357807
+INFO - 2023-11-30 15:23:27 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:27 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:27 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:28 --> Current time: 1701357808
+INFO - 2023-11-30 15:23:28 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:28 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:28 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:28 --> Current time: 1701357808
+INFO - 2023-11-30 15:23:28 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:28 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:28 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:28 --> Current time: 1701357808
+INFO - 2023-11-30 15:23:28 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:28 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:28 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:28 --> Current time: 1701357808
+INFO - 2023-11-30 15:23:28 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:28 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:28 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:28 --> Current time: 1701357808
+INFO - 2023-11-30 15:23:28 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:28 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:28 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:28 --> Current time: 1701357808
+INFO - 2023-11-30 15:23:28 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:28 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:28 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:29 --> Current time: 1701357809
+INFO - 2023-11-30 15:23:29 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:29 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:29 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:29 --> Current time: 1701357809
+INFO - 2023-11-30 15:23:29 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:29 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:29 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:29 --> Current time: 1701357809
+INFO - 2023-11-30 15:23:29 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:29 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:29 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:29 --> Current time: 1701357809
+INFO - 2023-11-30 15:23:29 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:29 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:29 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:30 --> Current time: 1701357810
+INFO - 2023-11-30 15:23:30 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:30 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:30 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:30 --> Current time: 1701357810
+INFO - 2023-11-30 15:23:30 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:30 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:30 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:31 --> Current time: 1701357811
+INFO - 2023-11-30 15:23:31 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:31 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:31 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:31 --> Current time: 1701357811
+INFO - 2023-11-30 15:23:31 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:31 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:31 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:32 --> Current time: 1701357812
+INFO - 2023-11-30 15:23:32 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:32 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:32 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:32 --> Current time: 1701357812
+INFO - 2023-11-30 15:23:32 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:32 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:32 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:32 --> Current time: 1701357812
+INFO - 2023-11-30 15:23:32 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:32 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:32 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:32 --> Current time: 1701357812
+INFO - 2023-11-30 15:23:32 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:32 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:32 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:33 --> Current time: 1701357813
+INFO - 2023-11-30 15:23:33 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:33 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:33 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:33 --> Current time: 1701357813
+INFO - 2023-11-30 15:23:33 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:33 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:33 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:33 --> Current time: 1701357813
+INFO - 2023-11-30 15:23:33 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:33 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:33 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:33 --> Current time: 1701357813
+INFO - 2023-11-30 15:23:33 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:33 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:33 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:34 --> Current time: 1701357814
+INFO - 2023-11-30 15:23:34 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:34 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:34 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:34 --> Current time: 1701357814
+INFO - 2023-11-30 15:23:34 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:34 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:34 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:35 --> Current time: 1701357815
+INFO - 2023-11-30 15:23:35 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:35 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:35 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:35 --> Current time: 1701357815
+INFO - 2023-11-30 15:23:35 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:35 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:35 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:35 --> Current time: 1701357815
+INFO - 2023-11-30 15:23:35 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:35 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:35 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:35 --> Current time: 1701357815
+INFO - 2023-11-30 15:23:35 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:35 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:35 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:36 --> Current time: 1701357816
+INFO - 2023-11-30 15:23:36 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:36 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:36 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:36 --> Current time: 1701357816
+INFO - 2023-11-30 15:23:36 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:36 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:36 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:37 --> Current time: 1701357817
+INFO - 2023-11-30 15:23:37 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:37 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:37 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:37 --> Current time: 1701357817
+INFO - 2023-11-30 15:23:37 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:37 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:37 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:37 --> Current time: 1701357817
+INFO - 2023-11-30 15:23:37 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:37 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:37 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:37 --> Current time: 1701357817
+INFO - 2023-11-30 15:23:37 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:37 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:37 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:38 --> Current time: 1701357818
+INFO - 2023-11-30 15:23:38 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:38 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:38 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:38 --> Current time: 1701357818
+INFO - 2023-11-30 15:23:38 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:38 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:38 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:38 --> Current time: 1701357818
+INFO - 2023-11-30 15:23:38 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:38 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:38 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:38 --> Current time: 1701357818
+INFO - 2023-11-30 15:23:38 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:38 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:38 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:39 --> Current time: 1701357819
+INFO - 2023-11-30 15:23:39 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:39 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:39 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:39 --> Current time: 1701357819
+INFO - 2023-11-30 15:23:39 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:39 --> Difference (minutes): 14547
+INFO - 2023-11-30 15:23:39 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:40 --> Current time: 1701357820
+INFO - 2023-11-30 15:23:40 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:40 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:40 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:40 --> Current time: 1701357820
+INFO - 2023-11-30 15:23:40 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:40 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:40 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:40 --> Current time: 1701357820
+INFO - 2023-11-30 15:23:40 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:40 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:40 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:40 --> Current time: 1701357820
+INFO - 2023-11-30 15:23:40 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:40 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:40 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:41 --> Current time: 1701357821
+INFO - 2023-11-30 15:23:41 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:41 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:41 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:41 --> Current time: 1701357821
+INFO - 2023-11-30 15:23:41 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:41 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:41 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:41 --> Current time: 1701357821
+INFO - 2023-11-30 15:23:41 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:41 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:41 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:41 --> Current time: 1701357821
+INFO - 2023-11-30 15:23:41 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:41 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:41 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:42 --> Current time: 1701357822
+INFO - 2023-11-30 15:23:42 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:42 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:42 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:42 --> Current time: 1701357822
+INFO - 2023-11-30 15:23:42 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:42 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:42 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:42 --> Current time: 1701357822
+INFO - 2023-11-30 15:23:42 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:42 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:42 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:42 --> Current time: 1701357822
+INFO - 2023-11-30 15:23:42 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:42 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:42 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:43 --> Current time: 1701357823
+INFO - 2023-11-30 15:23:43 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:43 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:43 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:43 --> Current time: 1701357823
+INFO - 2023-11-30 15:23:43 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:43 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:43 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:43 --> Current time: 1701357823
+INFO - 2023-11-30 15:23:43 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:43 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:43 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:43 --> Current time: 1701357823
+INFO - 2023-11-30 15:23:43 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:43 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:43 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:44 --> Current time: 1701357824
+INFO - 2023-11-30 15:23:44 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:44 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:44 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:44 --> Current time: 1701357824
+INFO - 2023-11-30 15:23:44 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:44 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:44 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:45 --> Current time: 1701357825
+INFO - 2023-11-30 15:23:45 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:45 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:45 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:45 --> Current time: 1701357825
+INFO - 2023-11-30 15:23:45 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:45 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:45 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:45 --> Current time: 1701357825
+INFO - 2023-11-30 15:23:45 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:45 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:45 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:45 --> Current time: 1701357825
+INFO - 2023-11-30 15:23:45 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:45 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:45 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:46 --> Current time: 1701357826
+INFO - 2023-11-30 15:23:46 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:46 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:46 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:46 --> Current time: 1701357826
+INFO - 2023-11-30 15:23:46 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:46 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:46 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:46 --> Current time: 1701357826
+INFO - 2023-11-30 15:23:46 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:46 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:46 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:46 --> Current time: 1701357826
+INFO - 2023-11-30 15:23:46 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:46 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:46 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:47 --> Current time: 1701357827
+INFO - 2023-11-30 15:23:47 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:47 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:47 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:47 --> Current time: 1701357827
+INFO - 2023-11-30 15:23:47 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:47 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:47 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:48 --> Current time: 1701357828
+INFO - 2023-11-30 15:23:48 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:48 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:48 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:48 --> Current time: 1701357828
+INFO - 2023-11-30 15:23:48 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:48 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:48 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:48 --> Current time: 1701357828
+INFO - 2023-11-30 15:23:48 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:48 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:48 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:48 --> Current time: 1701357828
+INFO - 2023-11-30 15:23:48 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:48 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:48 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:49 --> Current time: 1701357829
+INFO - 2023-11-30 15:23:49 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:49 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:49 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:49 --> Current time: 1701357829
+INFO - 2023-11-30 15:23:49 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:49 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:49 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:49 --> Current time: 1701357829
+INFO - 2023-11-30 15:23:49 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:49 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:49 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:49 --> Current time: 1701357829
+INFO - 2023-11-30 15:23:49 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:49 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:49 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:49 --> Current time: 1701357829
+INFO - 2023-11-30 15:23:49 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:49 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:49 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:49 --> Current time: 1701357829
+INFO - 2023-11-30 15:23:49 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:49 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:49 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:50 --> Current time: 1701357830
+INFO - 2023-11-30 15:23:50 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:50 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:50 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:50 --> Current time: 1701357830
+INFO - 2023-11-30 15:23:50 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:50 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:50 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:50 --> Current time: 1701357830
+INFO - 2023-11-30 15:23:50 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:50 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:50 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:50 --> Current time: 1701357830
+INFO - 2023-11-30 15:23:50 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:50 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:50 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-30 15:23:50 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 15:23:51 --> Current time: 1701357831
+INFO - 2023-11-30 15:23:51 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:51 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:51 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:51 --> Current time: 1701357831
+INFO - 2023-11-30 15:23:51 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:51 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:51 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:51 --> Current time: 1701357831
+INFO - 2023-11-30 15:23:51 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:51 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:51 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:51 --> Current time: 1701357831
+INFO - 2023-11-30 15:23:51 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:51 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:51 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:51 --> Current time: 1701357831
+INFO - 2023-11-30 15:23:51 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:51 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:51 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:51 --> Current time: 1701357831
+INFO - 2023-11-30 15:23:51 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:51 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:51 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:52 --> Current time: 1701357832
+INFO - 2023-11-30 15:23:52 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:52 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:52 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:52 --> Current time: 1701357832
+INFO - 2023-11-30 15:23:52 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:52 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:52 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:52 --> Current time: 1701357832
+INFO - 2023-11-30 15:23:52 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:52 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:52 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:52 --> Current time: 1701357832
+INFO - 2023-11-30 15:23:52 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:52 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:52 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:52 --> Current time: 1701357832
+INFO - 2023-11-30 15:23:52 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:52 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:52 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:52 --> Current time: 1701357832
+INFO - 2023-11-30 15:23:52 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:52 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:52 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:53 --> Current time: 1701357833
+INFO - 2023-11-30 15:23:53 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:53 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:53 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:53 --> Current time: 1701357833
+INFO - 2023-11-30 15:23:53 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:53 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:53 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:53 --> Current time: 1701357833
+INFO - 2023-11-30 15:23:53 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:53 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:53 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:53 --> Current time: 1701357833
+INFO - 2023-11-30 15:23:53 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:53 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:53 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:53 --> Current time: 1701357833
+INFO - 2023-11-30 15:23:53 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:53 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:53 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:53 --> Current time: 1701357833
+INFO - 2023-11-30 15:23:53 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:53 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:53 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:54 --> Current time: 1701357834
+INFO - 2023-11-30 15:23:54 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:54 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:54 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:54 --> Current time: 1701357834
+INFO - 2023-11-30 15:23:54 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:54 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:54 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:54 --> Current time: 1701357834
+INFO - 2023-11-30 15:23:54 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:54 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:54 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:54 --> Current time: 1701357834
+INFO - 2023-11-30 15:23:54 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:54 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:54 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:55 --> Current time: 1701357835
+INFO - 2023-11-30 15:23:55 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:55 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:55 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:55 --> Current time: 1701357835
+INFO - 2023-11-30 15:23:55 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:55 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:55 --> Current time: 1701357835
+INFO - 2023-11-30 15:23:55 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:55 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:55 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:55 --> Current time: 1701357835
+INFO - 2023-11-30 15:23:55 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:55 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:55 --> Current time: 1701357835
+INFO - 2023-11-30 15:23:55 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:55 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:55 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:55 --> Current time: 1701357835
+INFO - 2023-11-30 15:23:55 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:55 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:55 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:56 --> Current time: 1701357836
+INFO - 2023-11-30 15:23:56 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:56 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:56 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:56 --> Current time: 1701357836
+INFO - 2023-11-30 15:23:56 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:56 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:56 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:56 --> Current time: 1701357836
+INFO - 2023-11-30 15:23:56 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:56 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:56 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:56 --> Current time: 1701357836
+INFO - 2023-11-30 15:23:56 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:56 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:56 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:56 --> Current time: 1701357836
+INFO - 2023-11-30 15:23:56 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:56 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:56 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:56 --> Current time: 1701357836
+INFO - 2023-11-30 15:23:57 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:57 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:57 --> Current time: 1701357837
+INFO - 2023-11-30 15:23:57 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:57 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:57 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:57 --> Current time: 1701357837
+INFO - 2023-11-30 15:23:57 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:57 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:57 --> Current time: 1701357837
+INFO - 2023-11-30 15:23:57 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:57 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:57 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:57 --> Current time: 1701357837
+INFO - 2023-11-30 15:23:57 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:57 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:57 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:58 --> Current time: 1701357838
+INFO - 2023-11-30 15:23:58 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:58 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:58 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:58 --> Current time: 1701357838
+INFO - 2023-11-30 15:23:58 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:58 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:58 --> Current time: 1701357838
+INFO - 2023-11-30 15:23:58 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:58 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:58 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:58 --> Current time: 1701357838
+INFO - 2023-11-30 15:23:58 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:58 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:58 --> Current time: 1701357838
+INFO - 2023-11-30 15:23:58 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:58 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:58 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:58 --> Current time: 1701357838
+INFO - 2023-11-30 15:23:58 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:58 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:58 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:59 --> Current time: 1701357839
+INFO - 2023-11-30 15:23:59 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:59 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:59 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:59 --> Current time: 1701357839
+INFO - 2023-11-30 15:23:59 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:59 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:59 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:59 --> Current time: 1701357839
+INFO - 2023-11-30 15:23:59 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:59 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:59 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:59 --> Current time: 1701357839
+INFO - 2023-11-30 15:23:59 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:59 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:59 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:23:59 --> Current time: 1701357839
+INFO - 2023-11-30 15:23:59 --> Message time: 1701386593
+INFO - 2023-11-30 15:23:59 --> Difference (minutes): 479
+INFO - 2023-11-30 15:23:59 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:23:59 --> Current time: 1701357839
+INFO - 2023-11-30 15:23:59 --> Message time: 1700484940
+INFO - 2023-11-30 15:23:59 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:23:59 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:00 --> Current time: 1701357840
+INFO - 2023-11-30 15:24:00 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:00 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:00 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:00 --> Current time: 1701357840
+INFO - 2023-11-30 15:24:00 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:00 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:00 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:00 --> Current time: 1701357840
+INFO - 2023-11-30 15:24:00 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:00 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:00 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:00 --> Current time: 1701357840
+INFO - 2023-11-30 15:24:00 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:00 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:00 --> Formatted date: Nov 20, 2023 12:55 PM
+CRITICAL - 2023-11-30 15:24:00 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Controllers\ChatController.php(112): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Controllers\ChatController.php(124): App\Controllers\ChatController->getUserIdFromToken()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ChatController->getConnectedUsers()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ChatController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 15:24:01 --> Current time: 1701357841
+INFO - 2023-11-30 15:24:01 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:01 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:01 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:01 --> Current time: 1701357841
+INFO - 2023-11-30 15:24:01 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:01 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:01 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:01 --> Current time: 1701357841
+INFO - 2023-11-30 15:24:01 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:01 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:01 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:01 --> Current time: 1701357841
+INFO - 2023-11-30 15:24:01 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:01 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:01 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:02 --> Current time: 1701357842
+INFO - 2023-11-30 15:24:02 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:02 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:02 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:02 --> Current time: 1701357842
+INFO - 2023-11-30 15:24:02 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:02 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:02 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:02 --> Current time: 1701357842
+INFO - 2023-11-30 15:24:02 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:02 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:02 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:02 --> Current time: 1701357842
+INFO - 2023-11-30 15:24:02 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:02 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:02 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:02 --> Current time: 1701357842
+INFO - 2023-11-30 15:24:02 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:02 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:02 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:02 --> Current time: 1701357842
+INFO - 2023-11-30 15:24:02 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:02 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:02 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:03 --> Current time: 1701357843
+INFO - 2023-11-30 15:24:03 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:03 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:03 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:03 --> Current time: 1701357843
+INFO - 2023-11-30 15:24:03 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:03 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:03 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:03 --> Current time: 1701357843
+INFO - 2023-11-30 15:24:03 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:03 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:03 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:03 --> Current time: 1701357843
+INFO - 2023-11-30 15:24:03 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:03 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:03 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:03 --> Current time: 1701357843
+INFO - 2023-11-30 15:24:03 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:03 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:03 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:03 --> Current time: 1701357843
+INFO - 2023-11-30 15:24:03 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:03 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:03 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:04 --> Current time: 1701357844
+INFO - 2023-11-30 15:24:04 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:04 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:04 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:04 --> Current time: 1701357844
+INFO - 2023-11-30 15:24:04 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:04 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:04 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:04 --> Current time: 1701357844
+INFO - 2023-11-30 15:24:04 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:04 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:04 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:04 --> Current time: 1701357844
+INFO - 2023-11-30 15:24:04 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:04 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:04 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:04 --> Current time: 1701357844
+INFO - 2023-11-30 15:24:04 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:04 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:04 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:04 --> Current time: 1701357844
+INFO - 2023-11-30 15:24:04 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:04 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:04 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:05 --> Current time: 1701357845
+INFO - 2023-11-30 15:24:05 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:05 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:05 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:05 --> Current time: 1701357845
+INFO - 2023-11-30 15:24:05 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:05 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:05 --> Current time: 1701357845
+INFO - 2023-11-30 15:24:05 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:05 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:05 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:05 --> Current time: 1701357845
+INFO - 2023-11-30 15:24:05 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:05 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:05 --> Current time: 1701357845
+INFO - 2023-11-30 15:24:05 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:05 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:05 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:05 --> Current time: 1701357845
+INFO - 2023-11-30 15:24:05 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:05 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:05 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:06 --> Current time: 1701357846
+INFO - 2023-11-30 15:24:06 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:06 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:06 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:06 --> Current time: 1701357846
+INFO - 2023-11-30 15:24:06 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:06 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:06 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:06 --> Current time: 1701357846
+INFO - 2023-11-30 15:24:06 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:06 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:06 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:06 --> Current time: 1701357846
+INFO - 2023-11-30 15:24:06 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:06 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:06 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:07 --> Current time: 1701357847
+INFO - 2023-11-30 15:24:07 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:07 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:07 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:07 --> Current time: 1701357847
+INFO - 2023-11-30 15:24:07 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:07 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:07 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:07 --> Current time: 1701357847
+INFO - 2023-11-30 15:24:07 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:07 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:07 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:07 --> Current time: 1701357847
+INFO - 2023-11-30 15:24:07 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:07 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:07 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:07 --> Current time: 1701357847
+INFO - 2023-11-30 15:24:07 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:07 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:07 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:07 --> Current time: 1701357847
+INFO - 2023-11-30 15:24:07 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:07 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:07 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:08 --> Current time: 1701357848
+INFO - 2023-11-30 15:24:08 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:08 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:08 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:08 --> Current time: 1701357848
+INFO - 2023-11-30 15:24:08 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:08 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:08 --> Current time: 1701357848
+INFO - 2023-11-30 15:24:08 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:08 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:08 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:08 --> Current time: 1701357848
+INFO - 2023-11-30 15:24:08 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:08 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:08 --> Current time: 1701357848
+INFO - 2023-11-30 15:24:08 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:08 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:08 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:08 --> Current time: 1701357848
+INFO - 2023-11-30 15:24:08 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:08 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:08 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:09 --> Current time: 1701357849
+INFO - 2023-11-30 15:24:09 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:09 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:09 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:09 --> Current time: 1701357849
+INFO - 2023-11-30 15:24:09 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:09 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:09 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:09 --> Current time: 1701357849
+INFO - 2023-11-30 15:24:09 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:09 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:09 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:09 --> Current time: 1701357849
+INFO - 2023-11-30 15:24:09 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:09 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:09 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:10 --> Current time: 1701357850
+INFO - 2023-11-30 15:24:10 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:10 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:10 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:10 --> Current time: 1701357850
+INFO - 2023-11-30 15:24:10 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:10 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:10 --> Current time: 1701357850
+INFO - 2023-11-30 15:24:10 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:10 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:10 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:10 --> Current time: 1701357850
+INFO - 2023-11-30 15:24:10 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:10 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:10 --> Current time: 1701357850
+INFO - 2023-11-30 15:24:10 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:10 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:10 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:10 --> Current time: 1701357850
+INFO - 2023-11-30 15:24:10 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:10 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:10 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:11 --> Current time: 1701357851
+INFO - 2023-11-30 15:24:11 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:11 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:11 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:11 --> Current time: 1701357851
+INFO - 2023-11-30 15:24:11 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:11 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:11 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:11 --> Current time: 1701357851
+INFO - 2023-11-30 15:24:11 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:11 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:11 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:11 --> Current time: 1701357851
+INFO - 2023-11-30 15:24:11 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:11 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:11 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:11 --> Current time: 1701357851
+INFO - 2023-11-30 15:24:11 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:11 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:11 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:11 --> Current time: 1701357851
+INFO - 2023-11-30 15:24:11 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:11 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:11 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:12 --> Current time: 1701357852
+INFO - 2023-11-30 15:24:12 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:12 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:12 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:12 --> Current time: 1701357852
+INFO - 2023-11-30 15:24:12 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:12 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:12 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:12 --> Current time: 1701357852
+INFO - 2023-11-30 15:24:12 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:12 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:12 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:12 --> Current time: 1701357852
+INFO - 2023-11-30 15:24:12 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:12 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:12 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:12 --> Current time: 1701357852
+INFO - 2023-11-30 15:24:12 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:12 --> Difference (minutes): 479
+INFO - 2023-11-30 15:24:12 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:12 --> Current time: 1701357852
+INFO - 2023-11-30 15:24:12 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:12 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:12 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:13 --> Current time: 1701357853
+INFO - 2023-11-30 15:24:13 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:13 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:13 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:13 --> Current time: 1701357853
+INFO - 2023-11-30 15:24:13 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:13 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:13 --> Current time: 1701357853
+INFO - 2023-11-30 15:24:13 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:13 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:13 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:13 --> Current time: 1701357853
+INFO - 2023-11-30 15:24:13 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:13 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:13 --> Current time: 1701357853
+INFO - 2023-11-30 15:24:13 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:13 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:13 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:13 --> Current time: 1701357853
+INFO - 2023-11-30 15:24:13 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:13 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:13 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:14 --> Current time: 1701357854
+INFO - 2023-11-30 15:24:14 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:14 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:14 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:14 --> Current time: 1701357854
+INFO - 2023-11-30 15:24:14 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:14 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:14 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:14 --> Current time: 1701357854
+INFO - 2023-11-30 15:24:14 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:14 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:14 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:14 --> Current time: 1701357854
+INFO - 2023-11-30 15:24:14 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:14 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:14 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:14 --> Current time: 1701357854
+INFO - 2023-11-30 15:24:14 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:14 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:14 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:14 --> Current time: 1701357854
+INFO - 2023-11-30 15:24:14 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:14 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:14 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:15 --> Current time: 1701357855
+INFO - 2023-11-30 15:24:15 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:15 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:15 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:15 --> Current time: 1701357855
+INFO - 2023-11-30 15:24:15 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:15 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:15 --> Current time: 1701357855
+INFO - 2023-11-30 15:24:15 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:15 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:15 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:15 --> Current time: 1701357855
+INFO - 2023-11-30 15:24:15 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:15 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:15 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:16 --> Current time: 1701357856
+INFO - 2023-11-30 15:24:16 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:16 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:16 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:16 --> Current time: 1701357856
+INFO - 2023-11-30 15:24:16 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:16 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:16 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:16 --> Current time: 1701357856
+INFO - 2023-11-30 15:24:16 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:16 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:16 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:16 --> Current time: 1701357856
+INFO - 2023-11-30 15:24:16 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:16 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:16 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:16 --> Current time: 1701357856
+INFO - 2023-11-30 15:24:16 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:16 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:16 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:16 --> Current time: 1701357856
+INFO - 2023-11-30 15:24:16 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:16 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:16 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:17 --> Current time: 1701357857
+INFO - 2023-11-30 15:24:17 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:17 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:17 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:17 --> Current time: 1701357857
+INFO - 2023-11-30 15:24:17 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:17 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:17 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:17 --> Current time: 1701357857
+INFO - 2023-11-30 15:24:17 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:17 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:17 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:17 --> Current time: 1701357857
+INFO - 2023-11-30 15:24:17 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:17 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:17 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:17 --> Current time: 1701357857
+INFO - 2023-11-30 15:24:17 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:17 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:17 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:17 --> Current time: 1701357857
+INFO - 2023-11-30 15:24:17 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:17 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:17 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:18 --> Current time: 1701357858
+INFO - 2023-11-30 15:24:18 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:18 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:18 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:18 --> Current time: 1701357858
+INFO - 2023-11-30 15:24:18 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:18 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:18 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:18 --> Current time: 1701357858
+INFO - 2023-11-30 15:24:18 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:18 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:18 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:18 --> Current time: 1701357858
+INFO - 2023-11-30 15:24:18 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:18 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:18 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:19 --> Current time: 1701357859
+INFO - 2023-11-30 15:24:19 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:19 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:19 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:19 --> Current time: 1701357859
+INFO - 2023-11-30 15:24:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:19 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:19 --> Current time: 1701357859
+INFO - 2023-11-30 15:24:19 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:19 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:19 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:19 --> Current time: 1701357859
+INFO - 2023-11-30 15:24:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:19 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:19 --> Formatted date: Nov 20, 2023 12:55 PM
+INFO - 2023-11-30 15:24:19 --> Current time: 1701357859
+INFO - 2023-11-30 15:24:19 --> Message time: 1701386593
+INFO - 2023-11-30 15:24:19 --> Difference (minutes): 478
+INFO - 2023-11-30 15:24:19 --> Formatted date: Nov 30, 2023 11:23 PM
+INFO - 2023-11-30 15:24:19 --> Current time: 1701357859
+INFO - 2023-11-30 15:24:19 --> Message time: 1700484940
+INFO - 2023-11-30 15:24:19 --> Difference (minutes): 14548
+INFO - 2023-11-30 15:24:19 --> Formatted date: Nov 20, 2023 12:55 PM
