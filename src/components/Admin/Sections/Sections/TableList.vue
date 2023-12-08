@@ -5,22 +5,22 @@
 
         <!-- Add Section Dialog -->
         <q-dialog v-model="addSectionDialog" position="standard">
-            <q-card>
-                <q-card-section>
+            <q-card class="q-pa-md" style="width: 600px;">
+                <q-card-section >
                     <q-card-title class="text-h6">Add Section</q-card-title>
-                    <q-input v-model="newSection.name" label="Section Name" />
-                    <q-select
+                    <q-input filled v-model="newSection.name" label="Section Name" style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
+                    <q-select filled
                         v-model="newSection.coach"
                         label="Coach"
                         :options="coachOptions"
-                    />
-                    <q-input v-model="newSection.age_group" label="Age group" />
-                    <q-input v-model="newSection.quantity" label="Total" />
+                    style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
+                    <q-input filled v-model="newSection.age_group" label="Range of Age " style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
+                    <q-input filled v-model="newSection.quantity" label="Total Students" style="margin-bottom: 5px; color: primary;" label-color="black" class="bg-grey-2" />
                 </q-card-section>
 
                 <q-card-actions align="right">
-                    <q-btn label="Cancel" color="negative" v-close-popup />
-                    <q-btn label="Add Section" color="primary" @click="addSection" />
+                    <q-btn label="Cancel" color="negative" v-close-popup style="margin-bottom: 5px; color: primary;" label-color="black" filled-color="grey-4" />
+                    <q-btn label="Add Section" color="primary" @click="addSection" style="margin-bottom: 5px; color: primary;" label-color="black" filled-color="grey-4" />
                 </q-card-actions>
             </q-card>
         </q-dialog>
