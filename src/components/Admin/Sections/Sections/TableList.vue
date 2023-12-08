@@ -1,10 +1,20 @@
 <template>
     <div>
-        <q-btn @click="openAddSectionDialog" color="primary" label="Add Section" class="q-mt-md" />
-        <q-table title="" :rows="tableData" :columns="columns" row-key="name" />
+        <div class="row col-12 justify-end">
+            <q-btn @click="openAddSectionDialog" color="positive" label="Add Section" class="q-my-md" />
+        </div>
+        <q-table title="" :rows="tableData" :columns="columns" row-key="name" class="my-sticky-last-column-table">
+            <template #body-cell-actions="props">
+                <q-td :props="props">
+                    <q-btn flat round icon="edit" @click="editSection(props.row)" />
+                    <q-btn flat round icon="delete" @click="deleteSection(props.row)" color="negative" />
+                </q-td>
+            </template>
+        </q-table>
 
         <!-- Add Section Dialog -->
         <q-dialog v-model="addSectionDialog" position="standard">
+<<<<<<< Updated upstream
             <q-card class="q-pa-md" style="width: 600px;">
                 <q-card-section >
                     <q-card-title class="text-h6">Add Section</q-card-title>
@@ -21,6 +31,21 @@
                 <q-card-actions align="right">
                     <q-btn label="Cancel" color="negative" v-close-popup style="margin-bottom: 5px; color: primary;" label-color="black" filled-color="grey-4" />
                     <q-btn label="Add Section" color="primary" @click="addSection" style="margin-bottom: 5px; color: primary;" label-color="black" filled-color="grey-4" />
+=======
+            <q-card>
+                <q-card-section>
+                    <q-card-title class="text-h6">Section Data</q-card-title>
+                    <q-input v-model="newSection.name" label="Section Name" />
+                    <q-select v-model="newSection.coach" label="Coach" :options="coachOptions" />
+                    <q-input v-model="newSection.age_group" label="Age group" />
+                    <q-input v-model="newSection.quantity" label="Total" />
+                </q-card-section>
+
+                <q-card-actions align="right">
+                    <q-btn label="Cancel" color="negative" v-close-popup />
+                    <q-btn :label="editMode ? 'Edit Section' : 'Add Section'" :color="editMode ? 'primary' : 'positive'"
+                        @click="addOrEditSection" />
+>>>>>>> Stashed changes
                 </q-card-actions>
             </q-card>
         </q-dialog>
@@ -36,7 +61,17 @@ const columns = [
     { name: 'coach', label: 'Coach', field: 'coach', align: 'left', sortable: true },
     { name: 'age_group', label: 'Age Group', field: 'age_group', align: 'left', sortable: true },
     { name: 'quantity', label: 'Total Students', field: 'quantity', align: 'left', sortable: true },
+    {
+        name: 'actions',
+        label: 'Actions',
+        field: 'actions',
+        align: 'center',
+        sortable: false,
+        bodySlot: 'actions',
+    },
 ];
+
+const editMode = ref(false);
 
 const tableData = ref([]);
 const addSectionDialog = ref(false);
@@ -51,34 +86,33 @@ const coachOptions = ref([]);
 
 const openAddSectionDialog = async () => {
     // Reset the newSection object when opening the dialog
+    editMode.value = false;
+    // Show the dialog
+    addSectionDialog.value = true;
     newSection.value = {
         name: '',
         coach: '',
         age_group: '',
         quantity: '',
     };
+
+
     // Fetch the list of coaches and populate the options
-    const response = await axios.get('getcoachdata');
-    coachOptions.value = response.data.map(coach => ({
-        label: `${coach.firstname} ${coach.lastname}`,
-        value: coach.id, // Assuming coach.id is the coach's unique identifier
-    }));
-    addSectionDialog.value = true;
+    axios.get('getcoachdata')
+        .then(response => {
+            coachOptions.value = response.data.map(coach => ({
+                label: `${coach.firstname} ${coach.lastname}`,
+                value: coach.id,
+            }));
+            // Set to "Add" mode by default
+
+        })
+        .catch(error => {
+            console.error('Error fetching coach data:', error);
+        });
 };
 
-const addSection = async () => {
-    try {
-        // Call your API endpoint to add a section
-        await axios.post('addsection', newSection.value);
-        // Refresh the section data after adding a new section
-        const response = await axios.get('getsection');
-        tableData.value = response.data;
-        // Close the dialog after successfully adding a section
-        addSectionDialog.value = false;
-    } catch (error) {
-        console.error('Error adding section:', error);
-    }
-};
+
 
 // Define the created lifecycle hook
 onMounted(async () => {
@@ -90,4 +124,74 @@ onMounted(async () => {
         console.error('Error fetching data:', error);
     }
 });
+
+
+const editSection = async (section) => {
+    try {
+        // Set to "Edit" mode
+
+        // Open the addSectionDialog in "Edit" mode
+        openAddSectionDialog();
+
+        // Update the newSection object with the selected section's data
+        newSection.value = { ...section };
+
+        editMode.value = true;
+        // Note: You may need to adjust the API endpoint based on your actual implementation
+    } catch (error) {
+        console.error('Error fetching section data for editing:', error);
+    }
+};
+
+
+
+const deleteSection = async (section) => {
+    try {
+        // Call your API endpoint to delete a coach
+        await axios.delete(`deletesection/${section.id}`);
+        // Remove the deleted coach from the tableData
+        tableData.value = tableData.value.filter(item => item.id !== section.id);
+    } catch (error) {
+        console.error('Error deleting coach:', error);
+    }
+};
+
+
+const addOrEditSection = async () => {
+    try {
+        if (editMode.value) {
+            // Call your API endpoint to update a coach
+            await axios.put(`updatesection/${newSection.value.id}`, newSection.value);
+        } else {
+            // Call your API endpoint to add a section
+            await axios.post('addsection', newSection.value);
+        }
+
+        // Refresh the section data after adding/editing a section
+        const response = await axios.get('getsection');
+        tableData.value = response.data;
+
+        // Close the dialog after successfully adding/editing a section
+        addSectionDialog.value = false;
+    } catch (error) {
+        console.error(`Error ${editMode.value ? 'editing' : 'adding'} section:`, error);
+    }
+};
+
 </script>
+<style lang="sass">
+.my-sticky-last-column-table
+  /* specifying max-width so the example can
+    highlight the sticky column on any browser window */
+
+  thead tr:last-child th:last-child
+    /* bg color is important for th; just specify one */
+
+  td:last-child
+
+  th:last-child,
+  td:last-child
+    position: sticky
+    right: 0
+    z-index: 1
+</style>

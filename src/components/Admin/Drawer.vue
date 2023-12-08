@@ -50,15 +50,25 @@
                         <q-item-section>Sections</q-item-section>
                     </q-item>
                 </router-link>
-                <router-link to="/admin/help" class="text-grey-5" style="text-decoration: none">
-                    <q-item clickable v-ripple :active="isActive('help')" @click="setActiveLink('help')"
+                <router-link to="/admin/events" class="text-grey-5" style="text-decoration: none">
+                    <q-item clickable v-ripple :active="isActive('events')" @click="setActiveLink('events')"
                         active-class="my-menu-link">
                         <q-item-section avatar>
-                            <q-icon name="help" />
+                            <q-icon name="event" />
                         </q-item-section>
-                        <q-item-section>Help</q-item-section>
+                        <q-item-section>Events</q-item-section>
                     </q-item>
                 </router-link>
+                <router-link to="/admin/accounts" class="text-grey-5" style="text-decoration: none">
+                    <q-item clickable v-ripple :active="isActive('accounts')" @click="setActiveLink('accounts')"
+                        active-class="my-menu-link">
+                        <q-item-section avatar>
+                            <q-icon name="people"/>
+                        </q-item-section>
+                        <q-item-section>Accounts</q-item-section>
+                    </q-item>
+                </router-link>
+
             </q-list>
         </q-scroll-area>
 

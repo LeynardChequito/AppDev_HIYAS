@@ -3,8 +3,8 @@
         <!-- <div class="row">
             <div class="row col-12 items-start q-pa-md">Chats</div>
         </div> -->
-        <q-list bordered>
-            <q-item v-for="user in connectedUsers" :key="user.id" clickable v-ripple @click="navigateToChat(user.id)">
+        <q-list bordered class="text-white">
+            <q-item v-for="user in connectedUsers" :key="user.id" clickable v-ripple @click="navigateToChat(user.id)" >
                 <q-item-section top avatar>
                     <q-avatar>
                         <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
@@ -13,7 +13,7 @@
 
                 <q-item-section>
                     <q-item-label>{{ user.firstname }}</q-item-label>
-                    <q-item-label caption>{{ user.latest_message }}</q-item-label>
+                    <q-item-label caption class="text-white">{{ user.latest_message }}</q-item-label>
                 </q-item-section>
 
                 <q-item-section side top>
