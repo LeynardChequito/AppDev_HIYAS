@@ -12,7 +12,6 @@ class SectionController extends ResourceController
 {
     public function index()
     {
-        //
     }
 
     public function getData()
@@ -39,24 +38,50 @@ class SectionController extends ResourceController
 
 
 
-   public function addData()
-{
-    $json = $this->request->getJSON();
+    public function addData()
+    {
+        $json = $this->request->getJSON();
 
-    $data = [
-        'name' => $json->name,
-        'coach' => $json->coach->value, // Use the coach ID
-        'quantity' => $json->quantity,
-        'age_group' => $json->age_group,
-    ];
+        $data = [
+            'name' => $json->name,
+            'coach' => $json->coach->value, // Use the coach ID
+            'quantity' => $json->quantity,
+            'age_group' => $json->age_group,
+        ];
 
-    // Fetch coach details based on the provided coach ID
-    // ...
+        // Fetch coach details based on the provided coach ID
+        // ...
 
-    $sectionModel = new SectionModel();
-    $r = $sectionModel->save($data);
+        $sectionModel = new SectionModel();
+        $r = $sectionModel->save($data);
 
-    return $this->respond($r, 200);
-}
+        return $this->respond($r, 200);
+    }
 
+    public function deleteData($id = null)
+    {
+        $sectionModel = new SectionModel();
+        $r = $sectionModel->delete($id); // Assuming your primary key field is 'id'
+
+        return $this->respondDeleted();
+    }
+
+    public function updateData($id = null)
+    {
+        $json = $this->request->getJSON();
+
+
+        $data = [
+            'name' => $json->name,
+            'coach' => $json->coach->value, // Use the coach ID
+            'quantity' => $json->quantity,
+            'age_group' => $json->age_group,
+        ];
+
+
+        $SectionModel = new SectionModel();
+        $r = $SectionModel->update($id, $data); // Assuming your primary key field is 'id'
+
+        return $this->respond($r, 200);
+    }
 }
