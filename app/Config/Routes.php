@@ -23,8 +23,13 @@ $routes->get('getUserMessages/(:num)', 'ChatController::getUserMessages/$1');
 $routes->put('/updatecoach/(:num)', 'CoachController::updateData/$1');
 $routes->delete('/deletecoach/(:num)', 'CoachController::deleteData/$1');
 
+$routes->get('/getparent', 'ParentController::getData');
+$routes->post('/addparent', 'ParentController::addData');
 $routes->put('/updatesection/(:num)', 'SectionController::updateData/$1');
 $routes->delete('/deletesection/(:num)', 'SectionController::deleteData/$1');
+
+$routes->put('/updateparent/(:num)', 'ParentController::updateData/$1');
+$routes->delete('/deleteparent/(:num)', 'ParentController::deleteData/$1');
 
 $routes->post('logout', 'LoginController::logout');
 $routes->get('getConnectedUsers', 'ChatController::getConnectedUsers');
