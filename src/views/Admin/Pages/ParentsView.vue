@@ -3,15 +3,14 @@
 
         <q-tabs v-model="tab" dense class="bg-grey-10 text-grey" active-color="yellow" indicator-color="yellow"
             align="justify">
-            <q-tab name="coaches" label="Coaches" />
+            <q-tab name="parents" label="Coaches" />
             <q-tab name="attendance" label="Attendance" />
-            <q-tab name="lessonPlans" label="Lesson Plans" />
         </q-tabs>
 
 
         <q-tab-panels v-model="tab" animated class="bg-grey-10 text-grey">
 
-            <q-tab-panel name="coaches" class="q-pa-md">
+            <q-tab-panel name="parents" class="q-pa-md">
                 <TableList />
             </q-tab-panel>
 
@@ -21,9 +20,9 @@
   
 <script setup>
 import { ref } from 'vue';
-import TableList from '@/components/Admin/Coaches/Coaches/TableList.vue';
+import TableList from '@/components/Admin/Parents/Parents/TableList.vue';
 
-const tab = ref('coaches');
+const tab = ref('parents');
 const innerTab = ref('AttendanceWLA');
 const splitterModel = ref(10);
 </script>
