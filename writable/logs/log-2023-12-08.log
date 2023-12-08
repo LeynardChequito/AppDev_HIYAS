@@ -1,0 +1,471 @@
+CRITICAL - 2023-12-08 04:14:00 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:01 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:01 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:01 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:01 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:02 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:02 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:24 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:24 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:33 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:14:34 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:15:35 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:15:42 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:16:55 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 42.
+ 1 APPPATH\Controllers\SectionController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:22:30 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 57.
+ 1 APPPATH\Controllers\SectionController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:22:31 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 57.
+ 1 APPPATH\Controllers\SectionController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:22:53 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 57.
+ 1 APPPATH\Controllers\SectionController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:22:54 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 57.
+ 1 APPPATH\Controllers\SectionController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:22:54 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 57.
+ 1 APPPATH\Controllers\SectionController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:23:03 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 57.
+ 1 APPPATH\Controllers\SectionController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:18 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:19 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:35 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:55 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:57 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:58 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:26:59 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:27:16 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:28:30 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:28:38 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:31:40 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:31:40 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:31:40 --> Undefined array key "firstname"
+in APPPATH\Controllers\SectionController.php on line 59.
+ 1 APPPATH\Controllers\SectionController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\SectionController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:32:29 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:32:38 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:32:39 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:32:48 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:34:06 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:34:07 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:34:07 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:34:07 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:34:20 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:35:39 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-08 04:38:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`hiyas`.`sections`, CONSTRAINT `coach` FOREIGN KEY (`coach`) REFERENCES `coaches` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\SectionController.php(58): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-08 04:38:44 --> Cannot add or update a child row: a foreign key constraint fails (`hiyas`.`sections`, CONSTRAINT `coach` FOREIGN KEY (`coach`) REFERENCES `coaches` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SectionController.php(58): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:39:08 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sections` (`name`, `coach`, `quantity`, `age_group`) VALUES (:name:, :coach:, :quantity:, :age_group:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\SectionController.php(58): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:40:36 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\SectionController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:40:37 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\SectionController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:40:48 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\SectionController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:41:36 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\SectionController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:41:38 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\SectionController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 04:41:44 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\SectionController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SectionController->addData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SectionController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
