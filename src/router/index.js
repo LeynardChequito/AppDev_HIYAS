@@ -188,6 +188,16 @@ const routes = [
           name: "admin-coaches",
           component: () => import("@/views/Admin/Pages/CoachesView.vue"),
         },
+        {
+          path: "parents",
+          name: "admin-parents",
+          component: () => import("@/views/Admin/Pages/ParentsView.vue"),
+        },
+        {
+          path: "sections",
+          name: "admin-sections",
+          component: () => import("@/views/Admin/Pages/SectionsView.vue"),
+        },
     ]
   },
 ];
