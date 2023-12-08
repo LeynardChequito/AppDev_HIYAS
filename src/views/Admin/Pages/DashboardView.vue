@@ -14,15 +14,4 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { tab, tabs } from '@/assets/store';
-
-
-onMounted(() => {
-    // Add the dynamic tabs to the store
-    tabs.value = [
-        { name: 'default', label: 'HEHE' },
-        { name: 'try', label: 'Js' },
-    ];
-});
 </script>

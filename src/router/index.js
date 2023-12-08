@@ -183,6 +183,11 @@ const routes = [
           name: "admin-students",
           component: () => import("@/views/Admin/Pages/StudentsView.vue"),
         },
+        {
+          path: "coaches",
+          name: "admin-coaches",
+          component: () => import("@/views/Admin/Pages/CoachesView.vue"),
+        },
     ]
   },
 ];

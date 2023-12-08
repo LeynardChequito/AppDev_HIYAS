@@ -1,5 +1,5 @@
 <template>
-    <q-splitter v-model="splitterModel"  style="margin-top: -20px; margin-left: -10px;">
+    <q-splitter v-model="splitterModel" style="margin-top: -20px; margin-left: -10px;">
 
         <template v-slot:before>
             <q-tabs v-model="vTab" vertical class="text-grey-5 q-mb-lg" active-color="yellow" indicator-color="yellow">
