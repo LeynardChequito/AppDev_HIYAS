@@ -26,7 +26,7 @@
                         <q-icon :name="showPassword ? 'visibility' : 'visibility_off'" @click="togglePassword" style="cursor: pointer;" />
                       </template>
                   </q-input>
-
+                  <!-- 
                   <div class="row items-center">
                     <div class="text-caption col-2 text-weight-thin">Birthday</div>
 
@@ -48,7 +48,7 @@
                   </div>
                   <div class="col-12">
                       <q-select v-model="barangay" outlined label="Barangay" :options="barangayOptions" :rules="[v => !!v ]" dense />
-                  </div>
+                  </div> -->
                   <div class="col-12">
                       <q-select v-model="user_role" outlined label="Role" :options="userModeOptions" :rules="[v => !!v ]" dense />
                   </div>
@@ -94,52 +94,52 @@ export default {
 name: 'signup',
 
 data() {
-  const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 100 }, (_, index) => (currentYear - index).toString());
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const currentDate = new Date();
-  const days = Array.from({ length: 31 }, (_, index) => (index + 1).toString());
+  // const currentYear = new Date().getFullYear();
+  // const years = Array.from({ length: 100 }, (_, index) => (currentYear - index).toString());
+  // const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  // const currentDate = new Date();
+  // const days = Array.from({ length: 31 }, (_, index) => (index + 1).toString());
 
   return {
     firstname: '',
     lastname: '',
     mobile_or_email: '',
     password: '',
-    gender: 'male',
+    // gender: 'male',
     user_role: '',
-    barangay: '',
+    // barangay: '',
     userModeOptions: ['Student', 'Coach', 'Staff', 'Parent/Guardian', 'Other'],
-    barangayOptions: [
-      'Balite',
-      'Baruyan',
-      'Bayanan I',
-      'Bayanan II',
-      'Calero',
-      'Camilmil',
-      'Canubing I',
-      'Canubing II',
-      'Guinobatan',
-      'GulodIbaba East',
-      'Ibaba West',
-      'Ilaya',
-      'Lalud',
-      'Lazareto',
-      'Lumangbayan',
-      'Masipit',
-      'Pachoca',
-      'San Antonio',
-      'Suqui',
-      'Tawagan',
-      'Tawiran',
-      'Tibag',
-    ],
-    birthMonth: months[currentDate.getMonth()],
-    birthday: currentDate.getDate().toString(),
-    birthYear: currentDate.getFullYear().toString(),
-    months,
-    days,
-    years,
-    gender: ref('male'),
+    // barangayOptions: [
+    //   'Balite',
+    //   'Baruyan',
+    //   'Bayanan I',
+    //   'Bayanan II',
+    //   'Calero',
+    //   'Camilmil',
+    //   'Canubing I',
+    //   'Canubing II',
+    //   'Guinobatan',
+    //   'GulodIbaba East',
+    //   'Ibaba West',
+    //   'Ilaya',
+    //   'Lalud',
+    //   'Lazareto',
+    //   'Lumangbayan',
+    //   'Masipit',
+    //   'Pachoca',
+    //   'San Antonio',
+    //   'Suqui',
+    //   'Tawagan',
+    //   'Tawiran',
+    //   'Tibag',
+    // ],
+    // birthMonth: months[currentDate.getMonth()],
+    // birthday: currentDate.getDate().toString(),
+    // birthYear: currentDate.getFullYear().toString(),
+    // months,
+    // days,
+    // years,
+    // gender: ref('male'),
     teal: ref(false),
     showPassword: false,
   };
@@ -162,8 +162,8 @@ methods: {
         lastname: this.lastname,
         mobile_or_email: this.mobile_or_email,
         password: this.password,
-        birthday: `${this.birthYear}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthday}`, // Format the birthday
-        gender: this.gender,
+        // birthday: `${this.birthYear}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthday}`, // Format the birthday
+        // gender: this.gender,
         user_role: this.user_role,
         barangay: this.barangay,
       });
@@ -185,21 +185,21 @@ methods: {
     this.$router.push({ name: 'home' });
   },
 
-  validateBirthday(value) {
-    const birthDate = new Date(`${value}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthday}`);
-    const currentDate = new Date();
+  // validateBirthday(value) {
+  //   const birthDate = new Date(`${value}-${this.months.indexOf(this.birthMonth) + 1}-${this.birthday}`);
+  //   const currentDate = new Date();
 
-    // Calculate age
-    const age = currentDate.getFullYear() - birthDate.getFullYear();
+  //   // Calculate age
+  //   const age = currentDate.getFullYear() - birthDate.getFullYear();
 
-    // Check if the user is at least 5 years old
-    if (age < 5) {
-      return 'Must be at least 5 years old.';
-    }
+  //   // Check if the user is at least 5 years old
+  //   if (age < 5) {
+  //     return 'Must be at least 5 years old.';
+  //   }
 
-    // Return true if the validation passes
-    return true;
-  },
+  //   // Return true if the validation passes
+  //   return true;
+  // },
 
   togglePassword() {
     this.showPassword = !this.showPassword;
