@@ -168,8 +168,6 @@ const addOrEditSection = async () => {
   thead tr:last-child th:last-child
     /* bg color is important for th; just specify one */
 
-  td:last-child
-
   th:last-child,
   td:last-child
     position: sticky

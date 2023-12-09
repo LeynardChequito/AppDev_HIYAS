@@ -3,7 +3,7 @@
 
         <q-tabs v-model="tab" dense class="bg-grey-10 text-grey" active-color="yellow" indicator-color="yellow"
             align="justify">
-            <q-tab name="parents" label="Coaches" />
+            <q-tab name="parents" label="Parents" />
             <q-tab name="attendance" label="Attendance" />
         </q-tabs>
 

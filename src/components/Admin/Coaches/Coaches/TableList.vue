@@ -78,7 +78,6 @@
                     </div>
                     <q-select v-model="newCoach.address" label="Address" :options="addressOptions" :rules="[v => !!v]"
                         dense />
->>>>>>> Stashed changes
                 </q-card-section>
 
                 <q-card-actions align="right">
