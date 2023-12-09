@@ -35,6 +35,10 @@ $routes->put('/updateevent/(:num)', 'EventController::updateData/$1');
 $routes->delete('/deleteevent/(:num)', 'EventController::deleteData/$1');
 
 
+$routes->get('/getaccount', 'AccountController::getData');
+$routes->post('/addaccount', 'AccountController::addData');
+$routes->put('/updateaccount/(:num)', 'AccountController::updateData/$1');
+$routes->delete('/deleteaccount/(:num)', 'AccountController::deleteData/$1');
 
 $routes->put('/updatesection/(:num)', 'SectionController::updateData/$1');
 $routes->delete('/deletesection/(:num)', 'SectionController::deleteData/$1');

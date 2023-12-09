@@ -28,12 +28,9 @@ class SignupController extends ResourceController
         $validationRules = [
             'firstname' => 'required',
             'lastname' => 'required',
-            'mobile_or_email' => 'required|valid_email', // Adjust this validation based on your needs
+            'mobile_or_email' => 'required|valid_email',
             'password' => 'required|min_length[8]',
-            'birthday' => 'required|valid_date',
-            'gender' => 'required|in_list[male,female]',
-            'barangay' => 'required',
-            // 'user_role' => 'required',
+            'user_role' => 'required',
         ];
 
         // Perform validation
@@ -49,9 +46,6 @@ class SignupController extends ResourceController
                 'lastname' => $json->lastname,
                 'mobile_or_email' => $json->mobile_or_email,
                 'password' => password_hash($json->password, PASSWORD_DEFAULT),
-                'birthday' => $json->birthday,
-                'gender' => $json->gender,
-                'barangay' => $json->barangay,
                 'user_role' => $json->user_role,
             ];
 
