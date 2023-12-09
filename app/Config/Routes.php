@@ -8,7 +8,6 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'MainController::index');
 $routes->get('chat', 'ChatController::index');
 $routes->get('/getdata', 'TryController::getData');
-$routes->get('/getstudentdata', 'StudentController::getData');
 $routes->get('/studentAttendance', 'AttendanceController::studentAttendance');
 $routes->get('/getcoachdata', 'CoachController::getData');
 $routes->get('/getsection', 'SectionController::getData');
@@ -20,8 +19,16 @@ $routes->post('/login', 'LoginController::login');
 $routes->get('/getUser', 'LoginController::getUser');
 $routes->get('getUserMessages/(:num)', 'ChatController::getUserMessages/$1');
 
+
+$routes->get('/getstudentdata', 'StudentController::getData');
+$routes->post('/addstudent', 'StudentController::addData');
+$routes->put('/updatestudent/(:num)', 'StudentController::updateData/$1');
+$routes->delete('/deletestudent/(:num)', 'StudentController::deleteData/$1');
+
+
 $routes->put('/updatecoach/(:num)', 'CoachController::updateData/$1');
 $routes->delete('/deletecoach/(:num)', 'CoachController::deleteData/$1');
+
 
 $routes->get('/getparent', 'ParentController::getData');
 $routes->post('/addparent', 'ParentController::addData');

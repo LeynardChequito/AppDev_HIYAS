@@ -11,45 +11,26 @@ use App\Models\SectionModel;
 
 class AttendanceController extends ResourceController
 {
+    use ResponseTrait;
+
     public function studentAttendance()
     {
-        $studentAttendance = new StudentAttendanceModel();
-        $studentsModel = new StudentModel();
-        $sectionsModel = new SectionModel();
-
         // Fetch student attendance data
-        $attendanceData = $studentAttendance->findAll();
+        $attendanceModel = new StudentAttendanceModel();
+        $attendanceData = $attendanceModel->findAll();
 
-        // Fetch student details
-        $students = $studentsModel->findAll();
-
-        // Create a map for student IDs to student details
-        $studentsMap = [];
-        foreach ($students as $student) {
-            $studentsMap[$student['id']] = $student;
-        }
-
-        // Fetch section details
-        $sections = $sectionsModel->findAll();
-
-        // Create a map for section IDs to section details
-        $sectionsMap = [];
-        foreach ($sections as $section) {
-            $sectionsMap[$section['id']] = $section;
-        }
-
-        // Replace student IDs with student details in attendance data
+        // Replace foreign key IDs with corresponding names
         foreach ($attendanceData as &$attendance) {
-            if (isset($studentsMap[$attendance['student']])) {
-                $studentDetails = $studentsMap[$attendance['student']];
-                $attendance['student'] = $studentDetails['firstname'] . ' ' . $studentDetails['lastname'];
-            }
 
-            // Replace section IDs with section details in attendance data
-            if (isset($sectionsMap[$attendance['section']])) {
-                $sectionDetails = $sectionsMap[$attendance['section']];
-                $attendance['section'] = $sectionDetails['name'];
-            }
+            // Fetch student name
+            $studentModel = new StudentModel();
+            $student = $studentModel->find($attendance['student']);
+            $attendance['student'] = $student['firstname'] . ' ' . $student['lastname'];
+
+            $sectionModel = new SectionModel();
+            $section = $sectionModel->find($student['section']);
+            $student['section'] = $section['name'];
+            $attendance['section'] = $student['section'];
         }
 
         return $this->respond($attendanceData);
