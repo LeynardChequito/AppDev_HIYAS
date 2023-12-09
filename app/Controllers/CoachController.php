@@ -25,7 +25,7 @@ class CoachController extends ResourceController
     public function addData()
     {
         $json = $this->request->getJSON();
-
+        $gender = is_object($json->gender) ? $json->gender->value : $json->gender;
 
         $data = [
             'firstname' => $json->firstname,
@@ -33,7 +33,7 @@ class CoachController extends ResourceController
             'age' => $json->age,  // Assuming 'age' is available in your JSON data
             'birthday' => $json->birthday,
             'phone' => $json->phone,  // Assuming 'phone' is available in your JSON data
-            'gender' => $json->gender->value,
+            'gender' => $gender,
             'date_hired' => $json->date_hired,
             'coach_id' => $json->coach_id,
             'address' => $json->address,
@@ -50,13 +50,14 @@ class CoachController extends ResourceController
     {
         $json = $this->request->getJSON();
 
+        $gender = is_object($json->gender) ? $json->gender->value : $json->gender;
         $data = [
             'firstname' => $json->firstname,
             'lastname' => $json->lastname,
             'age' => $json->age,
             'birthday' => $json->birthday,
             'phone' => $json->phone,
-            'gender' => $json->gender->value,
+            'gender' => $gender,
             'date_hired' => $json->date_hired,
             'coach_id' => $json->coach_id,
             'address' => $json->address,

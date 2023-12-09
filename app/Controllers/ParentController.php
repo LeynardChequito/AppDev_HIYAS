@@ -7,7 +7,7 @@ use App\Models\ParentsModel;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 
-class CoachController extends ResourceController
+class ParentController extends ResourceController
 {
     use ResponseTrait;
     public function index()
@@ -17,8 +17,8 @@ class CoachController extends ResourceController
 
     public function getData()
     {
-        $student = new ParentsModel();
-        $data = $student->findAll();
+        $parent = new ParentsModel();
+        $data = $parent->findAll();
         return $this->respond($data);
     }
 
