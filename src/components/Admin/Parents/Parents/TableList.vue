@@ -3,7 +3,7 @@
         <div class="row col-12 justify-end">
             <q-btn @click="openAddParentDialog" color="positive" label="Add Parent" class="q-my-md" />
         </div>
-        <q-table :rows="tableData" :columns="columns" row-key="name" class="my-sticky-last-column-table">
+        <q-table title="" :rows="tableData" :columns="columns" row-key="name" class="my-sticky-last-column-table">
             <template #body-cell-actions="props">
                 <q-td :props="props">
                     <q-btn flat round icon="edit" @click="editParent(props.row)" />
@@ -59,18 +59,16 @@
         </q-dialog>
     </div>
 </template>
-
+  
 <script setup>
 import axios from 'axios';
-import { ref, onMounted, defineProps, defineEmits } from 'vue';
+import { ref, onMounted } from 'vue';
 
-const props = defineProps(['tableData']);  // Add any other props you might be using
-const emits = defineEmits(['update:tableData']);  // Specify the emitted event
-
+// Specify the emitted event
 const columns = [
     { name: 'firstname', label: 'First Name', field: 'firstname', align: 'left', sortable: true },
     { name: 'lastname', label: 'Last Name', field: 'lastname', align: 'left', sortable: true },
-    { name: 'age',      label: 'Age',       field: 'age',     align: 'left', sortable: true },
+    { name: 'age', label: 'Age', field: 'age', align: 'left', sortable: true },
     { name: 'birthday', label: 'Birthday', field: 'birthday', align: 'left', sortable: true },
     { name: 'address', label: 'Address', field: 'address', align: 'left', sortable: true },
     {
@@ -84,12 +82,14 @@ const columns = [
 ];
 
 const editMode = ref(false);
+
+const tableData = ref([]);
 const addParentDialog = ref(false);
 const newParent = ref({
+    firstname: '',
     lastname: '',
     age: '',
     birthday: '',
-    firstname: '',
     address: '',
 });
 
@@ -99,7 +99,10 @@ const addressOptions = [
     'Lumangbayan', 'Masipit', 'Pachoca', 'San Antonio', 'Suqui', 'Tawagan', 'Tawiran', 'Tibag',
 ];
 
-const openAddParentDialog = () => {
+const openAddParentDialog = async () => {
+    editMode.value = false;
+    addParentDialog.value = true;
+
     newParent.value = {
         lastname: '',
         age: '',
@@ -107,72 +110,79 @@ const openAddParentDialog = () => {
         firstname: '',
         address: '',
     };
-    addParentDialog.value = true;
-    editMode.value = false;
+
 };
 
 onMounted(async () => {
     try {
-        const response = await axios.get('/getparent');
-        console.log(response.data);
-        emits('update:tableData', response.data);  // Emit the event to update the prop
+        const response = await axios.get('getparent');
+        tableData.value = response.data;
     } catch (error) {
         console.error('Error fetching data:', error);
     }
+
 });
 
 const editParent = async (parent) => {
     try {
+        // Open the addSectionDialog in "Edit" mode
         openAddParentDialog();
+
+        // Update the newSection object with the selected section's data
         newParent.value = { ...parent };
+
         editMode.value = true;
+        // Note: You may need to adjust the API endpoint based on your actual implementation
     } catch (error) {
-        console.error('Error fetching parent data for editing:', error);
+        console.error('Error fetching section data for editing:', error);
     }
 };
 
-
 const deleteParent = async (parent) => {
     try {
-        if (!parent || !parent.id) {
-            console.error('Invalid parent data:', parent);
-            return;
-        }
-        await axios.delete(`/deleteparent/${parent.id}`);
-        emits('update:tableData', tableData.value.filter(item => item.id !== parent.id));  // Emit the event to update the prop
+        // Call your API endpoint to delete a coach
+        await axios.delete(`deleteparent/${parent.id}`);
+        // Remove the deleted coach from the tableData
+        tableData.value = tableData.value.filter(item => item.id !== parent.id);
     } catch (error) {
-        console.error('Error deleting parent:', error);
+        console.error('Error deleting coach:', error);
     }
 };
 
 const addOrEditParent = async () => {
     try {
         if (editMode.value) {
-            await axios.put('/updateparent/${newParent.value.id}', newParent.value);
+            // Call your API endpoint to update a coach
+            await axios.put(`updateparent/${newParent.value.id}`, newParent.value);
         } else {
-            await axios.post('/addparent', newParent.value);
+            // Call your API endpoint to add a section
+            await axios.post('addparent', newParent.value);
         }
-        const response = await axios.get('/getparent');
-        console.log(response.data);
-        emits('update:tableData', response.data);  // Emit the event to update the prop
+
+        // Refresh the section data after adding/editing a section
+        const response = await axios.get('getparent');
+        tableData.value = response.data;
+
+        // Close the dialog after successfully adding/editing a section
         addParentDialog.value = false;
     } catch (error) {
-        console.error(`Error ${editMode.value ? 'editing' : 'adding'} parent:`, error);
+        console.error(`Error ${editMode.value ? 'editing' : 'adding'} event:`, error);
     }
 };
 </script>
-
+  
 <style lang="sass">
-.my-sticky-last-column-table
+  .my-sticky-last-column-table
     thead tr:last-child th:last-child
-        background-color: white
-
+      background-color: white
+  
     td:last-child
-        background-color: white
-
+      background-color: white
+  
     th:last-child,
     td:last-child
-        position: sticky
-        right: 0
-        z-index: 1
-</style>
+      position: sticky
+      right: 0
+      z-index: 1
+  </style>
+  

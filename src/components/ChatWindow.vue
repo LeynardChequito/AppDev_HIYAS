@@ -19,14 +19,15 @@ export default {
   data() {
     return {
       currentUserId: null,
-      loading: false, 
+      loading: false,
+      lastMessageCount: 0, // Track the count of messages
     };
   },
 
   methods: {
     async getUser() {
       try {
-        this.loading = true; 
+        this.loading = true;
         const token = localStorage.getItem('token');
         const response = await axios.get('getUser', {
           headers: {
@@ -40,7 +41,7 @@ export default {
       } catch (error) {
         console.error('Error fetching user:', error);
       } finally {
-        this.loading = false; 
+        this.loading = false;
       }
     },
 
@@ -55,22 +56,26 @@ export default {
   },
 
   watch: {
-    messages: {
-      handler() {
+    messages(newMessages) {
+      // Check for new incoming messages
+      if (newMessages.length > this.lastMessageCount) {
+        this.lastMessageCount = newMessages.length;
         this.$nextTick(() => {
           this.scrollToBottom();
         });
-      },
-      deep: true,
+      }
     },
   },
 
   updated() {
-    this.scrollToBottom();
+    // Uncomment this line if scrollToBottom should happen after each update
+    // this.scrollToBottom();
   },
 
   created() {
     this.getUser();
+    // Uncomment this line if scrollToBottom should happen on component creation
+    // this.scrollToBottom();
   },
 };
 </script>

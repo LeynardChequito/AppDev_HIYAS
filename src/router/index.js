@@ -11,7 +11,7 @@ import EventsCalendar from "../views/EventsCalendarView.vue";
 import ManageAttendanceView from "../views/Manage/ManageAttendanceView.vue";
 
 import ChatView from "../views/ChatView.vue";
-import authService from '../JWT/authService';
+import authService from "../JWT/authService";
 
 //Reports-----------------------------------------------------------------------
 import ReportsView from "../views/ReportsView.vue";
@@ -27,7 +27,6 @@ import ManageAccountsView from "../views/Manage/ManageAccountsView.vue";
 import ManageParentsView from "../views/Manage/ManageParentsView.vue";
 import ManageEventsView from "../views/Manage/ManageEventsView.vue";
 import ManageSectionsView from "../views/Manage/ManageSectionsView.vue";
-
 
 const routes = [
   {
@@ -60,145 +59,137 @@ const routes = [
     path: "/reports",
     name: "reports",
     component: ReportsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/reports/coaches",
     name: "reportsCoaches",
     component: ReportsCoachesView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/reports/events",
     name: "reportsEvents",
     component: ReportsEventsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/reports/students",
     name: "reportsStudents",
     component: ReportsStudentsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/manage/announcements",
     name: "manageAnnouncements",
     component: ManageAnnouncementsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/manage/attendance",
     name: "manageAttendance",
     component: ManageAttendanceView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/manage/students",
     name: "manageStudents",
     component: ManageStudentsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/profile",
     name: "profile",
     component: Profile,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/reports/students/:id",
     component: IndividualStudent,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/reports/finance",
     name: "reportsFinance",
     component: ReportsFinanceView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/chats/:id",
     name: "chats",
     component: ChatView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/EventsCal",
     name: "EventsCal",
     component: EventsCalendar,
-   // meta: { requiresAuth: true },
+    // meta: { requiresAuth: true },
   },
   {
     path: "/manage/accounts",
     name: "account",
     component: ManageAccountsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/manage/parents",
     name: "parents",
     component: ManageParentsView,
-   // meta: { requiresAuth: true },
-
+    // meta: { requiresAuth: true },
   },
   {
     path: "/manage/events",
     name: "manageEvents",
     component: ManageEventsView,
-   // meta: { requiresAuth: true },
+    // meta: { requiresAuth: true },
   },
-   {
-  path: "/manage/sections",
+  {
+    path: "/manage/sections",
     name: "manageSections",
     component: ManageSectionsView,
-   // meta: { requiresAuth: true },
+    // meta: { requiresAuth: true },
   },
   {
     path: "/admin",
     name: "admin",
     component: () => import("@/views/Admin/AdminView.vue"),
     children: [
-        {
-          path: "dashboard",
-          name: "admin-dashboard",
-          component: () => import("@/views/Admin/Pages/DashboardView.vue"),
-        },
-        {
-          path: "",
-          redirect: { name: "admin-dashboard" },
-        },
-        {
-          path: "students",
-          name: "admin-students",
-          component: () => import("@/views/Admin/Pages/StudentsView.vue"),
-        },
-        {
-          path: "coaches",
-          name: "admin-coaches",
-          component: () => import("@/views/Admin/Pages/CoachesView.vue"),
-        },
-        {
-          path: "parents",
-          name: "admin-parents",
-          component: () => import("@/views/Admin/Pages/ParentsView.vue"),
-        },
-        {
-          path: "sections",
-          name: "admin-sections",
-          component: () => import("@/views/Admin/Pages/SectionsView.vue"),
-        },
-    ]
+      {
+        path: "dashboard",
+        name: "admin-dashboard",
+        component: () => import("@/views/Admin/Pages/DashboardView.vue"),
+      },
+      {
+        path: "",
+        redirect: { name: "admin-dashboard" },
+      },
+      {
+        path: "students",
+        name: "admin-students",
+        component: () => import("@/views/Admin/Pages/StudentsView.vue"),
+      },
+      {
+        path: "coaches",
+        name: "admin-coaches",
+        component: () => import("@/views/Admin/Pages/CoachesView.vue"),
+      },
+      {
+        path: "parents",
+        name: "admin-parents",
+        component: () => import("@/views/Admin/Pages/ParentsView.vue"),
+      },
+      {
+        path: "sections",
+        name: "admin-sections",
+        component: () => import("@/views/Admin/Pages/SectionsView.vue"),
+      },
+      {
+        path: "events",
+        name: "admin-events",
+        component: () => import("@/views/Admin/Pages/EventsView.vue"),
+      },
+    ],
   },
 ];
 
@@ -211,7 +202,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (to.meta.requiresAuth && !authService.isAuthenticated()) {
     // If the route requires authentication and the user is not authenticated
-    next('/login'); // Redirect to the login page
+    next("/login"); // Redirect to the login page
   } else {
     next(); // Proceed to the route
   }

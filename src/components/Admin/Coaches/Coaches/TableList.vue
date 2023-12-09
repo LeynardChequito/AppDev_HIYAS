@@ -54,6 +54,7 @@
                             <q-select v-model="newCoach.gender" label="Gender"
                                 :options="[{ label: 'Male', value: 'Male' }, { label: 'Female', value: 'Female' }]" />
                         </div>
+
                     </div>
 
                     <div class="row">
@@ -165,7 +166,7 @@ const openAddCoachDialog = () => {
         age: '',
         birthday: '',
         phone: '',
-        gender: '',
+        gender: 'Male',
         date_hired: '',
         coach_id: '',
         address: '',
