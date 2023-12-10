@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\AccountModel;    
+use App\Models\AccountModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\RESTful\ResourceController;
 use \CodeIgniter\Config\Services;
@@ -54,6 +54,7 @@ class LoginController extends ResourceController
             "email" => $user['mobile_or_email'],
             "firstname" => $user['firstname'],
             "id" => $user['id'], // Add this line
+            "user_role" => $user['user_role'], // Add this line
         ];
 
         $token = JWT::encode($payload, $key, 'HS256');
@@ -66,6 +67,7 @@ class LoginController extends ResourceController
 
         return $this->respond($response, 200);
     }
+
     public function getUser()
     {
         // $userModel = new AccountModel();
@@ -161,4 +163,56 @@ class LoginController extends ResourceController
 
         // Note: The exact parameters of setcookie depend on your application's setup
     }
+
+
+    // public function login()
+    // {
+
+    //     $json = $this->request->getJSON();
+
+
+
+    //     // Authenticate the user (you should replace this with your authentication logic)
+    //     $email    = $json->mobile_or_email;
+    //     $password = $json->password;
+
+    //     // Your authentication logic goes here...
+    //     // For example, you might use a model to check the user credentials
+
+    //     // Replace the following logic with your actual authentication process
+    //     $accountModel = new AccountModel();
+    //     $user = $accountModel->where('mobile_or_email', $email)->first();
+
+    //     if ($user && password_verify($password, $user['password'])) {
+    //         // Authentication successful
+
+    //         // Store user data in session
+    //         // $session = session();
+
+    //         $payload = [
+    //             "firstname" => $user['firstname'],
+    //             "id" => $user['id'], // Add this line
+    //             "user_role" => $user['user_role'],
+    //             'iat' => time()
+    //         ];
+
+
+    //         $token = JWT::encode($payload, getenv('JWTSecretKey'), 'HS256');
+
+
+    //         $response = [
+    //             'message' => 'Login Successful',
+    //             'token' => $token,
+    //             'user' => $user,
+    //         ];
+
+    //         // Return token
+    //         return $this->respond($response, 200);
+
+    //         // Return a success response with user data
+    //     } else {
+    //         // Authentication failed
+    //         return $this->failUnauthorized('Invalid credentials');
+    //     }
+    // }
 }

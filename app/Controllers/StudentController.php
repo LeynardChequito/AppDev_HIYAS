@@ -26,15 +26,23 @@ class StudentController extends ResourceController
 
         // Replace foreign key IDs with corresponding names
         foreach ($students as &$student) {
-            // Fetch section name
-            $sectionModel = new SectionModel();
-            $section = $sectionModel->find($student['section']);
-            $student['section'] = $section['name'];
+            // Fetch section name if it exists
+            if (!empty($student['section'])) {
+                $sectionModel = new SectionModel();
+                $section = $sectionModel->find($student['section']);
+                // Update the 'section' field only if the section is found
+                if ($section) {
+                    $student['section'] = $section['name'];
+                }
+            }
+            else{
+                $student['section'] = "Not assigned";
+            }
 
             // Fetch coach name
-            $coachModel = new CoachModel();
-            $coach = $coachModel->find($student['coach']);
-            $student['coach'] = $coach['firstname'] . ' ' . $coach['lastname'];
+            // $coachModel = new CoachModel();
+            // $coach = $coachModel->find($student['coach']);
+            // $student['coach'] = $coach['firstname'] . ' ' . $coach['lastname'];
 
             // Fetch parent/guardian name
             $parentsModel = new ParentsModel();
@@ -44,6 +52,7 @@ class StudentController extends ResourceController
 
         return $this->respond($students);
     }
+
 
     public function getDataById($id)
     {
@@ -57,9 +66,9 @@ class StudentController extends ResourceController
             $student['section'] = $section['name'];
 
             // Fetch coach name
-            $coachModel = new CoachModel();
-            $coach = $coachModel->find($student['coach']);
-            $student['coach'] = $coach['firstname'] . ' ' . $coach['lastname'];
+            // $coachModel = new CoachModel();
+            // $coach = $coachModel->find($student['coach']);
+            // $student['coach'] = $coach['firstname'] . ' ' . $coach['lastname'];
 
             // Fetch parent/guardian name
             $parentsModel = new ParentsModel();
@@ -87,7 +96,7 @@ class StudentController extends ResourceController
             'address' => $json->address,
             'contact_info' => $json->contact_info,
             'parent_guardian' => $json->parent_guardian->value,
-            'coach' => $json->coach->value,
+            // 'coach' => $json->coach->value,
             'section' => $json->section->value,
             'sponsor' => $json->sponsor,
             'id_number' => $json->id_number,
@@ -116,7 +125,7 @@ class StudentController extends ResourceController
             'address' => $json->address,
             'contact_info' => $json->contact_info,
             'parent_guardian' => $json->parent_guardian->value,
-            'coach' => $json->coach->value,
+            // 'coach' => $json->coach->value,
             'section' => $json->section->value,
             'sponsor' => $json->sponsor,
             'id_number' => $json->id_number,

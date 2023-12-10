@@ -56,6 +56,11 @@ $routes->post('logout', 'LoginController::logout');
 $routes->get('getConnectedUsers', 'ChatController::getConnectedUsers');
 // $routes->match(['get', 'post'], '/login', 'LoginController::login');
 
+$routes->post('createattendance', 'AttendanceController::createAttendance');
+$routes->get('getstudentsforattendance/(:num)', 'AttendanceController::getStudentsForAttendance/$1');
+// Add other routes if necessary
+
+
 $routes->post('/save', 'MainController::save');
 $routes->post('/del', 'MainController::del');
 $routes->get('/getMessage', 'ChatController::getMessages');

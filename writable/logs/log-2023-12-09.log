@@ -39312,3 +39312,1030 @@ in SYSTEMPATH\Database\BaseConnection.php on line 646.
  8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
  9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 12:48:21 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 12:48:23 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 12:48:24 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 12:48:24 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 12:48:24 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:24:34 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('33')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:24:36 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('33')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:24:36 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('33')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:24:36 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('33')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:24:37 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('33')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:27:54 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:27:55 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:28:07 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:28:08 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:28:59 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:28:59 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:29:28 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:29:28 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:29:31 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:29:31 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:29:31 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:29:31 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:29:31 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:29:31 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:29:31 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:29:31 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:30:12 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:30:12 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:30:25 --> mysqli_sql_exception: Unknown column 'section' in 'field list' in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\CIbackend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\CIbackend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\CIbackend\app\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+#10 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+#11 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-09 13:30:25 --> Unknown column 'section' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `student_attendance` (`student`, `section`, `status`, `date`, `event_type`) VALUES (:student:, :section:, :status:, :date:, :event_type:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\AttendanceController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:30:40 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 62.
+ 1 APPPATH\Controllers\AttendanceController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:30:46 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:30:59 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:01 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:02 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:03 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:03 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:03 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:06 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 62.
+ 1 APPPATH\Controllers\AttendanceController.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:09 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 63.
+ 1 APPPATH\Controllers\AttendanceController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:12 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:12 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:31:13 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(70): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:32:24 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 45.
+ 1 APPPATH\Controllers\AttendanceController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->addStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:32:54 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:32:56 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:32:57 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:33:14 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:34:18 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:35:23 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(68): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:35:24 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(68): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:36:36 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 60.
+ 1 APPPATH\Controllers\AttendanceController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:36:38 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 60.
+ 1 APPPATH\Controllers\AttendanceController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:30 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:32 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:32 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:33 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:36 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:36 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:51 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:51 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:51 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:41:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:41:51 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:41:53 --> Attempt to read property "value" on string
+in APPPATH\Controllers\StudentController.php on line 118.
+ 1 APPPATH\Controllers\StudentController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\StudentController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->updateData('3')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 13:42:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT) in C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\CIbackend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `st...', 0)
+#1 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `st...')
+#2 C:\laragon\www\CIbackend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `st...')
+#3 C:\laragon\www\CIbackend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `st...', Array, false)
+#4 C:\laragon\www\CIbackend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\CIbackend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\CIbackend\app\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\CIbackend\system\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+#8 C:\laragon\www\CIbackend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#9 C:\laragon\www\CIbackend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CIbackend\public\index.php(89): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 13:42:21 --> Cannot delete or update a parent row: a foreign key constraint fails (`hiyas`.`student_attendance`, CONSTRAINT `student` FOREIGN KEY (`student`) REFERENCES `students` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `students`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\StudentController.php(138): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\StudentController->deleteData('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:49:57 --> Attempt to read property "value" on string
+in APPPATH\Controllers\AttendanceController.php on line 61.
+ 1 APPPATH\Controllers\AttendanceController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on string', 'C:\\laragon\\www\\CIbackend\\app\\Controllers\\AttendanceController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:50:04 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(68): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:53:26 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:53:27 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:53:28 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:56:00 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:56:15 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:31 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:31 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:32 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:32 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:32 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:39 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:57:40 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:20 --> Too few arguments to function App\Controllers\AttendanceController::deleteStudentAttendance(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\AttendanceController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:20 --> Too few arguments to function App\Controllers\AttendanceController::deleteStudentAttendance(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\AttendanceController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:21 --> Too few arguments to function App\Controllers\AttendanceController::deleteStudentAttendance(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\AttendanceController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:21 --> Too few arguments to function App\Controllers\AttendanceController::deleteStudentAttendance(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\AttendanceController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:28 --> Too few arguments to function App\Controllers\AttendanceController::deleteStudentAttendance(), 0 passed in C:\laragon\www\CIbackend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\AttendanceController.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:03:50 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:03:51 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:03:51 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:03:51 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:04:09 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:04:52 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\AttendanceController.php(68): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->updateStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:04:57 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\AttendanceController.php(76): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AttendanceController->deleteStudentAttendance()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AttendanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(89): CodeIgniter\CodeIgniter->run()
