@@ -69,6 +69,16 @@
                     </q-item>
                 </router-link>
 
+                <router-link to="/admin/staff" class="text-grey-5" style="text-decoration: none">
+                    <q-item clickable v-ripple :active="isActive('staff')" @click="setActiveLink('staff')"
+                        active-class="my-menu-link">
+                        <q-item-section avatar>
+                            <q-icon name="supervisor_account"/>
+                        </q-item-section>
+                        <q-item-section>Staff</q-item-section>
+                    </q-item>
+                </router-link>
+
             </q-list>
         </q-scroll-area>
 
