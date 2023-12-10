@@ -55,10 +55,10 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-6 q-pl-xs">
+                        <!-- <div class="col-6 q-pl-xs">
                             <q-select v-model="newStudent.coach" :options="coachOptions" label="Coach" />
-                        </div>
-                        <div class="col-6 q-pr-xs">
+                        </div> -->
+                        <div class="col-12 q-pr-xs">
                             <q-select v-model="newStudent.section" :options="sectionOptions" label="Section" />
                         </div>
                     </div>
@@ -116,7 +116,7 @@ const columns = [
     { name: 'address', label: 'Address', field: 'address', align: 'left', sortable: true },
     { name: 'contact_info', label: 'Contact Info', field: 'contact_info', align: 'left', sortable: true },
     { name: 'parent_guardian', label: 'Parent/Guardian', field: 'parent_guardian', align: 'left', sortable: true },
-    { name: 'coach', label: 'Coach', field: 'coach', align: 'left', sortable: true },
+    // { name: 'coach', label: 'Coach', field: 'coach', align: 'left', sortable: true },
     { name: 'section', label: 'Section', field: 'section', align: 'left', sortable: true },
     { name: 'sponsor', label: 'Sponsor', field: 'sponsor', align: 'left', sortable: true },
     { name: 'id_number', label: 'ID Number', field: 'id_number', align: 'left', sortable: true },
@@ -150,7 +150,7 @@ const newStudent = ref({
     address: '',
     contact_info: '',
     parent_guardian: '',
-    coach: '',
+    // coach: '',
     section: '',
     sponsor: '',
     id_number: '',
@@ -175,7 +175,7 @@ const openAddStudentDialog = async () => {
         address: '',
         contact_info: '',
         parent_guardian: '',
-        coach: '',
+        // coach: '',
         section: '',
         sponsor: '',
         id_number: '',
@@ -184,17 +184,6 @@ const openAddStudentDialog = async () => {
         fam_number: '',
         staff: '',
     };
-    axios.get('getcoachdata')
-        .then(response => {
-            coachOptions.value = response.data.map(coach => ({
-                label: `${coach.firstname} ${coach.lastname}`,
-                value: coach.id,
-            }));
-
-        })
-        .catch(error => {
-            console.error('Error fetching coach data:', error);
-        });
 
     axios.get('getsection')
         .then(response => {

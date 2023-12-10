@@ -97,7 +97,7 @@ onMounted(async () => {
 });
 
 
-const editAccounts = async (account) => {
+const editAccount = async (account) => {
     try {
         // Set to "Edit" mode
 
@@ -116,7 +116,7 @@ const editAccounts = async (account) => {
 
 
 
-const deleteEvent = async (account) => {
+const deleteAccount = async (account) => {
     try {
         // Call your API endpoint to delete a coach
         await axios.delete(`deleteaccount/${account.id}`);
@@ -128,7 +128,7 @@ const deleteEvent = async (account) => {
 };
 
 
-const addOrEditAccounts = async () => {
+const addOrEditAccount = async () => {
     try {
         if (editMode.value) {
             // Call your API endpoint to update a coach

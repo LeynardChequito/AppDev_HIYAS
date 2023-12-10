@@ -34,84 +34,86 @@
   </q-form>
 </template>
 
-<script>
+<script setup>
 import axios from 'axios';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import jwtDecode from 'jsonwebtoken/decode';
 
-export default {
-  name: 'login',
-  data() {
-    return {
-      mobile_or_email: '',
-      password: '',
-      errors: {
-        mobile_or_email: '',
-        password: '',
-      },
-      showPassword: false,
-    };
-  },
-  methods: {
-    async login() {
-      // Clear previous error messages
-      this.errors.mobile_or_email = '';
-      this.errors.password = '';
+const mobile_or_email = ref('');
+const password = ref('');
+const showPassword = ref(false);
+const router = useRouter();
 
-      // Perform validation
-      if (!this.mobile_or_email) {
-        this.errors.mobile_or_email = 'Mobile or Email is required.';
-      }
 
-      if (!this.password) {
-        this.errors.password = 'Password is required.';
-      }
+const errors = {
+  mobile_or_email: ref(''),
+  password: ref(''),
+};
 
-      // If there are validation errors, stop the login process
-      if (this.errors.mobile_or_email || this.errors.password) {
-        return;
-      }
+const login = async () => {
+  // Clear previous error messages
+  errors.mobile_or_email = '';
+  errors.password = '';
 
-      try {
-        const response = await axios.post('/login', {
-          mobile_or_email: this.mobile_or_email,
-          password: this.password,
-        });
+  // Perform validation
+  if (!mobile_or_email.value) {
+    errors.mobile_or_email = 'Mobile or Email is required.';
+  }
 
-        // Assuming your server sends the token in the response
-        const token = response.data.token;
+  if (!password.value) {
+    errors.password = 'Password is required.';
+  }
 
-        // Store the token securely (e.g., in local storage)
-        localStorage.setItem('token', token);
-        // axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-        // Handle the response from the server, e.g., show a success message or redirect to another page
-        console.log('Login successful:', response.data);
+  // If there are validation errors, stop the login process
+  if (errors.mobile_or_email || errors.password) {
+    return;
+  }
 
-        // For example, redirect to the user's dashboard after a successful login
-        this.$router.push({ name: 'home' });
-      } catch (error) {
-        console.error('Error logging in:', error);
-        // Handle the error, e.g., display an error message to the user
-      }
+  try {
+    const response = await axios.post('login', {
+      mobile_or_email: mobile_or_email.value,
+      password: password.value,
+    });
 
-      // Simulate an incorrect email or password for demonstration
-      if (this.mobile_or_email !== 'correct@email.com' || this.password !== 'correctpassword') {
-        this.errors.mobile_or_email = 'Mobile or Email is incorrect.';
-        this.errors.password = 'Password is incorrect.';
-        return;
-      }
-    },
-    createAccount() {
-      // Add your create account logic here
-      this.$router.push({ name: 'register' });
-    },
-    logoClicked() {
-      this.$router.push({ name: 'home' });
-    },
-    togglePassword() {
-      this.showPassword = !this.showPassword;
-    },
-  },
+    // Check if the response contains a token
+    const token = response.data.token;
+
+    // Store the token securely, e.g., in localStorage
+    localStorage.setItem('token', token);
+
+    // Decode the token to access user data
+    const decodedToken = jwtDecode(token);
+    console.log('Decoded Token:', decodedToken);
+
+    // Redirect to the desired route (replace 'website' with your route name)
+    router.push({ name: 'admin' });
+  } catch (error) {
+    console.error('Error logging in:', error);
+  }
+
+  // Simulate an incorrect email or password for demonstration
+  if (mobile_or_email.value !== 'correct@email.com' || password.value !== 'correctpassword') {
+    errors.mobile_or_email = 'Mobile or Email is incorrect.';
+    errors.password = 'Password is incorrect.';
+    return;
+  }
+};
+
+const createAccount = () => {
+  // Add your create account logic here
+  router.push({ name: 'register' });
+};
+
+const logoClicked = () => {
+  router.push({ name: 'home' });
+};
+
+const togglePassword = () => {
+  showPassword.value = !showPassword.value;
 };
 </script>
+
 
 <style scoped>
 .login-page {
