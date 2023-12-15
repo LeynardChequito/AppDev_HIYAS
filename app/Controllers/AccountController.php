@@ -67,4 +67,26 @@ class AccountController extends ResourceController
 
         return $this->respondDeleted();
     }
+
+    // AccountController.php
+
+// Add this method to your AccountController class
+public function getUserById($id = null)
+{
+    try {
+        // Validate $id as needed
+
+        $accountModel = new AccountModel();
+        $user = $accountModel->find($id);
+
+        if ($user) {
+            return $this->respond($user);
+        } else {
+            return $this->failNotFound('User not found');
+        }
+    } catch (\Exception $e) {
+        return $this->failServerError('Error fetching user details');
+    }
+}
+
 }

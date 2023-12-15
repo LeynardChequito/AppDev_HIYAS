@@ -19,6 +19,9 @@ $routes->post('/login', 'LoginController::login');
 $routes->get('/getUser', 'LoginController::getUser');
 $routes->get('getUserMessages/(:num)', 'ChatController::getUserMessages/$1');
 
+$routes->get('getMessages/(:num)', 'ChatController::getMessages/$1');
+$routes->post('sendMessage', 'ChatController::sendMessage');
+
 $routes->get('/getstudentdata', 'StudentController::getData');
 
 $routes->post('/addstudent', 'StudentController::addData');
@@ -41,11 +44,20 @@ $routes->post('/addevent', 'EventController::addData');
 $routes->put('/updateevent/(:num)', 'EventController::updateData/$1');
 $routes->delete('/deleteevent/(:num)', 'EventController::deleteData/$1');
 
+
+$routes->get('/getstudentschedule', 'StudentScheduleController::getData');
+$routes->post('/addstudentschedule', 'StudentScheduleController::addData');
+$routes->put('/updatestudentschedule/(:num)', 'StudentScheduleController::updateData/$1');
+$routes->delete('/deletestudentschedule/(:num)', 'StudentScheduleController::deleteData/$1');
+
 $routes->post('/addstudentattendance', 'AttendanceController::addStudentAttendance');
 $routes->put('/updatestudentattendance/(:num)', 'AttendanceController::updateStudentAttendance/$1');
 $routes->delete('/deletestudentattendance/(:num)', 'AttendanceController::deleteStudentAttendance/$1');
+$routes->put('/updatestatus', 'AttendanceController::updateStatus');
+
 
 $routes->get('/getaccount', 'AccountController::getData');
+$routes->get('/getuser/(:num)', 'AccountController::getUserById/$1');
 $routes->post('/addaccount', 'AccountController::addData');
 $routes->put('/updateaccount/(:num)', 'AccountController::updateData/$1');
 $routes->delete('/deleteaccount/(:num)', 'AccountController::deleteData/$1');

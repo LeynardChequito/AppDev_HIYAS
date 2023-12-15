@@ -2,15 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
 use App\Models\AccountModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\RESTful\ResourceController;
-use \CodeIgniter\Config\Services;
-use Firebase\JWT\ExpiredException;
-use Firebase\JWT\BeforeValidException;
-use Firebase\JWT\SignatureInvalidException;
-
 use Firebase\JWT\JWT;
 use Firebase\JWT\KEY;
 
@@ -20,199 +14,82 @@ class LoginController extends ResourceController
 
     public function login()
     {
-        // Use $this->request->getJSON() to get JSON input
         $json = $this->request->getJSON();
 
-        // Extract email and password from the JSON data
+        // Authenticate the user (you should replace this with your authentication logic)
         $email = $json->mobile_or_email;
         $password = $json->password;
 
-        $userModel = new AccountModel();
+        // Your authentication logic goes here...
+        // For example, you might use a model to check the user credentials
 
-        $user = $userModel->where('mobile_or_email', $email)->first();
+        // Replace the following logic with your actual authentication process
+        $accountModel = new AccountModel();
+        $user = $accountModel->where('mobile_or_email', $email)->first();
 
-        if (is_null($user)) {
-            return $this->respond(['error' => 'Email does not exist'], 401);
-        }
+        if ($user && password_verify($password, $user['password'])) {
+            // Authentication successful
 
-        $pwd_verify = password_verify($password, $user['password']);
+            $payload = [
+                'firstname' => $user['firstname'],
+                'id' => $user['id'],
+                'user_role' => $user['user_role'],
+                'iat' => time(),
+            ];
 
-        if (!$pwd_verify) {
-            return $this->respond(['error' => 'Invalid username or password.'], 401);
-        }
+            $token = JWT::encode($payload, getenv('JWT_SECRET'), 'HS256');
 
-        $key = getenv('JWT_SECRET');
-        $iat = time(); // current timestamp value
-        $exp = $iat + 3600;
+            // Store the token in the session
+            session()->set('token', $token);
 
-        $payload = [
-            "iss" => "localhost",
-            "aud" => "localhost",
-            // "sub" => "Subject of the JWT",
-            "iat" => $iat, //Time the JWT issued at
-            "exp" => $exp, // Expiration time of token
-            "email" => $user['mobile_or_email'],
-            "firstname" => $user['firstname'],
-            "id" => $user['id'], // Add this line
-            "user_role" => $user['user_role'], // Add this line
-        ];
+            $response = [
+                'message' => 'Login Successful',
+                'token' => $token,
+                'user' => $user,
+            ];
 
-        $token = JWT::encode($payload, $key, 'HS256');
-
-        $response = [
-            'message' => 'Login Successful',
-            'token' => $token,
-            'user' => $user,
-        ];
-
-        return $this->respond($response, 200);
-    }
-
-    public function getUser()
-    {
-        // $userModel = new AccountModel();
-
-        $request = service('request');
-        $key = getenv('JWT_SECRET');
-        $headers = $request->getHeader('authorization');
-        $token = $headers->getValue();
-        // return $token;
-        try {
-            $decodedToken = JWT::decode($token, new KEY($key, 'HS256'));
-            $email = $decodedToken->email;
-            $firstname = $decodedToken->firstname;
-            $id = $decodedToken->id;
-            return $this->respond([
-                'status' => 1,
-                'user' => [
-                    "id" => $id,
-                    'email' => $email,
-                    'firstname' => $firstname,
-                    // Add other properties as needed
-                ],
-            ]);
-        } catch (\Exception $e) {
-            return $this->failUnauthorized('Invalid token');
+            // Return token
+            return $this->respond($response, 200);
+        } else {
+            // Authentication failed
+            return $this->failUnauthorized('Invalid credentials');
         }
     }
-
 
     public function logout()
     {
-        // Retrieve the token from the request headers
-        $request = service('request');
-        $headers = $request->getHeader('authorization');
-        $token = $headers->getValue();
+        // Remove the token from the session
+        session()->remove('token');
 
-        // Check if the token exists
-        if ($token) {
-            try {
-                // Attempt to decode the token to check if it's valid
-                $this->validateToken($token);
 
-                // Invalidate the token on the server side
-                $this->addToTokenBlacklist($token);
-
-                // Clear the token on the client side
-                $this->clearTokenCookie();
-
-                // Respond with a success message
-                return $this->respond(['message' => 'Logout Successful'], 200);
-            } catch (ExpiredException $e) {
-                // Automatically log out when the token has expired
-                return $this->respond(['message' => 'Token has expired. Logout Successful'], 200);
-            } catch (BeforeValidException $e) {
-                // Automatically log out when the token is not yet valid
-                return $this->respond(['message' => 'Token is not yet valid. Logout Successful'], 200);
-            } catch (SignatureInvalidException $e) {
-                // Automatically log out when the token signature is invalid
-                return $this->respond(['message' => 'Invalid token signature. Logout Successful'], 200);
-            } catch (\Exception $e) {
-                return $this->failUnauthorized('Logout Failed: Invalid token');
-            }
-        } else {
-            // If no token is present, respond with a success message
-            return $this->respond(['message' => 'Logout Successful (No Token Present)'], 200);
-        }
+        return $this->respond(['message' => 'Logout Successful'], 200);
     }
 
+        // public function getUser()
+        // {
+        //     // $userModel = new AccountModel();
 
-
-    private function validateToken($token)
-    {
-        // Attempt to decode the token
-        $key = getenv('JWT_SECRET');
-        JWT::decode($token, new KEY($key, 'HS256'));
-    }
-
-    private function addToTokenBlacklist($token)
-    {
-        // Store the invalidated token in a persistent storage, like a database
-        // This example uses a simple array; in a production environment, consider using a more robust solution
-        $blacklist = cache('token_blacklist') ?? [];
-        $blacklist[] = $token;
-
-        // Save the updated blacklist
-        cache()->save('token_blacklist', $blacklist, 60 * 60 * 24); // Adjust the expiration time as needed
-    }
-
-    private function clearTokenCookie()
-    {
-        // For example, if using JWT with HttpOnly cookies, clear the cookie
-        setcookie('token', '', time() - 3600, '/'); // Expire the cookie
-
-        // Note: The exact parameters of setcookie depend on your application's setup
-    }
-
-
-    // public function login()
-    // {
-
-    //     $json = $this->request->getJSON();
-
-
-
-    //     // Authenticate the user (you should replace this with your authentication logic)
-    //     $email    = $json->mobile_or_email;
-    //     $password = $json->password;
-
-    //     // Your authentication logic goes here...
-    //     // For example, you might use a model to check the user credentials
-
-    //     // Replace the following logic with your actual authentication process
-    //     $accountModel = new AccountModel();
-    //     $user = $accountModel->where('mobile_or_email', $email)->first();
-
-    //     if ($user && password_verify($password, $user['password'])) {
-    //         // Authentication successful
-
-    //         // Store user data in session
-    //         // $session = session();
-
-    //         $payload = [
-    //             "firstname" => $user['firstname'],
-    //             "id" => $user['id'], // Add this line
-    //             "user_role" => $user['user_role'],
-    //             'iat' => time()
-    //         ];
-
-
-    //         $token = JWT::encode($payload, getenv('JWTSecretKey'), 'HS256');
-
-
-    //         $response = [
-    //             'message' => 'Login Successful',
-    //             'token' => $token,
-    //             'user' => $user,
-    //         ];
-
-    //         // Return token
-    //         return $this->respond($response, 200);
-
-    //         // Return a success response with user data
-    //     } else {
-    //         // Authentication failed
-    //         return $this->failUnauthorized('Invalid credentials');
-    //     }
-    // }
+        //     $request = service('request');
+        //     $key = getenv('JWT_SECRET');
+        //     $headers = $request->getHeader('authorization');
+        //     $token = $headers->getValue();
+        //     // return $token;
+        //     try {
+        //         $decodedToken = JWT::decode($token, new KEY($key, 'HS256'));
+        //         $email = $decodedToken->email;
+        //         $firstname = $decodedToken->firstname;
+        //         $id = $decodedToken->id;
+        //         return $this->respond([
+        //             'status' => 1,
+        //             'user' => [
+        //                 "id" => $id,
+        //                 'email' => $email,
+        //                 'firstname' => $firstname,
+        //                 // Add other properties as needed
+        //             ],
+        //         ]);
+        //     } catch (\Exception $e) {
+        //         return $this->failUnauthorized('Invalid token');
+        //     }
+        // }
 }

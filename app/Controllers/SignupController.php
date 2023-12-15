@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AccountModel;
+use App\Models\StudentModel;
 use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\RESTful\ResourceController;
 
@@ -17,12 +18,11 @@ class SignupController extends ResourceController
         return view('signup'); // Assuming you have a view file for the signup page
     }
 
-  
+
 
     public function register()
     {
         $json = $this->request->getJSON();
-
 
         // Validate the input data
         $validationRules = [
@@ -40,7 +40,6 @@ class SignupController extends ResourceController
 
         try {
             // If validation passes, create a new user
-
             $userData = [
                 'firstname' => $json->firstname,
                 'lastname' => $json->lastname,
@@ -50,10 +49,22 @@ class SignupController extends ResourceController
             ];
 
             // Insert user data
-            $accountModel = new AccountModel(); // Assuming you have an AccountModel
-            $r = $accountModel->save($userData);
-            return $this->respond($r, 200); 
+            $accountModel = new AccountModel();
+            $accountId = $accountModel->insert($userData);
 
+            // Retrieve the student record based on conditions
+            $studentModel = new StudentModel(); // Replace with your actual StudentModel
+            $studentRecord = $studentModel
+                ->where('firstname', $json->firstname)
+                ->where('lastname', $json->lastname)
+                ->first();
+
+            // Update the student record with the account ID
+            if ($studentRecord) {
+                $studentModel->update($studentRecord['id'], ['account' => $accountId]);
+            }
+
+            return $this->respond(['message' => 'Registration successful'], 200);
         } catch (\Exception $e) {
             // Log the error or handle it appropriately
             log_message('error', 'Error in SignupController: ' . $e->getMessage());
