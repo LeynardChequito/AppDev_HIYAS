@@ -20,7 +20,7 @@
   
 <script setup>
 import { ref } from 'vue';
-import TableList from '@/components/Admin/Events/Events/TableList.vue';
+import TableList from '@/components/Admin/Schedules/Schedules/TableList.vue';
 
 const tab = ref('events');
 const innerTab = ref('AttendanceWLA');

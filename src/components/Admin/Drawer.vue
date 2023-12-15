@@ -50,13 +50,13 @@
                         <q-item-section>Sections</q-item-section>
                     </q-item>
                 </router-link>
-                <router-link to="/admin/events" class="text-grey-5" style="text-decoration: none">
-                    <q-item clickable v-ripple :active="isActive('events')" @click="setActiveLink('events')"
+                <router-link to="/admin/schedules" class="text-grey-5" style="text-decoration: none">
+                    <q-item clickable v-ripple :active="isActive('schedules')" @click="setActiveLink('schedules')"
                         active-class="my-menu-link">
                         <q-item-section avatar>
                             <q-icon name="event" />
                         </q-item-section>
-                        <q-item-section>Events</q-item-section>
+                        <q-item-section>Schedules</q-item-section>
                     </q-item>
                 </router-link>
                 <router-link to="/admin/accounts" class="text-grey-5" style="text-decoration: none">

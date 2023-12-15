@@ -1,36 +1,50 @@
 <template>
     <div v-if="loading" class="loading-overlay">
-        <img src="@/assets/images/loading.gif" alt="Loading..." style="width: 200px; height: 200px"/>
+        <img src="@/assets/images/loading.gif" alt="Loading..." style="width: 200px; height: 200px" />
     </div>
 
-    <q-header bordered class="text-white bg-blue-grey-10">
+    <q-header bordered class="text-black bg-green-2">
         <q-toolbar>
             <q-toolbar-title>
                 <div class="self-center q-gutter-lg row justify-center">
-                    <q-btn flat dense round :icon="accIcon" class="text-white" @click="accClicked" no-capture>
+                    <q-btn flat dense round :icon="accIcon" @click="accClicked" no-capture>
 
-                        <q-menu class="bg-blue-grey-5" :offset="[25, 0]" style="width: 350px">
-                            <div class="row q-pa-md">
-                                <div class="row justify-between">
-                                    <div class="text-h6 q-mb-md text-white col-12">My Account</div>
-                                    <div class="col-12">
+                        <q-menu class="bg-green-1" :offset="[25, 0]" style="width: 350px">
+                            <div class="row no-wrap q-pa-md">
+                                <div class="col-6">
+                                    <div class="text-h6 q-mb-md">My Account</div>
+                                    <div class="text-subtitle1 q-mt-md text-bold">Jan Dyze Malaluan</div>
+                                    <div class="text-subtitle2 text-italic q-mb-xs">Role </div>
+                                </div>
+                                <div class="col-1 justify-end text-black" style="top: 5px; right: 5px; position: absolute;">
+                                    <q-btn flat dense round icon="fullscreen" @click="goToChatsFullScreen" />
+                                </div>
+                                <q-separator vertical inset class="" />
+                                <div class="col-6 items-center">
+                                    <div class="flex justify-center items-center"> <!-- Centering container -->
+                                        <q-avatar size="72px">
+                                            <img src="https://cdn.quasar.dev/img/avatar4.jpg" />
+                                        </q-avatar>
                                     </div>
-                                    <q-separator />
-                                    <div class="col-12">
-                                        <q-btn flat dense icon="logout" class="text-white" @click="logout">Logout</q-btn>
+                                    <div class="flex justify-center items-center q-pt-sm"> <!-- Centering container -->
+                                        <q-btn color="negative" dense @click="logout">Logout</q-btn>
                                     </div>
                                 </div>
                             </div>
                         </q-menu>
+
+
+
+
                     </q-btn>
-                    <q-btn flat dense round :icon="msgIcon" class="text-white" @click="msgClicked" no-capture>
-                        <q-menu class="bg-blue-grey-5" :offset="[103, 0]" style="width: 350px">
+                    <q-btn flat dense round :icon="msgIcon" @click="msgClicked">
+                        <q-menu class="bg-green-1" :offset="[103, 0]" style="width: 350px">
                             <div class="row q-pa-md">
                                 <div class="row justify-end">
-                                    <div class="text-h6 q-mb-md text-white col-11">Messages</div>
-                                    <div class="col-1 justify-end">
-                                        <q-btn flat dense round icon="fullscreen" class="text-white"
-                                            @click="goToChatsFullScreen" />
+                                    <div class="text-h6 q-mb-md text-black col-11">Messages</div>
+                                    <div class="col-1 justify-end text-black"
+                                        style="top: 5px; right: 5px; position: absolute;">
+                                        <q-btn flat dense round icon="fullscreen" @click="goToChatsFullScreen" />
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -44,11 +58,14 @@
                             </div>
                         </q-menu>
                     </q-btn>
-                    <q-btn flat dense round :icon="notifIcon" @click="notifClicked" class="text-white">
-                        <q-menu class="bg-blue-grey-5" :offset="[140, 0]" style="width: 350px">
+                    <q-btn flat dense round :icon="homeIcon" @click="goHome" no-capture>
+
+                    </q-btn>
+                    <q-btn flat dense round :icon="notifIcon" @click="notifClicked">
+                        <q-menu class="bg-green-1" :offset="[140, 0]" style="width: 350px">
                             <div class="row q-pa-md">
                                 <div class="row justify-between">
-                                    <div class="text-h6 q-mb-md text-white col-12">Notifications</div>
+                                    <div class="text-h6 q-mb-md text-black col-12">Notifications</div>
                                     <div class="col-12">
                                     </div>
                                     <q-separator />
@@ -60,18 +77,21 @@
                             </div>
                         </q-menu>
                     </q-btn>
-                    <q-btn flat dense round :icon="appIcon" @click="appClicked" class="text-white">
-                        <q-menu class="bg-blue-grey-5" :offset="[198, 0]" style="width: 350px">
+                    <q-btn flat dense round :icon="appIcon" @click="appClicked" size="sm">
+                        <q-menu class="bg-green-1" :offset="[103, 0]" style="width: 350px">
                             <div class="row q-pa-md">
-                                <div class="row justify-between">
-                                    <div class="text-h6 q-mb-md text-white col-12">Quick Tools</div>
-                                    <div class="col-12">
+                                <div class="row justify-end">
+                                    <div class="text-h6 q-mb-md text-black col-11">Users</div>
+                                    <div class="col-1 justify-end text-black"
+                                        style="top: 5px; right: 5px; position: absolute;">
+                                        <q-btn flat dense round icon="fullscreen" @click="goToChatsFullScreen" />
                                     </div>
-                                    <q-separator />
-                                    <div class="col-12">
-                                        <!-- Full-screen button -->
-
-                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <UserList class="col-12" />
+                                </div>
+                                <q-separator />
+                                <div class="col-12">
                                 </div>
                             </div>
                         </q-menu>
@@ -81,19 +101,23 @@
             </q-toolbar-title>
         </q-toolbar>
 
-        <q-toolbar-title class="text-center bg-blue-grey-9">
+        <!-- <q-toolbar-title class="text-center bg-green-1 text-black">
             {{ dynamicName }}
-        </q-toolbar-title>
+        </q-toolbar-title> -->
     </q-header>
 </template>
   
 <script setup>
+import UserList from '@/components/Users/UserList.vue'
 import { useStore } from 'vuex';
 import { computed, ref } from 'vue';
 import ChatList from '@/components/ChatList.vue'
-import { useRouter } from 'vue-router';
-const router = useRouter();
 import axios from 'axios';
+import { useRouter } from 'vue-router';
+
+
+const router = useRouter();
+
 const loading = ref(false);
 
 const store = useStore();
@@ -101,7 +125,8 @@ const menuIcon = ref('menu_open');
 const notifIcon = ref('notifications');
 const msgIcon = ref('messages');
 const accIcon = ref('account_circle');
-const appIcon = ref('grid_view');
+const appIcon = ref('fa fa-users');
+const homeIcon = ref('home');
 
 
 const goToChatsFullScreen = () => {
@@ -117,6 +142,12 @@ const notifClicked = () => {
     notifIcon.value = notifIcon.value === 'notifications' ? 'notifications_active' : 'notifications';
 };
 
+const goHome = () => {
+    homeIcon.value = homeIcon.value === 'home' ? 'cottage' : 'home';
+    router.push({ name: 'student-home' });
+
+};
+
 const msgClicked = () => {
     msgIcon.value = msgIcon.value === 'messages' ? 'sms' : 'messages';
 };
@@ -126,7 +157,7 @@ const accClicked = () => {
 };
 
 const appClicked = () => {
-    appIcon.value = appIcon.value === 'grid_view' ? 'widgets' : 'grid_view';
+    appIcon.value = appIcon.value === 'fa fa-users' ? 'fa fa-user-group' : 'fa fa-users';
 };
 
 const dynamicName = computed(() => {

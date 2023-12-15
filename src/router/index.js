@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import LoginView from "../views/LoginView.vue";
+// import LoginView from "../views/LoginView.vue";
 import HomeView from "../views/HomeView.vue";
-import RegisterView from "../views/RegisterView.vue";
+// import RegisterView from "../views/RegisterView.vue";
 import Experiment from "../views/Experiment.vue";
 import ManageView from "../views/ManageView.vue";
 import ManageAnnouncementsView from "../views/Manage/ManageAnnouncementsView.vue";
@@ -34,16 +34,18 @@ const routes = [
     name: "home",
     component: HomeView,
   },
-  {
-    path: "/login",
-    name: "login",
-    component: LoginView,
-  },
-  {
-    path: "/register",
-    name: "register",
-    component: RegisterView,
-  },
+  // {
+  //   path: "/login",
+  //   name: "login",
+  //   component: LoginView,
+  //   meta: { requiresGuest: true },
+  // },
+  // {
+  //   path: "/register",
+  //   name: "register",
+  //   component: RegisterView,
+  //   meta: { requiresGuest: true },
+  // },
   {
     path: "/exp",
     name: "exp",
@@ -118,7 +120,7 @@ const routes = [
     path: "/chats/:id",
     name: "chats",
     component: ChatView,
-    // meta: { requiresAuth: true },
+    meta: { requiresAuth: true },
   },
   {
     path: "/EventsCal",
@@ -154,6 +156,7 @@ const routes = [
     path: "/admin",
     name: "admin",
     component: () => import("@/views/Admin/AdminView.vue"),
+    meta: { requiresAuth: true },
     children: [
       {
         path: "dashboard",
@@ -185,9 +188,9 @@ const routes = [
         component: () => import("@/views/Admin/Pages/SectionsView.vue"),
       },
       {
-        path: "events",
-        name: "admin-events",
-        component: () => import("@/views/Admin/Pages/EventsView.vue"),
+        path: "schedules",
+        name: "admin-schedules",
+        component: () => import("@/views/Admin/Pages/SchedulesView.vue"),
       },
       {
         path: "accounts",
@@ -195,6 +198,78 @@ const routes = [
         component: () => import("@/views/Admin/Pages/AccountsView.vue"),
       },
     ],
+  },
+  {
+    path: "/student",
+    name: "student",
+    component: () => import("@/views/Student/StudentView.vue"),
+    meta: { requiresAuth: true },
+    children: [
+      {
+        path: "home",
+        name: "student-home",
+        component: () => import("@/views/Student/Pages/HomeView.vue"),
+      },
+      {
+        path: "",
+        redirect: { name: "student-home" },
+      },
+      {
+        path: "section",
+        name: "student-section",
+        component: () => import("@/views/Student/Pages/SectionView.vue"),
+      },
+      {
+        path: "attendance",
+        name: "student-attendance",
+        component: () => import("@/views/Student/Pages/AttendanceView.vue"),
+      },
+      {
+        path: "reports",
+        name: "student-reports",
+        component: () =>
+          import("@/views/Student/Pages/ReportAndSubmitView.vue"),
+      },
+      {
+        path: "announcements",
+        name: "student-announcements",
+        component: () => import("@/views/Student/Pages/AnnouncementsView.vue"),
+      },
+      {
+        path: "schedule",
+        name: "student-schedule",
+        component: () => import("@/views/Student/Pages/ScheduleView.vue"),
+      },
+    ],
+  },
+  {
+    path: "/parent",
+    name: "parent",
+    component: () => import("@/views/Parent/ParentView.vue"),
+    meta: { requiresAuth: true },
+    children: [
+      {
+        path: "home",
+        name: "parent-home",
+        component: () => import("@/views/Parent/Pages/HomeView.vue"),
+      },
+      {
+        path: "",
+        redirect: { name: "parent-home" },
+      },
+    ],
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("@/views/Users/LoginView.vue"),
+    meta: { requiresGuest: true },
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: () => import("@/views/Users/RegisterView.vue"),
+    meta: { requiresGuest: true },
   },
 ];
 
@@ -208,6 +283,18 @@ router.beforeEach((to, from, next) => {
   if (to.meta.requiresAuth && !authService.isAuthenticated()) {
     // If the route requires authentication and the user is not authenticated
     next("/login"); // Redirect to the login page
+  } else if (to.meta.requiresGuest && authService.isAuthenticated()) {
+    // If the route requires a guest (unauthenticated) user and the user is authenticated
+    const userRole = authService.getUserRole(); // Replace with your actual method to get the user role
+
+    // Redirect based on user role
+    if (userRole === "Staff") {
+      next("/admin"); // Redirect to the admin page
+    } else if (userRole === "Student") {
+      next("/student"); // Redirect to the home page for roles "Student" or "Parent"
+    } else if (userRole === "Parent/Guardian") {
+      next("/parent"); // Redirect to the home page for roles "Student" or "Parent"
+    }
   } else {
     next(); // Proceed to the route
   }

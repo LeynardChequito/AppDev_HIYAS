@@ -32,7 +32,7 @@
     </q-dialog>
 
     <!-- Display Table -->
-   <div class="q-pa-md">
+    <div class="q-pa-md">
       <q-form @submit.prevent="applyFilter">
         <q-input v-model="filterValue" label="Filter Value" dense />
         <q-btn type="submit" label="Apply Filter" color="primary" dense />
@@ -44,20 +44,21 @@
         <q-btn-toggle v-model="filterBy" :options="filterOptions" flat color="primary" dense />
       </q-btn-group>
     </div>
-
+    <q-btn label="Save" color="positive" @click="saveAttendance" class="q-mt-md q-mr-md" />
     <!-- Display Table -->
-    <q-table
-      :rows="filteredTableData"
-      :columns="columns"
-      :rows-per-page-options="[10, 20, 30]"
-      row-key="name"
-      :pagination.sync="pagination"
-      :sorting.sync="sorting"
-      :filter.sync="filter"
-      class="my-sticky-last-column-table"
-    >
-      <!-- ... (unchanged code for table actions) ... -->
+    <!-- Display Table -->
+    <q-table :rows="filteredTableData" :columns="columns" :rows-per-page-options="[10, 20, 30]" row-key="name"
+      :pagination.sync="pagination" :sorting.sync="sorting" :filter.sync="filter" class="my-sticky-last-column-table">
+      <template #body-cell-actions="props">
+        <q-td :props="props">
+          <q-radio v-model="props.row.action" val="Present" label="P" dense class="q-mr-sm" />
+          <q-radio v-model="props.row.action" val="Absent" label="A" dense class="q-mr-sm" />
+          <q-radio v-model="props.row.action" val="Late" label="L" dense class="q-mr-sm" />
+          <q-radio v-model="props.row.action" val="Excused" label="E" dense class="q-mr-sm" />
+        </q-td>
+      </template>
     </q-table>
+
   </div>
 </template>
 
@@ -68,12 +69,22 @@ import { ref, onMounted, computed } from 'vue';
 const columns = [
   { name: 'student', label: 'Student', field: 'student', align: 'left', sortable: true },
   { name: 'section', label: 'Section', field: 'section', align: 'left', sortable: true },
-  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
+  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true, },
   { name: 'date', label: 'Date', field: 'date', align: 'left', sortable: true },
+  {
+    name: 'actions',
+    label: 'Actions',
+    field: 'actions',
+    align: 'center',
+    sortable: false,
+    bodySlot: 'action',
+  },
 ];
 
+
+
 const createAttendanceDialog = ref(false);
-const newAttendance = ref({ date: '', section: '' });
+const newAttendance = ref({ date: '', section: '', event_type: 'WLA' }); // Set event_type to 'WLA' by default
 const sectionOptions = ref([]);
 const tableData = ref([]);
 const pagination = ref({ page: 1, rowsPerPage: 10 });
@@ -102,23 +113,36 @@ onMounted(async () => {
   try {
     const response = await axios.get('studentAttendance');
     // Filter the data to keep only entries with event_type "WLA"
-    tableData.value = response.data;
+    tableData.value = response.data.map(entry => ({
+      ...entry,
+      action: entry.status, // Initialize action with the current status value
+    }));
   } catch (error) {
     console.error('Error fetching data:', error);
   }
 });
 
+
 const createAttendance = async () => {
   try {
     console.log('Creating attendance...');
+
+    // Set event_type to 'WLA' if it's not already set
+    if (!newAttendance.value.event_type) {
+      newAttendance.value.event_type = 'WLA';
+    }
+
+    console.log('New Attendance:', newAttendance.value);
+
     // Your API call to create attendance goes here
-    await axios.post('createattendance', newAttendance.value);
+    const response = await axios.post('createattendance', newAttendance.value);
+    console.log('API Response:', response.data);
 
     // Fetch and update tableData with student names
     await updateTableData(newAttendance.value.section);
 
-    const response = await axios.get('studentAttendance');
-    tableData.value = response.data;
+    const attendanceResponse = await axios.get('studentAttendance');
+    tableData.value = attendanceResponse.data;
 
     // Close the dialog after successfully creating attendance
     createAttendanceDialog.value = false;
@@ -126,6 +150,9 @@ const createAttendance = async () => {
     console.error('Error creating attendance:', error);
   }
 };
+
+
+
 
 const updateTableData = async (sectionId) => {
   try {
@@ -167,6 +194,47 @@ const applyFilter = () => {
   // You can add more advanced filtering logic if needed
   filter.value = filterValue.value;
 };
+
+const changedEntries = filteredTableData.value.filter(entry => entry.status !== entry.action);
+
+const saveAttendance = async () => {
+  try {
+    console.log('Saving attendance...');
+
+    // Filter out entries without changes
+    const changedEntries = filteredTableData.value.filter(entry => entry.status !== entry.action);
+
+    if (changedEntries.length === 0) {
+      console.log('No changes to save.');
+      return;
+    }
+
+    // Prepare data for API update
+    const updateData = changedEntries.map(entry => ({
+      id: entry.id, // Replace 'id' with the actual property name containing the unique identifier
+      student: entry.student,
+      status: entry.action,
+      date: entry.date,
+      event_type: entry.event_type,
+    }));
+
+    // Your API call to update attendance goes here
+    const response = await axios.put('updatestatus', updateData);
+    console.log('API Response:', response.data);
+
+    // Fetch and update tableData with updated attendance data
+    await updateTableData(newAttendance.value.section);
+
+    const attendanceResponse = await axios.get('studentAttendance');
+    tableData.value = attendanceResponse.data;
+
+    console.log('Attendance saved successfully.');
+  } catch (error) {
+    console.error('Error saving attendance:', error);
+  }
+};
+
+
 
 // Rest of your methods (editAttendance, deleteAttendance) remain unchanged
 </script>

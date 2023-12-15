@@ -1,4 +1,5 @@
 import axios from "axios";
+import jwtDecode from "jsonwebtoken/decode";
 
 const authService = {
   async login(credentials) {
@@ -44,7 +45,7 @@ const authService = {
     // Retrieve the user role from the decoded token
     const token = this.getToken();
     if (token) {
-      const decodedToken = token;
+      const decodedToken = jwtDecode(token);
       return decodedToken.user_role;
     }
     return null;

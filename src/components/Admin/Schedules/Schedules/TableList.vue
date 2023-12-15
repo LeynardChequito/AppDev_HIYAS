@@ -1,12 +1,12 @@
 <template>
     <div>
         <div class="row col-12 justify-end">
-            <q-btn @click="openAddEventDialog" color="positive" label="Add Event" class="q-my-md" />
+            <q-btn @click="openAddEventDialog" color="positive" label="Add Schedule" class="q-my-md" />
         </div>
         <q-table title="" :rows="tableData" :columns="columns" row-key="name" class="my-sticky-last-column-table">
             <template #body-cell-actions="props">
                 <q-td :props="props">
-                    <q-btn flat round icon="edit" @click="editEvent(props.row)" />
+                    <!-- <q-btn flat round icon="edit" @click="editEvent(props.row)" /> -->
                     <q-btn flat round icon="delete" @click="deleteEvent(props.row)" color="negative" />
                 </q-td>
             </template>
@@ -16,60 +16,41 @@
             <q-card>
                 <q-card-section>
                     <q-card-title class="text-h6">Event Data</q-card-title>
-                    <q-input v-model="newEvent.name" label="Event Name" />
+                    <q-input v-model="newEvent.type" label="Event Name" />
                     <q-input v-model="newEvent.description" label="Event Description" />
-                    <q-input filled v-model="newEvent.start" label="Event Start">
-                        <template v-slot:prepend>
+                    <q-input v-model="newEvent.start" label="Date and Time" mask="datetime">
+                        <template v-slot:append>
                             <q-icon name="event" class="cursor-pointer">
                                 <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                    <q-date v-model="newEvent.start" mask="YYYY-MM-DD HH:mm">
+                                    <div class="q-gutter-md">
+                                        <q-date v-model="newEvent.start" mask="YYYY/MM/DD HH:mm" />
                                         <div class="row items-center justify-end">
                                             <q-btn v-close-popup label="Close" color="primary" flat />
                                         </div>
-                                    </q-date>
+                                    </div>
                                 </q-popup-proxy>
                             </q-icon>
                         </template>
-
-                        <template v-slot:append>
-                            <q-icon name="access_time" class="cursor-pointer">
+                        <template v-slot:prepend>
+                            <q-icon name="schedule" class="cursor-pointer">
                                 <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                    <q-time v-model="newEvent.start" mask="YYYY-MM-DD HH:mm">
+                                    <div class="q-gutter-md">
+                                        <q-time v-model="newEvent.start" mask="YYYY/MM/DD HH:mm" />
                                         <div class="row items-center justify-end">
                                             <q-btn v-close-popup label="Close" color="primary" flat />
                                         </div>
-                                    </q-time>
+                                    </div>
                                 </q-popup-proxy>
                             </q-icon>
                         </template>
                     </q-input>
-                    <q-input filled v-model="newEvent.end" label="Event Start">
-                        <template v-slot:prepend>
-                            <q-icon name="event" class="cursor-pointer">
-                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                    <q-date v-model="newEvent.end" mask="YYYY-MM-DD HH:mm">
-                                        <div class="row items-center justify-end">
-                                            <q-btn v-close-popup label="Close" color="primary" flat />
-                                        </div>
-                                    </q-date>
-                                </q-popup-proxy>
-                            </q-icon>
-                        </template>
 
-                        <template v-slot:append>
-                            <q-icon name="access_time" class="cursor-pointer">
-                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                    <q-time v-model="newEvent.end" mask="YYYY-MM-DD HH:mm">
-                                        <div class="row items-center justify-end">
-                                            <q-btn v-close-popup label="Close" color="primary" flat />
-                                        </div>
-                                    </q-time>
-                                </q-popup-proxy>
-                            </q-icon>
-                        </template>
-                    </q-input>
-                    <!-- <q-date v-model="newEvent.end" label="Event End" mask="YYYY-MM-DDTHH:mm:ss" color="positive" /> -->
-                    <q-input v-model="newEvent.audience" label="Participants" />
+
+                    <q-select v-model="newEvent.audience" label="Participants" :options="audienceOptions"
+                        :rules="[v => !!v]" dense />
+
+                    <q-select v-if="newEvent.audience === 'Students'" v-model="selectedStudents" label="Select Students"
+                        use-input use-chips multiple :options="studentOptions" />
                 </q-card-section>
 
                 <q-card-actions align="right">
@@ -81,17 +62,20 @@
         </q-dialog>
     </div>
 </template>
-
+  
 <script setup>
 import axios from 'axios';
 import { ref, onMounted } from 'vue';
 
+const audienceOptions = ['All', 'Students', 'Coaches', 'Parents/Guardians', 'Staff'];
+const selectedStudents = ref([]);
+const studentOptions = ref([]); // Add this line
+
 const columns = [
-    { name: 'name', label: 'Event', field: 'name', align: 'left', sortable: true },
-    { name: 'description', label: 'Description', field: 'description', align: 'left', sortable: true },
-    { name: 'start', label: 'Event Start', field: 'start', align: 'left', sortable: true },
-    { name: 'end', label: 'Event End', field: 'end', align: 'left', sortable: true },
     { name: 'audience', label: 'Participants', field: 'audience', align: 'left', sortable: true },
+    { name: 'type', label: 'Type', field: 'type', align: 'left', sortable: true },
+    { name: 'description', label: 'Description', field: 'description', align: 'left', sortable: true },
+    { name: 'start', label: 'Event Start', field: 'date', align: 'left', sortable: true },
     {
         name: 'actions',
         label: 'Actions',
@@ -103,46 +87,47 @@ const columns = [
 ];
 
 const editMode = ref(false);
-
 const tableData = ref([]);
 const addEventDialog = ref(false);
+
 const newEvent = ref({
-    name: '',
+    audience: '',
+    type: '',
     description: '',
     start: '',
-    end: '',
-    audience: '',
 });
 
-
 const openAddEventDialog = async () => {
-    // Reset the newSection object when opening the dialog
     editMode.value = false;
-    // Show the dialog
     addEventDialog.value = true;
     newEvent.value = {
-        name: '',
+        audience: '',
+        type: '',
         description: '',
         start: '',
-        end: '',
-        audience: '',
     };
 
+    try {
+        const studentsResponse = await axios.get('/getstudentdata');
+        studentOptions.value = studentsResponse.data.map(student => ({
+            value: student.id,
+            label: `${student.firstname} ${student.lastname}`,
+        }));
+    } catch (error) {
+        console.error('Error fetching students data:', error);
+    }
 };
-
-
 
 // Define the created lifecycle hook
 onMounted(async () => {
     try {
-        const response = await axios.get('getevent');
+        const response = await axios.get('getstudentschedule');
         // Filter the data to keep only entries with event_type "WLA"
         tableData.value = response.data;
     } catch (error) {
         console.error('Error fetching data:', error);
     }
 });
-
 
 const editEvent = async (event) => {
     try {
@@ -161,12 +146,10 @@ const editEvent = async (event) => {
     }
 };
 
-
-
 const deleteEvent = async (event) => {
     try {
         // Call your API endpoint to delete a coach
-        await axios.delete(`deleteevent/${event.id}`);
+        await axios.delete(`deletestudentschedule/${event.id}`);
         // Remove the deleted coach from the tableData
         tableData.value = tableData.value.filter(item => item.id !== event.id);
     } catch (error) {
@@ -174,19 +157,30 @@ const deleteEvent = async (event) => {
     }
 };
 
-
 const addOrEditEvent = async () => {
     try {
         if (editMode.value) {
             // Call your API endpoint to update a coach
-            await axios.put(`updateevent/${newEvent.value.id}`, newEvent.value);
+            await axios.put(`updatestudentschedule/${newEvent.value.id}`, newEvent.value);
         } else {
-            // Call your API endpoint to add a section
-            await axios.post('addevent', newEvent.value);
+            // If the audience is 'Students', send selectedStudents instead of newEvent.value
+            if (newEvent.value.audience === 'Students') {
+                const studentsData = {
+                    type: newEvent.value.type,
+                    description: newEvent.value.description,
+                    start: newEvent.value.start,
+                    audience: selectedStudents.value.map(student => student.value),
+                };
+
+                await axios.post('addstudentschedule', studentsData);
+            } else {
+                // Call your API endpoint to add a section
+                await axios.post('addstudentschedule', newEvent.value);
+            }
         }
 
         // Refresh the section data after adding/editing a section
-        const response = await axios.get('getevent');
+        const response = await axios.get('getstudentschedule');
         tableData.value = response.data;
 
         // Close the dialog after successfully adding/editing a section
@@ -197,19 +191,21 @@ const addOrEditEvent = async () => {
 };
 
 </script>
+  
 <style lang="sass">
-.my-sticky-last-column-table
-  /* specifying max-width so the example can
-    highlight the sticky column on any browser window */
-
-  thead tr:last-child th:last-child
-    /* bg color is important for th; just specify one */
-
-  td:last-child
-
-  th:last-child,
-  td:last-child
-    position: sticky
-    right: 0
-    z-index: 1
-</style>
+    .my-sticky-last-column-table
+      /* specifying max-width so the example can
+        highlight the sticky column on any browser window */
+    
+      thead tr:last-child th:last-child
+        /* bg color is important for th; just specify one */
+    
+      td:last-child
+    
+      th:last-child,
+      td:last-child
+        position: sticky
+        right: 0
+        z-index: 1
+    </style>
+  
