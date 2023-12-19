@@ -1,81 +1,94 @@
 <template>
-    <div>
-        <div class="row col-12 justify-end">
-            <q-btn @click="openAddEventDialog" color="positive" label="Add Schedule" class="q-my-md" />
-        </div>
-        <q-table title="" :rows="tableData" :columns="columns" row-key="name" class="my-sticky-last-column-table">
-            <template #body-cell-actions="props">
-                <q-td :props="props">
-                    <!-- <q-btn flat round icon="edit" @click="editEvent(props.row)" /> -->
-                    <q-btn flat round icon="delete" @click="deleteEvent(props.row)" color="negative" />
-                </q-td>
-            </template>
-        </q-table>
-
-        <q-dialog v-model="addEventDialog" position="standard">
-            <q-card>
-                <q-card-section>
-                    <q-card-title class="text-h6">Event Data</q-card-title>
-                    <q-input v-model="newEvent.type" label="Event Name" />
-                    <q-input v-model="newEvent.description" label="Event Description" />
-                    <q-input v-model="newEvent.start" label="Date and Time" mask="datetime">
-                        <template v-slot:append>
-                            <q-icon name="event" class="cursor-pointer">
-                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                    <div class="q-gutter-md">
-                                        <q-date v-model="newEvent.start" mask="YYYY/MM/DD HH:mm" />
-                                        <div class="row items-center justify-end">
-                                            <q-btn v-close-popup label="Close" color="primary" flat />
-                                        </div>
-                                    </div>
-                                </q-popup-proxy>
-                            </q-icon>
-                        </template>
-                        <template v-slot:prepend>
-                            <q-icon name="schedule" class="cursor-pointer">
-                                <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-                                    <div class="q-gutter-md">
-                                        <q-time v-model="newEvent.start" mask="YYYY/MM/DD HH:mm" />
-                                        <div class="row items-center justify-end">
-                                            <q-btn v-close-popup label="Close" color="primary" flat />
-                                        </div>
-                                    </div>
-                                </q-popup-proxy>
-                            </q-icon>
-                        </template>
-                    </q-input>
-
-
-                    <q-select v-model="newEvent.audience" label="Participants" :options="audienceOptions"
-                        :rules="[v => !!v]" dense />
-
-                    <q-select v-if="newEvent.audience === 'Students'" v-model="selectedStudents" label="Select Students"
-                        use-input use-chips multiple :options="studentOptions" />
-                </q-card-section>
-
-                <q-card-actions align="right">
-                    <q-btn label="Cancel" color="negative" v-close-popup />
-                    <q-btn :label="editMode ? 'Edit Event' : 'Add Event'" :color="editMode ? 'primary' : 'positive'"
-                        @click="addOrEditEvent" />
-                </q-card-actions>
-            </q-card>
-        </q-dialog>
+    <div class="row col-12 justify-end">
+        <q-btn @click="openAddEventDialog" color="positive" label="Add Schedule" class="q-my-md" />
     </div>
+
+    <div class="event-cards-container">
+        <div v-for="(eventType, index) in uniqueEventTypes" :key="index" class="event-card">
+            <q-card>
+                <q-card-section class="scrollable-card-section">
+                    <h2>{{ eventType }} Schedule</h2>
+                    <p><strong>Description:</strong> {{ eventType.description }}</p>
+                    <p><strong>Date and Time:</strong> {{ eventType.start }}</p>
+
+                    <div v-for="event in getTableData(eventType)" :key="event.id">
+                        <div class="participant-item">
+                            <p><strong>Participants:</strong> {{ event.audience }}</p>
+                        </div>
+                    </div>
+                </q-card-section>
+            </q-card>
+        </div>
+    </div>
+    <q-dialog v-model="addEventDialog" position="standard">
+        <q-card>
+            <q-card-section>
+                <q-card-title class="text-h6">Event Data</q-card-title>
+                <q-input v-model="newEvent.type" label="Event Name" />
+                <q-input v-model="newEvent.description" label="Event Description" />
+                <q-input v-model="newEvent.start" label="Date and Time" mask="datetime">
+                    <template v-slot:append>
+                        <q-icon name="event" class="cursor-pointer">
+                            <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                                <div class="q-gutter-md">
+                                    <q-date v-model="newEvent.start" mask="YYYY/MM/DD HH:mm" />
+                                    <div class="row items-center justify-end">
+                                        <q-btn v-close-popup label="Close" color="primary" flat />
+                                    </div>
+                                </div>
+                            </q-popup-proxy>
+                        </q-icon>
+                    </template>
+                    <template v-slot:prepend>
+                        <q-icon name="schedule" class="cursor-pointer">
+                            <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+                                <div class="q-gutter-md">
+                                    <q-time v-model="newEvent.start" mask="YYYY/MM/DD HH:mm" />
+                                    <div class="row items-center justify-end">
+                                        <q-btn v-close-popup label="Close" color="primary" flat />
+                                    </div>
+                                </div>
+                            </q-popup-proxy>
+                        </q-icon>
+                    </template>
+                </q-input>
+
+
+                <q-select v-model="newEvent.audience" label="Participants" :options="audienceOptions" :rules="[v => !!v]"
+                    dense />
+
+                <q-select v-if="newEvent.audience === 'Students'" v-model="selectedStudents" label="Select Students"
+                    use-input use-chips multiple :options="studentOptions" />
+            </q-card-section>
+
+            <q-card-actions align="right">
+                <q-btn label="Cancel" color="negative" v-close-popup />
+                <q-btn :label="editMode ? 'Edit Event' : 'Add Event'" :color="editMode ? 'primary' : 'positive'"
+                    @click="addOrEditEvent" />
+            </q-card-actions>
+        </q-card>
+    </q-dialog>
 </template>
   
 <script setup>
 import axios from 'axios';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 
 const audienceOptions = ['All', 'Students', 'Coaches', 'Parents/Guardians', 'Staff'];
 const selectedStudents = ref([]);
-const studentOptions = ref([]); // Add this line
+const studentOptions = ref([]);
+
+const uniqueEventTypes = computed(() => Array.from(new Set(tableData.value.map(event => event.type))));
+
+const getTableData = (eventType) => {
+    return tableData.value.filter((event) => event.type === eventType);
+};
+const getTableRowKey = (eventType) => {
+    return (row) => `${eventType}_${row.name}`;
+};
 
 const columns = [
     { name: 'audience', label: 'Participants', field: 'audience', align: 'left', sortable: true },
-    { name: 'type', label: 'Type', field: 'type', align: 'left', sortable: true },
-    { name: 'description', label: 'Description', field: 'description', align: 'left', sortable: true },
-    { name: 'start', label: 'Event Start', field: 'date', align: 'left', sortable: true },
     {
         name: 'actions',
         label: 'Actions',
@@ -191,21 +204,34 @@ const addOrEditEvent = async () => {
 };
 
 </script>
-  
+
 <style lang="sass">
-    .my-sticky-last-column-table
-      /* specifying max-width so the example can
-        highlight the sticky column on any browser window */
-    
-      thead tr:last-child th:last-child
-        /* bg color is important for th; just specify one */
-    
-      td:last-child
-    
-      th:last-child,
-      td:last-child
-        position: sticky
-        right: 0
-        z-index: 1
-    </style>
-  
+.scrollable-card-section
+  max-height: 300px
+  overflow-y: auto
+
+.my-sticky-last-column-table
+  thead tr:last-child th:last-child
+    td:last-child
+  th:last-child,
+  td:last-child
+    position: sticky
+    right: 0
+    z-index: 1
+.scrollable-card-section
+  max-height: 300px
+  height: 300px
+  overflow-y: auto
+
+.event-cards-container
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  gap: 20px
+
+.event-card
+  width: 100%
+  box-sizing: border-box
+
+.participant-item
+  margin-bottom: 10px
+</style>

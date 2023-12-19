@@ -1,73 +1,137 @@
 <template>
   <div class="q-pa-md row justify-center">
-    <div style="width: 100%; max-width: 400px">
-      <q-chat-message v-for="message in messages" :key="message.id" :name="message.sender" :text="[message.message]"
-        :sent="message.sender === userId" />
-      <q-input v-model="newMessage" @keyup.enter="sendMessage" placeholder="Type your message..." />
+    <div class="col-4 one">
+      <ChatList />
+    </div>
+    <div class="col-8 item-start">
+      <!-- <div class="col-12 text-center">
+        <h3>{{ receiverName }}</h3> 
+      </div> -->
+      <chat-window :messages="messages" />
+      <div class="q-pa-md">
+        <q-input rounded outlined bottom-slots v-model="newMessage" label="Send Message" :dense="dense">
+          <template v-slot:after>
+            <q-btn @click="sendMessage" round dense flat icon="send" />
+          </template>
+        </q-input>
+      </div>
     </div>
   </div>
 </template>
-<script setup>
+
+<script>
+import ChatWindow from '@/components/ChatWindow.vue';
+import ChatList from '@/components/ChatList.vue';
 import axios from 'axios';
-import jwtDecode from 'jsonwebtoken/decode';
-import { useRoute } from 'vue-router';
-import { ref, onMounted, watchEffect } from 'vue';
 
-const route = useRoute();
-const userId = ref('');
-const messages = ref([]);
-const newMessage = ref('');
+export default {
+  components: {
+    ChatWindow,
+    ChatList
+  },
 
-watchEffect(() => {
-  // Retrieve the user role from your token or another source
-  // For example, you can decode the token and get the user role
-  const storedToken = localStorage.getItem('token');
-  if (storedToken) {
-    const decodedToken = jwtDecode(storedToken);
-    userId.value = decodedToken.sender;
-  }
-});
+  data() {
+    return {
+      messages: [],
+      newMessage: '',
+      receiver: this.$route.params.id, // Use the ID from the route as the default receiver
+      receiverName: '', // Add receiverName data property
+    };
+  },
 
-// Extract the 'id' parameter from the route
-const routeUserId = ref(route.params.id);
+  methods: {
+    async sendMessage() {
+      try {
+        const token = localStorage.getItem('token');
 
-// Fetch messages when the component is mounted
-onMounted(() => {
-  getMessages();
-});
+        if (token) {
+          axios.defaults.headers.common['Authorization'] = `${token}`;
+        } else {
+          console.error('No token available.');
+          return;
+        }
 
-// Function to fetch messages
-const getMessages = async () => {
-  try {
-    const response = await axios.get(`/getMessages/${userId.value}`);
-    messages.value = response.data;
-  } catch (error) {
-    console.error('Error fetching messages:', error);
-  }
-};
+        await axios.post('sendMessage', {
+          message: this.newMessage,
+          receiver: this.receiver,
+        });
 
-// Function to send a new message
-const sendMessage = async () => {
-  try {
-    if (routeUserId.value) {
-      const response = await axios.post('sendMessage', {
-        sender: userId.value,
-        receiver: routeUserId.value,
-        message: newMessage.value,
-      });
+        await this.fetchMessages();
 
-      // Assuming the API response includes the newly created message
-      // messages.value.push(response.data);
+        this.$emit('messages-fetched', this.messages);
+        this.$emit('message-sent', this.newMessage);
 
-      // Clear the input field after sending the message
-      newMessage.value = '';
-    } else {
-      console.warn('No user selected. Please select a user to chat.');
-      // Handle the case when no user is selected, e.g., display a message to the user
-    }
-  } catch (error) {
-    console.error('Error sending message:', error);
-  }
+        // Clear the input field
+        this.newMessage = '';
+      } catch (error) {
+        console.error('Error sending message:', error);
+      }
+    },
+
+    async fetchMessages() {
+      try {
+        const token = localStorage.getItem('token');
+
+        if (token) {
+          axios.defaults.headers.common['Authorization'] = `${token}`;
+        } else {
+          console.error('No token available.');
+          return;
+        }
+
+        // Perform the Axios GET request to fetch messages for the specific user
+        const response = await axios.get(`getUserMessages/${this.receiver}`);
+        this.messages = response.data;
+
+        // Emit a custom event to notify the parent component
+        this.$emit('messages-fetched', this.messages);
+      } catch (error) {
+        console.error('Error fetching messages:', error);
+      }
+    },
+
+    async fetchReceiverName() {
+      try {
+        const token = localStorage.getItem('token');
+
+        if (token) {
+          axios.defaults.headers.common['Authorization'] = `${token}`;
+        } else {
+          console.error('No token available.');
+          return;
+        }
+
+        // Perform the Axios GET request to fetch the receiver's information
+        const response = await axios.get(`getUserMessages/${this.receiver}`);
+        this.receiverName = response.data[0].receiver_name;
+
+      } catch (error) {
+        console.error('Error fetching receiver name:', error);
+      }
+    },
+  },
+
+  watch: {
+    // Watch for changes in the route params and update the receiver ID accordingly
+    '$route.params.id': function (newUserId) {
+      this.receiver = newUserId;
+      // Fetch messages and receiver name for the new user when the route changes
+      this.fetchMessages();
+      this.fetchReceiverName();
+    },
+  },
+
+  mounted() {
+    this.fetchMessages();
+    this.fetchReceiverName();
+
+    setInterval(() => {
+      this.fetchMessages();
+    }, 10000);
+  },
 };
 </script>
 
+<style scoped>
+/* Add your scoped styles here */
+</style>

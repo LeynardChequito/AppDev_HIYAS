@@ -3,14 +3,14 @@
 
         <q-tabs v-model="tab" dense class="bg-grey-10 text-grey" active-color="yellow" indicator-color="yellow"
             align="justify">
-            <q-tab name="events" label="Events" />
+            <q-tab name="schedules" label="Schedules" />
             <q-tab name="birthdays" label="Birthdays" />
         </q-tabs>
 
 
         <q-tab-panels v-model="tab" animated class="bg-grey-10 text-grey">
 
-            <q-tab-panel name="events" class="q-pa-md">
+            <q-tab-panel name="schedules" class="q-pa-md">
                 <TableList />
             </q-tab-panel>
 
@@ -22,7 +22,7 @@
 import { ref } from 'vue';
 import TableList from '@/components/Admin/Schedules/Schedules/TableList.vue';
 
-const tab = ref('events');
+const tab = ref('schedules');
 const innerTab = ref('AttendanceWLA');
 const splitterModel = ref(10);
 </script>

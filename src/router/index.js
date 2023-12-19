@@ -173,6 +173,11 @@ const routes = [
         component: () => import("@/views/Admin/Pages/StudentsView.vue"),
       },
       {
+        path: "students/:id",
+        name: "admin-student-details",
+        component: () => import("@/views/Admin/Pages/StudentDetailsView.vue"),
+      },
+      {
         path: "coaches",
         name: "admin-coaches",
         component: () => import("@/views/Admin/Pages/CoachesView.vue"),

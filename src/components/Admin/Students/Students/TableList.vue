@@ -3,11 +3,13 @@
         <div class="row col-12 justify-end">
             <q-btn @click="openAddStudentDialog" color="positive" label="Add Student" class="q-my-md" />
         </div>
+
         <q-table title="" :rows="tableData" :columns="columns" row-key="name" class="my-sticky-last-column-table">
             <template #body-cell-actions="props">
                 <q-td :props="props">
                     <q-btn flat round icon="edit" @click="editStudent(props.row)" />
                     <q-btn flat round icon="delete" @click="deleteStudent(props.row)" color="negative" />
+                    <q-btn flat round icon="mdi-eye" @click="viewStudent(props.row)" />
                 </q-td>
             </template>
         </q-table>
@@ -106,6 +108,9 @@
 <script setup>
 import axios from 'axios';
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const columns = [
     { name: 'firstname', label: 'First Name', field: 'firstname', align: 'left', sortable: true },
@@ -134,11 +139,15 @@ const columns = [
     },
 ];
 
+const viewStudent = (student) => {
+    // Redirect to the /students/id route
+    router.push(`/admin/students/${student.id}`);
+};
+
 const parentGuardianOptions = ref([]);
 const coachOptions = ref([]);
 const sectionOptions = ref([]);
 const editMode = ref(false);
-
 const tableData = ref([]);
 const addStudentDialog = ref(false);
 const newStudent = ref({
@@ -276,6 +285,7 @@ const addOrEditStudent = async () => {
     } catch (error) {
         console.error(`Error ${editMode.value ? 'editing' : 'adding'} Student:`, error);
     }
+
 };
 
 </script>

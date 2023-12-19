@@ -1,0 +1,66 @@
+<!-- Chat.vue -->
+<template>
+  <div class="q-pa-md row justify-center">
+    <div style="width: 100%; max-width: 400px">
+      <div v-for="message in messages" :key="message.id">
+        <q-chat-message
+          :name="message.sender === currentUser ? 'me' : 'Jane'"
+          :text="[message.message]"
+          :sent="message.sender === currentUser"
+        />
+      </div>
+    </div>
+    <q-input
+      v-model="newMessage"
+      @keydown.enter.prevent="sendMessage"
+      label="Type your message..."
+    />
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      messages: [],
+      currentUser: 'me', // Replace with the current user's name
+      newMessage: '',
+    };
+  },
+  mounted() {
+    this.fetchMessages();
+    setInterval(this.fetchMessages, 5000); // Poll every 5 seconds (adjust as needed)
+  },
+  methods: {
+    async fetchMessages() {
+      try {
+        const response = await axios.get('/getMessages'); // Replace with your backend endpoint
+        this.messages = response.data;
+      } catch (error) {
+        console.error('Error fetching messages:', error);
+      }
+    },
+    async sendMessage() {
+      try {
+        const message = {
+          sender: this.currentUser,
+          receiver: 'Jane', // Replace with the recipient's name
+          message: this.newMessage,
+        };
+
+        await axios.post('/sendMessage', message); // Replace with your backend endpoint
+
+        // Clear the input field
+        this.newMessage = '';
+
+        // Fetch messages after sending to update the chat immediately
+        this.fetchMessages();
+      } catch (error) {
+        console.error('Error sending message:', error);
+      }
+    },
+  },
+};
+</script>
