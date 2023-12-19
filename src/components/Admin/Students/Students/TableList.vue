@@ -57,6 +57,17 @@
                     </div>
 
                     <div class="row">
+                        <div class="col-6 q-pr-xs">
+                            <q-input v-model="newStudent.height" label="Height (cm)" />
+                        </div>
+                        <div class="col-6 q-pr-xs">
+                            <div class="col-6 q-pr-xs">
+                                <q-input v-model="newStudent.weight" label="Weight (kg)" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <!-- <div class="col-6 q-pl-xs">
                             <q-select v-model="newStudent.coach" :options="coachOptions" label="Coach" />
                         </div> -->
@@ -129,6 +140,8 @@ const columns = [
     { name: 'grade_level', label: 'Grade Level', field: 'grade_level', align: 'left', sortable: true },
     { name: 'fam_number', label: 'Number in Family', field: 'fam', align: 'center', sortable: true },
     { name: 'staff', label: 'Staff', field: 'staff', align: 'left', sortable: true },
+    { name: 'height', label: 'Height (cm)', field: 'height', align: 'left', sortable: true },
+    { name: 'weight', label: 'Weight (kg)', field: 'weight', align: 'left', sortable: true },
     {
         name: 'actions',
         label: 'Actions',
@@ -167,6 +180,8 @@ const newStudent = ref({
     grade_level: '',
     fam_number: '',
     staff: '',
+    height: '',
+    weight: '',
 });
 
 
@@ -192,6 +207,8 @@ const openAddStudentDialog = async () => {
         grade_level: '',
         fam_number: '',
         staff: '',
+        height: '',
+        weight: '',
     };
 
     axios.get('getsection')
