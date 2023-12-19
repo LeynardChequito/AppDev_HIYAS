@@ -30,7 +30,7 @@ import ManageSectionsView from "../views/Manage/ManageSectionsView.vue";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "home",
     component: HomeView,
   },
