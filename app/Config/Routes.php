@@ -17,8 +17,8 @@ $routes->post('/addcoach', 'CoachController::addData');
 $routes->post('/addsection', 'SectionController::addData');
 $routes->post('/login', 'LoginController::login');
 $routes->get('/getUser', 'LoginController::getUser');
-$routes->get('getUserMessages/(:num)', 'ChatController::getUserMessages/$1');
 
+$routes->get('getUserMessages/(:num)', 'ChatController::getUserMessages/$1');
 $routes->get('getMessages/(:num)', 'ChatController::getMessages/$1');
 $routes->post('sendMessage', 'ChatController::sendMessage');
 
