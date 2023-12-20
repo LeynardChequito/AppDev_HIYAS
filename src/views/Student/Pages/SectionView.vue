@@ -7,13 +7,13 @@
 
         <div v-if="studentData" style="padding-top: 35px">
             <q-tabs v-model="tab" dense class="bg-grey-3 text-black" active-color="white" indicator-color="none"
-                active-bg-color="green" align="justify" >
-                <q-tab name="section" style="border-radius: 30px;" class="q-mx-sm"  >
+                active-bg-color="green" align="justify">
+                <q-tab name="section" style="border-radius: 30px;" class="q-mx-sm">
                     {{ studentData.section }}
                 </q-tab>
-                <q-tab name="classmates" label="classmates" style="border-radius: 30px;" class="q-mx-sm"/>
-                <q-tab name="coach" label="coach" style="border-radius: 30px;" class="q-mx-sm"/>
-                <q-tab name="chat" label="chat" style="border-radius: 30px;" class="q-mx-sm"/>
+                <q-tab name="classmates" label="classmates" style="border-radius: 30px;" class="q-mx-sm" />
+                <q-tab name="coach" label="coach" style="border-radius: 30px;" class="q-mx-sm" />
+                <q-tab name="chat" label="chat" style="border-radius: 30px;" class="q-mx-sm" />
             </q-tabs>
         </div>
 
@@ -22,8 +22,8 @@
                 <q-tab-panel name="section" class="q-pa-md">
                     <!-- Content for section tab -->
                 </q-tab-panel>
-                <q-tab-panel name="attendance" class="q-pa-md">
-                    <!-- Content for attendance tab -->
+                <q-tab-panel name="chat" class="q-pa-md">
+                    <GroupChatView />
                 </q-tab-panel>
             </q-tab-panels>
         </div>
@@ -34,6 +34,7 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import jwtDecode from 'jsonwebtoken/decode';
+import GroupChatView from '@/components/Students/GroupChatView.vue';
 
 const tab = ref('section');
 const innerTab = ref('AttendanceWLA');
@@ -67,9 +68,10 @@ onMounted(async () => {
 </script>
   
 <style>
-  /* Custom styles for pill-shaped tabs */
-  .tabs-pills .q-tabs-tabs .q-tab {
-    border-radius: 30px; /* Adjust the border-radius as needed */
-  }
-  </style>
+/* Custom styles for pill-shaped tabs */
+.tabs-pills .q-tabs-tabs .q-tab {
+    border-radius: 30px;
+    /* Adjust the border-radius as needed */
+}
+</style>
   

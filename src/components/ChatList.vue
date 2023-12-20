@@ -66,7 +66,7 @@
       // Automatically fetch connected users every 5 seconds
       this.autoReload = setInterval(() => {
         this.fetchConnectedUsers();
-      }, 10000);
+      }, 500);
     },
   
     beforeDestroy() {

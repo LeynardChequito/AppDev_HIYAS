@@ -33,34 +33,37 @@
 
     <!-- Display Table -->
     <div class="q-pa-md">
-      <!-- Remove filter-related code here -->
-    </div>
-    <!-- Display Table -->
-    <!-- Display Table -->
-    <div v-for="sectionId in sectionOptions" :key="sectionId" class="q-mb-md">
-      <q-table :rows="getTableData(sectionId)" :columns="columns" :rows-per-page-options="[10, 20, 30]"
-        :pagination.sync="getPagination(sectionId)" :sorting.sync="sorting" :filter.sync="filter"
-        class="my-sticky-last-column-table">
-        <template #body-cell-actions="props">
-          <q-td :props="props">
-            <q-radio v-model="props.row.action" val="Present" label="P" dense class="q-mr-sm" />
-            <q-radio v-model="props.row.action" val="Absent" label="A" dense class="q-mr-sm" />
-            <q-radio v-model="props.row.action" val="Late" label="L" dense class="q-mr-sm" />
-            <q-radio v-model="props.row.action" val="Excused" label="E" dense class="q-mr-sm" />
-          </q-td>
-        </template>
-      </q-table>
+      <q-form @submit.prevent="applyFilter">
+        <q-input v-model="filterValue" label="Filter Value" dense />
+        <q-btn type="submit" label="Apply Filter" color="primary" dense />
+      </q-form>
     </div>
 
-    <div class="row col-12 justify-end ">
-      <q-btn label="Save" color="positive" @click="saveAttendance" class="q-mt-md q-mr-md" />
+    <div class="q-pa-md">
+      <q-btn-group>
+        <q-btn-toggle v-model="filterBy" :options="filterOptions" flat color="primary" dense />
+      </q-btn-group>
     </div>
+    <q-btn label="Save" color="positive" @click="saveAttendance" class="q-mt-md q-mr-md" />
+    <!-- Display Table -->
+    <q-table :rows="filteredTableData" :columns="columns" :rows-per-page-options="[10, 20, 30]" row-key="name"
+      :pagination.sync="pagination" :sorting.sync="sorting" :filter.sync="filter" class="my-sticky-last-column-table">
+      <template #body-cell-actions="props">
+        <q-td :props="props">
+          <q-radio v-model="props.row.action" val="Present" label="P" dense class="q-mr-sm" />
+          <q-radio v-model="props.row.action" val="Absent" label="A" dense class="q-mr-sm" />
+          <q-radio v-model="props.row.action" val="Late" label="L" dense class="q-mr-sm" />
+          <q-radio v-model="props.row.action" val="Excused" label="E" dense class="q-mr-sm" />
+        </q-td>
+      </template>
+    </q-table>
+
   </div>
 </template>
 
 <script setup>
 import axios from 'axios';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 
 const columns = [
   { name: 'student', label: 'Student', field: 'student', align: 'left', sortable: true },
@@ -78,15 +81,16 @@ const columns = [
 ];
 
 
+
 const createAttendanceDialog = ref(false);
-const newAttendance = ref({ date: '', section: '', event_type: 'WLA' });
+const newAttendance = ref({ date: '', section: '', event_type: 'WLA' }); // Set event_type to 'WLA' by default
 const sectionOptions = ref([]);
 const tableData = ref([]);
 const pagination = ref({ page: 1, rowsPerPage: 10 });
 const sorting = ref({ sortBy: 'date', descending: false });
 const filter = ref('');
 const filterBy = ref('date'); // Initial filter option
-const filterValue = ref('');
+const filterValue = ref(''); // Input value for filter
 
 const filterOptions = [
   { label: 'Filter by Date', value: 'date' },
@@ -108,6 +112,7 @@ onMounted(async () => {
   try {
     const response = await axios.get('studentAttendance');
     // Filter the data to keep only entries with event_type "WLA"
+
     tableData.value = response.data.map(entry => ({
       ...entry,
       action: entry.status, // Initialize action with the current status value
@@ -116,6 +121,7 @@ onMounted(async () => {
     console.error('Error fetching data:', error);
   }
 });
+
 
 const createAttendance = async () => {
   try {
@@ -134,7 +140,6 @@ const createAttendance = async () => {
 
     // Fetch and update tableData with student names
     await updateTableData(newAttendance.value.section);
-
     const attendanceResponse = await axios.get('studentAttendance');
     tableData.value = attendanceResponse.data;
 
@@ -144,7 +149,6 @@ const createAttendance = async () => {
     console.error('Error creating attendance:', error);
   }
 };
-
 const updateTableData = async (sectionId) => {
   try {
     console.log('Updating table data for section:', sectionId);
@@ -169,23 +173,40 @@ const updateTableData = async (sectionId) => {
     console.error(`Error fetching data for section ${sectionId}:`, error);
   }
 };
-const saveAttendance = async (sectionId) => {
-  try {
-    console.log(`Saving attendance for section ${sectionId}...`);
 
-    // Filter out entries without changes for the specific section
-    const changedEntries = tableData.value.filter(
-      (entry) => entry.section === sectionId && entry.status !== entry.action
-    );
+// Computed property to filter table data based on selected filter option and value
+const filteredTableData = computed(() => {
+  const filterLower = filterValue.value.toLowerCase();
+  const filterByLower = filterBy.value.toLowerCase();
+
+  return tableData.value.filter(entry => {
+    const valueLower = entry[filterByLower].toString().toLowerCase();
+    return valueLower.includes(filterLower);
+  });
+});
+
+const applyFilter = () => {
+  // You can add more advanced filtering logic if needed
+  filter.value = filterValue.value;
+};
+
+const changedEntries = filteredTableData.value.filter(entry => entry.status !== entry.action);
+
+const saveAttendance = async () => {
+  try {
+    console.log('Saving attendance...');
+
+    // Filter out entries without changes
+    const changedEntries = filteredTableData.value.filter(entry => entry.status !== entry.action);
 
     if (changedEntries.length === 0) {
-      console.log('No changes to save for section', sectionId);
+      console.log('No changes to save.');
       return;
     }
 
     // Prepare data for API update
-    const updateData = changedEntries.map((entry) => ({
-      id: entry.id,
+    const updateData = changedEntries.map(entry => ({
+      id: entry.id, // Replace 'id' with the actual property name containing the unique identifier
       student: entry.student,
       status: entry.action,
       date: entry.date,
@@ -196,26 +217,21 @@ const saveAttendance = async (sectionId) => {
     const response = await axios.put('updatestatus', updateData);
     console.log('API Response:', response.data);
 
-    // Fetch and update tableData with updated attendance data for the specific section
-    await updateTableData(sectionId);
+    // Fetch and update tableData with updated attendance data
+    await updateTableData(newAttendance.value.section);
 
-    console.log(`Attendance saved successfully for section ${sectionId}`);
+    const attendanceResponse = await axios.get('studentAttendance');
+    tableData.value = attendanceResponse.data;
+
+    console.log('Attendance saved successfully.');
   } catch (error) {
-    console.error(`Error saving attendance for section ${sectionId}:`, error);
+    console.error('Error saving attendance:', error);
   }
 };
 
 
 
-const getTableData = (sectionId) => {
-  return tableData.value.filter((entry) => entry.section === sectionId);
-};
-
-const getPagination = (sectionId) => {
-  const sectionRowCount = tableData.value.filter((entry) => entry.section === sectionId).length;
-  return { page: 1, rowsPerPage: 10, rowsNumber: sectionRowCount };
-};
-
+// Rest of your methods (editAttendance, deleteAttendance) remain unchanged
 </script>
 
 <style lang="sass">

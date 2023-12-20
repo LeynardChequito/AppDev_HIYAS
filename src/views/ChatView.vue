@@ -127,7 +127,7 @@ export default {
 
     setInterval(() => {
       this.fetchMessages();
-    }, 10000);
+    }, 500);
   },
 };
 </script>
