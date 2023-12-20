@@ -30,7 +30,8 @@ class ParentController extends ResourceController
         $data = [
             'firstname' => $json->firstname,
             'lastname' => $json->lastname,
-            'age' => $json->age,  // Assuming 'age' is available in your JSON data
+            'age' => $json->age,
+            // Assuming 'age' is available in your JSON data
             'birthday' => $json->birthday,
             'address' => $json->address,
         ];
@@ -66,5 +67,13 @@ class ParentController extends ResourceController
         $r = $parentModel->delete($id); // Assuming your primary key field is 'id'
 
         return $this->respondDeleted();
+    }
+
+    public function getTotalParents()
+    {
+        $parents = new ParentsModel();
+        $totalParents = $parents->countAll(); // Assuming your studentModel has the countAll method
+
+        return $this->respond(['totalParents' => $totalParents]);
     }
 }

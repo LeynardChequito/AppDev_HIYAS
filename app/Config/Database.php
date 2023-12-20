@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'u262559041_Hiyas',
-        'password' => 'ApdevHiyas123',
-        'database' => 'u262559041_hiyas',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'hiyas',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -49,6 +49,28 @@ class Database extends Config
         'failover' => [],
         'port'     => 3306,
     ];
+  
+  
+    
+    // public $default = [
+    //     'DSN'      => '',
+    //     'hostname' => 'localhost',
+    //     'username' => 'u262559041_Hiyas',
+    //     'password' => 'ApdevHiyas123',
+    //     'database' => 'u262559041_hiyas',
+    //     'DBDriver' => 'MySQLi',
+    //     'DBPrefix' => '',
+    //     'pConnect' => false,
+    //     'DBDebug'  => (ENVIRONMENT !== 'production'),
+    //     'charset'  => 'utf8',
+    //     'DBCollat' => 'utf8_general_ci',
+    //     'swapPre'  => '',
+    //     'encrypt'  => false,
+    //     'compress' => false,
+    //     'strictOn' => false,
+    //     'failover' => [],
+    //     'port'     => 3306,
+    // ];
   
     /**
      * This database connection is used when

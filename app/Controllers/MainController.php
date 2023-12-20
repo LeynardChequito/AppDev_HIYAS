@@ -12,7 +12,7 @@ class MainController extends ResourceController
 {
     public function index()
     {
-       return $this->respond(['hello'=>'world']);
+       return $this->respond(['hello'=>'world']);   
     }
 
     public function save()

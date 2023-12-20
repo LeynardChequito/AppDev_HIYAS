@@ -74,6 +74,12 @@ $routes->get('getstudentsforattendance/(:num)', 'AttendanceController::getStuden
 
 
 $routes->post('/save', 'MainController::save');
+$routes->get('/gettotalstudents', 'StudentController::getTotalStudents');
+$routes->get('/gettotalparents', 'ParentController::getTotalParents');
 $routes->post('/del', 'MainController::del');
 $routes->get('/getMessage', 'ChatController::getMessages');
 $routes->post('/sendMessage', 'ChatController::sendMessage');
+
+// $routes->get('/getGroupMessages', 'GroupChatController::getMessages');
+$routes->get('getGroupMessages/(:num)', 'GroupChatController::getGroupMessages/$1');
+$routes->post('/sendGroupMessage', 'GroupChatController::sendMessage');

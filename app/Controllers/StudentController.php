@@ -104,6 +104,8 @@ class StudentController extends ResourceController
             'grade_level' => $json->grade_level,
             'fam_number' => $json->fam_number,
             'staff' => $json->staff,
+            'height' => $json->height,
+            'weight' => $json->weight,
         ];
 
         $StudentModel = new StudentModel(); // Assuming you have an AccountModel
@@ -133,6 +135,8 @@ class StudentController extends ResourceController
             'grade_level' => $json->grade_level,
             'fam_number' => $json->fam_number,
             'staff' => $json->staff,
+            'height' => $json->height,
+            'weight' => $json->weight,
         ];
 
         $StudentModel = new StudentModel();
@@ -149,6 +153,15 @@ class StudentController extends ResourceController
         return $this->respondDeleted();
     }
 
+    public function getTotalStudents()
+    {
+        $studentModel = new StudentModel();
+        $totalStudents = $studentModel->countAll(); // Assuming your studentModel has the countAll method
 
 
+        return $this->respond(['totalStudents' => $totalStudents]);
+    }
 }
+
+
+
